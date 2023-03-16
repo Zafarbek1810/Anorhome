@@ -14,8 +14,8 @@ const Banner = () => {
     <BannerWrapper>
       <Container>
         <Carousel
-        //  autoplay
-        //  autoplaySpeed={3500}
+         autoplay
+         autoplaySpeed={5000}
          easing
           ref={ref}
           className="carusel"

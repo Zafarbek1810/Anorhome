@@ -68,12 +68,32 @@ const BannerWrapper = styled.div`
         li{
             width: 37px;
             height: 2px !important;
-            background: rgba(255, 255, 255, );
+            background: transparent;
+
+            button{
+                height: 2px !important;
+                background: rgba(255, 255, 255, 0.2);
+            }
 
         }
-        /* li.slick-active{
-            background: #fe152b !important;
-        } */
+        li.slick-active{
+            background: #2E3134;
+            height: 2px !important;
+            button{
+                height: 2px !important;
+                background: #fe152b !important;
+                animation: dot 5s;
+            }
+        }
+    }
+  }
+
+  @keyframes dot {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
     }
   }
 
