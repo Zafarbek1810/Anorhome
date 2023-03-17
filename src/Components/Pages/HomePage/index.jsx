@@ -1,6 +1,9 @@
 import React from 'react';
+import Footer from '../Footer/footer';
 import Header from '../Header';
 import Banner from './Banner';
+import Clients from './Clients/client';
+import Contact from './Contact/contact';
 import SecondSection from './SecondSection';
 import ThirdSection from './ThirdSection';
 
@@ -11,6 +14,9 @@ const HomePage = () => {
             <Banner/>
             <SecondSection/>
             <ThirdSection/>
+            <Clients />
+            <Contact />
+            <Footer />
         </div>
     );
 };
