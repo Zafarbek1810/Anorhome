@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import Container from "../../../Common/Container";
 import MyLink from "../../../Common/MyLink";
+import CalendarSvg from "../../../Common/Svgs/CalendarSvg";
+import LocationSvg from "../../../Common/Svgs/LocationSvg";
 import { ThirdSectionWrapper } from "./ThirdSection.style";
 
 const ThirdSection = () => {
+    const [active, setActive] = useState("active")
   return (
     <ThirdSectionWrapper>
       <div className="title">
@@ -26,7 +29,64 @@ const ThirdSection = () => {
               <MyLink to="/#">See All</MyLink>
             </div>
           </div>
-          <div className="right"></div>
+          <div className="right">
+            <div className="card active card1">
+              <img src="/images/img2.png" alt="" />
+              <div className="bottom">
+                <span>
+                  <LocationSvg /> New York
+                </span>
+                <span>
+                  <CalendarSvg /> 12.01.2023
+                </span>
+              </div>
+              <div className="bottom2">
+                <span>New York</span>
+              </div>
+            </div>
+            <div className="card active">
+              <img src="/images/img2.png" alt="" />
+              <div className="bottom">
+                <span>
+                  <LocationSvg /> New York
+                </span>
+                <span>
+                  <CalendarSvg /> 12.01.2023
+                </span>
+              </div>
+              <div className="bottom2">
+                <span>New York</span>
+              </div>
+            </div>
+            <div className="card active">
+              <img src="/images/img2.png" alt="" />
+              <div className="bottom">
+                <span>
+                  <LocationSvg /> New York
+                </span>
+                <span>
+                  <CalendarSvg /> 12.01.2023
+                </span>
+              </div>
+              <div className="bottom2">
+                <span>New York</span>
+              </div>
+            </div>
+            <div className="card active">
+              <img src="/images/img2.png" alt="" />
+              <div className="bottom">
+                <span>
+                  <LocationSvg /> New York
+                </span>
+                <span>
+                  <CalendarSvg /> 12.01.2023
+                </span>
+              </div>
+              <div className="bottom2">
+                <span>New York</span>
+              </div>
+            </div>
+          </div>
         </div>
       </Container>
     </ThirdSectionWrapper>
