@@ -21,6 +21,7 @@ const SecondSectionWrapper = styled.div`
     background: #ffffff;
     padding: 65px 40px;
     display: flex;
+    gap: 40px;
 
     .left {
       width: 60%;
@@ -34,10 +35,11 @@ const SecondSectionWrapper = styled.div`
       }
       .countWrap {
         margin-top: 60px;
+        margin-bottom: 75px;
         background: #ffffff;
         box-shadow: 0px 4px 23px rgba(217, 4, 41, 0.08);
         display: flex;
-        padding: 30px;
+        padding: 30px 0;
 
         .count {
           width: 25%;
@@ -69,10 +71,28 @@ const SecondSectionWrapper = styled.div`
           }
         }
       }
+
+      a {
+        font-family: "Figtree";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: #ffffff;
+        background: #fe152b;
+        padding: 15px 40px !important;
+        transition: 300ms;
+
+        &:hover{
+            background: rgba(254, 21, 43, 0.7);
+        }
+      }
     }
 
     .right {
       width: 40%;
+
+      
     }
   }
 `;

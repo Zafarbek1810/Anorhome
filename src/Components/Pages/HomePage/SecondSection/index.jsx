@@ -5,6 +5,7 @@ import FamilySvg from "../../../Common/Svgs/FamilySvg";
 import ProjectsSvg from "../../../Common/Svgs/ProjectsSvg";
 import RevenueSvg from "../../../Common/Svgs/RevenueSvg";
 import TrustedSvg from "../../../Common/Svgs/TrustedSvg";
+import MyLink from "../../../Common/MyLink";
 
 const countData = [
   {
@@ -57,13 +58,17 @@ const SecondSection = () => {
               {countData.map((v, i) => (
                 <div key={i} className="count">
                   {v.img}
-                  <p className="num">{v.count}</p>
+                  <p className="num">{v.count}{v.suffix}</p>
                   <p className="title">{v.p}</p>
                 </div>
               ))}
             </div>
+
+            <MyLink to="/#">Learn More</MyLink>
           </div>
-          <div className="right"></div>
+          <div className="right">
+            <img src="/images/img.png" alt="" />
+          </div>
         </div>
       </Container>
     </SecondSectionWrapper>

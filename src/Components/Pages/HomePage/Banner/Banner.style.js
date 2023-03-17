@@ -15,11 +15,11 @@ const BannerWrapper = styled.div`
 
   .carusel {
     width: 500px;
-    height: 80vh !important;
+    height: 90vh !important;
 
     .wrap {
-      height: 90vh;
-      transform: translateY(10%);
+      height: 100vh;
+      transform: translateY(20%);
       display: flex;
       flex-direction: column;
       align-items: flex-start;
@@ -59,6 +59,11 @@ const BannerWrapper = styled.div`
         color: #ffffff;
         background: #fe152b;
         padding: 15px 40px !important;
+        transition: 300ms;
+
+        &:hover{
+            background: rgba(254, 21, 43, 0.7);
+        }
       }
     }
 
