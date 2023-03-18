@@ -58,76 +58,87 @@ const BannerWrapper = styled.div`
         line-height: 19px;
         color: #ffffff;
         background: #fe152b;
-        padding: 15px 40px !important;
+        padding: 20px 45px !important;
         transition: 300ms;
+        position: relative;
 
-        &:hover{
-            background: rgba(254, 21, 43, 0.7);
+        svg {
+          position: absolute;
+          left: 0;
+          top: 0;
+          fill: none;
+          stroke: #fff;
+          stroke-dasharray: 150 480;
+          stroke-dashoffset: 150;
+          transition: 1s ease-in-out;
         }
+      }
+      a:hover {
+        transition: 1s ease-in-out;
+        background: #fe152b;
+      }
+
+      a:hover svg {
+        stroke-dashoffset: -480;
+      }
+
+      a span {
+        color: white;
+        font-size: 18px;
+        font-weight: 100;
       }
     }
 
-    .slick-dots-bottom{
-        justify-content: start;
+    .slick-dots-bottom {
+      justify-content: start;
 
-        li{
-            width: 37px;
-            height: 2px !important;
-            background: transparent;
+      li {
+        width: 37px;
+        height: 2px !important;
+        background: transparent;
 
-            button{
-                height: 2px !important;
-                background: rgba(255, 255, 255, 0.2);
-            }
-
+        button {
+          height: 2px !important;
+          background: rgba(255, 255, 255, 0.2);
         }
-        li.slick-active{
-            background: #2E3134;
-            height: 2px !important;
-            button{
-                height: 2px !important;
-                background: #fe152b !important;
-                animation: dot 5s;
-            }
+      }
+      li.slick-active {
+        background: #2e3134;
+        height: 2px !important;
+        button {
+          height: 2px !important;
+          background: #fe152b !important;
+          animation: dot 5s;
         }
+      }
     }
   }
 
   @keyframes dot {
-    0%{
-        width: 0;
+    0% {
+      width: 0;
     }
-    100%{
-        width: 100%;
+    100% {
+      width: 100%;
     }
   }
 
-  .dots {
-    display: flex;
-    position: relative;
-    div {
-      width: 37px;
-      height: 2px;
-      background: rgba(255, 255, 255, 0.2);
-      margin-right: 6px;
-    }
 
-    .active:after{
-        content: "";
-    display: block;
-    right: 0;
-    position: absolute;
-    border: 1px solid #fe152b;
-    transition: width 0.3s ease 0s;
-    width: 0;
-    }
-    .active {
-      background: #fe152b !important;
-    }
+  @media (max-width: 700px) {
+    .carusel{
+      width: 90% !important;
+      overflow: hidden;
 
-    &:hover > .active:after{
-        width: 100%;
-        left: 0 !important;
+      .wrap{
+        .title{
+          font-size: 42px;
+          line-height: 52px;
+        }
+
+        .descr{
+
+        }
+      }
     }
   }
 `;

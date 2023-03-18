@@ -44,6 +44,7 @@ const ThirdSectionWrapper = styled.div`
         margin: 0;
         color: #ffffff;
         margin-bottom: 20px;
+        color: #ffffff;
       }
       .descr {
         font-family: "Figtree";
@@ -82,58 +83,30 @@ const ThirdSectionWrapper = styled.div`
       width: 60%;
       height: 100%;
       display: flex;
-      gap: 20px;
-      .card1 {
-        width: 55%;
-        flex-grow: 1;
-        .bottom {
-          transform: rotate(0deg) !important;
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          width: 100%;
-          padding: 10px 30px;
-          display: flex !important;
-          justify-content: space-between;
-          background: linear-gradient(
-            360deg,
-            rgba(22, 26, 29, 0.79) 0%,
-            rgba(22, 26, 29, 0.23) 100%
-          );
-          span {
-            display: flex;
-            align-items: center;
-            height: 70px;
-            width: 300px;
-            font-family: "Figtree";
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 19px;
-            color: #ffffff;
-            svg {
-              margin-right: 15px;
-            }
-          }
-        }
-        .bottom2{
-            display: none !important;
-        }
-      }
+      
 
-      .card {
+      .card { 
+        padding: 10px;
+
+        overflow: hidden;
         height: 470px;
-        width: 15%;
         position: relative;
-        border: 1px solid #ffffff;
-        transition: 500ms ease;
+        transition: all 500ms ease-in-out;
+        width: 15%;
+
+        .card-img-wrapper {
+          height: 100%;
+          overflow: hidden;
+        }
+
         img {
           width: 100%;
           height: 100%;
           object-fit: cover;
+          transition: 300ms ease;
         }
 
-        .bottom {    
+        .bottom {
           transform: rotate(-90deg);
           position: absolute;
           bottom: 0;
@@ -163,8 +136,8 @@ const ThirdSectionWrapper = styled.div`
             }
           }
         }
-        .bottom2{
-            display: block;
+        .bottom2 {
+          display: block;
           transform: rotate(-90deg);
           position: absolute;
           top: 80%;
@@ -185,9 +158,11 @@ const ThirdSectionWrapper = styled.div`
           }
         }
       }
-
-      .card:hover {
-        width: 55%;
+      .card.active {
+        flex-grow: 1;
+        img{
+          transform: scale(1.1);
+        }
         .bottom {
           transform: rotate(0);
           position: absolute;
@@ -218,8 +193,8 @@ const ThirdSectionWrapper = styled.div`
             }
           }
         }
-        .bottom2{
-            display: none;
+        .bottom2 {
+          display: none;
           transform: rotate(-90deg);
           position: absolute;
           bottom: 0;
@@ -240,19 +215,17 @@ const ThirdSectionWrapper = styled.div`
           }
         }
       }
+      .card:hover {
+        /* width: 55%; */
+        /* flex-grow: 5; */
 
-      .card:hover .card1{
-            width: 15% !important;
+        
 
-            .bottom{
-                display: none !important; 
-            }
-            .bottom2{
-                display: block !important; 
-            }
-        }
-      
-      
+      }
+
+      color: #ffffff;
+    }
+    .btns {
     }
   }
 `;

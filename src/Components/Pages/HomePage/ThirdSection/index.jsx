@@ -5,8 +5,45 @@ import CalendarSvg from "../../../Common/Svgs/CalendarSvg";
 import LocationSvg from "../../../Common/Svgs/LocationSvg";
 import { ThirdSectionWrapper } from "./ThirdSection.style";
 
+const data=[
+  {
+    img:"/images/img2.png",
+    city:"New York",
+    date:" 12.01.2023"
+  },
+  {
+    img:"/images/img.png",
+    city:"New York",
+    date:" 12.01.2023"
+  },
+  {
+    img:"/images/img2.png",
+    city:"New York",
+    date:" 12.01.2023"
+  },
+  {
+    img:"/images/img.png",
+    city:"New York",
+    date:" 12.01.2023"
+  },
+]
 const ThirdSection = () => {
-    const [active, setActive] = useState("active")
+  const [activeIndex, setActiveIndex] = useState("0");
+
+  const onMouseOver = (e) => {
+    const element = e.target;
+    if (!element.dataset.imageindex) {
+      const divElement = element.closest("div[data-imageindex]");
+      setActiveIndex(divElement.dataset.imageindex);
+    } else {
+      setActiveIndex(element.dataset.imageindex);
+    }
+  };
+
+  const onMouseLeave = (e) => {
+    setActiveIndex("0");
+  };
+
   return (
     <ThirdSectionWrapper>
       <div className="title">
@@ -30,62 +67,34 @@ const ThirdSection = () => {
             </div>
           </div>
           <div className="right">
-            <div className="card active card1">
-              <img src="/images/img2.png" alt="" />
-              <div className="bottom">
-                <span>
-                  <LocationSvg /> New York
-                </span>
-                <span>
-                  <CalendarSvg /> 12.01.2023
-                </span>
-              </div>
-              <div className="bottom2">
-                <span>New York</span>
-              </div>
-            </div>
-            <div className="card active">
-              <img src="/images/img2.png" alt="" />
-              <div className="bottom">
-                <span>
-                  <LocationSvg /> New York
-                </span>
-                <span>
-                  <CalendarSvg /> 12.01.2023
-                </span>
-              </div>
-              <div className="bottom2">
-                <span>New York</span>
-              </div>
-            </div>
-            <div className="card active">
-              <img src="/images/img2.png" alt="" />
-              <div className="bottom">
-                <span>
-                  <LocationSvg /> New York
-                </span>
-                <span>
-                  <CalendarSvg /> 12.01.2023
-                </span>
-              </div>
-              <div className="bottom2">
-                <span>New York</span>
-              </div>
-            </div>
-            <div className="card active">
-              <img src="/images/img2.png" alt="" />
-              <div className="bottom">
-                <span>
-                  <LocationSvg /> New York
-                </span>
-                <span>
-                  <CalendarSvg /> 12.01.2023
-                </span>
-              </div>
-              <div className="bottom2">
-                <span>New York</span>
-              </div>
-            </div>
+            {data.map((obj, index) => (
+              <>
+                <div
+                  className={`card ${
+                    activeIndex === `${index}` ? "active" : ""
+                  }`}
+                  key={index}
+                  data-imageIndex={index}
+                  onMouseOver={onMouseOver}
+                  onMouseLeave={onMouseLeave}
+                >
+                  <div className="card-img-wrapper">
+                  <img src={obj.img} alt="" />
+                  </div>
+                  <div className="bottom">
+                    <span>
+                      <LocationSvg /> {obj.city}
+                    </span>
+                    <span>
+                      <CalendarSvg /> {obj.date}
+                    </span>
+                  </div>
+                  <div className="bottom2">
+                    <span>{obj.city}</span>
+                  </div>
+                </div>
+              </>
+            ))}
           </div>
         </div>
       </Container>

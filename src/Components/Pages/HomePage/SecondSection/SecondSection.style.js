@@ -80,12 +80,34 @@ const SecondSectionWrapper = styled.div`
         line-height: 19px;
         color: #ffffff;
         background: #fe152b;
-        padding: 15px 40px !important;
+        padding: 20px 45px !important;
         transition: 300ms;
+        position: relative;
 
-        &:hover{
-            background: rgba(254, 21, 43, 0.7);
+        svg {
+          position: absolute;
+          left: 0;
+          top: 0;
+          fill: none;
+          stroke: #fff;
+          stroke-dasharray: 150 480;
+          stroke-dashoffset: 150;
+          transition: 1s ease-in-out;
         }
+      }
+      a:hover {
+        transition: 1s ease-in-out;
+        background: #fe152b;
+      }
+
+      a:hover svg {
+        stroke-dashoffset: -480;
+      }
+
+      a span {
+        color: white;
+        font-size: 18px;
+        font-weight: 100;
       }
     }
 

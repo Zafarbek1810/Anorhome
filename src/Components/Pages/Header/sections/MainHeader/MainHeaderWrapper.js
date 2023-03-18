@@ -282,7 +282,7 @@ const MainHeaderWrapper = styled.div`
     .burger-btn {
       &:after,
       &:before {
-        background-color: #222;
+        background-color: #000;
       }
 
       span {
@@ -426,8 +426,15 @@ const MainHeaderWrapper = styled.div`
   }
 
   @media (max-width: 1024px) {
+
+    .callBtn{
+      display: none;
+    }
+    .lang{
+      display: none !important;
+    }
     .logo {
-      width: 30%;
+      width: 30% !important;
     }
     li {
       list-style: none;

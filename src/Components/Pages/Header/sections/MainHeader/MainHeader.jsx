@@ -1,6 +1,5 @@
 import React, { useEffect, useState, useRef, useContext } from "react";
-import MyLink from "../../../../Common/MyLink";
-import Container from "../../../../Common/Container";
+import MyLink from "../../../../Common/MyLink"; 
 import GlobeSvg from "../../../../Common/Svgs/GlobeSvg";
 import BurgerList from "./Components/BurgerList";
 import { HeaderContext } from "../../../../../Context/HeaderContext";
@@ -123,7 +122,8 @@ const MainHeader = ({ isFixed }) => {
         </div>
 
         <div className="callBtn">
-          <MyLink to="/#">Call Me Now!</MyLink>
+          <MyLink to="/#">
+            Call Me Now!</MyLink>
         </div>
 
         <div
