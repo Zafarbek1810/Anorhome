@@ -1,5 +1,4 @@
 import { Carousel } from "antd";
-import Image from "next/image";
 import React, { useEffect, useRef } from "react";
 import Container from "../../../Common/Container";
 import { TestimionalsWrapper } from "./Testimionals.style";
@@ -33,7 +32,7 @@ const Testimionals = () => {
           <Carousel autoplay dots={false} ref={carouselRef}>
             <div className="carusel">
               <div className="left">
-                <Image src="/images/man.png" width={243} height={341} />
+                <img src="/images/man.png" width={243} height={341} />
               </div>
               <div className="right">
                 <h3 className="name">Frank Paradiso</h3>
@@ -52,7 +51,7 @@ const Testimionals = () => {
             </div>
             <div className="carusel">
               <div className="left">
-                <Image src="/images/man.png" width={243} height={341} />
+                <img src="/images/man.png" width={243} height={341} />
               </div>
               <div className="right">
                 <h3 className="name">Frank Paradiso</h3>
@@ -71,7 +70,7 @@ const Testimionals = () => {
             </div>
             <div className="carusel">
               <div className="left">
-                <Image src="/images/man.png" width={243} height={341} />
+                <img src="/images/man.png" width={243} height={341} />
               </div>
               <div className="right">
                 <h3 className="name">Frank Paradiso</h3>

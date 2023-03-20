@@ -83,13 +83,7 @@ const SecondSection = () => {
             </MyLink>
           </div>
           <div className="right">
-            <Image
-              src="/images/img.png"
-              alt=""
-              width={387}
-              height={431}
-              loading="lazy"
-            />
+            <img src="/images/img.png" alt="" />
           </div>
         </div>
       </Container>
