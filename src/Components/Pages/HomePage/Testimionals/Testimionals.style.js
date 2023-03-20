@@ -55,8 +55,13 @@ const TestimionalsWrapper = styled.div`
     padding: 45px 30px;
 
     .left {
+      width: 30%;
+      img{
+        width: 100%;
+      }
     }
     .right {
+      width: 70%;
       position: relative;
       img {
         position: absolute;
@@ -97,6 +102,30 @@ const TestimionalsWrapper = styled.div`
         font-size: 18px;
         line-height: 22px;
         color: #ffffff;
+      }
+    }
+  }
+
+  @media (max-width: 700px) {
+    .wrapper{
+      flex-direction: column;
+      .car{
+        width: 100% !important;
+
+        .carusel{
+          flex-direction: column;
+          .left{
+            width: 100%;
+          }
+          .right{
+            width: 100%;
+          }
+        }
+      }
+      .btns{
+        justify-content: center;
+        margin-top: 40px;
+        width: 100% !important;
       }
     }
   }

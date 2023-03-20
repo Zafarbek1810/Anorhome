@@ -87,7 +87,6 @@ const ThirdSectionWrapper = styled.div`
 
       .card { 
         padding: 10px;
-
         overflow: hidden;
         height: 470px;
         position: relative;
@@ -226,6 +225,52 @@ const ThirdSectionWrapper = styled.div`
       color: #ffffff;
     }
     .btns {
+    }
+  }
+
+  @media (max-width: 700px) {
+    .wrap{
+      display: flex;
+      flex-direction: column-reverse;
+
+      .right{
+        width: 100%;
+        span{
+          font-size: 12px !important;
+        }
+
+          .card{
+            .bottom2{
+              position: absolute;
+          top: 80%;
+          left: -30px;
+          width: 100%;
+            }
+          }
+          .card.active{
+            .bottom{
+              display: flex;
+              flex-direction: column;
+              padding: 20px 35px !important; 
+              span{
+                height: 35px;
+              }
+            }
+          }
+      }
+
+      .left{
+        width: 100%;
+        .subtitle {
+          font-size: 16px;
+        }
+        .titles{
+          font-size: 48px;
+        }
+        .descr{
+          font-size: 14px;
+        }
+      }
     }
   }
 `;

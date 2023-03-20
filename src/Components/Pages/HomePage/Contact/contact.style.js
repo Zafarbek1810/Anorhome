@@ -71,5 +71,18 @@ const ContactWrappper = styled.div`
       }
     }
   }
+
+  @media (max-width: 700px) {
+    .contact{
+      display: flex;
+      flex-direction: column-reverse;
+      &__info{
+        width: 100%;
+      }
+      &__map{
+        width: 100%;
+      }
+    }
+  }
 `;
 export { ContactWrappper };
