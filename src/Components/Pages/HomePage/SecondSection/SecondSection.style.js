@@ -32,10 +32,10 @@ const SecondSectionWrapper = styled.div`
         font-size: 20px;
         line-height: 24px;
         color: #2b2d42;
+        margin: 0;
       }
       .countWrap {
-        margin-top: 60px;
-        margin-bottom: 75px;
+        margin: 40px 0;
         background: #ffffff;
         box-shadow: 0px 4px 23px rgba(217, 4, 41, 0.08);
         display: flex;
