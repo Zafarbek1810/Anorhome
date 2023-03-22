@@ -15,7 +15,7 @@ export const LINKS = [
   },
   {
     name: "About Us",
-    path: "/",
+    path: "/about",
     id: 2,
   },
   {
