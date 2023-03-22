@@ -28,7 +28,6 @@ const Testimionals = () => {
       <Container style={{ paddingTop: 100, paddingBottom: 100 }}>
         <div className="wrapper">
           <div className="car" >
-
           <Carousel autoplay dots={false} ref={carouselRef}>
             <div className="carusel">
               <div className="left">

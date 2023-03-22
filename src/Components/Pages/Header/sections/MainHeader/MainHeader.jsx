@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef, useContext } from "react";
-import MyLink from "../../../../Common/MyLink"; 
+import MyLink from "../../../../Common/MyLink";
 import GlobeSvg from "../../../../Common/Svgs/GlobeSvg";
 import BurgerList from "./Components/BurgerList";
 import { HeaderContext } from "../../../../../Context/HeaderContext";
@@ -97,7 +97,7 @@ const MainHeader = ({ isFixed }) => {
         </div>
 
         <div className="lang">
-          <GlobeSvg/>
+          <GlobeSvg />
           <Select
             defaultValue="en"
             style={{
@@ -116,14 +116,15 @@ const MainHeader = ({ isFixed }) => {
               {
                 value: "ru",
                 label: "RUS",
-              }             
+              },
             ]}
           />
         </div>
 
         <div className="callBtn">
           <MyLink to="/#">
-            Call Me Now!</MyLink>
+            <span>Call Me Now!</span>
+          </MyLink>
         </div>
 
         <div

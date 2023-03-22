@@ -32,10 +32,10 @@ const SecondSectionWrapper = styled.div`
         font-size: 20px;
         line-height: 24px;
         color: #2b2d42;
+        margin: 0;
       }
       .countWrap {
-        margin-top: 60px;
-        margin-bottom: 75px;
+        margin: 40px 0;
         background: #ffffff;
         box-shadow: 0px 4px 23px rgba(217, 4, 41, 0.08);
         display: flex;
@@ -114,7 +114,50 @@ const SecondSectionWrapper = styled.div`
     .right {
       width: 40%;
 
+      img{
+        width: 100%;
+      }
+    }
+  }
+
+  @media (max-width: 700px) {
+    .wrap{
+      display: flex;
+      flex-direction: column-reverse;
+
+      .right{
+        width: 100%;
+      }
+
+      .left{
+        width: 100%;
+        p.info {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  @media (max-width: 450px) {
+    .wrap{
       
+
+      .left{
+        
+        .countWrap{
+          flex-wrap: wrap;
+          .count{
+            width: 50%;
+            border: none;
+            margin-bottom: 30px;
+            &:nth-child(1){
+              border-right: 1px solid #A4161A;
+            }
+            &:nth-child(3){
+              border-right: 1px solid #A4161A;
+            }
+          }
+        }
+      }
     }
   }
 `;

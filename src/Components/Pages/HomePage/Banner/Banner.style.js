@@ -123,20 +123,18 @@ const BannerWrapper = styled.div`
     }
   }
 
-
   @media (max-width: 700px) {
-    .carusel{
+    .carusel {
       width: 90% !important;
       overflow: hidden;
 
-      .wrap{
-        .title{
+      .wrap {
+        .title {
           font-size: 42px;
           line-height: 52px;
         }
 
-        .descr{
-
+        .descr {
         }
       }
     }
