@@ -14,8 +14,7 @@ const Banner = () => {
       <Container>
         <Carousel
           autoplay
-          autoplaySpeed={4000}
-          easing
+          autoplaySpeed={3000}
           ref={ref}
           className="carusel"
         >
@@ -28,19 +27,11 @@ const Banner = () => {
               pellentesque proin neque pellentesque suspendisse sit. Proin ut at
               tortor nulla quam arcu
             </p>
-            <MyLink to="/#">
-              <svg viewBox="0 0 180 60" class="border">
-                <polyline
-                  points="179,1 179,59 1,59 1,1 179,1"
-                  class="bg-line"
-                />
-                <polyline
-                  points="179,1 179,59 1,59 1,1 179,1"
-                  class="hl-line"
-                />
-              </svg>
-              <span>Learn More</span>
-            </MyLink>
+            <section class="buttons">
+              <MyLink to="/#" className="btn btn-4">
+                <span>Learn More</span>
+              </MyLink>
+            </section>
           </div>
           <div className="wrap">
             <h1 className="title">
@@ -51,19 +42,11 @@ const Banner = () => {
               pellentesque proin neque pellentesque suspendisse sit. Proin ut at
               tortor nulla quam arcu
             </p>
-            <MyLink to="/#">
-              <svg viewBox="0 0 180 60" class="border">
-                <polyline
-                  points="179,1 179,59 1,59 1,1 179,1"
-                  class="bg-line"
-                />
-                <polyline
-                  points="179,1 179,59 1,59 1,1 179,1"
-                  class="hl-line"
-                />
-              </svg>
-              <span>Learn More</span>
-            </MyLink>
+            <section class="buttons">
+              <MyLink to="/#" className="btn btn-4">
+                <span>Learn More</span>
+              </MyLink>
+            </section>
           </div>
           <div className="wrap">
             <h1 className="title">
@@ -74,19 +57,11 @@ const Banner = () => {
               pellentesque proin neque pellentesque suspendisse sit. Proin ut at
               tortor nulla quam arcu
             </p>
-            <MyLink to="/#">
-              <svg viewBox="0 0 180 60" class="border">
-                <polyline
-                  points="179,1 179,59 1,59 1,1 179,1"
-                  class="bg-line"
-                />
-                <polyline
-                  points="179,1 179,59 1,59 1,1 179,1"
-                  class="hl-line"
-                />
-              </svg>
-              <span>Learn More</span>
-            </MyLink>
+            <section class="buttons">
+              <MyLink to="/#" className="btn btn-4">
+                <span>Learn More</span>
+              </MyLink>
+            </section>
           </div>
           <div className="wrap">
             <h1 className="title">
@@ -97,19 +72,11 @@ const Banner = () => {
               pellentesque proin neque pellentesque suspendisse sit. Proin ut at
               tortor nulla quam arcu
             </p>
-            <MyLink to="/#">
-              <svg viewBox="0 0 180 60" class="border">
-                <polyline
-                  points="179,1 179,59 1,59 1,1 179,1"
-                  class="bg-line"
-                />
-                <polyline
-                  points="179,1 179,59 1,59 1,1 179,1"
-                  class="hl-line"
-                />
-              </svg>
-              <span>Learn More</span>
-            </MyLink>
+            <section class="buttons">
+              <MyLink to="/#" className="btn btn-4">
+                <span>Learn More</span>
+              </MyLink>
+            </section>
           </div>
           <div className="wrap">
             <h1 className="title">
@@ -120,19 +87,11 @@ const Banner = () => {
               pellentesque proin neque pellentesque suspendisse sit. Proin ut at
               tortor nulla quam arcu
             </p>
-            <MyLink to="/#">
-              <svg viewBox="0 0 180 60" class="border">
-                <polyline
-                  points="179,1 179,59 1,59 1,1 179,1"
-                  class="bg-line"
-                />
-                <polyline
-                  points="179,1 179,59 1,59 1,1 179,1"
-                  class="hl-line"
-                />
-              </svg>
-              <span>Learn More</span>
-            </MyLink>
+            <section class="buttons">
+              <MyLink to="/#" className="btn btn-4">
+                <span>Learn More</span>
+              </MyLink>
+            </section>
           </div>
           <div className="wrap">
             <h1 className="title">
@@ -143,19 +102,11 @@ const Banner = () => {
               pellentesque proin neque pellentesque suspendisse sit. Proin ut at
               tortor nulla quam arcu
             </p>
-            <MyLink to="/#">
-              <svg viewBox="0 0 180 60" class="border">
-                <polyline
-                  points="179,1 179,59 1,59 1,1 179,1"
-                  class="bg-line"
-                />
-                <polyline
-                  points="179,1 179,59 1,59 1,1 179,1"
-                  class="hl-line"
-                />
-              </svg>
-              <span>Learn More</span>
-            </MyLink>
+            <section class="buttons">
+              <MyLink to="/#" className="btn btn-4">
+                <span>Learn More</span>
+              </MyLink>
+            </section>
           </div>
         </Carousel>
       </Container>
