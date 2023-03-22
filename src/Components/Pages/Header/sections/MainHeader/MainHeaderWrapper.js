@@ -42,18 +42,18 @@ const MainHeaderWrapper = styled.div`
     }
   }
 
-  .content{
+  .content {
     justify-content: space-between;
-    .logo{
+    .logo {
       width: 15%;
     }
-    .navbar-wrapper{
+    .navbar-wrapper {
       width: 60%;
     }
-    .lang{
+    .lang {
       width: 10%;
     }
-    .callBtn{
+    .callBtn {
       width: 15%;
     }
   }
@@ -69,12 +69,11 @@ const MainHeaderWrapper = styled.div`
     min-height: 100px !important;
     padding-top: 10px !important;
 
-
     .lang {
       display: flex;
       align-items: center;
 
-      .ant-select-open{
+      .ant-select-open {
         border: none !important;
       }
       .ant-select-selector {
@@ -85,8 +84,8 @@ const MainHeaderWrapper = styled.div`
         font-weight: 700 !important;
         font-size: 15px !important;
         line-height: 18px !important;
-        color: #ffffff !important;  
-        &:active{
+        color: #ffffff !important;
+        &:active {
           color: red !important;
         }
       }
@@ -100,29 +99,36 @@ const MainHeaderWrapper = styled.div`
       }
     }
 
-    .callBtn{
-      background: #FFFFFF;
-      padding: 15px 35px;
-      a{
-        font-family: 'Figtree';
+    .callBtn {
+      background: #ffffff;
+      padding: 15px 15px;
+      text-align: center;
+      border: 1px solid transparent;
+      a {
+        font-family: "Figtree";
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
         line-height: 19px;
-        color: #161A1D;
+        color: #161a1d;
+
       }
+      &:hover{
+        border: 1px solid red;
+      }
+     
     }
+  }
 
-    .navs {
-      p {
-        color: #000;
-        font-family: Nunito Sans;
-        font-weight: 700;
-        transition: 300ms;
+  .navs {
+    p {
+      color: #000;
+      font-family: Nunito Sans;
+      font-weight: 700;
+      transition: 300ms;
 
-        &:hover {
-          color: #f67f00 !important;
-        }
+      &:hover {
+        color: #f67f00 !important;
       }
     }
   }
@@ -167,7 +173,7 @@ const MainHeaderWrapper = styled.div`
           font-family: "Figtree";
           font-style: normal;
           font-weight: 400;
-          font-size: 18px;
+          font-size: 18px !important;
           line-height: 22px;
           color: #fff;
         }
@@ -177,11 +183,11 @@ const MainHeaderWrapper = styled.div`
     .burger-btn {
       &:after,
       &:before {
-        background-color: #222;
+        background-color: #fff;
       }
 
       span {
-        background-color: #222;
+        background-color: #fff;
       }
     }
   }
@@ -221,24 +227,28 @@ const MainHeaderWrapper = styled.div`
       }
     }
 
-    .callBtn{
-      background: #161A1D;
+    .callBtn {
+      background: #161a1d;
       padding: 15px 35px;
-      a{
-        font-family: 'Figtree';
+
+      a {
+        font-family: "Figtree";
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
         line-height: 19px;
         color: #fff !important;
       }
+
+     
+      
     }
 
     p {
       font-family: "Figtree";
       font-style: normal;
       font-weight: 400;
-      font-size: 18px;
+      font-size: 18px !important;
       line-height: 22px;
       /* identical to box height */
 
@@ -426,11 +436,10 @@ const MainHeaderWrapper = styled.div`
   }
 
   @media (max-width: 1024px) {
-
-    .callBtn{
+    .callBtn {
       display: none;
     }
-    .lang{
+    .lang {
       display: none !important;
     }
     .logo {
@@ -452,6 +461,21 @@ const MainHeaderWrapper = styled.div`
     }
 
     .header2 {
+      .burger-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        span {
+          background-color: #000 !important;
+        }
+        &::before {
+          background-color: #000 !important;
+        }
+        &::after {
+          background-color: #000 !important;
+        }
+      }
     }
 
     .navbar-wrapper {
@@ -462,6 +486,16 @@ const MainHeaderWrapper = styled.div`
       display: flex;
       align-items: center;
       justify-content: center;
+
+      span {
+        background-color: #fff !important;
+      }
+      &::before {
+        background-color: #fff !important;
+      }
+      &::after {
+        background-color: #fff !important;
+      }
     }
 
     .getBtn {

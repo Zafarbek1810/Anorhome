@@ -53,7 +53,7 @@ const TestimionalsWrapper = styled.div`
     gap: 50px;
     background: #161a1d;
     padding: 45px 30px;
-
+    
     .left {
       width: 30%;
       img{
@@ -61,12 +61,13 @@ const TestimionalsWrapper = styled.div`
       }
     }
     .right {
-      width: 70%;
       position: relative;
+      width: 70%;
       img {
         position: absolute;
-        right: 0;
-        bottom: 0;
+        right: 0px;
+        bottom: 0px;
+        z-index: 0;
       }
       .name {
         font-family: "Montserrat";
@@ -93,6 +94,8 @@ const TestimionalsWrapper = styled.div`
         font-size: 18px;
         line-height: 22px;
         color: #ffffff;
+        position: relative;
+        z-index: 22;
       }
 
       .date {
