@@ -58,6 +58,7 @@ const TestimionalsWrapper = styled.div`
       width: 30%;
       img{
         width: 100%;
+        object-fit: cover;
       }
     }
     .right {
@@ -105,6 +106,8 @@ const TestimionalsWrapper = styled.div`
         font-size: 18px;
         line-height: 22px;
         color: #ffffff;
+        position: relative;
+        z-index: 22;
       }
     }
   }
@@ -119,6 +122,9 @@ const TestimionalsWrapper = styled.div`
           flex-direction: column;
           .left{
             width: 100%;
+            img{
+              object-fit: contain;
+            }
           }
           .right{
             width: 100%;
@@ -126,6 +132,7 @@ const TestimionalsWrapper = styled.div`
         }
       }
       .btns{
+        padding: 0;
         justify-content: center;
         margin-top: 40px;
         width: 100% !important;

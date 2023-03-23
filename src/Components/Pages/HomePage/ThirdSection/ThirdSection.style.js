@@ -55,28 +55,58 @@ const ThirdSectionWrapper = styled.div`
         margin-bottom: 40px;
         color: #ffffff;
       }
-      .btns a:nth-child(1) {
-        background: #ffffff;
+      /* ================== */
+      .buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+      }
+
+      .btn {
         font-family: "Figtree";
-        font-style: normal;
         font-weight: 500;
         font-size: 16px;
-        line-height: 19px;
-        padding: 15px 40px;
-        color: #161a1d;
-        margin-right: 30px;
+        color: #000;
+        cursor: pointer;
+        max-width: 160px !important;
+        padding: 15px 30px;
+        position: relative;
+        width: 100%;
+        background: #e5e5e5;
       }
-      .btns a:nth-child(2) {
-        background: transparent;
-        font-family: "Figtree";
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 19px;
-        padding: 15px 40px;
-        color: #ffffff;
-        border: 1px solid #fff;
+
+      .btn:hover {
+        text-decoration: none;
       }
+
+      .btn-4 {
+        overflow: hidden;
+        position: relative;
+      }
+      .btn-4 span {
+        z-index: 20;
+      }
+      .btn-4:after {
+        background: #fff;
+        content: "";
+        height: 155px;
+        left: -75px;
+        opacity: 0.9;
+        position: absolute;
+        top: -50px;
+        transform: rotate(35deg);
+        transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+        width: 50px;
+        z-index: 10;
+      }
+
+      .btn-4:hover:after {
+        left: 120%;
+        transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+      }
+      /* ============== */
     }
 
     .right {
@@ -171,6 +201,7 @@ const ThirdSectionWrapper = styled.div`
           padding: 10px 30px;
           display: flex;
           justify-content: space-between;
+          align-items: center;
           background: linear-gradient(
             360deg,
             rgba(22, 26, 29, 0.79) 0%,
@@ -190,6 +221,10 @@ const ThirdSectionWrapper = styled.div`
             svg {
               margin-right: 15px;
             }
+          }
+          a{
+            width: 150px;
+            font-family: "Figtree";
           }
         }
         .bottom2 {
@@ -217,9 +252,6 @@ const ThirdSectionWrapper = styled.div`
       .card:hover {
         /* width: 55%; */
         /* flex-grow: 5; */
-
-        
-
       }
 
       color: #ffffff;
@@ -250,10 +282,12 @@ const ThirdSectionWrapper = styled.div`
           .card.active{
             .bottom{
               display: flex;
-              flex-direction: column;
               padding: 20px 35px !important; 
               span{
                 height: 35px;
+              }
+              a{
+                font-size: 12px;
               }
             }
           }
@@ -270,6 +304,47 @@ const ThirdSectionWrapper = styled.div`
         .descr{
           font-size: 14px;
         }
+        
+      }
+    }
+  }
+  @media (max-width: 500px) {
+    .wrap{
+      display: flex;
+      flex-direction: column-reverse;
+
+      .right{
+        width: 100%;
+        span{
+          font-size: 12px !important;
+        }
+
+          .card{
+            .bottom2{
+              position: absolute;
+              top: 80%;
+              left: -30px;
+              width: 100%;
+            }
+          }
+          .card.active{
+            .bottom{
+              display: flex;
+              flex-direction: column;
+              padding: 20px 35px !important; 
+              transform: translateX(25%);
+              span{
+                height: 35px;
+                transform: translateX(25%);
+                svg{
+                  display: none;
+                }
+              }
+              a{
+                font-size: 12px;
+              }
+            }
+          }
       }
     }
   }

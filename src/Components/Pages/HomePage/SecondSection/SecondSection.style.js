@@ -72,43 +72,62 @@ const SecondSectionWrapper = styled.div`
         }
       }
 
-      a {
+       /* ============== button hover  start======================== */
+
+       .buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+      }
+
+      .btn {
         font-family: "Figtree";
-        font-style: normal;
         font-weight: 500;
         font-size: 16px;
-        line-height: 19px;
-        color: #ffffff;
-        background: #fe152b;
-        padding: 20px 45px !important;
-        transition: 300ms;
+        color: #fff;
+        cursor: pointer;
+        max-width: 160px !important;
+        padding: 15px 30px;
         position: relative;
-
-        svg {
-          position: absolute;
-          left: 0;
-          top: 0;
-          fill: none;
-          stroke: #fff;
-          stroke-dasharray: 150 480;
-          stroke-dashoffset: 150;
-          transition: 1s ease-in-out;
-        }
-      }
-      a:hover {
-        transition: 1s ease-in-out;
+        width: 100%;
         background: #fe152b;
       }
 
-      a:hover svg {
-        stroke-dashoffset: -480;
+      .btn:hover {
+        text-decoration: none;
       }
 
-      a span {
-        color: white;
-        font-size: 18px;
-        font-weight: 100;
+      .btn-4 {
+        /* border: 1px solid; */
+        overflow: hidden;
+        position: relative;
       }
+      .btn-4 span {
+        z-index: 20;
+      }
+      .btn-4:after {
+        background: #fff;
+        content: "";
+        height: 155px;
+        left: -75px;
+        opacity: 0.2;
+        position: absolute;
+        top: -50px;
+        transform: rotate(35deg);
+        transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+        width: 50px;
+        z-index: 10;
+      }
+
+      .btn-4:hover:after {
+        left: 120%;
+        transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+      }
+    }
+
+    /* =================== button hover end =================== */
     }
 
     .right {
@@ -118,7 +137,6 @@ const SecondSectionWrapper = styled.div`
         width: 100%;
       }
     }
-  }
 
   @media (max-width: 700px) {
     .wrap{
