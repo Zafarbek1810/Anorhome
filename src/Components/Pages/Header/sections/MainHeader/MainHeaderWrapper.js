@@ -100,24 +100,63 @@ const MainHeaderWrapper = styled.div`
     }
 
     .callBtn {
-      background: #ffffff;
-      padding: 15px 15px;
-      text-align: center;
-      border: 1px solid transparent;
-      a {
+      border: none;
+      /* ============== button hover  start======================== */
+
+      .buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+      }
+
+      .btn {
         font-family: "Figtree";
-        font-style: normal;
         font-weight: 500;
         font-size: 16px;
-        line-height: 19px;
-        color: #161a1d;
+        color: #fff;
+        cursor: pointer;
+        max-width: 160px !important;
+        padding: 15px 30px;
+        position: relative;
+        width: 100%;
+        background: #e5e5e5;
+      }
 
+      .btn:hover {
+        text-decoration: none;
       }
-      &:hover{
-        border: 1px solid red;
+
+      .btn-4 {
+        /* border: 1px solid; */
+        overflow: hidden;
+        position: relative;
       }
-     
+      .btn-4 span {
+        z-index: 20;
+      }
+      .btn-4:after {
+        background: #fff;
+        content: "";
+        height: 155px;
+        left: -75px;
+        opacity: 0.9;
+        position: absolute;
+        top: -50px;
+        transform: rotate(35deg);
+        transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+        width: 50px;
+        z-index: 10;
+      }
+
+      .btn-4:hover:after {
+        left: 120%;
+        transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+      }
     }
+
+    /* =================== button hover end =================== */
   }
 
   .navs {
@@ -228,20 +267,61 @@ const MainHeaderWrapper = styled.div`
     }
 
     .callBtn {
-      background: #161a1d;
-      padding: 15px 35px;
+      border: none;
+      /* ============== button hover  start======================== */
 
-      a {
-        font-family: "Figtree";
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 19px;
-        color: #fff !important;
+      .buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
       }
 
-     
-      
+      .btn {
+        font-family: "Figtree";
+        font-weight: 500;
+        font-size: 16px;
+        color: #fff !important;
+        cursor: pointer;
+        max-width: 160px !important;
+        padding: 15px 30px;
+        position: relative;
+        width: 100%;
+        background: #000;
+        border: none !important;
+      }
+
+      .btn:hover {
+        text-decoration: none;
+      }
+
+      .btn-4 {
+        /* border: 1px solid; */
+        overflow: hidden;
+        position: relative;
+      }
+      .btn-4 span {
+        z-index: 20;
+      }
+      .btn-4:after {
+        background: #fff;
+        content: "";
+        height: 155px;
+        left: -75px;
+        opacity: 0.2;
+        position: absolute;
+        top: -50px;
+        transform: rotate(35deg);
+        transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+        width: 50px;
+        z-index: 10;
+      }
+
+      .btn-4:hover:after {
+        left: 120%;
+        transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+      }
     }
 
     p {
@@ -584,6 +664,12 @@ const MainHeaderWrapper = styled.div`
       &.open {
         left: 0;
       }
+    }
+  }
+
+  @media (max-width: 700px) {
+    .logo {
+      width: 50% !important;
     }
   }
 `;

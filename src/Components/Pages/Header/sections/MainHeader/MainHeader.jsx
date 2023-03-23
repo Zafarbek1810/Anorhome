@@ -122,9 +122,11 @@ const MainHeader = ({ isFixed }) => {
         </div>
 
         <div className="callBtn">
-          <MyLink to="/#">
-            <span>Call Me Now!</span>
-          </MyLink>
+        <section class="buttons">
+              <MyLink to="/#" className="btn btn-4">
+                <span>Call Me Now!</span>
+              </MyLink>
+            </section>
         </div>
 
         <div

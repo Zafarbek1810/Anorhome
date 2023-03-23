@@ -9,22 +9,26 @@ const data=[
   {
     img:"/images/img2.png",
     city:"New York",
-    date:" 12.01.2023"
+    date:" 12.01.2023",
+    link:"/#"
   },
   {
     img:"/images/img.png",
     city:"New York",
-    date:" 12.01.2023"
+    date:" 12.01.2023",
+    link:"/#"
   },
   {
     img:"/images/img2.png",
     city:"New York",
-    date:" 12.01.2023"
+    date:" 12.01.2023",
+    link:"/#"
   },
   {
     img:"/images/img.png",
     city:"New York",
-    date:" 12.01.2023"
+    date:" 12.01.2023",
+    link:"/#"
   },
 ]
 const ThirdSection = () => {
@@ -61,10 +65,11 @@ const ThirdSection = () => {
               pellentesque proin neque pellentesque suspendisse sit. Proin ut at
               tortor nulla quam arcu{" "}
             </p>
-            <div className="btns">
-              <MyLink to="/#">Learn More</MyLink>
-              <MyLink to="/#">See All</MyLink>
-            </div>
+            <section class="buttons">
+              <MyLink to="/#" className="btn btn-4">
+                <span>See All</span>
+              </MyLink>
+            </section>
           </div>
           <div className="right">
             {data.map((obj, index) => (
@@ -85,9 +90,7 @@ const ThirdSection = () => {
                     <span>
                       <LocationSvg /> {obj.city}
                     </span>
-                    <span>
-                      <CalendarSvg /> {obj.date}
-                    </span>
+                      <MyLink to={obj.link}>Learn More</MyLink>
                   </div>
                   <div className="bottom2">
                     <span>{obj.city}</span>

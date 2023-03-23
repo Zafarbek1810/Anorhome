@@ -68,19 +68,11 @@ const SecondSection = () => {
               ))}
             </div>
 
-            <MyLink to="/#">
-              <svg viewBox="0 0 180 60" class="border">
-                <polyline
-                  points="179,1 179,59 1,59 1,1 179,1"
-                  class="bg-line"
-                />
-                <polyline
-                  points="179,1 179,59 1,59 1,1 179,1"
-                  class="hl-line"
-                />
-              </svg>
-              <span>Learn More</span>
-            </MyLink>
+            <section class="buttons">
+              <MyLink to="/#" className="btn btn-4">
+                <span>Learn More</span>
+              </MyLink>
+            </section>
           </div>
           <div className="right">
             <img src="/images/img.png" alt="" />

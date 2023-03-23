@@ -22,5 +22,16 @@ const ClientsWrapper = styled.div`
     align-items: center;
     justify-content: space-between;
   }
+
+  @media (max-width: 700px) {
+    .clients__logo{
+      flex-wrap: wrap;
+      justify-content: center;
+
+      svg{
+        margin: 10px;
+      }
+    }
+  }
 `;
 export { ClientsWrapper };

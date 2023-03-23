@@ -8,6 +8,7 @@ const FooterWrapper = styled.div`
     padding: 50px 0;
     display: flex;
     align-items: start;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
   .footer__info {
@@ -26,15 +27,17 @@ const FooterWrapper = styled.div`
   .footer__items {
     width: 55%;
     padding-top: 30px;
+    display: flex;
 
     .links {
       font-family: "Montserrat";
       font-style: normal;
       font-weight: 600;
       font-size: 18px;
-      margin: 30px;
+      /* margin: 30px; */
       transition: 0.3s;
       color: #fff;
+      width: 25%;
       &:hover {
         color: #fe152b;
       }
