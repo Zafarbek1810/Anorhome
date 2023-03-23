@@ -2,11 +2,11 @@ import styled from "styled-components";
 
 const HeroWrapper = styled.div`
   background-image: linear-gradient(
-      90deg,
-      #161a1d 46.48%,
-      rgba(22, 26, 29, 0.6) 75.12%,
+    90deg,
+      #161a1d 36.48%,
+      rgba(22, 26, 29, 0.6) 65.12%,
       rgba(22, 26, 29, 0) 100%
-      ),
+    ),
       url("/images/aboutUS1.webp"); 
   background-position: center;
   background-repeat: no-repeat;
@@ -138,7 +138,7 @@ const HeroWrapper = styled.div`
       margin-top: 20px;
       padding: 7px 0;
       text-align: center; 
-      transform: translateY(-180px) translateX(-70px);
+      transform: translateY(70px) translateX(10px);
        
       h3 {
         font-family: "Figtree";
@@ -177,7 +177,7 @@ const HeroWrapper = styled.div`
       margin-top: 20px;
       padding: 7px 0;
       text-align: center; 
-      transform: translateY(70px) translateX(30px); 
+      transform: translateY(-180px) translateX(-30px); 
 
       h3 {
         font-family: "Figtree";
