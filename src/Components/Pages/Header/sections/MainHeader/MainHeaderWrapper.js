@@ -309,7 +309,7 @@ const MainHeaderWrapper = styled.div`
         content: "";
         height: 155px;
         left: -75px;
-        opacity: 0.2;
+        opacity: 0.6;
         position: absolute;
         top: -50px;
         transform: rotate(35deg);
