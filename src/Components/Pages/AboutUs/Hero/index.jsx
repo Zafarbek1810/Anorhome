@@ -1,7 +1,7 @@
 import React from "react";
 import Container from "../../../Common/Container/index";
 import { HeroWrapper } from "./HeroWrapper.style";
-
+import Tilt from "react-parallax-tilt";
 const Hero = () => {
   return (
     <HeroWrapper>
@@ -35,9 +35,7 @@ const Hero = () => {
                 <p>Happy Families</p>
                 <div className="arrow-red"></div>
               </div>
-
             </div>
-
             <div className="right__second">
               <div className="right__box-red2">
                 <span>
@@ -56,7 +54,6 @@ const Hero = () => {
                 <p>Completed Projects</p>
                 <div className="arrow-white"></div>
               </div>
-
             </div>
           </div>
         </div>

@@ -1,15 +1,17 @@
 import React from "react";
 import MyLink from "../../Common/MyLink";
 import { DemoStyle } from "./DemoStyle";
+import Tilt from 'react-parallax-tilt';
+
 
 const Demo = () => {
   return (
     <DemoStyle>
-      <section class="buttons">
-          <MyLink to="/#" className="btn btn-4">
-            <span>Hover</span>
-          </MyLink>
-      </section>
+      <Tilt>
+      <div >
+        <h1>React Parallax Tilt 👀</h1>
+      </div>
+    </Tilt>
     </DemoStyle>
   );
 };

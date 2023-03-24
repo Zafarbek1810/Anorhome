@@ -10,7 +10,7 @@ import { Select } from "antd";
 export const LINKS = [
   {
     name: "Services",
-    path: "/",
+    path: "/services",
     id: 1,
   },
   {
