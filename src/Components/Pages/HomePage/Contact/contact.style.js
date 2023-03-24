@@ -65,6 +65,7 @@ const ContactWrappper = styled.div`
     &__map {
       background-color: #fff;
       width: 70%;
+      height: 615px;
       iframe {
         height: 615px !important;
         border: none;
@@ -81,6 +82,7 @@ const ContactWrappper = styled.div`
       }
       &__map{
         width: 100%;
+        
       }
     }
   }

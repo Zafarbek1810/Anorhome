@@ -5,16 +5,14 @@ import Container from "../../../Common/Container/index";
 const HistorySection = () => {
   return (
     <HistoryWrapper>
+       <div className="title">
+        <Container>
+          <h3>About Us</h3>
+        </Container>
+      </div>
       <Container>
         <section>
-          <div className="text__wrapper">
-            <div className="text__paragr">
-              <p>Find us at some of the coolest cities across the globe.</p>
-            </div>
-            <div className="text__title">
-              <h2>ANORHOME HISTORY</h2>
-            </div>
-          </div>
+          
 
           <img src="/aboutUs/history1.jpg" alt="History section image" />
 
@@ -49,8 +47,7 @@ const HistorySection = () => {
               </div>
             </div>
           </div>
-
-          <hr />
+ 
         </section>
       </Container>
     </HistoryWrapper>

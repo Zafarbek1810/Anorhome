@@ -1,6 +1,6 @@
 import React from "react";
-import { TeamWrapper } from "./teamWrapper.style";
-import Conatiner from "../../../Common/Container/index";
+import { TeamWrapper } from "./teamWrapper.style"; 
+import Container from "../../../Common/Container/index";
 
 const ourStaffs = [
   {
@@ -33,51 +33,20 @@ const ourStaffs = [
     title: "John Wick",
     text: "President of Anorhome.com",
   },
-  {
-    img: "/aboutUs/staff.png",
-    title: "John Wick",
-    text: "President of Anorhome.com",
-  },
-  {
-    img: "/aboutUs/staff.png",
-    title: "John Wick",
-    text: "President of Anorhome.com",
-  },
-  {
-    img: "/aboutUs/staff.png",
-    title: "John Wick",
-    text: "President of Anorhome.com",
-  },
-  {
-    img: "/aboutUs/staff.png",
-    title: "John Wick",
-    text: "President of Anorhome.com",
-  },
-  {
-    img: "/aboutUs/staff.png",
-    title: "John Wick",
-    text: "President of Anorhome.com",
-  },
-  {
-    img: "/aboutUs/staff.png",
-    title: "John Wick",
-    text: "President of Anorhome.com",
-  },
+   
 ];
 
 const TeamSection = () => {
   return (
     <TeamWrapper>
-      <Conatiner>
+      <div className="title">
+        <Container>
+          <h3>Our Team</h3>
+        </Container>
+      </div>
+      <Container>
         <section>
-          <div className="text__wrapper">
-            <div className="text__paragr">
-              <p>Find us at some of the coolest cities across the globe.</p>
-            </div>
-            <div className="text__title">
-              <h2>OUR TEAM</h2>
-            </div>
-          </div>
+           
 
           <div>
             <div className="images-wrapper">
@@ -95,7 +64,7 @@ const TeamSection = () => {
             </div>
           </div>
         </section>
-      </Conatiner>
+      </Container>
     </TeamWrapper>
   );
 };

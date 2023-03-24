@@ -2,12 +2,12 @@ import styled from "styled-components";
 
 const HeroWrapper = styled.div`
   background-image: linear-gradient(
-    90deg,
+      90deg,
       #161a1d 36.48%,
       rgba(22, 26, 29, 0.6) 65.12%,
       rgba(22, 26, 29, 0) 100%
     ),
-      url("/images/aboutUS1.webp"); 
+    url("/images/aboutUS1.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -25,21 +25,22 @@ const HeroWrapper = styled.div`
   }
   .left {
     width: 50%;
+    padding-right: 50px;
     h2 {
       font-family: "Figtree";
       font-style: normal;
       font-weight: 900;
-      font-size: 36px;
-      line-height: 43px;
-      letter-spacing: 0.1em;
+      font-size: 70px;
+      line-height: 84px;
       color: #ffffff;
+      margin: 0;
     }
     p {
       font-family: "Figtree";
       font-style: normal;
-      font-weight: 500;
-      font-size: 18px;
-      line-height: 22px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
       letter-spacing: 0.1em;
       color: #ffffff;
     }
@@ -60,9 +61,9 @@ const HeroWrapper = styled.div`
       background: #ffffff;
       margin-top: 20px;
       padding: 7px 0;
-      text-align: center; 
+      text-align: center;
       transform: translateY(-140px) translateX(-120px);
-       
+
       h3 {
         font-family: "Figtree";
         font-style: normal;
@@ -99,8 +100,8 @@ const HeroWrapper = styled.div`
       background: #fe172d;
       margin-top: 20px;
       padding: 7px 0;
-      text-align: center; 
-      transform: translateY(100px) translateX(-5px);  
+      text-align: center;
+      transform: translateY(100px) translateX(-5px);
 
       h3 {
         font-family: "Figtree";
@@ -137,9 +138,9 @@ const HeroWrapper = styled.div`
       background: #ffffff;
       margin-top: 20px;
       padding: 7px 0;
-      text-align: center; 
+      text-align: center;
       transform: translateY(70px) translateX(10px);
-       
+
       h3 {
         font-family: "Figtree";
         font-style: normal;
@@ -176,8 +177,8 @@ const HeroWrapper = styled.div`
       background: #fe172d;
       margin-top: 20px;
       padding: 7px 0;
-      text-align: center; 
-      transform: translateY(-180px) translateX(-30px); 
+      text-align: center;
+      transform: translateY(-180px) translateX(-30px);
 
       h3 {
         font-family: "Figtree";
@@ -209,23 +210,25 @@ const HeroWrapper = styled.div`
       }
     }
   }
-  .arrow-white{
+  .arrow-white {
     position: absolute;
     width: 17px;
     height: 17px;
     background-color: #fff;
     bottom: 0;
     left: 50%;
-    transform: translateY(50%) translateX(-50%)  skew(24deg,341deg) rotate(335deg);
+    transform: translateY(50%) translateX(-50%) skew(24deg, 341deg)
+      rotate(335deg);
   }
-  .arrow-red{
+  .arrow-red {
     position: absolute;
     width: 17px;
     height: 17px;
     background-color: #fe172d;
     bottom: 0;
     left: 50%;
-    transform: translateY(50%) translateX(-50%) skew(24deg,341deg) rotate(335deg);
+    transform: translateY(50%) translateX(-50%) skew(24deg, 341deg)
+      rotate(335deg);
   }
 `;
 export { HeroWrapper };

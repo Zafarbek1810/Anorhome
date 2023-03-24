@@ -8,12 +8,10 @@ const Hero = () => {
       <Container>
         <div className="wrapper">
           <div className="left">
-            <h2>WE MAKE IT REALITY</h2>
+            <h2>We Make It Reality</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur. Lectus purus in nec lectus
-              fusce orci nulla viverra est. Adipiscing ut tristique cras amet in
-              ultrices. Orci etiam mi sollicitudin ullamcorper non turpis
-              venenatis.
+              fusce orci nulla viverra consectetur est.  
             </p>
           </div>
           <div className="right">
