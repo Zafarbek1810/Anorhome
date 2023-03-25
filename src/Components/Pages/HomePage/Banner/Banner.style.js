@@ -58,6 +58,7 @@ const BannerWrapper = styled.div`
         justify-content: center;
         text-align: center;
         width: 100%;
+        margin-bottom: 30px;
       }
 
       .btn {

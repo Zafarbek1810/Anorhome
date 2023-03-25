@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 const ContactWrappper = styled.div`
+padding-bottom: 40px;
   background: #fff;
   .title {
     border-top: 1px solid #161a1d;
