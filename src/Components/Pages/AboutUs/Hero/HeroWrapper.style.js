@@ -269,7 +269,7 @@ const HeroWrapper = styled.div`
         width: 145px;
         margin-top: 18px;
         padding: 5px 0;
-        transform: translateY(100px) translateX(-65px);
+        transform: translateY(80px) translateX(-70px);
 
         h3 {
           font-size: 22px;
@@ -284,7 +284,7 @@ const HeroWrapper = styled.div`
         width: 150px;
         margin-top: 20px;
         padding: 7px 0;
-        transform: translateY(55px) translateX(-20px);
+        transform: translateY(40px) translateX(-35px);
 
         h3 {
           font-size: 22px;
@@ -335,7 +335,7 @@ const HeroWrapper = styled.div`
         margin-top: 16px;
         padding: 4px 0;
         text-align: center;
-        transform: translateY(-50px) translateX(-100px);
+        transform: translateY(-50px) translateX(-90px);
 
         h3 {
           font-size: 20px;

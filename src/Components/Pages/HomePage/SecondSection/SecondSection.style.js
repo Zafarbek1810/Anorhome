@@ -19,7 +19,7 @@ const SecondSectionWrapper = styled.div`
 
   .wrap {
     background: #ffffff;
-    padding: 65px 40px;
+    padding: 55px 20px;
     display: flex;
     gap: 40px;
 
