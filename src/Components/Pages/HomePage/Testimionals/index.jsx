@@ -25,68 +25,79 @@ const Testimionals = () => {
         </Container>
       </div>
 
-      <Container style={{ paddingTop: 100, paddingBottom: 100 }}>
+      <Container
+        className="cont"
+        style={{
+          paddingTop: 100,
+          paddingBottom: 100,
+          position: "relative",
+          zIndex: 4,
+        }}
+      >
         <div className="wrapper">
-          <div className="car" >
-          <Carousel autoplay dots={false} ref={carouselRef}>
-            <div className="carusel">
-              <div className="left">
-                <img src="/images/man.png" width={243} height={341} />
+          <div className="car">
+            <Carousel autoplay dots={false} ref={carouselRef}>
+              <div className="carusel">
+                <div className="left">
+                  <img src="/images/man.png" width={243} height={341} />
+                </div>
+                <div className="right">
+                  <h3 className="name">Frank Paradiso</h3>
+                  <p className="prof">CEO of Build.uz</p>
+                  <p className="descr">
+                    Lorem ipsum dolor sit amet consectetur. Arcu nullam quam
+                    nunc lacus quam fringilla libero. Enim non in viverra
+                    porttitor eu nisl. Dolor eget pellentesque cursus augue.
+                    Tristique dolor ornare porta aenean in cras. A nunc congue
+                    varius suscipit vulputate. Adipiscing quam vitae a odio eu
+                    accumsan ut. Leo et ultrices scelerisque molestie ante mi
+                    in.
+                  </p>
+                  <p className="date">20.12.2024</p>
+                  <img src="/images/66.png" alt="" />
+                </div>
               </div>
-              <div className="right">
-                <h3 className="name">Frank Paradiso</h3>
-                <p className="prof">CEO of Build.uz</p>
-                <p className="descr">
-                  Lorem ipsum dolor sit amet consectetur. Arcu nullam quam nunc
-                  lacus quam fringilla libero. Enim non in viverra porttitor eu
-                  nisl. Dolor eget pellentesque cursus augue. Tristique dolor
-                  ornare porta aenean in cras. A nunc congue varius suscipit
-                  vulputate. Adipiscing quam vitae a odio eu accumsan ut. Leo et
-                  ultrices scelerisque molestie ante mi in.
-                </p>
-                <p className="date">20.12.2024</p>
-                <img src="/images/66.png" alt="" />
+              <div className="carusel">
+                <div className="left">
+                  <img src="/images/man.png" width={243} height={341} />
+                </div>
+                <div className="right">
+                  <h3 className="name">Frank Paradiso</h3>
+                  <p className="prof">CEO of Build.uz</p>
+                  <p className="descr">
+                    Lorem ipsum dolor sit amet consectetur. Arcu nullam quam
+                    nunc lacus quam fringilla libero. Enim non in viverra
+                    porttitor eu nisl. Dolor eget pellentesque cursus augue.
+                    Tristique dolor ornare porta aenean in cras. A nunc congue
+                    varius suscipit vulputate. Adipiscing quam vitae a odio eu
+                    accumsan ut. Leo et ultrices scelerisque molestie ante mi
+                    in.
+                  </p>
+                  <p className="date">20.12.2024</p>
+                  <img src="/images/66.png" alt="" />
+                </div>
               </div>
-            </div>
-            <div className="carusel">
-              <div className="left">
-                <img src="/images/man.png" width={243} height={341} />
+              <div className="carusel">
+                <div className="left">
+                  <img src="/images/man.png" width={243} height={341} />
+                </div>
+                <div className="right">
+                  <h3 className="name">Frank Paradiso</h3>
+                  <p className="prof">CEO of Build.uz</p>
+                  <p className="descr">
+                    Lorem ipsum dolor sit amet consectetur. Arcu nullam quam
+                    nunc lacus quam fringilla libero. Enim non in viverra
+                    porttitor eu nisl. Dolor eget pellentesque cursus augue.
+                    Tristique dolor ornare porta aenean in cras. A nunc congue
+                    varius suscipit vulputate. Adipiscing quam vitae a odio eu
+                    accumsan ut. Leo et ultrices scelerisque molestie ante mi
+                    in.
+                  </p>
+                  <p className="date">20.12.2024</p>
+                  <img src="/images/66.png" alt="" />
+                </div>
               </div>
-              <div className="right">
-                <h3 className="name">Frank Paradiso</h3>
-                <p className="prof">CEO of Build.uz</p>
-                <p className="descr">
-                  Lorem ipsum dolor sit amet consectetur. Arcu nullam quam nunc
-                  lacus quam fringilla libero. Enim non in viverra porttitor eu
-                  nisl. Dolor eget pellentesque cursus augue. Tristique dolor
-                  ornare porta aenean in cras. A nunc congue varius suscipit
-                  vulputate. Adipiscing quam vitae a odio eu accumsan ut. Leo et
-                  ultrices scelerisque molestie ante mi in.
-                </p>
-                <p className="date">20.12.2024</p>
-                <img src="/images/66.png" alt="" />
-              </div>
-            </div>
-            <div className="carusel">
-              <div className="left">
-                <img src="/images/man.png" width={243} height={341} />
-              </div>
-              <div className="right">
-                <h3 className="name">Frank Paradiso</h3>
-                <p className="prof">CEO of Build.uz</p>
-                <p className="descr">
-                  Lorem ipsum dolor sit amet consectetur. Arcu nullam quam nunc
-                  lacus quam fringilla libero. Enim non in viverra porttitor eu
-                  nisl. Dolor eget pellentesque cursus augue. Tristique dolor
-                  ornare porta aenean in cras. A nunc congue varius suscipit
-                  vulputate. Adipiscing quam vitae a odio eu accumsan ut. Leo et
-                  ultrices scelerisque molestie ante mi in.
-                </p>
-                <p className="date">20.12.2024</p>
-                <img src="/images/66.png" alt="" />
-              </div>
-            </div>
-          </Carousel>
+            </Carousel>
           </div>
 
           <div className="btns">

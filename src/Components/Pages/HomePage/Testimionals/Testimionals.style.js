@@ -38,6 +38,9 @@ const TestimionalsWrapper = styled.div`
         border: none;
         cursor: pointer;
       }
+      button:hover{
+        color: #fff!important;
+      }
 
       button:nth-child(1) {
         svg {
@@ -45,6 +48,7 @@ const TestimionalsWrapper = styled.div`
         }
       }
     }
+     
   }
 
   .carusel {

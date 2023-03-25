@@ -6,15 +6,51 @@ const BannerWrapper = styled.div`
       #161a1d 36.48%,
       rgba(22, 26, 29, 0.6) 65.12%,
       rgba(22, 26, 29, 0) 100%
-    ),
-    url("/images/banner.jpg");
+    );
+    /* url("/images/banner.jpg"); */
   height: 100vh;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+.cont {
+  position: relative;
+  z-index: 4;
+}
+  .img-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    &:after {
+      background-image: linear-gradient(
+      90deg,
+      #161a1d 36.48%,
+      rgba(22, 26, 29, 0.6) 65.12%,
+      rgba(22, 26, 29, 0) 100%
+      );
+      z-index: 3;
+      top: 0;
+      left: 0;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: block;
+      content: '';
+    }
+
+     img {
+      width: 100%;
+      height: 100vh;
+      object-position: cover;
+     }
+
+     .slick-dots.slick-dots-bottom {
+      display: none !important;
+     }
+  }
 
   .carusel {
-    width: 500px;
+    width: 600px;
     height: 90vh !important;
 
     .wrap {
