@@ -59,9 +59,48 @@ section{
       font-style: normal;
       font-weight: 400;
       font-size: 16px;
-      line-height: 5px;
+      line-height: 20px;
       letter-spacing: 0.1em; 
       color: #ffffff;
+    }
+  }
+
+  
+  // MOBILE
+  @media (max-width: 767.98px) {
+     
+    .images-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    .images-item {
+      width: calc((100% - 15px) / 2);
+    }
+    .img-wrapper {
+      overflow: hidden;
+      width: 100%;
+      height: auto;
+
+      img {
+        max-width: 100%;
+        height: auto; 
+      }
+    }
+
+    .images-inner {
+      text-align: start;
+
+      h2 {
+        margin-top: 10px;
+        margin-bottom: 5px;
+        font-size: 18px; 
+      }
+      p {
+        font-size: 12px;
+        color: #5d5d5d;
+        margin: 0;
+      }
     }
   }
 `;
