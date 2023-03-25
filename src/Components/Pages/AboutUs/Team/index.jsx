@@ -4,32 +4,32 @@ import Container from "../../../Common/Container/index";
 
 const ourStaffs = [
   {
-    img: "/aboutUs/staff.png",
+    img: "/aboutUs/staff3.png",
     title: "John Wick",
     text: "President of Anorhome.com",
   },
   {
-    img: "/aboutUs/staff.png",
+    img: "/aboutUs/staff2.png",
     title: "John Wick",
     text: "President of Anorhome.com",
   },
   {
-    img: "/aboutUs/staff.png",
+    img: "/aboutUs/staff4.png",
     title: "John Wick",
     text: "President of Anorhome.com",
   },
   {
-    img: "/aboutUs/staff.png",
+    img: "/aboutUs/staff4.png",
     title: "John Wick",
     text: "President of Anorhome.com",
   },
   {
-    img: "/aboutUs/staff.png",
+    img: "/aboutUs/staff5.png",
     title: "John Wick",
     text: "President of Anorhome.com",
   },
   {
-    img: "/aboutUs/staff.png",
+    img: "/aboutUs/staff2.png",
     title: "John Wick",
     text: "President of Anorhome.com",
   },
