@@ -99,9 +99,11 @@ const FooterWrapper = styled.div`
 
     }
     .footer__socials {
-      width: 50%;   
+      width: 70%;   
       p{
         font-size: 18px;
+        width: 100%;
+
       }
       .everbest {
     padding: 10px 0;
