@@ -299,7 +299,8 @@ const ThirdSectionWrapper = styled.div`
           font-size: 16px;
         }
         .titles{
-          font-size: 48px;
+          font-size: 32px;
+          line-height: 36px;
         }
         .descr{
           font-size: 14px;
