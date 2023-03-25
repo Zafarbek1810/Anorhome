@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const HistoryWrapper = styled.div`
-  background-color: #000000;
+  background-color: #161A1D;
   padding: 100px 0;
   section {
     padding-top: 100px;
