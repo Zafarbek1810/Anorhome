@@ -8,6 +8,7 @@ const HeroWrapper = styled.div`
       rgba(22, 26, 29, 0) 100%
     ),
     url("/images/aboutUS1.webp");
+    
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -57,10 +58,10 @@ const HeroWrapper = styled.div`
     }
     &__box-white {
       position: absolute;
-      width: 198px;
+      width: 160px;
       background: #ffffff;
-      margin-top: 20px;
-      padding: 7px 0;
+      margin-top: 15px;
+      padding: 5px 0;
       text-align: center;
       transform: translateY(-140px) translateX(-120px);
 
@@ -69,8 +70,8 @@ const HeroWrapper = styled.div`
         font-style: normal;
         font-weight: 800;
         font-size: 24px;
-        line-height: 9px;
-        margin-top: 20px;
+        line-height: 2px;
+        margin-top: 18px;
         color: #000;
       }
       p {
@@ -79,6 +80,7 @@ const HeroWrapper = styled.div`
         font-weight: 400;
         font-size: 12px;
         line-height: 1px;
+        margin: 13px;
         color: #000;
       }
       span {
@@ -96,10 +98,10 @@ const HeroWrapper = styled.div`
     }
     &__box-red {
       position: absolute;
-      width: 176px;
+      width: 156px;
       background: #fe172d;
-      margin-top: 20px;
-      padding: 7px 0;
+      margin-top: 10px;
+      padding: 5px 0;
       text-align: center;
       transform: translateY(100px) translateX(-5px);
 
@@ -108,7 +110,7 @@ const HeroWrapper = styled.div`
         font-style: normal;
         font-size: 24px;
         line-height: 9px;
-        margin-top: 20px;
+        margin-top: 14px;
         color: #fff;
       }
       p {
@@ -117,6 +119,7 @@ const HeroWrapper = styled.div`
         font-weight: 400;
         font-size: 14px;
         line-height: 1px;
+        margin-top: 6px;
         color: #fff;
       }
       span {
@@ -134,20 +137,20 @@ const HeroWrapper = styled.div`
     }
     &__box-white2 {
       position: absolute;
-      width: 198px;
+      width: 150px;
       background: #ffffff;
-      margin-top: 20px;
-      padding: 7px 0;
+      margin-top: 10px;
+      padding: 5px 0;
       text-align: center;
-      transform: translateY(70px) translateX(10px);
+      transform: translateY(50px) translateX(-10px);
 
       h3 {
         font-family: "Figtree";
         font-style: normal;
         font-weight: 800;
         font-size: 24px;
-        line-height: 9px;
-        margin-top: 20px;
+        line-height: 5px;
+        margin-top: 15px;
         color: #000;
       }
       p {
@@ -156,6 +159,7 @@ const HeroWrapper = styled.div`
         font-weight: 400;
         font-size: 12px;
         line-height: 1px;
+        margin: 14px 0;
         color: #000;
       }
       span {
@@ -173,19 +177,18 @@ const HeroWrapper = styled.div`
     }
     &__box-red2 {
       position: absolute;
-      width: 176px;
-      background: #fe172d;
-      margin-top: 20px;
-      padding: 7px 0;
+      width: 156px;
+      background: #fe172d; 
+      padding: 5px 0;
       text-align: center;
-      transform: translateY(-180px) translateX(-30px);
+      transform: translateY(-165px) translateX(-80px);
 
       h3 {
         font-family: "Figtree";
         font-style: normal;
         font-size: 24px;
-        line-height: 9px;
-        margin-top: 20px;
+        line-height: 5px;
+        margin-top: 15px;
         color: #fff;
       }
       p {
@@ -194,6 +197,7 @@ const HeroWrapper = styled.div`
         font-weight: 400;
         font-size: 14px;
         line-height: 1px;
+        margin: 12px 0;
         color: #fff;
       }
       span {
