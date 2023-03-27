@@ -36,10 +36,17 @@ const TestimionalsWrapper = styled.div`
       button{
         background-color: transparent;
         border: none;
-        cursor: pointer;
+        transition: 300ms;
       }
       button:hover{
-        color: #fff!important;
+        cursor: pointer;
+        svg{
+          background-color: red !important;
+          border-radius: 50%;
+          path{
+            fill: #fff !important;
+          }
+        }
       }
 
       button:nth-child(1) {

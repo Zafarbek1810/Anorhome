@@ -72,6 +72,11 @@ const MainHeaderWrapper = styled.div`
     .lang {
       display: flex;
       align-items: center;
+      
+
+     .ant-select-dropdown{
+        border-radius:0 !important;
+      }
 
       .ant-select-open {
         border: none !important;

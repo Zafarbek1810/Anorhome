@@ -6,22 +6,45 @@ import { HeaderContext } from "../../../../../Context/HeaderContext";
 import { MainHeaderWrapper } from "./MainHeaderWrapper";
 import useWindowDimensions from "../../../../../Hooks/useWindow";
 import { Select } from "antd";
+import { useRouter } from "next/router";
 
 export const LINKS = [
   {
     name: "Services",
     path: "/services",
-    id: 1,
+    id: 2,
   },
   {
     name: "About Us",
     path: "/about",
-    id: 2,
+    id: 3,
   },
   {
     name: "Projects",
     path: "/",
+    id: 4,
+  },
+];
+export const LINKS2 = [
+  {
+    name: "Home",
+    path: "/",
+    id: 1,
+  },
+  {
+    name: "Services",
+    path: "/services",
+    id: 2,
+  },
+  {
+    name: "About Us",
+    path: "/about",
     id: 3,
+  },
+  {
+    name: "Projects",
+    path: "/",
+    id: 4,
   },
 ];
 
@@ -30,6 +53,7 @@ const MainHeader = ({ isFixed }) => {
   const { burger, handleBurger, setBurger } = useContext(HeaderContext);
   const ref = useRef(null);
   const width = useWindowDimensions();
+  const router = useRouter();
 
   useEffect(() => {
     const listenScrollEvent = () => {
@@ -62,6 +86,13 @@ const MainHeader = ({ isFixed }) => {
     console.log(`selected ${value}`);
   };
 
+
+  // const [selectedLanguage, setSelectedLanguage] = useState('en'); // default language is English
+
+  // const handleChange = (event) => {
+  //   setSelectedLanguage(event.target.value);
+  // };
+
   return (
     <MainHeaderWrapper ref={ref} isFixed={isFixed}>
       <div className={`content ${header}`}>
@@ -84,20 +115,31 @@ const MainHeader = ({ isFixed }) => {
         </div>
         <div className="navbar-wrapper">
           <ul className="links_cont">
-            {LINKS.map(({ name, path, id }) => (
-              <li key={id}>
-                <MyLink to={path}>
-                  <div className="navs">
-                    <p>{name}</p>
-                  </div>
-                </MyLink>
-              </li>
-            ))}
+            {router.pathname === "/"
+              ? LINKS.map(({ name, path, id }) => (
+                  <li key={id}>
+                    <MyLink to={path}>
+                      <div className="navs">
+                        <p>{name}</p>
+                      </div>
+                    </MyLink>
+                  </li>
+                ))
+              : LINKS2.map(({ name, path, id }) => (
+                  <li key={id}>
+                    <MyLink to={path}>
+                      <div className="navs">
+                        <p>{name}</p>
+                      </div>
+                    </MyLink>
+                  </li>
+                ))}
           </ul>
         </div>
 
         <div className="lang">
           <GlobeSvg />
+          
           <Select
             defaultValue="en"
             style={{
@@ -122,11 +164,11 @@ const MainHeader = ({ isFixed }) => {
         </div>
 
         <div className="callBtn">
-        <section class="buttons">
-              <MyLink to="/#" className="btn btn-4">
-                <span>Call Me Now!</span>
-              </MyLink>
-            </section>
+          <section class="buttons">
+            <MyLink to="/#" className="btn btn-4">
+              <span>Call Me Now!</span>
+            </MyLink>
+          </section>
         </div>
 
         <div
