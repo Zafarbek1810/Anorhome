@@ -65,17 +65,17 @@ const SecondSection = () => {
             <div className="countWrap">
               {countData.map((v, i) => (
                 <div key={i} className="count">
-                  <div data-aos={"fade-right"}>{v.img}</div>
-                  <p data-aos={"fade-right"} className="num">
+                  <div data-aos={"fade-up"}>{v.img}</div>
+                  <p data-aos={"fade-up"} className="num">
                     {v.count}
                     {v.suffix}
                   </p>
-                  <p data-aos={"fade-right"} className="title">{v.p}</p>
+                  <p data-aos={"fade-up"} className="title">{v.p}</p>
                 </div>
               ))}
             </div>
 
-            <section data-aos={"fade-right"} class="buttons">
+            <section data-aos={"fade-up"} class="buttons">
               <MyLink to="/#" className="btn btn-4">
                 <span>Learn More</span>
               </MyLink>
