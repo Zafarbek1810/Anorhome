@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos"
 import { TeamWrapper } from "./teamWrapper.style"; 
 import Container from "../../../Common/Container/index";
 
@@ -37,9 +38,15 @@ const ourStaffs = [
 ];
 
 const TeamSection = () => {
+
+  useEffect(() => {
+    AOS.init({ duration: 1500, once: true});
+    AOS.refresh();
+  }, []);
+
   return (
     <TeamWrapper>
-      <div className="title">
+      <div data-aos={"fade-in"} className="title">
         <Container>
           <h3>Our Team</h3>
         </Container>
@@ -49,7 +56,7 @@ const TeamSection = () => {
            
 
           <div>
-            <div className="images-wrapper">
+            <div className="images-wrapper" data-aos={"fade-up"}>
               {ourStaffs.map(({ img, title, text }, index) => (
                 <div className="images-item" key={index}>
                   <div className="images-inner">

@@ -1,10 +1,17 @@
 import { Carousel } from "antd";
 import React, { useEffect, useRef } from "react";
+import AOS from "aos";
 import Container from "../../../Common/Container";
 import { TestimionalsWrapper } from "./Testimionals.style";
 import CarouselRightSvg from "../../../Common/Svgs/CarouselRightSvg";
+
 const Testimionals = () => {
   const carouselRef = useRef();
+
+  useEffect(() => {
+    AOS.init({ duration: 1500, once: true  });
+    AOS.refresh();
+  }, []);
 
   useEffect(() => {
     console.log();
@@ -19,7 +26,7 @@ const Testimionals = () => {
 
   return (
     <TestimionalsWrapper>
-      <div className="title">
+      <div data-aos={"fade-in"} className="title">
         <Container>
           <h3>Testimonials</h3>
         </Container>
@@ -34,7 +41,7 @@ const Testimionals = () => {
           zIndex: 4,
         }}
       >
-        <div className="wrapper">
+        <div data-aos={"fade-up"} className="wrapper">
           <div className="car">
             <Carousel autoplay dots={false} ref={carouselRef}>
               <div className="carusel">

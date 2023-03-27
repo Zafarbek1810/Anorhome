@@ -1,14 +1,23 @@
 import React, { useEffect, useRef } from "react";
 import { BannerWrapper } from "./Banner.style";
+import AOS from "aos";
 import MyLink from "../../../Common/MyLink";
 import Container from "../../../Common/Container";
 import { Carousel } from "antd";
+
+
 const Banner = () => {
   const ref = useRef();
 
   useEffect(() => {
+    AOS.init({ duration: 1500, once: true  });
+    AOS.refresh();
+  }, []);
+
+  useEffect(() => {
     console.log(ref);
   }, []);
+
   return (
     <BannerWrapper>
       <div className="img-wrapper">
@@ -34,7 +43,9 @@ const Banner = () => {
           ref={ref}
           className="carusel"
         >
-          <div className="wrap">
+          <div
+            className="wrap" data-aos={"zoom-in"}
+          >
             <h1 className="title">
               <span>Investment</span> In Real Estate
             </h1>
@@ -49,7 +60,7 @@ const Banner = () => {
               </MyLink>
             </section>
           </div>
-          <div className="wrap">
+          <div className="wrap" data-aos={"zoom-in"} >
             <h1 className="title">
               <span>Sales Office</span> For Your Project
             </h1>
