@@ -1,20 +1,29 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
 import Container from "../../../Common/Container/index";
-import { HeroWrapper } from "./HeroWrapper.style";
-import Tilt from "react-parallax-tilt";
+import { HeroWrapper } from "./HeroWrapper.style"; 
+
 const Hero = () => {
+
+  
+  useEffect(() => {
+    AOS.init({ duration: 1500, once: true,});
+    AOS.refresh();
+  }, []);
+
+  
   return (
     <HeroWrapper>
       <Container>
         <div className="wrapper">
-          <div className="left">
+          <div className="left" data-aos={"fade-in"}>
             <h2>We Make It Reality</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur. Lectus purus in nec lectus
               fusce orci nulla viverra consectetur est.  
             </p>
           </div>
-          <div className="right">
+          <div className="right"  data-aos={"fade-in"}>
             <div className="right__first">
               <div className="right__box-white">
                 <span>

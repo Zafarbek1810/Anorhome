@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect} from "react";
+import AOS from "aos"
 import Container from "../../../Common/Container";
 import UserNumSvg from "../../../Common/Svgs/UserNumSvg";
 import BuildingSvg from "../../../Common/Svgs/BuildingSvg";
@@ -7,16 +8,22 @@ import { ContactWrappper } from "./contact.style";
 import MyLink from "../../../Common/MyLink";
 
 const Contact = () => {
+
+  useEffect(() => {
+    AOS.init({ duration: 1500, once: true  });
+    AOS.refresh();
+  }, []);
+
   return (
     <ContactWrappper>
-      <div className="title">
+      <div data-aos={"fade-in"} className="title">
         <Container>
           <h3>Contact Us</h3>
         </Container>
       </div>
 
       <Container>
-        <div className="contact">
+        <div className="contact" data-aos={"fade-up"}>
           <div className="contact__info">
             <div className="contact__box">
               <span className="contact__icon">

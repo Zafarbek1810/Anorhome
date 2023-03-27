@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
 import Container from "../../../Common/Container";
 import AtlassianSvg from "../../../Common/Svgs/AtlassianSvg";
 import GithubSvg from "../../../Common/Svgs/GithubSvg";
@@ -9,16 +10,23 @@ import WindowsSvg from "../../../Common/Svgs/WindowsSvg";
 import { ClientsWrapper } from "./client.style";
 
 const Clients = () => {
+
+  useEffect(() => {
+    AOS.init({ duration: 1500, once: true });
+    AOS.refresh();
+    
+  }, []);
+
   return (
     <ClientsWrapper>
-      <div className="title">
+      <div data-aos={"fade-in"} className="title">
         <Container>
           <h3>Clients</h3>
         </Container>
       </div>
 
         <Container>
-            <div className="clients__logo">
+            <div data-aos={"zoom-in"} className="clients__logo">
               <GoogleSvg />
               <WindowsSvg />
               <OracleSvg />

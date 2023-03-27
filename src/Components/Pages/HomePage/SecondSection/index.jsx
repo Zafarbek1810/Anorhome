@@ -1,4 +1,5 @@
-import React from "react";
+import React, {useEffect} from "react";
+import AOS from "aos"
 import { SecondSectionWrapper } from "./SecondSection.style";
 import Container from "../../../Common/Container";
 import FamilySvg from "../../../Common/Svgs/FamilySvg";
@@ -35,9 +36,15 @@ const countData = [
   },
 ];
 const SecondSection = () => {
+
+  useEffect(() => {
+    AOS.init({ duration: 1500, once: true  });
+    AOS.refresh();
+  }, []);
+
   return (
     <SecondSectionWrapper>
-      <div className="title">
+      <div data-aos={"fade-in"} className="title">
         <Container>
           <h3>About Us</h3>
         </Container>
@@ -45,8 +52,8 @@ const SecondSection = () => {
 
       <Container style={{ paddingTop: 90, paddingBottom: 90 }}>
         <div className="wrap">
-          <div className="left">
-            <p className="info">
+          <div className="left" >
+            <p data-aos={"fade-right"} className="info">
               Lorem ipsum dolor sit amet consectetur. Arcu nullam quam nunc
               lacus quam fringilla libero. Enim non in viverra porttitor eu
               nisl. Dolor eget pellentesque cursus augue. Tristique dolor ornare
@@ -58,24 +65,24 @@ const SecondSection = () => {
             <div className="countWrap">
               {countData.map((v, i) => (
                 <div key={i} className="count">
-                  {v.img}
-                  <p className="num">
+                  <div data-aos={"fade-right"}>{v.img}</div>
+                  <p data-aos={"fade-right"} className="num">
                     {v.count}
                     {v.suffix}
                   </p>
-                  <p className="title">{v.p}</p>
+                  <p data-aos={"fade-right"} className="title">{v.p}</p>
                 </div>
               ))}
             </div>
 
-            <section class="buttons">
+            <section data-aos={"fade-right"} class="buttons">
               <MyLink to="/#" className="btn btn-4">
                 <span>Learn More</span>
               </MyLink>
             </section>
           </div>
           <div className="right">
-            <img src="/images/img.png" alt="" />
+            <img src="/images/img.png" alt=""  data-aos={"fade-left"}/>
           </div>
         </div>
       </Container>

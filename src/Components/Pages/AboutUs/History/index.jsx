@@ -1,23 +1,30 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
 import { HistoryWrapper } from "./historyWrapper.style";
 import Container from "../../../Common/Container/index";
 
 const HistorySection = () => {
+
+  useEffect(() => {
+    AOS.init({ duration: 1500, once: true});
+    AOS.refresh();
+  }, []);
+
   return (
     <HistoryWrapper>
-      <div className="title">
+      <div data-aos={"fade-in"} className="title">
         <Container>
           <h3>About Us</h3>
         </Container>
       </div>
       <Container>
         <section>
-          <img src="/aboutUs/history1.jpg" alt="History section image" />
+          <img src="/aboutUs/history1.jpg" alt="History section image" data-aos={"fade-up"}/>
 
           <hr />
 
           <div className="box__wrapper">
-            <div className="box__boxes">
+            <div className="box__boxes" data-aos="fade-zoom-in" >
               <div className="box__left">
                 <img src="/aboutUs/ourStory.svg" alt="Our Story Svg" />
                 <h2>Our Story</h2>
@@ -32,7 +39,7 @@ const HistorySection = () => {
                 </p>
               </div>
             </div>
-            <div className="box__boxes">
+            <div className="box__boxes" data-aos="fade-zoom-in" >
               <div className="box__left">
                 <img src="/aboutUs/ourMission.svg" alt="Our Mission Svg" />
                 <h2>Our Mission</h2>
@@ -54,7 +61,7 @@ const HistorySection = () => {
                 </p>
               </div>
             </div>
-            <div className="box__boxes">
+            <div className="box__boxes" data-aos="fade-zoom-in" >
               <div className="box__left">
                 <img src="/aboutUs/ourVision.svg" alt="Our Vision Svg" />
                 <h2>Our Vision</h2>
