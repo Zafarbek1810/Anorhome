@@ -85,13 +85,7 @@ const MainHeader = ({ isFixed }) => {
   const handleChange = (value) => {
     console.log(`selected ${value}`);
   };
-
-
-  // const [selectedLanguage, setSelectedLanguage] = useState('en'); // default language is English
-
-  // const handleChange = (event) => {
-  //   setSelectedLanguage(event.target.value);
-  // };
+  const activePath = router.pathname;
 
   return (
     <MainHeaderWrapper ref={ref} isFixed={isFixed}>
@@ -115,31 +109,62 @@ const MainHeader = ({ isFixed }) => {
         </div>
         <div className="navbar-wrapper">
           <ul className="links_cont">
-            {router.pathname === "/"
-              ? LINKS.map(({ name, path, id }) => (
-                  <li key={id}>
-                    <MyLink to={path}>
-                      <div className="navs">
-                        <p>{name}</p>
-                      </div>
-                    </MyLink>
-                  </li>
-                ))
-              : LINKS2.map(({ name, path, id }) => (
-                  <li key={id}>
-                    <MyLink to={path}>
-                      <div className="navs">
-                        <p>{name}</p>
-                      </div>
-                    </MyLink>
-                  </li>
-                ))}
+            {router.pathname === "/" ? (
+              LINKS.map(({ name, path, id }) => (
+                <li key={id}>
+                  <MyLink to={path}>
+                    <div className="navs">
+                      <p>{name}</p>
+                    </div>
+                  </MyLink>
+                </li>
+              ))
+            ) : (
+              <>
+                <li>
+                  <NavLink
+                    activePath={activePath}
+                    to="/"
+                    className="item-links"
+                  >
+                    Home
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    activePath={activePath}
+                    to="/services"
+                    className="item-links"
+                  >
+                    Services
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    activePath={activePath}
+                    to="/about"
+                    className="item-links"
+                  >
+                    About Us
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    activePath={activePath}
+                    to="/projects"
+                    className="item-links"
+                  >
+                    Projects
+                  </NavLink>
+                </li>
+              </>
+            )}
           </ul>
         </div>
 
         <div className="lang">
           <GlobeSvg />
-          
+
           <Select
             defaultValue="en"
             style={{
@@ -180,6 +205,19 @@ const MainHeader = ({ isFixed }) => {
         <BurgerList burger={burger} />
       </div>
     </MainHeaderWrapper>
+  );
+};
+
+const NavLink = ({ children, className, to, activePath, ...props }) => {
+  const active = activePath === to;
+  return (
+    <MyLink
+      to={to}
+      className={`item-links ${active ? "active-item-link" : ""}`}
+      {...props}
+    >
+      {children}
+    </MyLink>
   );
 };
 
