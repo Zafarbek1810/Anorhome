@@ -175,6 +175,11 @@ const MainHeaderWrapper = styled.div`
         color: #f67f00 !important;
       }
     }
+
+    p.active{
+      color: #fe152b !important;
+    }
+
   }
 
   .header {
@@ -212,6 +217,10 @@ const MainHeaderWrapper = styled.div`
     }
 
     .links_cont {
+      
+      a.active{
+        color: #fe152b !important;
+      }
       .navs {
         p {
           font-family: "Figtree";
@@ -221,6 +230,25 @@ const MainHeaderWrapper = styled.div`
           line-height: 22px;
           color: #fff;
         }
+      }
+
+      .item-links{
+        font-family: "Figtree";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px !important;
+          line-height: 22px;
+          color: #fff !important;
+          margin-right: 40px;
+          transition: 300ms;
+
+          &:hover{
+            color: #fe152b !important;
+          }
+      }
+      .active-item-link{
+        font-weight: 600 !important;
+        color: #fe152b !important;
       }
     }
 
@@ -367,10 +395,38 @@ const MainHeaderWrapper = styled.div`
     }
 
     .links_cont {
+      
+      a.active{
+        color: #fe152b !important;
+      }
       .navs {
-        svg {
-          color: #000 !important;
+        p {
+          font-family: "Figtree";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px !important;
+          line-height: 22px;
+          color: #fff;
         }
+      }
+
+      .item-links{
+        font-family: "Figtree";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px !important;
+          line-height: 22px;
+          color: #000 !important;
+          margin-right: 40px;
+          transition: 300ms;
+
+          &:hover{
+            color: #fe152b !important;
+          }
+      }
+      .active-item-link{
+        font-weight: 600 !important;
+        color: #fe152b !important;
       }
     }
 
