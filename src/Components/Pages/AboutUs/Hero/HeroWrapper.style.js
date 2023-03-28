@@ -4,8 +4,13 @@ const HeroWrapper = styled.div`
   background-image: linear-gradient(
       90deg,
       #161a1d 36.48%,
-      rgba(22, 26, 29, 0.6) 65.12%,
+      rgba(22, 26, 29, 0.6) 60.12%,
       rgba(22, 26, 29, 0) 100%
+    ),
+    linear-gradient(
+      67deg,
+      transparent 69.12%,
+      rgba(22, 26, 29, 1) 100%
     ),
     url("/images/aboutUS1.webp");
     
@@ -49,8 +54,12 @@ const HeroWrapper = styled.div`
   }
   .right {
     width: 50%;
-    display: flex;
-    justify-content: space-around;
+    
+    &__inner {
+      display: flex;
+      justify-content: space-around;
+    }
+
     &__first {
       position: relative;
     }
@@ -175,6 +184,7 @@ const HeroWrapper = styled.div`
           width: 20px;
         }
       }
+
     }
     &__box-red2 {
       position: absolute;
@@ -252,8 +262,7 @@ const HeroWrapper = styled.div`
       }
     }
     .right {
-      display: flex;
-      justify-content: space-around;
+      
 
       &__box-white {
         width: 140px;

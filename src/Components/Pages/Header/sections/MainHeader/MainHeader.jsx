@@ -52,7 +52,7 @@ const MainHeader = ({ isFixed }) => {
   const [header, setHeader] = useState("header");
   const { burger, handleBurger, setBurger } = useContext(HeaderContext);
   const ref = useRef(null);
-  const width = useWindowDimensions();
+  const { width } = useWindowDimensions();
   const router = useRouter();
 
   useEffect(() => {
