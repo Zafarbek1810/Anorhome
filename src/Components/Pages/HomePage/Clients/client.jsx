@@ -26,7 +26,7 @@ const Clients = () => {
       </div>
 
         <Container>
-            <div data-aos={"zoom-in"} className="clients__logo">
+            <div data-aos={"fade-up"} className="clients__logo">
               <GoogleSvg />
               <WindowsSvg />
               <OracleSvg />
