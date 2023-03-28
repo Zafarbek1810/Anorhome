@@ -9,9 +9,10 @@ const HeroWrapper = styled.div`
     ),
     url("/images/aboutUS1.webp");
     
-  background-position: center;
+  background-position: center right;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto 100vh;
+  width: auto;
   height: 100vh;
   display: flex;
   align-items: center;
