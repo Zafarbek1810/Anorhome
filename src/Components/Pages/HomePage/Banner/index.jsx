@@ -18,6 +18,10 @@ const Banner = () => {
     console.log(ref);
   }, []);
 
+  const onChange = (currentSlide) => {
+    ref.current.goTo(currentSlide)
+  };
+
   return (
     <BannerWrapper>
       <div className="img-wrapper">
@@ -27,6 +31,7 @@ const Banner = () => {
           pauseOnHover={false}
           pauseOnDotsHover={false}
           autoplay
+          ref={ref}
           autoplaySpeed={3000}
         >
           <img src="/images/banner.jpg" alt="" />
@@ -40,7 +45,8 @@ const Banner = () => {
           pauseOnHover={false}
           pauseOnDotsHover={false}
           autoplaySpeed={3000}
-          ref={ref}
+          afterChange={onChange}
+          
           className="carusel"
         >
           <div

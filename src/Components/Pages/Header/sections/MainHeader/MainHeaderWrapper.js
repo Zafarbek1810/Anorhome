@@ -3,11 +3,11 @@ import styled from "styled-components";
 const MainHeaderWrapper = styled.div`
   background-color: #fff;
   z-index: 1000;
-  svg {
+  /* svg {
     color: #000 !important;
     flex-shrink: 0;
     width: 10px;
-  }
+  } */
 
   .logo {
     flex-shrink: 0;
@@ -365,13 +365,7 @@ const MainHeaderWrapper = styled.div`
       line-height: 22px;
       /* identical to box height */
 
-      color: #000;
-    }
-
-    svg {
       color: #000 !important;
-      flex-shrink: 0;
-      width: 10px;
     }
 
     a,

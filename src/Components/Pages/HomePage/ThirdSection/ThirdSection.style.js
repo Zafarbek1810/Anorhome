@@ -223,7 +223,16 @@ const ThirdSectionWrapper = styled.div`
             }
           }
           a{
-            width: 150px;
+            width: 170px;
+            display: flex;
+            align-items: center;
+            svg {
+              margin-right: 0px;
+              margin-left: 5px;
+              width: 20px;
+
+            }
+            display: flex;
             font-family: "Figtree";
           }
         }

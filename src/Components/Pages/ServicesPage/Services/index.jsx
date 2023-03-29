@@ -45,7 +45,7 @@ const data = [
 const Services = () => {
     const imgRef =useRef()
 
-    const pos = useScrollPosition(-0.05); //scrollY * 0.5
+    const pos = useScrollPosition(-0.07); //scrollY * 0.5
 
 
     useEffect(()=>{

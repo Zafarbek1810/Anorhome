@@ -5,6 +5,7 @@ import MyLink from "../../../Common/MyLink";
 import CalendarSvg from "../../../Common/Svgs/CalendarSvg";
 import LocationSvg from "../../../Common/Svgs/LocationSvg";
 import { ThirdSectionWrapper } from "./ThirdSection.style";
+import RightSvg from "../../../Common/Svgs/RightSvg";
 
 const data=[
   {
@@ -96,7 +97,7 @@ const ThirdSection = () => {
                     <span>
                       <LocationSvg /> {obj.city}
                     </span>
-                      <MyLink to={obj.link}>Learn More</MyLink>
+                      <MyLink to={obj.link}>Learn More <RightSvg/></MyLink>
                   </div>
                   <div className="bottom2">
                     <span>{obj.city}</span>

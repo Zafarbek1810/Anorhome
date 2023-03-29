@@ -22,7 +22,7 @@ const ServicesWrapper = styled.div`
       font-weight: 700;
       font-size: 24px;
       line-height: 29px;
-      letter-spacing: 0.1em;
+      letter-spacing: 2px;
       color: #ffffff;
     }
 
@@ -35,7 +35,7 @@ const ServicesWrapper = styled.div`
       font-weight: 900;
       font-size: 56px;
       line-height: 67px;
-      letter-spacing: 0.1em;
+      letter-spacing: 2px;
       color: #ffffff;
     }
   }
@@ -81,7 +81,7 @@ const ServicesWrapper = styled.div`
 
         img {
           width: 100%;
-          height: 140%;
+          height: 150%;
           object-fit: cover;
         }
       }

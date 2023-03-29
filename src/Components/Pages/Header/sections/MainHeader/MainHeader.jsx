@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useRef, useContext } from "react";
 import MyLink from "../../../../Common/MyLink";
 import GlobeSvg from "../../../../Common/Svgs/GlobeSvg";
+import LogoSvg from "../../../../Common/Svgs/LogoSvg";
 import BurgerList from "./Components/BurgerList";
 import { HeaderContext } from "../../../../../Context/HeaderContext";
 import { MainHeaderWrapper } from "./MainHeaderWrapper";
@@ -92,7 +93,8 @@ const MainHeader = ({ isFixed }) => {
       <div className={`content ${header}`}>
         <div className="logo">
           <MyLink to="/#" onClick={() => setBurger((p) => !p)}>
-            <img
+            <LogoSvg/>
+            {/* <img
               src={
                 width > 991
                   ? header !== "header"
@@ -104,7 +106,7 @@ const MainHeader = ({ isFixed }) => {
               }
               width={100}
               height={72}
-            />
+            /> */}
           </MyLink>
         </div>
         <div className="navbar-wrapper">

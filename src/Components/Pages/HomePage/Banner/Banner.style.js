@@ -41,7 +41,7 @@ const BannerWrapper = styled.div`
      img {
       width: 100%;
       height: 100vh;
-      object-position: cover;
+      object-fit: cover;
      }
 
      .slick-dots.slick-dots-bottom {
