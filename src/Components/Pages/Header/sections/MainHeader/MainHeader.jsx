@@ -8,6 +8,8 @@ import { MainHeaderWrapper } from "./MainHeaderWrapper";
 import useWindowDimensions from "../../../../../Hooks/useWindow";
 import { Select } from "antd";
 import { useRouter } from "next/router";
+import { useContextSelector } from "use-context-selector";
+import { ModalContext } from "../../../../../Context/ModalContext/Context";
 
 export const LINKS = [
   {
@@ -22,7 +24,7 @@ export const LINKS = [
   },
   {
     name: "Projects",
-    path: "/",
+    path: "/projects",
     id: 4,
   },
 ];
@@ -87,6 +89,12 @@ const MainHeader = ({ isFixed }) => {
     console.log(`selected ${value}`);
   };
   const activePath = router.pathname;
+
+  const setIsModalVisible = useContextSelector(
+    ModalContext,
+    (state) => state[1]
+  );
+
 
   return (
     <MainHeaderWrapper ref={ref} isFixed={isFixed}>
@@ -192,9 +200,11 @@ const MainHeader = ({ isFixed }) => {
 
         <div className="callBtn">
           <section class="buttons">
-            <MyLink to="/#" className="btn btn-4">
+            <button className="btn btn-4" onClick={() => {
+            setIsModalVisible((p) => !p);
+          }}>
               <span>Call Me Now!</span>
-            </MyLink>
+            </button>
           </section>
         </div>
 
