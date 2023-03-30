@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@tawk.to/tawk-messenger-react": "^2.0.1",
     "antd": "^5.3.1",
     "aos": "^2.3.4",
     "next": "13.2.4",
