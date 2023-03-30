@@ -8,9 +8,16 @@ const StyledContainer = styled.div`
   padding-left: 15px;
   padding-right: 15px;
 
-  @media (max-width: 700px) {
-    max-width: ${(props) => (props.width ? `${props.width}px` : "95vw")};
-  }
+
+  // TABLET
+  @media (max-width: 991.98px) {
+    max-width: ${(props) => (props.width ? `${props.width}px` : "97vw")};
+    }
+  
+    // MOBILE
+    @media (max-width: 767.98px) {
+      max-width: ${(props) => (props.width ? `${props.width}px` : "95vw")};
+    } 
 `;
 
 export { StyledContainer };
