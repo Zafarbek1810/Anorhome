@@ -73,7 +73,7 @@ const ServicesWrapper = styled.div`
       }
       .col-2 {
         width: 37.5%;
-        height: 390px;
+        height: 350px;
         padding: 0 30px;
         overflow: hidden;
         border-left: 1px solid #d9d9d9;

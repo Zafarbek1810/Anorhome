@@ -123,10 +123,11 @@ const MainHeaderWrapper = styled.div`
         color: #fff;
         cursor: pointer;
         max-width: 160px !important;
-        padding: 15px 30px;
+        padding: 15px 15px;
         position: relative;
         width: 100%;
         background: #e5e5e5;
+        border: none;
       }
 
       .btn:hover {

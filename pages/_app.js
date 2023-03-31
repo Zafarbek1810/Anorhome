@@ -1,9 +1,10 @@
 import { useEffect } from 'react';
 import { HeaderProvider } from '../src/Context/HeaderContext'
 import '../styles/globals.css'
-
-  
+import Modal from "../src/Components/Common/ContactModal"
+import FormModal from "../src/Components/Common/ContactModal/FormModal"
 import "aos/dist/aos.css";
+import { ModalProvider } from '../src/Context/ModalContext/Context';
 import MyTawk from '../src/Components/Common/Tawk';
 
 
@@ -25,12 +26,22 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <HeaderProvider>
+<<<<<<< HEAD
     <Component {...pageProps} />
     {/* <MyTawk /> */}
+=======
+      <ModalProvider>
+        <Component {...pageProps} />
+    <MyTawk />
+        <Modal>
+          <FormModal />
+        </Modal>
+      </ModalProvider>
+>>>>>>> 2f0bbd565f2385304c6dcf6b5d285398025864fd
     </HeaderProvider>
 
   )
-  
+
 }
 
 export default MyApp

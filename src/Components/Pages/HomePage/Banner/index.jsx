@@ -30,9 +30,9 @@ const Banner = () => {
           pauseOnFocus={false}
           pauseOnHover={false}
           pauseOnDotsHover={false}
-          autoplay
+          // autoplay
           ref={ref}
-          autoplaySpeed={3000}
+          // autoplaySpeed={3000}
         >
           <img src="/images/banner.jpg" alt="" />
           <img src="/images/banner2.jpg" alt="" />
