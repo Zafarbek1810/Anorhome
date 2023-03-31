@@ -60,9 +60,9 @@ const MainHeader = ({ isFixed }) => {
 
   useEffect(() => {
     const listenScrollEvent = () => {
-      if (window.scrollY < 180) {
+      if (window.scrollY < 100) {
         return setHeader("header");
-      } else if (window.scrollY > 180) {
+      } else if (window.scrollY > 100) {
         return setHeader("header2");
       }
     };
