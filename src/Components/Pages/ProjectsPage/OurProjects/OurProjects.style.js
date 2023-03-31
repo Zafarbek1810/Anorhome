@@ -120,7 +120,22 @@ const OurProjectsWrapper = styled.div`
     }
     .right {
       width: 50%;
+      height: 200vh;
+      overflow-y: scroll;
       padding: 40px;
+
+      ::-webkit-scrollbar {
+        width: 6px !important;
+      }
+
+      ::-webkit-scrollbar-track {
+        background-color: #f5f5f5 !important;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background-color: #d9d9d9 !important;
+        border-radius: 10px !important;
+      }
 
       .cards {
         .card {
@@ -183,16 +198,16 @@ const OurProjectsWrapper = styled.div`
           }
         }
 
-        .card:hover{
+        .card:hover {
           background-color: #161a1d;
           cursor: pointer;
 
-          .text{
-            h6{
-              color: #FFFFFF;
+          .text {
+            h6 {
+              color: #ffffff;
             }
-            p{
-              color: #FFFFFF;
+            p {
+              color: #ffffff;
             }
           }
         }
