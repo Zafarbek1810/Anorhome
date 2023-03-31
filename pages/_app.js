@@ -4,8 +4,7 @@ import '../styles/globals.css'
 import Modal from "../src/Components/Common/ContactModal"
 import FormModal from "../src/Components/Common/ContactModal/FormModal"
 import "aos/dist/aos.css";
-import { ModalProvider } from '../src/Context/ModalContext/Context';
-import MyTawk from '../src/Components/Common/Tawk';
+import { ModalProvider } from '../src/Context/ModalContext/Context'; 
 
 
 function MyApp({ Component, pageProps }) {
