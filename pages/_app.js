@@ -26,18 +26,12 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <HeaderProvider>
-<<<<<<< HEAD
     <Component {...pageProps} />
-    {/* <MyTawk /> */}
-=======
       <ModalProvider>
-        <Component {...pageProps} />
-    <MyTawk />
         <Modal>
           <FormModal />
         </Modal>
       </ModalProvider>
->>>>>>> 2f0bbd565f2385304c6dcf6b5d285398025864fd
     </HeaderProvider>
 
   )
