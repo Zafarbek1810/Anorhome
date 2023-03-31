@@ -30,7 +30,7 @@ const Banner = () => {
           pauseOnFocus={false}
           pauseOnHover={false}
           pauseOnDotsHover={false}
-          // autoplay
+          autoplay
           ref={ref}
           // autoplaySpeed={3000}
         >

@@ -113,6 +113,8 @@ const ThirdSectionWrapper = styled.div`
       width: 60%;
       height: 100%;
       display: flex;
+
+      
       
 
       .card { 
@@ -162,6 +164,9 @@ const ThirdSectionWrapper = styled.div`
             color: #ffffff;
             svg {
               margin-right: 15px;
+              path{
+                fill:#fff !important;
+              }
             }
           }
         }

@@ -15,7 +15,7 @@ const HomePage = () => {
             <Banner/>
             <SecondSection/>
             <ThirdSection/>
-            <Testimionals/>
+            {/* <Testimionals/> */}
             <Clients />
             <Contact />
             <Footer />

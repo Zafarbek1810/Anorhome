@@ -12,7 +12,7 @@ const ServicesPage = () => {
         <div>
             <Header/>
             <Services/>
-            <Testimionals/>
+            {/* <Testimionals/> */}
             <Clients/>
             <Contact/>
             <Footer/>

@@ -2,39 +2,46 @@ import React, { useEffect, useRef } from "react";
 import useScrollPosition from "../../../../Hooks/useScrollPosition";
 import MyLink from "../../../Common/MyLink";
 import { ServicesWrapper } from "./Services.style";
+import { useRouter } from "next/router";
 
 const data = [
   {
+    id: "1",
     span: "1",
     p1: "Investment Consulting",
     img: "/images/services/service1.png",
     p2: "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Scelerisque pulvinar amet turpis elit euismod mollis interdum nulla. Consequat viverra aenean egestas congue metus nisi sed. Semper vitae amet faucibus in ac. Donec aliquam eu faucibus faucibus id lobortis integer. Ipsum dignissim non dui nullam eu magna. Ut pellentesque arcu est pulvinar ullamcorper. Aliquet egestas at tincidunt mi scelerisque orci",
   },
   {
+    id: "2",
     span: "2",
     p1: "Investment Consulting",
     img: "/images/services/service2.png",
     p2: "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Scelerisque pulvinar amet turpis elit euismod mollis interdum nulla. Consequat viverra aenean egestas congue metus nisi sed. Semper vitae amet faucibus in ac. Donec aliquam eu faucibus faucibus id lobortis integer. Ipsum dignissim non dui nullam eu magna. Ut pellentesque arcu est pulvinar ullamcorper. Aliquet egestas at tincidunt mi scelerisque orci",
   },
   {
+    id: "3",
     span: "3",
     p1: "Investment Consulting",
     img: "/images/services/service3.png",
     p2: "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Scelerisque pulvinar amet turpis elit euismod mollis interdum nulla. Consequat viverra aenean egestas congue metus nisi sed. Semper vitae amet faucibus in ac. Donec aliquam eu faucibus faucibus id lobortis integer. Ipsum dignissim non dui nullam eu magna. Ut pellentesque arcu est pulvinar ullamcorper. Aliquet egestas at tincidunt mi scelerisque orci",
   },
   {
+    id: "4",
     span: "4",
     p1: "Investment Consulting",
     img: "/images/services/service4.png",
     p2: "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Scelerisque pulvinar amet turpis elit euismod mollis interdum nulla. Consequat viverra aenean egestas congue metus nisi sed. Semper vitae amet faucibus in ac. Donec aliquam eu faucibus faucibus id lobortis integer. Ipsum dignissim non dui nullam eu magna. Ut pellentesque arcu est pulvinar ullamcorper. Aliquet egestas at tincidunt mi scelerisque orci",
   },
   {
+    id: "5",
     span: "5",
     p1: "Investment Consulting",
     img: "/images/services/service5.png",
     p2: "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Scelerisque pulvinar amet turpis elit euismod mollis interdum nulla. Consequat viverra aenean egestas congue metus nisi sed. Semper vitae amet faucibus in ac. Donec aliquam eu faucibus faucibus id lobortis integer. Ipsum dignissim non dui nullam eu magna. Ut pellentesque arcu est pulvinar ullamcorper. Aliquet egestas at tincidunt mi scelerisque orci",
   },
   {
+    id: "6",
     span: "6",
     p1: "Investment Consulting",
     img: "/images/services/service6.png",
@@ -44,6 +51,7 @@ const data = [
 
 const Services = () => {
     const imgRef =useRef()
+    const router =useRouter();
 
     const pos = useScrollPosition(-0.07); //scrollY * 0.5
 
@@ -51,6 +59,8 @@ const Services = () => {
     useEffect(()=>{
         console.log(window.scrollY);
     },[])
+
+    console.log(router);
 
   return (
     <ServicesWrapper>
@@ -74,7 +84,7 @@ const Services = () => {
              {v.p2}
             </p>
             <div className="btn">
-              <MyLink to="/#">Learn More</MyLink>
+              <MyLink to={`/services?id=${v.id}`}>Learn More</MyLink>
             </div>
           </div>
         </div>
