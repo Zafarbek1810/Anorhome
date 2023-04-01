@@ -84,7 +84,7 @@ const Services = () => {
              {v.p2}
             </p>
             <div className="btn">
-              <MyLink to={`/services?id=${v.id}`}>Learn More</MyLink>
+              <MyLink to={`/serviceDetail?id=${v.id}`}>Learn More</MyLink>
             </div>
           </div>
         </div>
