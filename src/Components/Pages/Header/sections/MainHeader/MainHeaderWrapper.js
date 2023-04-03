@@ -68,6 +68,13 @@ const MainHeaderWrapper = styled.div`
     z-index: 999;
     min-height: 100px !important;
     padding-top: 10px !important;
+    .logo{
+      svg{
+        path.fil1{
+          fill: #fff;
+        }
+      }
+    }
 
     .lang {
       display: flex;

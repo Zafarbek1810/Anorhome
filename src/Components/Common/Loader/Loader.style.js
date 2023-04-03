@@ -1,47 +1,27 @@
 import styled from "styled-components";
 
-const DemoStyle = styled.div`
-  
+const LoaderWrapper = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(90deg, #00b377, #00d68f);
+  /* background: linear-gradient(90deg, #00b377, #00d68f); */
+  background: #161A1D;
   box-shadow: inset 0px 0px 90px rgba(0, 0, 0, 0.5);
   margin: 0px;
   padding: 0px;
-  /* a {
-    position: fixed;
-    bottom: 2%;
-    display: block;
-    text-align: center;
-    color: #0fa;
-    font-family: "Lato", sans-serif;
-    text-decoration: none !important;
-    width: 100%;
-  } */
-
-  /* body,
-  html {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-  } */
-
-  /* body {
-    background: linear-gradient(90deg, #00b377, #00d68f);
-    box-shadow: inset 0px 0px 90px rgba(0, 0, 0, 0.5);
-    margin: 0px;
-    padding: 0px;
-  } */
+  z-index: 99999 !important;
 
   .demo {
-    width: 100px;
-    height: 102px;
+    width: 130px;
+    height: 132px;
     border-radius: 100%;
     position: absolute;
     top: 45%;
     left: calc(50% - 50px);
   }
-
+/* rgb(237,50,64) */
   .circle {
     width: 100%;
     height: 100%;
@@ -51,11 +31,11 @@ const DemoStyle = styled.div`
     width: 100%;
     height: 100%;
     border-radius: 100%;
-    border: 5px solid rgba(0, 255, 170, 0.7);
+    border: 10px solid rgba(237,50,64, 0.7);
     border-right: none;
     border-top: none;
     background-clip: padding;
-    box-shadow: inset 0px 0px 10px rgba(0, 255, 170, 0.15);
+    box-shadow: inset 0px 0px 10px rgba(237,50,64, 0.15);
   }
 
   @-webkit-keyframes spin {
@@ -105,4 +85,4 @@ const DemoStyle = styled.div`
   }
 `;
 
-export { DemoStyle };
+export { LoaderWrapper };

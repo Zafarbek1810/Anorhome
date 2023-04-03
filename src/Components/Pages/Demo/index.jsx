@@ -6,7 +6,23 @@ const Demo = () => {
   
   return (
     <DemoStyle>
-      demo
+      <div class='demo'>
+  <div class='circle'>
+    <div class='inner'></div>
+  </div>
+  <div class='circle'>
+    <div class='inner'></div>
+  </div>
+  <div class='circle'>
+    <div class='inner'></div>
+  </div>
+  <div class='circle'>
+    <div class='inner'></div>
+  </div>
+  <div class='circle'>
+    <div class='inner'></div>
+  </div>
+</div>
     </DemoStyle>
   );
 };
