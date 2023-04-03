@@ -75,6 +75,7 @@ const MainHeaderWrapper = styled.div`
       
 
      .ant-select-dropdown{
+      z-index:9999 !important;
         border-radius:0 !important;
       }
 

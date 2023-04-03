@@ -17,7 +17,8 @@ a {
 }
 
 .ant-select-dropdown{
-  border-radius: 0 !important
+  border-radius: 0 !important;
+  z-index: 9999;
 }
 .header2 .ant-select-selection-item{
   color: #000 !important;

@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 const OurProjectsWrapper = styled.div`
   background: #ffffff;
+  padding: 40px 0;
 
   .swiper {
     width: 100%;
