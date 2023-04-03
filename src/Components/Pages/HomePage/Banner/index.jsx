@@ -1,12 +1,16 @@
 import React, { useEffect, useRef } from "react";
 import { BannerWrapper } from "./Banner.style";
 import AOS from "aos";
+import { useTranslation } from "react-i18next";
 import MyLink from "../../../Common/MyLink";
 import Container from "../../../Common/Container";
 import { Carousel } from "antd";
 
 
 const Banner = () => {
+
+  const { t } = useTranslation();
+
   const ref = useRef();
 
   useEffect(() => {
@@ -21,6 +25,7 @@ const Banner = () => {
   const onChange = (currentSlide) => {
     ref.current.goTo(currentSlide)
   };
+ 
 
   return (
     <BannerWrapper>
@@ -53,27 +58,25 @@ const Banner = () => {
             className="wrap" data-aos={"zoom-in"}
           >
             <h1 className="title">
-              <span>Investment</span> In Real Estate
+              <span>{t("hero.title-span")} </span>
+              {t("hero.title")}
             </h1>
             <p className="descr">
-              Lorem ipsum dolor sit amet consectetur. Luctus in montes
-              pellentesque proin neque pellentesque suspendisse sit. Proin ut at
-              tortor nulla quam arcu
+            {t("hero.paragr")}
             </p>
             <section class="buttons">
               <MyLink to="/#" className="btn btn-4">
-                <span>Learn More</span>
+                <span>{t("hero.button")}</span>
               </MyLink>
             </section>
           </div>
           <div className="wrap" data-aos={"zoom-in"} >
             <h1 className="title">
-              <span>Sales Office</span> For Your Project
+              <span>{t("hero.title-span2")} </span> 
+              {t("hero.title2")} 
             </h1>
             <p className="descr">
-              Lorem ipsum dolor sit amet consectetur. Luctus in montes
-              pellentesque proin neque pellentesque suspendisse sit. Proin ut at
-              tortor nulla quam arcu
+            {t("hero.paragr2")}
             </p>
             <section class="buttons">
               <MyLink to="/#" className="btn btn-4">
