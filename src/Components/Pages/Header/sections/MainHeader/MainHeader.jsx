@@ -10,6 +10,8 @@ import { Select } from "antd";
 import { useRouter } from "next/router";
 import { useContextSelector } from "use-context-selector";
 import { ModalContext } from "../../../../../Context/ModalContext/Context";
+import { useTranslation } from "react-i18next";
+import i18next from "i18next";
 
 export const LINKS = [
   {
@@ -52,6 +54,11 @@ export const LINKS2 = [
 ];
 
 const MainHeader = ({ isFixed }) => {
+
+  const { t, i18n } = useTranslation();
+  const defaultLang = i18next.language; 
+
+
   const [header, setHeader] = useState("header");
   const { burger, handleBurger, setBurger } = useContext(HeaderContext);
   const ref = useRef(null);
@@ -85,9 +92,11 @@ const MainHeader = ({ isFixed }) => {
     };
   }, []);
 
-  const handleChange = (value) => {
-    console.log(`selected ${value}`);
+  const handleChange = (e) => {
+    localStorage.setItem("siteLang", e);
+    i18n.changeLanguage(e);
   };
+  
   const activePath = router.pathname;
 
   const setIsModalVisible = useContextSelector(
@@ -176,11 +185,21 @@ const MainHeader = ({ isFixed }) => {
           <GlobeSvg />
 
           <Select
-            defaultValue="en"
+            placeholder="Lang"
+            id="lang"
+            value={defaultLang}
             style={{
               width: 80,
             }}
             onChange={handleChange}
+            filterOption={(input, option) =>
+              (option?.label ?? "").includes(input)
+            }
+            filterSort={(optionA, optionB) =>
+              (optionA?.label ?? "")
+                .toLowerCase()
+                .localeCompare((optionB?.label ?? "").toLowerCase())
+            }
             options={[
               {
                 value: "en",

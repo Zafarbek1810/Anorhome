@@ -13,6 +13,7 @@ const BannerWrapper = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  
 .cont {
   position: relative;
   z-index: 4;
