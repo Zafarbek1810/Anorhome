@@ -52,9 +52,10 @@ const BannerWrapper = styled.div`
 
   .carusel {
     width: 600px;
-    height: 90vh !important;
-
+    /* height: auto !important; */
+    
     .wrap {
+      position: relative;
       height: 100vh;
       transform: translateY(20%);
       display: flex;
@@ -63,7 +64,7 @@ const BannerWrapper = styled.div`
       justify-content: center;
 
       .title {
-        font-family: "Figtree";
+        font-family: "Jost";
         font-style: normal;
         font-weight: 900;
         font-size: 70px;
@@ -78,7 +79,7 @@ const BannerWrapper = styled.div`
       }
 
       .descr {
-        font-family: "Figtree";
+        font-family: "Jost";
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
@@ -99,7 +100,7 @@ const BannerWrapper = styled.div`
       }
 
       .btn {
-        font-family: "Figtree";
+        font-family: "Jost";
         font-weight: 500;
         font-size: 16px;
         color: #fff;
@@ -146,6 +147,9 @@ const BannerWrapper = styled.div`
     /* =================== button hover end =================== */
 
     .slick-dots-bottom {
+      position: absolute;
+      bottom: 0;
+      left: 0;
       justify-content: start;
 
       li {

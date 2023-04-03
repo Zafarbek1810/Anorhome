@@ -8,7 +8,7 @@ const ClientsWrapper = styled.div`
     border-bottom: 1px solid #161A1D;
 
     h3 {
-      font-family: "Figtree";
+      font-family: "Jost";
       font-style: normal;
       font-weight: 700;
       font-size: 40px;

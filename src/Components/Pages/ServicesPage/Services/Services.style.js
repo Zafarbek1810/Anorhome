@@ -17,7 +17,7 @@ const ServicesWrapper = styled.div`
     p {
       margin: 0;
       width: 30%;
-      font-family: "Figtree";
+      font-family: "Jost";
       font-style: normal;
       font-weight: 700;
       font-size: 24px;
@@ -30,7 +30,7 @@ const ServicesWrapper = styled.div`
       margin: 0;
       width: 60%;
       text-align: end;
-      font-family: "Figtree";
+      font-family: "Jost";
       font-style: normal;
       font-weight: 900;
       font-size: 56px;
@@ -49,7 +49,7 @@ const ServicesWrapper = styled.div`
         width: 25%;
         position: relative;
         span {
-          font-family: "Figtree";
+          font-family: "Jost";
           font-style: normal;
           font-weight: 800;
           font-size: 128px;
@@ -59,7 +59,7 @@ const ServicesWrapper = styled.div`
         }
 
         p {
-          font-family: "Figtree";
+          font-family: "Jost";
           font-style: normal;
           font-weight: 800;
           font-size: 36px;
@@ -93,7 +93,7 @@ const ServicesWrapper = styled.div`
         flex-direction: column;
         justify-content: space-between;
         p {
-          font-family: "Figtree";
+          font-family: "Jost";
           font-style: normal;
           font-weight: 400;
           font-size: 16px;
@@ -110,7 +110,7 @@ const ServicesWrapper = styled.div`
             width: 100%;
             background-color: #fff;
             color: #fe152b;
-            font-family: "Figtree";
+            font-family: "Jost";
             font-style: normal;
             font-weight: 500;
             font-size: 16px;

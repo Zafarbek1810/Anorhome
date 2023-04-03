@@ -33,14 +33,14 @@ padding-bottom: 40px;
         padding-bottom: 0;
       }
       h4 {
-        font-family: "Figtree";
+        font-family: "Jost";
         font-style: normal;
         font-weight: 600;
         font-size: 20px;
         color: #ffffff;
       }
       p {
-        font-family: "Figtree";
+        font-family: "Jost";
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
@@ -50,7 +50,7 @@ padding-bottom: 40px;
         }
       }
       .emailLink {
-        font-family: 'Figtree';
+        font-family: 'Jost';
         font-style: normal;
         font-weight: 400;
         font-size: 16px;

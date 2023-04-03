@@ -8,7 +8,7 @@ const SecondSectionWrapper = styled.div`
     border-bottom: 1px solid #ffffff;
 
     h3 {
-      font-family: "Figtree";
+      font-family: "Jost";
       font-style: normal;
       font-weight: 700;
       font-size: 40px;
@@ -26,7 +26,7 @@ const SecondSectionWrapper = styled.div`
     .left {
       width: 60%;
       p.info {
-        font-family: "Figtree";
+        font-family: "Jost";
         font-style: normal;
         font-weight: 400;
         font-size: 20px;
@@ -53,7 +53,7 @@ const SecondSectionWrapper = styled.div`
           
 
           .num {
-            font-family: "Figtree";
+            font-family: "Jost";
             font-style: normal;
             font-weight: 600;
             font-size: 20px;
@@ -62,7 +62,7 @@ const SecondSectionWrapper = styled.div`
           }
 
           .title {
-            font-family: "Figtree";
+            font-family: "Jost";
             font-style: normal;
             font-weight: 400;
             font-size: 14px;
@@ -83,7 +83,7 @@ const SecondSectionWrapper = styled.div`
       }
 
       .btn {
-        font-family: "Figtree";
+        font-family: "Jost";
         font-weight: 500;
         font-size: 16px;
         color: #fff;

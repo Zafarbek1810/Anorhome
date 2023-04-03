@@ -31,7 +31,7 @@ const OurProjectsWrapper = styled.div`
       border-right: 1px solid #d9d9d9;
 
       .title {
-        font-family: "Figtree";
+        font-family: "Jost";
         font-style: normal;
         font-weight: 700;
         font-size: 40px;
@@ -41,7 +41,7 @@ const OurProjectsWrapper = styled.div`
       }
 
       .heading {
-        font-family: "Figtree";
+        font-family: "Jost";
         font-style: normal;
         font-weight: 700;
         font-size: 32px;
@@ -50,7 +50,7 @@ const OurProjectsWrapper = styled.div`
       }
 
       .descr {
-        font-family: "Figtree";
+        font-family: "Jost";
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
@@ -67,7 +67,7 @@ const OurProjectsWrapper = styled.div`
         }
 
         p {
-          font-family: "Figtree";
+          font-family: "Jost";
           font-style: normal;
           font-weight: 600;
           font-size: 16px;
@@ -84,7 +84,7 @@ const OurProjectsWrapper = styled.div`
           margin-right: 24px;
         }
         p {
-          font-family: "Figtree";
+          font-family: "Jost";
           font-style: normal;
           font-weight: 600;
           font-size: 16px;
@@ -95,7 +95,7 @@ const OurProjectsWrapper = styled.div`
 
       .galery {
         .title-img {
-          font-family: "Figtree";
+          font-family: "Jost";
           font-style: normal;
           font-weight: 600;
           font-size: 20px;
@@ -166,7 +166,7 @@ const OurProjectsWrapper = styled.div`
 
             h6 {
               margin: 0;
-              font-family: "Figtree";
+              font-family: "Jost";
               font-style: normal;
               font-weight: 600;
               font-size: 20px;
@@ -176,7 +176,7 @@ const OurProjectsWrapper = styled.div`
             }
 
             p {
-              font-family: "Figtree";
+              font-family: "Jost";
               font-style: normal;
               font-weight: 400;
               font-size: 14px;
@@ -188,7 +188,7 @@ const OurProjectsWrapper = styled.div`
               display: flex;
               align-items: center;
               p {
-                font-family: "Figtree";
+                font-family: "Jost";
                 font-style: normal;
                 font-weight: 600;
                 font-size: 14px;

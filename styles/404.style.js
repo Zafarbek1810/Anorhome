@@ -18,7 +18,7 @@ const ErrorPageWrapper = styled.div`
   .left {
     width: 50%;
     h2 {
-      font-family: "Figtree";
+      font-family: "Jost";
       font-style: normal;
       font-weight: 700;
       font-size: 64px;
@@ -27,7 +27,7 @@ const ErrorPageWrapper = styled.div`
       color: #ffffff;
     }
     p {
-      font-family: "Figtree";
+      font-family: "Jost";
       font-style: normal;
       font-weight: 400;
       font-size: 18px;
@@ -55,7 +55,7 @@ const ErrorPageWrapper = styled.div`
     text-align: center;
   }
   .btn1 {
-    font-family: "Figtree";
+    font-family: "Jost";
     font-weight: 500;
     font-size: 16px;
     color: #fff;
@@ -72,7 +72,7 @@ const ErrorPageWrapper = styled.div`
   }
 
   .btn2 {
-    font-family: "Figtree";
+    font-family: "Jost";
     font-weight: 500;
     font-size: 16px;
     color: #fff;
@@ -187,7 +187,7 @@ const ErrorPageWrapper = styled.div`
     }
 
     .btn1 {
-      font-family: "Figtree";
+      font-family: "Jost";
       font-weight: 500;
       font-size: 15px;
       color: #fff;
@@ -204,7 +204,7 @@ const ErrorPageWrapper = styled.div`
     }
 
     .btn2 {
-      font-family: "Figtree";
+      font-family: "Jost";
       font-weight: 500;
       font-size: 15px;
       color: #fff;

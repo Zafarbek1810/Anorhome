@@ -11,7 +11,7 @@ const HistoryWrapper = styled.div`
     border-bottom: 1px solid #ffffff;
 
     h3 {
-      font-family: "Figtree";
+      font-family: "Jost";
       font-style: normal;
       font-weight: 700;
       font-size: 40px;
@@ -43,7 +43,7 @@ const HistoryWrapper = styled.div`
         padding-right: 14px;
       }
       h2 {
-        font-family: "Figtree";
+        font-family: "Jost";
         font-style: normal;
         font-weight: 900;
         font-size: 45px;
@@ -55,7 +55,7 @@ const HistoryWrapper = styled.div`
     .box__right {
       width: 60%;
       p {
-        font-family: "Figtree";
+        font-family: "Jost";
         font-style: normal;
         font-weight: 400;
         font-size: 20px;

@@ -92,7 +92,7 @@ const MainHeaderWrapper = styled.div`
       .ant-select-selector {
         border: none !important;
         background-color: transparent !important;
-        font-family: "Figtree" !important;
+        font-family: "Jost" !important;
         font-style: normal !important;
         font-weight: 700 !important;
         font-size: 15px !important;
@@ -125,7 +125,7 @@ const MainHeaderWrapper = styled.div`
       }
 
       .btn {
-        font-family: "Figtree";
+        font-family: "Jost";
         font-weight: 500;
         font-size: 16px;
         color: #fff;
@@ -232,7 +232,7 @@ const MainHeaderWrapper = styled.div`
       }
       .navs {
         p {
-          font-family: "Figtree";
+          font-family: "Jost";
           font-style: normal;
           font-weight: 400;
           font-size: 18px !important;
@@ -242,7 +242,7 @@ const MainHeaderWrapper = styled.div`
       }
 
       .item-links{
-        font-family: "Figtree";
+        font-family: "Jost";
           font-style: normal;
           font-weight: 400;
           font-size: 18px !important;
@@ -291,7 +291,7 @@ const MainHeaderWrapper = styled.div`
       .ant-select-selector {
         border: none !important;
         background-color: transparent !important;
-        font-family: "Figtree" !important;
+        font-family: "Jost" !important;
         font-style: normal !important;
         font-weight: 700 !important;
         font-size: 15px !important;
@@ -321,7 +321,7 @@ const MainHeaderWrapper = styled.div`
       }
 
       .btn {
-        font-family: "Figtree";
+        font-family: "Jost";
         font-weight: 500;
         font-size: 16px;
         color: #fff !important;
@@ -367,7 +367,7 @@ const MainHeaderWrapper = styled.div`
     }
 
     p {
-      font-family: "Figtree";
+      font-family: "Jost";
       font-style: normal;
       font-weight: 400;
       font-size: 18px !important;
@@ -404,7 +404,7 @@ const MainHeaderWrapper = styled.div`
       }
       .navs {
         p {
-          font-family: "Figtree";
+          font-family: "Jost";
           font-style: normal;
           font-weight: 400;
           font-size: 18px !important;
@@ -414,7 +414,7 @@ const MainHeaderWrapper = styled.div`
       }
 
       .item-links{
-        font-family: "Figtree";
+        font-family: "Jost";
           font-style: normal;
           font-weight: 400;
           font-size: 18px !important;

@@ -11,7 +11,7 @@ const TemplateWrapper = styled.div`
       z-index: 33;
       .title {
         width: 150%;
-        font-family: "Figtree";
+        font-family: "Jost";
         font-style: normal;
         font-weight: 900;
         font-size: 70px;
@@ -31,7 +31,7 @@ const TemplateWrapper = styled.div`
       }
 
       .descr {
-        font-family: "Figtree";
+        font-family: "Jost";
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
@@ -48,7 +48,7 @@ const TemplateWrapper = styled.div`
       border-bottom: 1px solid #ffffff;
 
       h3 {
-        font-family: "Figtree";
+        font-family: "Jost";
         font-style: normal;
         font-weight: 700;
         font-size: 40px;
@@ -70,7 +70,7 @@ const TemplateWrapper = styled.div`
           padding: 0 30px;
           h5.title {
             margin: 10px 0;
-            font-family: "Figtree";
+            font-family: "Jost";
             font-style: normal;
             font-weight: 700;
             font-size: 32px;
@@ -79,7 +79,7 @@ const TemplateWrapper = styled.div`
           }
           p.descr {
             margin: 0;
-            font-family: "Figtree";
+            font-family: "Jost";
             font-style: normal;
             font-weight: 400;
             font-size: 14px;
@@ -98,7 +98,7 @@ const TemplateWrapper = styled.div`
       border-bottom: 1px solid #ffffff;
 
       h3 {
-        font-family: "Figtree";
+        font-family: "Jost";
         font-style: normal;
         font-weight: 700;
         font-size: 40px;
@@ -108,7 +108,7 @@ const TemplateWrapper = styled.div`
     }
     .descr {
       margin: 0;
-      font-family: "Figtree";
+      font-family: "Jost";
       font-style: normal;
       font-weight: 400;
       font-size: 18px;
@@ -167,7 +167,7 @@ const TemplateWrapper = styled.div`
         }
 
         h5 {
-          font-family: "Figtree";
+          font-family: "Jost";
           font-style: normal;
           font-weight: 900;
           font-size: 24px;
@@ -177,7 +177,7 @@ const TemplateWrapper = styled.div`
           margin: 50px 0 30px;
         }
         p {
-          font-family: "Figtree";
+          font-family: "Jost";
           font-style: normal;
           font-weight: 400;
           font-size: 16px;
@@ -194,7 +194,7 @@ const TemplateWrapper = styled.div`
         }
 
         .btn {
-          font-family: "Figtree";
+          font-family: "Jost";
           font-weight: 500;
           font-size: 16px;
           color: #fff !important;

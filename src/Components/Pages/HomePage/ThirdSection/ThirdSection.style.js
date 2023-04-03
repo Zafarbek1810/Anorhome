@@ -8,7 +8,7 @@ const ThirdSectionWrapper = styled.div`
     border-bottom: 1px solid #ffffff;
 
     h3 {
-      font-family: "Figtree";
+      font-family: "Jost";
       font-style: normal;
       font-weight: 700;
       font-size: 40px;
@@ -26,7 +26,7 @@ const ThirdSectionWrapper = styled.div`
       width: 40%;
 
       .subtitle {
-        font-family: "Figtree";
+        font-family: "Jost";
         font-style: normal;
         font-weight: 600;
         font-size: 18px;
@@ -36,7 +36,7 @@ const ThirdSectionWrapper = styled.div`
         margin-bottom: 15px;
       }
       .titles {
-        font-family: "Figtree";
+        font-family: "Jost";
         font-style: normal;
         font-weight: 900;
         font-size: 64px;
@@ -47,7 +47,7 @@ const ThirdSectionWrapper = styled.div`
         color: #ffffff;
       }
       .descr {
-        font-family: "Figtree";
+        font-family: "Jost";
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
@@ -65,7 +65,7 @@ const ThirdSectionWrapper = styled.div`
       }
 
       .btn {
-        font-family: "Figtree";
+        font-family: "Jost";
         font-weight: 500;
         font-size: 16px;
         color: #000;
@@ -156,7 +156,7 @@ const ThirdSectionWrapper = styled.div`
             align-items: center;
             height: 70px;
             width: 300px;
-            font-family: "Figtree";
+            font-family: "Jost";
             font-style: normal;
             font-weight: 400;
             font-size: 16px;
@@ -183,7 +183,7 @@ const ThirdSectionWrapper = styled.div`
             align-items: center;
             height: 70px;
             width: 300px;
-            font-family: "Figtree";
+            font-family: "Jost";
             font-style: normal;
             font-weight: 400;
             font-size: 16px;
@@ -217,7 +217,7 @@ const ThirdSectionWrapper = styled.div`
             align-items: center;
             height: 70px;
             width: 300px;
-            font-family: "Figtree";
+            font-family: "Jost";
             font-style: normal;
             font-weight: 400;
             font-size: 16px;
@@ -238,7 +238,7 @@ const ThirdSectionWrapper = styled.div`
 
             }
             display: flex;
-            font-family: "Figtree";
+            font-family: "Jost";
           }
         }
         .bottom2 {
@@ -254,7 +254,7 @@ const ThirdSectionWrapper = styled.div`
             align-items: center;
             height: 70px;
             width: 300px;
-            font-family: "Figtree";
+            font-family: "Jost";
             font-style: normal;
             font-weight: 400;
             font-size: 16px;
