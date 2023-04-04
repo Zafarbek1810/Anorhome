@@ -6,6 +6,7 @@ import { Checkbox, Input, message } from "antd";
 import Loading from "./Loading";
 import { useContextSelector } from "use-context-selector";
 import { ModalContext } from "../../../../Context/ModalContext/Context";
+import axios from "axios";
 
 const FormModal = () => {
   const {
@@ -22,8 +23,43 @@ const FormModal = () => {
     (state) => state[1]
   );
 
-  const onSubmit = async (values) => {
+  const onSubmit1 = async (values) => {
     console.log("yuborildi");
+  };
+
+  const onSubmit = async (values) => {
+    // console.log(values);
+    // setIsLoading(true);
+    // await axios
+    //   .post(`https://b24-sxb9n5.bitrix24.com/rest/1/03mqnsugxor1f48m/`, values)
+    //   .then((res) => {
+    //     setIsModalVisible(false);
+    //     reset();
+    //   })
+    //   .catch((err) => {
+    //     console.log(err);
+    //       setIsModalVisible(false);
+    //   });
+    // setIsLoading(false);
+
+    try {
+      const response = await axios.post(
+        'https://b24-sxb9n5.bitrix24.com/rest/1/ou1q9dnhfyrmdjja/crm.contact.get.json',
+        {
+          fields: {
+            PHONE: values.phone,
+          },
+        }
+      );
+  
+      console.log(response.data);
+  
+      // Display a success message to the user
+    } catch (error) {
+      console.error(error);
+  
+      // Display an error message to the user
+    }
   };
 
   return (
@@ -34,7 +70,6 @@ const FormModal = () => {
             <h3>Call Me Now!</h3>
             <label className="label">
               <span className="label-text">Phone Number</span>
-             
               <svg
                   width="13"
                   height="22"

@@ -1,6 +1,6 @@
 import React from "react";
 import { LoaderWrapper } from "./Loader.style";
-
+import LogoSvg from "../../Common/Svgs/LogoSvg"
 const Loader = ({loading2}) => {
   return (
     <LoaderWrapper style={{
@@ -24,6 +24,9 @@ const Loader = ({loading2}) => {
           <div class="inner"></div>
         </div>
       </div>
+        <div className="logo">
+        <LogoSvg/>
+        </div>
     </LoaderWrapper>
   );
 };

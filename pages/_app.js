@@ -6,8 +6,8 @@ import LanguageDetector from "i18next-browser-languagedetector";
 import HttpApi from "i18next-http-backend";
 import Modal from "../src/Components/Common/ContactModal";
 import { HeaderProvider } from '../src/Context/HeaderContext';
-import { ModalProvider } from '../src/Context/ModalContext/Context'; 
-import {  useState } from 'react';
+import { ModalProvider } from '../src/Context/ModalContext/Context';
+import { useState } from 'react';
 import Loader from '../src/Components/Common/Loader';
 import FormModal from "../src/Components/Common/ContactModal/FormModal";
 
@@ -42,7 +42,7 @@ i18n
   });
 
 
-function MyApp({ Component, pageProps }) { 
+function MyApp({ Component, pageProps }) {
   const [loading, setLoading] = useState(true)
   const [loading2, setLoading2] = useState(false)
 
@@ -53,7 +53,7 @@ function MyApp({ Component, pageProps }) {
   // }, [])
 
   useEffect(() => {
-    setTimeout(()=>{
+    setTimeout(() => {
       setTimeout(() => {
         setLoading(false);
       }, 1000);
@@ -67,20 +67,20 @@ function MyApp({ Component, pageProps }) {
   } = useTranslation();
 
   useEffect(() => {
-    i18n.changeLanguage(localStorage.getItem("siteLang")) || "ru"; 
+    i18n.changeLanguage(localStorage.getItem("siteLang")) || "ru";
   }, []);
 
   return (
-    <HeaderProvider>
-    <Component {...pageProps} />
-    {loading && <Loader loading2={loading2}/>}
-      <ModalProvider>
+    <ModalProvider>
+      <HeaderProvider>
+        <Component {...pageProps} />
+        {loading && <Loader loading2={loading2} />}
         <Modal>
           <FormModal />
         </Modal>
-      </ModalProvider>
-          <Script src="//code.jivosite.com/widget/guz7xA8JEU" async /> 
-    </HeaderProvider>
+        <Script src="//code.jivosite.com/widget/guz7xA8JEU" async />
+      </HeaderProvider>
+    </ModalProvider>
 
   )
 

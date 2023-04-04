@@ -21,6 +21,20 @@ const LoaderWrapper = styled.div`
     top: 45%;
     left: calc(50% - 50px);
   }
+
+  .logo{
+    width: 300px;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    svg{
+      path:last-child{
+        fill:white;
+        /* display:none; */
+      }
+    }
+  }
 /* rgb(237,50,64) */
   .circle {
     width: 100%;
@@ -35,7 +49,7 @@ const LoaderWrapper = styled.div`
     border-right: none;
     border-top: none;
     background-clip: padding;
-    box-shadow: inset 0px 0px 10px rgba(237,50,64, 0.15);
+    /* box-shadow: inset 0px 0px 10px rgba(237,50,64, 0.15); */
   }
 
   @-webkit-keyframes spin {
