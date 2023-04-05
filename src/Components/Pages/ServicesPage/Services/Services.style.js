@@ -157,6 +157,42 @@ const ServicesWrapper = styled.div`
       }
     }
   }
+
+  @media(max-width:1024px){
+    padding: 50px 0;
+    .top{
+      flex-direction:column;
+      text-align:center;
+      p{
+        width: 100%;
+      }
+      h4{
+        width: 100%;
+        text-align:center;
+      }
+    }
+
+    .wrapper{
+      .box{
+        flex-direction:column;
+        .col-1, .col-2, .col-3{
+          width: 100%;
+          margin-bottom:30px;
+          img{
+            transform:none !important;
+            height: 100%;
+          }
+        }
+
+        .col-3{
+          padding-left:0;
+          p{
+            margin-bottom:30px;
+          }
+        }
+      }
+    }
+  }
 `;
 
 export { ServicesWrapper };

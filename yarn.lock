@@ -325,6 +325,13 @@
     "@nodelib/fs.scandir" "2.1.5"
     "fastq" "^1.6.0"
 
+"@pbe/react-yandex-maps@^1.2.3":
+  "integrity" "sha512-haLhEym1eGNj67N44M2aKQHGKKufs+LzK4/n5XK4jBTr+LzO8zZSnsBbN0UsxzEFcRb8wh24qqDvOyxFuR1HGA=="
+  "resolved" "https://registry.npmjs.org/@pbe/react-yandex-maps/-/react-yandex-maps-1.2.3.tgz"
+  "version" "1.2.3"
+  dependencies:
+    "@types/yandex-maps" "2.1.29"
+
 "@pkgr/utils@^2.3.1":
   "integrity" "sha512-wfzX8kc1PMyUILA+1Z/EqoE4UCXGy0iRGMhPwdfae1+f0OXlLqCk+By+aMzgJBzR9AzS4CDizioG6Ss1gvAFJw=="
   "resolved" "https://registry.npmjs.org/@pkgr/utils/-/utils-2.3.1.tgz"
@@ -415,6 +422,11 @@
   "integrity" "sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ=="
   "resolved" "https://registry.npmjs.org/@types/json5/-/json5-0.0.29.tgz"
   "version" "0.0.29"
+
+"@types/yandex-maps@2.1.29":
+  "integrity" "sha512-nuibRWj3RU/9KXlCzTrRtDE+n6V9l7NbT9JakicqZ5OXIdwyb6blvV2Uwn6lB58WYm3DSUDP2I2AWlnWMc8z2w=="
+  "resolved" "https://registry.npmjs.org/@types/yandex-maps/-/yandex-maps-2.1.29.tgz"
+  "version" "2.1.29"
 
 "@typescript-eslint/parser@^5.42.0":
   "integrity" "sha512-ppvmeF7hvdhUUZWSd2EEWfzcFkjJzgNQzVST22nzg958CR+sphy8A6K7LXQZd6V75m1VKjp+J4g/PCEfSCmzhw=="

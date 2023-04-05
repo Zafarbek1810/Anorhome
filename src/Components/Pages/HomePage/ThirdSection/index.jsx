@@ -73,7 +73,7 @@ const ThirdSection = () => {
               tortor nulla quam arcu{" "}
             </p>
             <section data-aos={"fade-right"} class="buttons">
-              <MyLink to="/#" className="btn btn-4">
+              <MyLink to="/projects" className="btn btn-4">
                 <span>See All</span>
               </MyLink>
             </section>

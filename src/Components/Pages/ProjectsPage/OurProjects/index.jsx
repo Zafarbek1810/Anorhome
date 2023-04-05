@@ -3,6 +3,9 @@ import Container from "../../../Common/Container";
 import { OurProjectsWrapper } from "./OurProjects.style";
 import LocationSvg from "../../../Common/Svgs/LocationSvg";
 import CalendarSvg from "../../../Common/Svgs/CalendarSvg";
+import MyLink from "../../../Common/MyLink";
+import { Carousel } from "antd";
+import RightSvg from "../../../Common/Svgs/RightSvg";
 
 // import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -130,14 +133,10 @@ const OurProjects = () => {
               <div>
                 <h4 className="title">Our Completed Projects</h4>
                 <p className="heading">{data[selectedCardIndex].title}</p>
-                <p className="descr">
-                {data[selectedCardIndex].descr}
-                </p>
+                <p className="descr">{data[selectedCardIndex].descr}</p>
                 <div className="location">
                   <LocationSvg />
-                  <p>
-                  {data[selectedCardIndex].loc2}
-                  </p>
+                  <p>{data[selectedCardIndex].loc2}</p>
                 </div>
                 <div className="calendar">
                   <CalendarSvg /> <p>{data[selectedCardIndex].date}</p>
@@ -145,20 +144,28 @@ const OurProjects = () => {
 
                 <div className="galery">
                   <h5 className="title-img">Project Gallery</h5>
-                  <div className="imgs">
-                    <div className="img">
-                      <img src={data[selectedCardIndex].img1} alt="" />
+                  <Carousel
+                    pauseOnFocus={false}
+                    pauseOnHover={false}
+                    pauseOnDotsHover={false}
+                    className="carusel"
+                  >
+                    <div className="imgs">
+                      <div className="img">
+                        <img src={data[selectedCardIndex].img1} alt="" />
+                      </div>
+                      <div className="img">
+                        <img src={data[selectedCardIndex].img1} alt="" />
+                      </div>
+                      <div className="img">
+                        <img src={data[selectedCardIndex].img1} alt="" />
+                      </div>
+                      <div className="img">
+                        <img src={data[selectedCardIndex].img1} alt="" />
+                      </div>
                     </div>
-                    <div className="img">
-                      <img src={data[selectedCardIndex].img1} alt="" />
-                    </div>
-                    <div className="img">
-                      <img src={data[selectedCardIndex].img1} alt="" />
-                    </div>
-                    <div className="img">
-                      <img src={data[selectedCardIndex].img1} alt="" />
-                    </div>
-                  </div>
+                  </Carousel>
+                  <RightSvg/>
                 </div>
               </div>
             ) : (
