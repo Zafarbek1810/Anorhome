@@ -69,11 +69,11 @@ const Contact = () => {
             <YMaps>
               <Map width="100%" height="100%" defaultState={defaultState}>
                 <Placemark
-                  geometry={[41.324987, 69.320206]}
+                  geometry={[41.325177, 69.320278]}
                   options={{
                     iconLayout: "default#image",
                     iconImageSize: [50, 50],
-                    iconImageHref: "/images/logo2.png",
+                    iconImageHref: "/images/map3.png",
                     iconColor:"red"
                   }}
                 />

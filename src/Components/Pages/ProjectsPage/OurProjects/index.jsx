@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import Container from "../../../Common/Container";
 import { OurProjectsWrapper } from "./OurProjects.style";
 import LocationSvg from "../../../Common/Svgs/LocationSvg";
@@ -6,13 +6,12 @@ import CalendarSvg from "../../../Common/Svgs/CalendarSvg";
 import MyLink from "../../../Common/MyLink";
 import { Carousel } from "antd";
 import RightSvg from "../../../Common/Svgs/RightSvg";
-
-// import { Swiper, SwiperSlide } from "swiper/react";
-
-// import "swiper/css";
-// import "swiper/css/grid";
-// import "swiper/css/pagination";
-// import { Grid, Pagination } from "swiper";
+import ToRightSvg from "../../../Common/Svgs/ToRightSvg";
+import ToLeftSvg from "../../../Common/Svgs/ToLeftSvg";
+import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import { Navigation } from "swiper";
 
 const data = [
   {
@@ -123,6 +122,8 @@ const OurProjects = () => {
   function handleCardClick(index) {
     setSelectedCardIndex(index);
   }
+  const swiperRef = useRef();
+  const swiper = useSwiper();
 
   return (
     <OurProjectsWrapper>
@@ -144,28 +145,71 @@ const OurProjects = () => {
 
                 <div className="galery">
                   <h5 className="title-img">Project Gallery</h5>
-                  <Carousel
-                    pauseOnFocus={false}
-                    pauseOnHover={false}
-                    pauseOnDotsHover={false}
-                    className="carusel"
+                  <Swiper
+                    slidesPerView={2}
+                    spaceBetween={30}
+                    ref={swiperRef}
+                    loop={true}
+                    pagination={{
+                      clickable: true,
+                    }}
+                    navigation={{
+                      prevEl: ".prev",
+                      nextEl: ".next",
+                      clickable: true,
+                    }}
+                    modules={[Navigation]}
+                    className="mySwiper"
                   >
-                    <div className="imgs">
-                      <div className="img">
-                        <img src={data[selectedCardIndex].img1} alt="" />
+                    <SwiperSlide>
+                      <div className="imgs">
+                        <div className="img">
+                          <img src={data[selectedCardIndex].img1} alt="" />
+                        </div>
+                        <div className="img">
+                          <img src={data[selectedCardIndex].img1} alt="" />
+                        </div>
                       </div>
-                      <div className="img">
-                        <img src={data[selectedCardIndex].img1} alt="" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <div className="imgs">
+                        <div className="img">
+                          <img src={data[selectedCardIndex].img1} alt="" />
+                        </div>
+                        <div className="img">
+                          <img src={data[selectedCardIndex].img1} alt="" />
+                        </div>
                       </div>
-                      <div className="img">
-                        <img src={data[selectedCardIndex].img1} alt="" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <div className="imgs">
+                        <div className="img">
+                          <img src={data[selectedCardIndex].img1} alt="" />
+                        </div>
+                        <div className="img">
+                          <img src={data[selectedCardIndex].img1} alt="" />
+                        </div>
                       </div>
-                      <div className="img">
-                        <img src={data[selectedCardIndex].img1} alt="" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <div className="imgs">
+                        <div className="img">
+                          <img src={data[selectedCardIndex].img1} alt="" />
+                        </div>
+                        <div className="img">
+                          <img src={data[selectedCardIndex].img1} alt="" />
+                        </div>
                       </div>
-                    </div>
-                  </Carousel>
-                  <RightSvg/>
+                    </SwiperSlide>
+                  </Swiper>
+                  <div className="btns">
+                    <button className="prev">
+                      <ToLeftSvg />
+                    </button>
+                    <button className="next">
+                      <ToRightSvg />
+                    </button>
+                  </div>
                 </div>
               </div>
             ) : (
