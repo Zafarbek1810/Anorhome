@@ -10,6 +10,15 @@ const OurProjectsWrapper = styled.div`
     margin-left: auto;
     margin-right: auto;
   }
+  .swiper-wrapper{
+    padding-bottom:15px;
+  }
+  .swiper-pagination-horizontal{
+    transform:translateY(10px) !important;
+  }
+  .swiper-pagination-bullet-active{
+    background: #ED3240;
+  }
 
   .swiper-slide {
     text-align: center;
@@ -106,7 +115,10 @@ const OurProjectsWrapper = styled.div`
 
         .btns{
          display: flex;
+         transform: translateY(-15px);
          justify-content:end;
+         position:relative;
+         z-index:33;
          button{
           background: transparent;
           border: none;
@@ -198,6 +210,7 @@ const OurProjectsWrapper = styled.div`
               display: flex;
               align-items: center;
               p {
+                margin-left:10px;
                 font-family: "Jost";
                 font-style: normal;
                 font-weight: 600;
