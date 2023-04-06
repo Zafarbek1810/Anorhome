@@ -3,7 +3,8 @@ import useScrollPosition from "../../../../Hooks/useScrollPosition";
 import MyLink from "../../../Common/MyLink";
 import { ServicesWrapper } from "./Services.style";
 import { useRouter } from "next/router";
-
+import useWindowDimensions from "../../../../Hooks/useWindow";
+import AOS from "aos";
 const data = [
   {
     id: "1",
@@ -55,29 +56,39 @@ const Services = () => {
 
     const pos = useScrollPosition(-0.07); //scrollY * 0.5
 
+    const { height: scrollY, width: clientWidth } = useWindowDimensions();
+
+
 
     useEffect(()=>{
-        console.log(window.scrollY);
+        console.log(scrollY);
+        console.log(clientWidth);
+        
     },[])
 
-    console.log(router);
+    useEffect(() => {
+      AOS.init({ duration: 1500, once: true });
+      AOS.refresh();
+      
+    }, []);
+
 
   return (
     <ServicesWrapper>
-      <div className="top">
+      <div className="top" data-aos={"fade-up"}>
         <p>Find us at some of the coolest cities across the globe.</p>
         <h4>Anorhome Services</h4>
       </div>
 
       <div className="wrapper">
         {data.map((v,i)=>(
-        <div className="box" key={i}>
+        <div className="box" key={i} data-aos={"fade-up"}>
           <div className="col-1">
             <span>{v.span}</span>
             <p>{v.p1}</p>
           </div>
           <div className="col-2" >
-            <img src={v.img} alt="" style={{ transform: `translateY(${pos}px)` }} ref={imgRef}/>
+            <img src={v.img} alt="" style={{ transform: `translateY(${pos}px` }} ref={imgRef}/>
           </div>
           <div className="col-3">
             <p>

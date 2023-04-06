@@ -104,11 +104,21 @@ const OurProjectsWrapper = styled.div`
           color: #161a1d;
         }
 
+        .btns{
+         display: flex;
+         justify-content:end;
+         button{
+          background: transparent;
+          border: none;
+          &:hover{
+            cursor: pointer;
+          }
+         }
+        }
+
         .imgs {
-          display: flex;
-          flex-wrap: wrap;
           .img {
-            width: 50%;
+            width: 100%;
             padding: 5px;
             img {
               width: 100%;
@@ -213,6 +223,23 @@ const OurProjectsWrapper = styled.div`
           }
         }
       }
+    }
+  }
+
+  @media(max-width:870px){
+    .wrapper{
+      flex-direction:column-reverse;
+
+      .left{
+        width: 100%;
+        border: none;
+      }
+
+      .right{
+        width: 100%;
+        height:300px;
+      }
+      
     }
   }
 `;

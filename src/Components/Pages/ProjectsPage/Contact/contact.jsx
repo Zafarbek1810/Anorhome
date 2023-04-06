@@ -6,6 +6,7 @@ import BuildingSvg from "../../../Common/Svgs/BuildingSvg";
 import EmailSvg from "../../../Common/Svgs/EmailSvg";
 import { ContactWrappper } from "./contact.style";
 import MyLink from "../../../Common/MyLink";
+import { Map, Placemark, YMaps } from "@pbe/react-yandex-maps";
 
 const Contact = () => {
 
@@ -13,7 +14,10 @@ const Contact = () => {
     AOS.init({ duration: 1500, once: true  });
     AOS.refresh();
   }, []);
-
+  const defaultState = {
+    center: [41.324987, 69.320206],
+    zoom: 17,
+  };
   return (
     <ContactWrappper>
       <div data-aos={"fade-in"} className="title">
@@ -55,13 +59,19 @@ const Contact = () => {
             </div>
           </div>
           <div className="contact__map">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1498.1239378953987!2d69.320297!3d41.325223!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef4ef744f17c9%3A0x2985e04e95ecf63!2s67%20Mustaqillik%20Ave%2C%20Tashkent%2C%20Uzbekistan!5e0!3m2!1sen!2sus!4v1679046025301!5m2!1sen!2sus"
-              width="100%"
-              height="500px"
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
+          <YMaps>
+              <Map width="100%" height="100%" defaultState={defaultState}>
+                <Placemark
+                  geometry={[41.325177, 69.320278]}
+                  options={{
+                    iconLayout: "default#image",
+                    iconImageSize: [50, 50],
+                    iconImageHref: "/images/map3.png",
+                    iconColor:"red"
+                  }}
+                />
+              </Map>
+            </YMaps>
           </div>
         </div>
       </Container>

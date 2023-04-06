@@ -3,6 +3,18 @@ import styled from "styled-components";
 const ContactWrappper = styled.div`
 padding-bottom: 40px;
   background: #fff;
+  .pharmacies_placemarket {
+  background: #baadf3;
+  box-shadow: 0 12px 16px #1c009833;
+  border: 2px solid #cec4fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 5px 10px;
+  width: 40px;
+}
   .title {
     border-top: 1px solid #161a1d;
     border-bottom: 1px solid #161a1d;
@@ -25,7 +37,7 @@ padding-bottom: 40px;
     &__info {
       background: #161a1d;
       width: 30%;
-      padding: 40px;
+      padding:20px 40px;
     }
     &__box {
       padding-bottom: 40px;
