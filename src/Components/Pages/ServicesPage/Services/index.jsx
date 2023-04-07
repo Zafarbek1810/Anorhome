@@ -44,26 +44,21 @@ const data = [
 ];
 
 const Services = () => {
-    const imgRef =useRef()
-    const router =useRouter();
+  const router = useRouter();
 
-    const pos = useScrollPosition(-0.09); //scrollY * 0.5
+  const pos = useScrollPosition(-0.07); //scrollY * 0.5
 
-    const { height: scrollY, width: clientWidth } = useWindowDimensions();
+  const { height: scrollY, width: clientWidth } = useWindowDimensions();
 
+  useEffect(() => {
+    console.log(scrollY);
+    console.log(clientWidth);
+  }, []);
 
-
-    useEffect(()=>{
-        console.log(scrollY);
-        console.log(clientWidth);
-    },[])
-
-    useEffect(() => {
-      AOS.init({ duration: 1500, once: true });
-      AOS.refresh();
-      
-    }, []);
-
+  useEffect(() => {
+    AOS.init({ duration: 1500, once: true });
+    AOS.refresh();
+  }, []);
 
   return (
     <ServicesWrapper>
@@ -73,24 +68,20 @@ const Services = () => {
       </div>
 
       <div className="wrapper">
-        {data.map((v,i)=>(
-        <div className="box" key={i} data-aos={"fade-up"}>
-          <div className="col-1">
-            <span>{v.span}</span>
-            <p>{v.p1}</p>
-          </div>
-          <div className="col-2" >
-            <img src={v.img} alt="" style={{ transform: `translateY(${pos}px` }} ref={imgRef}/>
-          </div>
-          <div className="col-3">
-            <p>
-             {v.p2}
-            </p>
-            <div className="btn">
-              <MyLink to={`/serviceDetail?id=${v.id}`}>Learn More</MyLink>
+        {data.map((v, i) => (
+          <div className="box" key={i} data-aos={"fade-up"}>
+            <div className="col-1">
+              <span>{v.span}</span>
+              <p>{v.p1}</p>
+            </div>
+            <div className="col-2">{<ImgParalax v={v} pos={pos} />}</div>
+            <div className="col-3">
+              <p>{v.p2}</p>
+              <div className="btn">
+                <MyLink to={`/serviceDetail?id=${v.id}`}>Learn More</MyLink>
+              </div>
             </div>
           </div>
-        </div>
         ))}
       </div>
     </ServicesWrapper>
@@ -98,3 +89,25 @@ const Services = () => {
 };
 
 export default Services;
+
+function ImgParalax({ v, pos }) {
+  const imgRef = useRef();
+
+  const elDistanceToTop =
+    window.pageYOffset + imgRef.current?.getBoundingClientRect().top;
+
+  const isVisibleOnScreen = pos + window.innerHeight > elDistanceToTop;
+  const num = pos + window.innerHeight - elDistanceToTop;
+
+  return (
+    <img
+      src={v.img}
+      alt=""
+      style={{
+        transform: isVisibleOnScreen ? `translateY(${num * -0.2}px` : "",
+        transition: "all 0.2s ease",
+      }}
+      ref={imgRef}
+    />
+  );
+}

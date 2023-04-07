@@ -73,7 +73,7 @@ const Contact = () => {
                   options={{
                     iconLayout: "default#image",
                     iconImageSize: [50, 50],
-                    iconImageHref: "/images/map3.png",
+                    iconImageHref: "/images/map.svg",
                     iconColor:"red"
                   }}
                 />

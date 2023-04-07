@@ -15,7 +15,7 @@ const TemplateWrapper = styled.div`
         font-style: normal;
         font-weight: 900;
         font-size: 70px;
-        line-height: 84px;
+        line-height: 74px;
         letter-spacing: 0.1em;
         color: #ffffff;
       }

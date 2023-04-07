@@ -1,6 +1,6 @@
-import {useState, useEffect} from 'react';
+import { useState, useEffect } from 'react';
 
-export default function useScrollPosition(scrollFactor=0) {
+export default function useScrollPosition(scrollFactor = 0) {
   const [position, setPosition] = useState(0);
 
   function onScroll() {
@@ -14,6 +14,8 @@ export default function useScrollPosition(scrollFactor=0) {
     };
   }, []);
 
+  console.log(position);
 
-  return position*scrollFactor;
+
+  return position;
 }
