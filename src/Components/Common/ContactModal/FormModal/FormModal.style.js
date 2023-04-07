@@ -5,7 +5,7 @@ const FormModalWrapper = styled.div`
 
   .form-wrapper {
     h3 {
-      font-family: "Jost";
+      font-family: "Mulish";
       font-style: normal;
       font-weight: 700;
       font-size: 36px;
@@ -20,7 +20,7 @@ const FormModalWrapper = styled.div`
       position: relative;
 
       .label-text {
-        font-family: "Jost";
+        font-family: "Mulish";
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
@@ -34,7 +34,7 @@ const FormModalWrapper = styled.div`
         width: 70%;
         padding: 11px 0 11px 50px;
 
-        font-family: "Jost";
+        font-family: "Mulish";
         font-style: normal;
         font-weight: 600;
         font-size: 16px;
@@ -64,7 +64,7 @@ const FormModalWrapper = styled.div`
       }
 
       .btn {
-        font-family: "Jost";
+        font-family: "Mulish";
         font-weight: 500;
         font-size: 16px;
         color: #fff !important;

@@ -64,7 +64,7 @@ const BannerWrapper = styled.div`
       justify-content: center;
 
       .title {
-        font-family: "Jost";
+        font-family: "Mulish";
         font-style: normal;
         font-weight: 900;
         font-size: 70px;
@@ -79,7 +79,7 @@ const BannerWrapper = styled.div`
       }
 
       .descr {
-        font-family: "Jost";
+        font-family: "Mulish";
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
@@ -100,7 +100,7 @@ const BannerWrapper = styled.div`
       }
 
       .btn {
-        font-family: "Jost";
+        font-family: "Mulish";
         font-weight: 500;
         font-size: 16px;
         color: #fff;

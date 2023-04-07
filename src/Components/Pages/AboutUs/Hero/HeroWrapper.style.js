@@ -34,7 +34,7 @@ const HeroWrapper = styled.div`
     width: 50%;
     padding-right: 50px;
     h2 {
-      font-family: "Jost";
+      font-family: "Mulish";
       font-style: normal;
       font-weight: 900;
       font-size: 70px;
@@ -43,7 +43,7 @@ const HeroWrapper = styled.div`
       margin: 0;
     }
     p {
-      font-family: "Jost";
+      font-family: "Mulish";
       font-style: normal;
       font-weight: 400;
       font-size: 16px;
@@ -76,7 +76,7 @@ const HeroWrapper = styled.div`
       transform: translateY(-140px) translateX(-120px);
 
       h3 {
-        font-family: "Jost";
+        font-family: "Mulish";
         font-style: normal;
         font-weight: 800;
         font-size: 24px;
@@ -85,7 +85,7 @@ const HeroWrapper = styled.div`
         color: #000;
       }
       p {
-        font-family: "Jost";
+        font-family: "Mulish";
         font-style: normal;
         font-weight: 400;
         font-size: 12px;
@@ -116,7 +116,7 @@ const HeroWrapper = styled.div`
       transform: translateY(100px) translateX(-5px);
 
       h3 {
-        font-family: "Jost";
+        font-family: "Mulish";
         font-style: normal;
         font-size: 24px;
         line-height: 9px;
@@ -124,7 +124,7 @@ const HeroWrapper = styled.div`
         color: #fff;
       }
       p {
-        font-family: "Jost";
+        font-family: "Mulish";
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
@@ -155,7 +155,7 @@ const HeroWrapper = styled.div`
       transform: translateY(50px) translateX(-10px);
 
       h3 {
-        font-family: "Jost";
+        font-family: "Mulish";
         font-style: normal;
         font-weight: 800;
         font-size: 24px;
@@ -164,7 +164,7 @@ const HeroWrapper = styled.div`
         color: #000;
       }
       p {
-        font-family: "Jost";
+        font-family: "Mulish";
         font-style: normal;
         font-weight: 400;
         font-size: 12px;
@@ -195,7 +195,7 @@ const HeroWrapper = styled.div`
       transform: translateY(-165px) translateX(-80px);
 
       h3 {
-        font-family: "Jost";
+        font-family: "Mulish";
         font-style: normal;
         font-size: 24px;
         line-height: 5px;
@@ -203,7 +203,7 @@ const HeroWrapper = styled.div`
         color: #fff;
       }
       p {
-        font-family: "Jost";
+        font-family: "Mulish";
         font-style: normal;
         font-weight: 400;
         font-size: 14px;

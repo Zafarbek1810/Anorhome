@@ -8,7 +8,7 @@ const TestimionalsWrapper = styled.div`
     border-bottom: 1px solid #161a1d;
 
     h3 {
-      font-family: "Jost";
+      font-family: "Mulish";
       font-style: normal;
       font-weight: 700;
       font-size: 40px;

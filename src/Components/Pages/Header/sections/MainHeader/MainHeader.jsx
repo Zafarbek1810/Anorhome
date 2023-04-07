@@ -15,23 +15,6 @@ import i18next from "i18next";
 
 export const LINKS = [
   {
-    name: "Services",
-    path: "/services",
-    id: 2,
-  },
-  {
-    name: "About Us",
-    path: "/about",
-    id: 3,
-  },
-  {
-    name: "Projects",
-    path: "/projects",
-    id: 4,
-  },
-];
-export const LINKS2 = [
-  {
     name: "Home",
     path: "/",
     id: 1,
@@ -48,16 +31,14 @@ export const LINKS2 = [
   },
   {
     name: "Projects",
-    path: "/",
+    path: "/projects",
     id: 4,
   },
 ];
 
 const MainHeader = ({ isFixed }) => {
-
   const { t, i18n } = useTranslation();
-  const defaultLang = i18next.language; 
-
+  const defaultLang = i18next.language;
 
   const [header, setHeader] = useState("header");
   const { burger, handleBurger, setBurger } = useContext(HeaderContext);
@@ -96,7 +77,7 @@ const MainHeader = ({ isFixed }) => {
     localStorage.setItem("siteLang", e);
     i18n.changeLanguage(e);
   };
-  
+
   const activePath = router.pathname;
 
   const setIsModalVisible = useContextSelector(
@@ -104,80 +85,48 @@ const MainHeader = ({ isFixed }) => {
     (state) => state[1]
   );
 
-
   return (
     <MainHeaderWrapper ref={ref} isFixed={isFixed}>
       <div className={`content ${header}`}>
         <div className="logo">
           <MyLink to="/#" onClick={() => setBurger((p) => !p)}>
-            <LogoSvg/>
-            {/* <img
-              src={
-                width > 991
-                  ? header !== "header"
-                    ? `/images/logo.png`
-                    : isFixed
-                    ? `/images/logo.png`
-                    : `/images/logo.png`
-                  : `/images/logo.png`
-              }
-              width={100}
-              height={72}
-            /> */}
+            <LogoSvg />
           </MyLink>
         </div>
         <div className="navbar-wrapper">
           <ul className="links_cont">
-            {router.pathname === "/" ? (
-              LINKS.map(({ name, path, id }) => (
-                <li key={id}>
-                  <MyLink to={path}>
-                    <div className="navs">
-                      <p>{name}</p>
-                    </div>
-                  </MyLink>
-                </li>
-              ))
-            ) : (
-              <>
-                <li>
-                  <NavLink
-                    activePath={activePath}
-                    to="/"
-                    className="item-links"
-                  >
-                    Home
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink
-                    activePath={activePath}
-                    to="/services"
-                    className="item-links"
-                  >
-                    Services
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink
-                    activePath={activePath}
-                    to="/about"
-                    className="item-links"
-                  >
-                    About Us
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink
-                    activePath={activePath}
-                    to="/projects"
-                    className="item-links"
-                  >
-                    Projects
-                  </NavLink>
-                </li>
-              </>
-            )}
+            <li>
+              <NavLink activePath={activePath} to="/" className="item-links">
+                Home
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                activePath={activePath}
+                to="/services"
+                className="item-links"
+              >
+                Services
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                activePath={activePath}
+                to="/about"
+                className="item-links"
+              >
+                About Us
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                activePath={activePath}
+                to="/projects"
+                className="item-links"
+              >
+                Projects
+              </NavLink>
+            </li>
           </ul>
         </div>
 
@@ -219,9 +168,12 @@ const MainHeader = ({ isFixed }) => {
 
         <div className="callBtn">
           <section class="buttons">
-            <button className="btn btn-4" onClick={() => {
-            setIsModalVisible((p) => !p);
-          }}>
+            <button
+              className="btn btn-4"
+              onClick={() => {
+                setIsModalVisible((p) => !p);
+              }}
+            >
               <span>Call Me Now!</span>
             </button>
           </section>

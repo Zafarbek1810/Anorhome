@@ -7,7 +7,7 @@ const BurgerWrapper = styled.div`
       a {
         color: #000;
         font-size: 18px !important;
-        font-family: 'Jost';
+        font-family: 'Mulish';
         font-weight: 700;
         transition: 300ms;
 
@@ -25,7 +25,7 @@ const BurgerWrapper = styled.div`
       .ant-select-selector {
         border: none !important;
         background-color: transparent !important;
-        font-family: "Jost" !important;
+        font-family: "Mulish" !important;
         font-style: normal !important;
         font-weight: 700 !important;
         font-size: 15px !important;
@@ -62,7 +62,7 @@ const BurgerWrapper = styled.div`
       }
 
       .btn {
-        font-family: "Jost";
+        font-family: "Mulish";
         font-weight: 500;
         font-size: 16px;
         color: #fff !important;

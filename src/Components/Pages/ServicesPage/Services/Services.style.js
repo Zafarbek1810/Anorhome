@@ -17,7 +17,7 @@ const ServicesWrapper = styled.div`
     p {
       margin: 0;
       width: 30%;
-      font-family: "Jost";
+      font-family: "Mulish";
       font-style: normal;
       font-weight: 700;
       font-size: 24px;
@@ -30,7 +30,7 @@ const ServicesWrapper = styled.div`
       margin: 0;
       width: 60%;
       text-align: end;
-      font-family: "Jost";
+      font-family: "Mulish";
       font-style: normal;
       font-weight: 900;
       font-size: 56px;
@@ -42,14 +42,14 @@ const ServicesWrapper = styled.div`
 
   .wrapper {
       .box {
-        padding: 40px;
+        padding: 40px 20px;
         display: flex;
         border-bottom: 1px solid #ffffff;
       .col-1 {
-        width: 25%;
+        width: 27%;
         position: relative;
         span {
-          font-family: "Jost";
+          font-family: "Mulish";
           font-style: normal;
           font-weight: 800;
           font-size: 128px;
@@ -59,7 +59,7 @@ const ServicesWrapper = styled.div`
         }
 
         p {
-          font-family: "Jost";
+          font-family: "Mulish";
           font-style: normal;
           font-weight: 800;
           font-size: 36px;
@@ -72,7 +72,7 @@ const ServicesWrapper = styled.div`
         }
       }
       .col-2 {
-        width: 37.5%;
+        width: 37%;
         height: 350px;
         padding: 0 30px;
         overflow: hidden;
@@ -87,13 +87,13 @@ const ServicesWrapper = styled.div`
       }
 
       .col-3 {
-        width: 37.5%;
+        width: 37%;
         padding-left: 50px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         p {
-          font-family: "Jost";
+          font-family: "Mulish";
           font-style: normal;
           font-weight: 400;
           font-size: 16px;
@@ -110,7 +110,7 @@ const ServicesWrapper = styled.div`
             width: 100%;
             background-color: #fff;
             color: #fe152b;
-            font-family: "Jost";
+            font-family: "Mulish";
             font-style: normal;
             font-weight: 500;
             font-size: 16px;
@@ -159,7 +159,7 @@ const ServicesWrapper = styled.div`
   }
 
   @media(max-width:1024px){
-    padding: 50px 0;
+    padding: 50px 10px;
     .top{
       flex-direction:column;
       text-align:center;

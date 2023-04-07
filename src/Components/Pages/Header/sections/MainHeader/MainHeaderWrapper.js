@@ -92,7 +92,7 @@ const MainHeaderWrapper = styled.div`
       .ant-select-selector {
         border: none !important;
         background-color: transparent !important;
-        font-family: "Jost" !important;
+        font-family: "Mulish" !important;
         font-style: normal !important;
         font-weight: 700 !important;
         font-size: 15px !important;
@@ -125,7 +125,7 @@ const MainHeaderWrapper = styled.div`
       }
 
       .btn {
-        font-family: "Jost";
+        font-family: "Mulish";
         font-weight: 500;
         font-size: 16px;
         color: #fff;
@@ -226,13 +226,13 @@ const MainHeaderWrapper = styled.div`
     }
 
     .links_cont {
-      
+      margin-left: 30px;
       a.active{
         color: #fe152b !important;
       }
       .navs {
         p {
-          font-family: "Jost";
+          font-family: "Mulish";
           font-style: normal;
           font-weight: 400;
           font-size: 18px !important;
@@ -242,7 +242,7 @@ const MainHeaderWrapper = styled.div`
       }
 
       .item-links{
-        font-family: "Jost";
+        font-family: "Mulish";
           font-style: normal;
           font-weight: 400;
           font-size: 18px !important;
@@ -256,7 +256,7 @@ const MainHeaderWrapper = styled.div`
           }
       }
       .active-item-link{
-        font-weight: 600 !important;
+        font-weight: 400 !important;
         color: #fe152b !important;
       }
     }
@@ -273,7 +273,7 @@ const MainHeaderWrapper = styled.div`
     }
   }
   .header2 {
-    background-color: #fff;
+    background-color: #fff !important;
     position: fixed !important;
     top: 0;
     left: 0;
@@ -288,10 +288,14 @@ const MainHeaderWrapper = styled.div`
       display: flex;
       align-items: center;
 
+      .ant-select-single.ant-select-open .ant-select-selection-item{
+        color: #fff !important;
+      }
+
       .ant-select-selector {
         border: none !important;
         background-color: transparent !important;
-        font-family: "Jost" !important;
+        font-family: "Mulish" !important;
         font-style: normal !important;
         font-weight: 700 !important;
         font-size: 15px !important;
@@ -321,7 +325,7 @@ const MainHeaderWrapper = styled.div`
       }
 
       .btn {
-        font-family: "Jost";
+        font-family: "Mulish";
         font-weight: 500;
         font-size: 16px;
         color: #fff !important;
@@ -367,7 +371,7 @@ const MainHeaderWrapper = styled.div`
     }
 
     p {
-      font-family: "Jost";
+      font-family: "Mulish";
       font-style: normal;
       font-weight: 400;
       font-size: 18px !important;
@@ -398,13 +402,12 @@ const MainHeaderWrapper = styled.div`
     }
 
     .links_cont {
-      
       a.active{
         color: #fe152b !important;
       }
       .navs {
         p {
-          font-family: "Jost";
+          font-family: "Mulish";
           font-style: normal;
           font-weight: 400;
           font-size: 18px !important;
@@ -414,7 +417,7 @@ const MainHeaderWrapper = styled.div`
       }
 
       .item-links{
-        font-family: "Jost";
+        font-family: "Mulish";
           font-style: normal;
           font-weight: 400;
           font-size: 18px !important;
@@ -428,7 +431,7 @@ const MainHeaderWrapper = styled.div`
           }
       }
       .active-item-link{
-        font-weight: 600 !important;
+        font-weight: 400 !important;
         color: #fe152b !important;
       }
     }
@@ -454,7 +457,7 @@ const MainHeaderWrapper = styled.div`
       display: flex;
       justify-content: center;
       margin: 0;
-      width: 70%;
+      width: 100%;
 
       li {
         list-style: none;

@@ -34,13 +34,15 @@ const OurProjectsWrapper = styled.div`
 
   .wrapper {
     display: flex;
+    height: 1500px;
     .left {
+      background-color: #fff;
       width: 50%;
       padding-right: 40px;
       border-right: 1px solid #d9d9d9;
 
       .title {
-        font-family: "Jost";
+        font-family: "Mulish";
         font-style: normal;
         font-weight: 700;
         font-size: 40px;
@@ -50,7 +52,7 @@ const OurProjectsWrapper = styled.div`
       }
 
       .heading {
-        font-family: "Jost";
+        font-family: "Mulish";
         font-style: normal;
         font-weight: 700;
         font-size: 32px;
@@ -59,7 +61,7 @@ const OurProjectsWrapper = styled.div`
       }
 
       .descr {
-        font-family: "Jost";
+        font-family: "Mulish";
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
@@ -76,7 +78,7 @@ const OurProjectsWrapper = styled.div`
         }
 
         p {
-          font-family: "Jost";
+          font-family: "Mulish";
           font-style: normal;
           font-weight: 600;
           font-size: 16px;
@@ -93,7 +95,7 @@ const OurProjectsWrapper = styled.div`
           margin-right: 24px;
         }
         p {
-          font-family: "Jost";
+          font-family: "Mulish";
           font-style: normal;
           font-weight: 600;
           font-size: 16px;
@@ -104,7 +106,7 @@ const OurProjectsWrapper = styled.div`
 
       .galery {
         .title-img {
-          font-family: "Jost";
+          font-family: "Mulish";
           font-style: normal;
           font-weight: 600;
           font-size: 20px;
@@ -143,9 +145,10 @@ const OurProjectsWrapper = styled.div`
     }
     .right {
       width: 50%;
-      height: 200vh;
+      height: 100%;
       overflow-y: scroll;
       padding: 40px;
+      background-color: #fff;
 
       ::-webkit-scrollbar {
         width: 6px !important;
@@ -188,7 +191,7 @@ const OurProjectsWrapper = styled.div`
 
             h6 {
               margin: 0;
-              font-family: "Jost";
+              font-family: "Mulish";
               font-style: normal;
               font-weight: 600;
               font-size: 20px;
@@ -198,7 +201,7 @@ const OurProjectsWrapper = styled.div`
             }
 
             p {
-              font-family: "Jost";
+              font-family: "Mulish";
               font-style: normal;
               font-weight: 400;
               font-size: 14px;
@@ -211,7 +214,7 @@ const OurProjectsWrapper = styled.div`
               align-items: center;
               p {
                 margin-left:10px;
-                font-family: "Jost";
+                font-family: "Mulish";
                 font-style: normal;
                 font-weight: 600;
                 font-size: 14px;
@@ -242,17 +245,51 @@ const OurProjectsWrapper = styled.div`
   @media(max-width:870px){
     .wrapper{
       flex-direction:column-reverse;
-
       .left{
         width: 100%;
         border: none;
+        padding: 0;
       }
 
       .right{
         width: 100%;
         height:300px;
+        padding: 0;
+
+        .cards{
+          height: 300px !important;
+
+          .card{
+            width: 100% !important;
+          }
+        }
       }
       
+    }
+  }
+  @media(max-width: 745px){
+    .wrapper{
+      height: 1600px;
+    }
+  }
+  @media(max-width: 620px){
+    .wrapper{
+      height: 1700px;
+    }
+  }
+  @media(max-width: 520px){
+    .wrapper{
+      height: 1800px;
+    }
+  }
+  @media(max-width: 454px){
+    .wrapper{
+      height: 1900px;
+    }
+  }
+  @media(max-width: 375px){
+    .wrapper{
+      height: 1980px;
     }
   }
 `;
