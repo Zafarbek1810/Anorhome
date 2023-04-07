@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import useScrollPosition from "../../../../Hooks/useScrollPosition";
 import MyLink from "../../../Common/MyLink";
 import { ServicesWrapper } from "./Services.style";
@@ -92,12 +92,20 @@ export default Services;
 
 function ImgParalax({ v, pos }) {
   const imgRef = useRef();
+  const [num, setNum] = useState(0);
+  const [isVisibleOnScreen, setIsVisibleOnScreen] = useState(false);
 
-  const elDistanceToTop =
-    window.pageYOffset + imgRef.current?.getBoundingClientRect().top;
+  // if (typeof window === undefined) {
+  //   var window = {};
+  // } else {
+  //   window = window;
+  // }
 
-  const isVisibleOnScreen = pos + window.innerHeight > elDistanceToTop;
-  const num = pos + window.innerHeight - elDistanceToTop;
+  useEffect(() => {
+    const elDistanceToTop =  window?.pageYOffset + imgRef.current?.getBoundingClientRect().top;
+    setIsVisibleOnScreen(pos + window?.innerHeight > elDistanceToTop);
+    setNum(pos + window?.innerHeight - elDistanceToTop);
+  }, [pos]);
 
   return (
     <img

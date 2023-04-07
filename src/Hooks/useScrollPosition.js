@@ -14,8 +14,6 @@ export default function useScrollPosition(scrollFactor = 0) {
     };
   }, []);
 
-  console.log(position);
-
 
   return position;
 }
