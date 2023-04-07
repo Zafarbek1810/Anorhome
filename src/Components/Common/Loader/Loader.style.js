@@ -45,7 +45,7 @@ const LoaderWrapper = styled.div`
     width: 100%;
     height: 100%;
     border-radius: 100%;
-    border: 10px solid rgba(237,50,64, 0.7);
+    border: 7px solid rgba(237,50,64, 0.9);
     border-right: none;
     border-top: none;
     background-clip: padding;

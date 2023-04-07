@@ -56,7 +56,7 @@ function MyApp({ Component, pageProps }) {
     setTimeout(() => {
       setTimeout(() => {
         setLoading(false);
-      }, 1000);
+      }, 1500);
       setLoading2(true);
     }, 1500)
   }, [])

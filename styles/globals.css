@@ -23,7 +23,13 @@ a {
 .header2 .ant-select-selection-item{
   color: #000 !important;
 }
-
+.header .ant-select-selection-item{
+  color: #fff !important;
+  border: none !important;
+}
+.header2 .lang .ant-select-single.ant-select-open .ant-select-selection-item{
+  color: #FE152B !important;
+}
 .ant-select-item-option-selected{
   background: none !important;
   color: #FE152B !important;

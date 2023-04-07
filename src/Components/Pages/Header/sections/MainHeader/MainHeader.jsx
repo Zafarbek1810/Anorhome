@@ -137,6 +137,7 @@ const MainHeader = ({ isFixed }) => {
             placeholder="Lang"
             id="lang"
             value={defaultLang}
+            getPopupContainer={trigger => trigger.parentElement}
             style={{
               width: 80,
             }}
@@ -165,6 +166,14 @@ const MainHeader = ({ isFixed }) => {
             ]}
           />
         </div>
+        {/* <div className="sel">
+        <GlobeSvg />
+          <select class="form-select" aria-label="Default select example">
+            <option value="1">ENG</option>
+            <option value="2">RUS</option>
+            <option value="3">UZB</option>
+          </select>
+        </div> */}
 
         <div className="callBtn">
           <section class="buttons">

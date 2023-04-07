@@ -76,13 +76,40 @@ const MainHeaderWrapper = styled.div`
       }
     }
 
+    .sel{
+      display: flex;
+      align-items: center;
+      svg {
+        width: 30px;
+        fill: #fff;
+      }
+
+      select{
+        border: none !important;
+        background-color: transparent !important;
+        font-family: "Mulish" !important;
+        font-style: normal !important;
+        font-weight: 700 !important;
+        font-size: 15px !important;
+        line-height: 18px !important;
+        color: #ffffff !important;
+        padding: 5px 10px !important;
+        
+      }
+
+      option{
+        background-color: #fff;
+        color: red !important;
+      }
+    }
+
     .lang {
       display: flex;
       align-items: center;
       
 
      .ant-select-dropdown{
-      z-index:9999 !important;
+      z-index:99999 !important;
         border-radius:0 !important;
       }
 
