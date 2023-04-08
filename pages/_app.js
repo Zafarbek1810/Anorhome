@@ -77,8 +77,7 @@ function MyApp({ Component, pageProps }) {
         {loading && <Loader loading2={loading2} />}
         <Modal>
           <FormModal />
-        </Modal>
-        {/* <Script src="//code.jivosite.com/widget/guz7xA8JEU" async /> */}
+        </Modal> 
       </HeaderProvider>
     </ModalProvider>
 
