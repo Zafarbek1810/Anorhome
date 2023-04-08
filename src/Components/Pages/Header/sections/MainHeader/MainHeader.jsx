@@ -12,6 +12,7 @@ import { useContextSelector } from "use-context-selector";
 import { ModalContext } from "../../../../../Context/ModalContext/Context";
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
+// import Select from "react-select";
 
 export const LINKS = [
   {
@@ -166,13 +167,32 @@ const MainHeader = ({ isFixed }) => {
             ]}
           />
         </div>
+
         {/* <div className="sel">
         <GlobeSvg />
-          <select class="form-select" aria-label="Default select example">
-            <option value="1">ENG</option>
-            <option value="2">RUS</option>
-            <option value="3">UZB</option>
-          </select>
+        <Select
+        onChange={handleChange}
+        classNamePrefix="select"
+        defaultValue={{
+          value: "en",
+          label: "ENG",
+        }}
+        name="language"
+        options={[
+              {
+                value: "en",
+                label: "ENG",
+              },
+              {
+                value: "uz",
+                label: "UZB",
+              },
+              {
+                value: "ru",
+                label: "RUS",
+              },
+            ]}
+      />
         </div> */}
 
         <div className="callBtn">

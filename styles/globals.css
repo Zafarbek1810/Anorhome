@@ -25,7 +25,6 @@ a {
 }
 .header .ant-select-selection-item{
   color: #fff !important;
-  border: none !important;
 }
 .header2 .lang .ant-select-single.ant-select-open .ant-select-selection-item{
   color: #FE152B !important;
@@ -33,6 +32,17 @@ a {
 .ant-select-item-option-selected{
   background: none !important;
   color: #FE152B !important;
+}
+
+.ant-select-dropdown{
+  left: 0px;
+  top: 36px !important;
+  min-width: 80px;
+  width: 80px;
+}
+
+.select__input{
+  color: #fff !important;
 }
 
 
