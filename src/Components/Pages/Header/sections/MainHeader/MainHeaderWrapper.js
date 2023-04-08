@@ -77,6 +77,7 @@ const MainHeaderWrapper = styled.div`
     }
 
     .sel{
+      width: 15%;
       display: flex;
       align-items: center;
       svg {
@@ -84,7 +85,21 @@ const MainHeaderWrapper = styled.div`
         fill: #fff;
       }
 
-      select{
+      .select__dropdown-indicator{
+        display:none;
+      }
+      .select__indicators{
+        span{
+          display: none;
+        }
+      }
+      .select__control{
+        background-color: transparent !important;
+        color: #fff !important;
+        border: none;
+      }
+
+      input{
         border: none !important;
         background-color: transparent !important;
         font-family: "Mulish" !important;
@@ -93,14 +108,8 @@ const MainHeaderWrapper = styled.div`
         font-size: 15px !important;
         line-height: 18px !important;
         color: #ffffff !important;
-        padding: 5px 10px !important;
-        
       }
-
-      option{
-        background-color: #fff;
-        color: red !important;
-      }
+      
     }
 
     .lang {
@@ -116,6 +125,7 @@ const MainHeaderWrapper = styled.div`
       .ant-select-open {
         border: none !important;
       }
+
       .ant-select-selector {
         border: none !important;
         background-color: transparent !important;
@@ -317,7 +327,7 @@ const MainHeaderWrapper = styled.div`
       align-items: center;
 
       .ant-select-single.ant-select-open .ant-select-selection-item{
-        color: #fff !important;
+        color: #000 !important;
       }
 
       .ant-select-selector {
