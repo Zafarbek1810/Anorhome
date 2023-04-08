@@ -1,4 +1,11 @@
 {
+  "header": {
+    "home": "Asosiy",
+    "service": "Xizmatlar",
+    "about": "Biz Xaqimizda",
+    "projects": "Loyihalar",
+    "call-btn": "Qong'iroq qiling!"
+  },
   "hero": {
     "title-span": "Sarmoya",
     "title": "Ko'chmas mulk sohasida",

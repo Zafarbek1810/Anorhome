@@ -1,4 +1,11 @@
 {
+  "header": {
+    "home": "Home",
+    "service": "Service",
+    "about": "About Us",
+    "projects": "Projects",
+    "call-btn": "Call Me Now!"
+  },
   "hero": {
     "title-span": "Investment",
     "title": "In Real Estate",

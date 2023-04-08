@@ -97,7 +97,7 @@ const MainHeader = ({ isFixed }) => {
           <ul className="links_cont">
             <li>
               <NavLink activePath={activePath} to="/" className="item-links">
-                Home
+              {t("header.home")}
               </NavLink>
             </li>
             <li>
@@ -106,7 +106,7 @@ const MainHeader = ({ isFixed }) => {
                 to="/services"
                 className="item-links"
               >
-                Services
+                {t("header.service")}
               </NavLink>
             </li>
             <li>
@@ -115,7 +115,7 @@ const MainHeader = ({ isFixed }) => {
                 to="/about"
                 className="item-links"
               >
-                About Us
+                {t("header.about")}
               </NavLink>
             </li>
             <li>
@@ -124,7 +124,7 @@ const MainHeader = ({ isFixed }) => {
                 to="/projects"
                 className="item-links"
               >
-                Projects
+              {t("header.projects")}
               </NavLink>
             </li>
           </ul>
@@ -183,7 +183,7 @@ const MainHeader = ({ isFixed }) => {
                 setIsModalVisible((p) => !p);
               }}
             >
-              <span>Call Me Now!</span>
+              <span>{t("header.call-btn")}</span>
             </button>
           </section>
         </div>

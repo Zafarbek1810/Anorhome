@@ -70,8 +70,8 @@ const BannerWrapper = styled.div`
         font-size: 70px;
         line-height: 84px;
         color: #ffffff;
-        margin-bottom: 16px;
-        span {
+        margin-bottom: 16px; 
+        span { 
           background-image: linear-gradient(90deg, #ff6a00, #ee0979);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
