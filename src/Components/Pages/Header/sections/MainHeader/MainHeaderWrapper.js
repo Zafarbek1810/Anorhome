@@ -219,6 +219,7 @@ const MainHeaderWrapper = styled.div`
 
       &:hover {
         color: #f67f00 !important;
+        font-weight: 700;
       }
     }
 
