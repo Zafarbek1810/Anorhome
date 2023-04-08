@@ -11,7 +11,7 @@ import ToLeftSvg from "../../../Common/Svgs/ToLeftSvg";
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Navigation } from "swiper";
+import { Navigation, Pagination } from "swiper";
 
 const data = [
   {
@@ -150,15 +150,13 @@ const OurProjects = () => {
                     spaceBetween={30}
                     ref={swiperRef}
                     loop={true}
-                    pagination={{
-                      clickable: true,
-                    }}
+                    pagination={true}
                     navigation={{
                       prevEl: ".prev",
                       nextEl: ".next",
                       clickable: true,
                     }}
-                    modules={[Navigation]}
+                    modules={[Navigation, Pagination]}
                     className="mySwiper"
                   >
                     <SwiperSlide>

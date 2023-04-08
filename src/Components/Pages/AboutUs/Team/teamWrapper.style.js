@@ -7,7 +7,7 @@ background-color: #161A1D;
     border-bottom: 1px solid #ffffff;
 
     h3 {
-      font-family: "Jost";
+      font-family: "Mulish";
       font-style: normal;
       font-weight: 700;
       font-size: 40px;
@@ -47,7 +47,7 @@ section{
     text-align: start;
 
     h2 {
-      font-family: "Jost";
+      font-family: "Mulish";
       font-style: normal;
       font-weight: 800;
       font-size: 24px;
@@ -56,7 +56,7 @@ section{
       color: #ffffff;
     }
     p {
-      font-family: "Jost";
+      font-family: "Mulish";
       font-style: normal;
       font-weight: 400;
       font-size: 16px;

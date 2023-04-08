@@ -12,8 +12,9 @@ const FooterWrapper = styled.div`
   }
   .footer__info {
     width: 30%;
-    img {
+    svg {
       width: 80%;
+      height: auto;
     }
     p {
       font-family: "Montserrat";

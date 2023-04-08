@@ -5,6 +5,7 @@ import FacebookSvg from "../../Common/Svgs/FacebookSvg";
 import InstagramSvg from "../../Common/Svgs/InstagramSvg";
 import TelegramSvg from "../../Common/Svgs/TelegramSvg";
 import { FooterWrapper } from "./footer.style";
+import FooterLogoSvg from "../../Common/Svgs/FooterLogoSvg"
 
 const Footer = () => {
   return (
@@ -12,7 +13,8 @@ const Footer = () => {
       <Container>
         <div className="footer__wrapper">
           <div className="footer__info">
-            <img src="/images/footer-logo.png" alt="Footer Logo" />
+            {/* <img src="/images/footer-logo.png" alt="Footer Logo" /> */}
+            <FooterLogoSvg/>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Laudantium

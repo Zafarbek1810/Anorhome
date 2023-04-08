@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import useScrollPosition from "../../../../Hooks/useScrollPosition";
 import MyLink from "../../../Common/MyLink";
 import { ServicesWrapper } from "./Services.style";
@@ -9,69 +9,56 @@ const data = [
   {
     id: "1",
     span: "1",
-    p1: "Investment Consulting",
-    img: "/images/services/service1.png",
+    p1: "Strategic consulting",
+    img: "/images/services/service1.jpg",
     p2: "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Scelerisque pulvinar amet turpis elit euismod mollis interdum nulla. Consequat viverra aenean egestas congue metus nisi sed. Semper vitae amet faucibus in ac. Donec aliquam eu faucibus faucibus id lobortis integer. Ipsum dignissim non dui nullam eu magna. Ut pellentesque arcu est pulvinar ullamcorper. Aliquet egestas at tincidunt mi scelerisque orci",
   },
   {
     id: "2",
     span: "2",
-    p1: "Investment Consulting",
-    img: "/images/services/service2.png",
+    p1: "Promotion of real estate development projects",
+    img: "/images/services/service2.jpg",
     p2: "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Scelerisque pulvinar amet turpis elit euismod mollis interdum nulla. Consequat viverra aenean egestas congue metus nisi sed. Semper vitae amet faucibus in ac. Donec aliquam eu faucibus faucibus id lobortis integer. Ipsum dignissim non dui nullam eu magna. Ut pellentesque arcu est pulvinar ullamcorper. Aliquet egestas at tincidunt mi scelerisque orci",
   },
   {
     id: "3",
     span: "3",
-    p1: "Investment Consulting",
-    img: "/images/services/service3.png",
+    p1: "Investment consulting",
+    img: "/images/services/service3.jpg",
     p2: "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Scelerisque pulvinar amet turpis elit euismod mollis interdum nulla. Consequat viverra aenean egestas congue metus nisi sed. Semper vitae amet faucibus in ac. Donec aliquam eu faucibus faucibus id lobortis integer. Ipsum dignissim non dui nullam eu magna. Ut pellentesque arcu est pulvinar ullamcorper. Aliquet egestas at tincidunt mi scelerisque orci",
   },
   {
     id: "4",
     span: "4",
-    p1: "Investment Consulting",
-    img: "/images/services/service4.png",
+    p1: "Real estate services",
+    img: "/images/services/service4.jpg",
     p2: "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Scelerisque pulvinar amet turpis elit euismod mollis interdum nulla. Consequat viverra aenean egestas congue metus nisi sed. Semper vitae amet faucibus in ac. Donec aliquam eu faucibus faucibus id lobortis integer. Ipsum dignissim non dui nullam eu magna. Ut pellentesque arcu est pulvinar ullamcorper. Aliquet egestas at tincidunt mi scelerisque orci",
   },
   {
     id: "5",
     span: "5",
-    p1: "Investment Consulting",
-    img: "/images/services/service5.png",
-    p2: "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Scelerisque pulvinar amet turpis elit euismod mollis interdum nulla. Consequat viverra aenean egestas congue metus nisi sed. Semper vitae amet faucibus in ac. Donec aliquam eu faucibus faucibus id lobortis integer. Ipsum dignissim non dui nullam eu magna. Ut pellentesque arcu est pulvinar ullamcorper. Aliquet egestas at tincidunt mi scelerisque orci",
-  },
-  {
-    id: "6",
-    span: "6",
-    p1: "Investment Consulting",
-    img: "/images/services/service6.png",
+    p1: "Trust management",
+    img: "/images/services/service5.jpg",
     p2: "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Scelerisque pulvinar amet turpis elit euismod mollis interdum nulla. Consequat viverra aenean egestas congue metus nisi sed. Semper vitae amet faucibus in ac. Donec aliquam eu faucibus faucibus id lobortis integer. Ipsum dignissim non dui nullam eu magna. Ut pellentesque arcu est pulvinar ullamcorper. Aliquet egestas at tincidunt mi scelerisque orci",
   },
 ];
 
 const Services = () => {
-    const imgRef =useRef()
-    const router =useRouter();
+  const router = useRouter();
 
-    const pos = useScrollPosition(-0.07); //scrollY * 0.5
+  const pos = useScrollPosition(-0.07); //scrollY * 0.5
 
-    const { height: scrollY, width: clientWidth } = useWindowDimensions();
+  const { height: scrollY, width: clientWidth } = useWindowDimensions();
 
+  useEffect(() => {
+    console.log(scrollY);
+    console.log(clientWidth);
+  }, []);
 
-
-    useEffect(()=>{
-        console.log(scrollY);
-        console.log(clientWidth);
-        
-    },[])
-
-    useEffect(() => {
-      AOS.init({ duration: 1500, once: true });
-      AOS.refresh();
-      
-    }, []);
-
+  useEffect(() => {
+    AOS.init({ duration: 1500, once: true });
+    AOS.refresh();
+  }, []);
 
   return (
     <ServicesWrapper>
@@ -81,24 +68,20 @@ const Services = () => {
       </div>
 
       <div className="wrapper">
-        {data.map((v,i)=>(
-        <div className="box" key={i} data-aos={"fade-up"}>
-          <div className="col-1">
-            <span>{v.span}</span>
-            <p>{v.p1}</p>
-          </div>
-          <div className="col-2" >
-            <img src={v.img} alt="" style={{ transform: `translateY(${pos}px` }} ref={imgRef}/>
-          </div>
-          <div className="col-3">
-            <p>
-             {v.p2}
-            </p>
-            <div className="btn">
-              <MyLink to={`/serviceDetail?id=${v.id}`}>Learn More</MyLink>
+        {data.map((v, i) => (
+          <div className="box" key={i} data-aos={"fade-up"}>
+            <div className="col-1">
+              <span>{v.span}</span>
+              <p>{v.p1}</p>
+            </div>
+            <div className="col-2">{<ImgParalax v={v} pos={pos} />}</div>
+            <div className="col-3">
+              <p>{v.p2}</p>
+              <div className="btn">
+                <MyLink to={`/serviceDetail?id=${v.id}`}>Learn More</MyLink>
+              </div>
             </div>
           </div>
-        </div>
         ))}
       </div>
     </ServicesWrapper>
@@ -106,3 +89,33 @@ const Services = () => {
 };
 
 export default Services;
+
+function ImgParalax({ v, pos }) {
+  const imgRef = useRef();
+  const [num, setNum] = useState(0);
+  const [isVisibleOnScreen, setIsVisibleOnScreen] = useState(false);
+
+  // if (typeof window === undefined) {
+  //   var window = {};
+  // } else {
+  //   window = window;
+  // }
+
+  useEffect(() => {
+    const elDistanceToTop =  window?.pageYOffset + imgRef.current?.getBoundingClientRect().top;
+    setIsVisibleOnScreen(pos + window?.innerHeight > elDistanceToTop);
+    setNum(pos + window?.innerHeight - elDistanceToTop);
+  }, [pos]);
+
+  return (
+    <img
+      src={v.img}
+      alt=""
+      style={{
+        transform: isVisibleOnScreen ? `translateY(${num * -0.2}px` : "",
+        transition: "all 0.2s ease",
+      }}
+      ref={imgRef}
+    />
+  );
+}
