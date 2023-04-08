@@ -4,9 +4,8 @@ import { HistoryWrapper } from "./historyWrapper.style";
 import Container from "../../../Common/Container/index";
 
 const HistorySection = () => {
-
   useEffect(() => {
-    AOS.init({ duration: 1500, once: true});
+    AOS.init({ duration: 1500, once: true });
     AOS.refresh();
   }, []);
 
@@ -19,27 +18,38 @@ const HistorySection = () => {
       </div>
       <Container>
         <section>
-          <img src="/aboutUs/history1.jpg" alt="History section image" data-aos={"fade-up"}/>
+          <img
+            src="/aboutUs/history1.jpg"
+            alt="History section image"
+            data-aos={"fade-up"}
+          />
 
           <hr />
 
           <div className="box__wrapper">
-            <div className="box__boxes" data-aos="fade-zoom-in" >
+            <div className="box__boxes" data-aos="fade-zoom-in">
               <div className="box__left">
                 <img src="/aboutUs/ourStory.svg" alt="Our Story Svg" />
                 <h2>Our Story</h2>
               </div>
               <div className="box__right">
                 <p>
-                  Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis
-                  rhoncus scelerisque venenatis luctus nunc. Scelerisque
-                  pulvinar amet turpis elit euismod mollis interdum nulla.
-                  Consequat viverra aenean egestas congue metus nisi sed. Semper
-                  vitae amet faucibus in ac.{" "}
+                  Наша команда экспертов обладает профессиональными знаниями и
+                  многолетним опытом работы в сфере недвижимости, что позволяет
+                  нам предоставлять нашим партнерам и клиентам уникальные
+                  решения и качественный сервис. Мы стремимся к долгосрочным
+                  отношениям с нашими клиентами и готовы оказать
+                  профессиональную поддержку на всех этапах работы в сфере
+                  недвижимости. Стратегический партнер ООО «Anorhome» -
+                  узбекско-британское CП Beltera Holding. Учредители Beltera
+                  Holding много лет успешно занимаются инвестиционным
+                  консалтингом на европейском рынке. Собирая опыт каждого
+                  проекта, мы храним все ваши данные в секрете, гарантируя их
+                  безопасность договором о коммерческой тайне
                 </p>
               </div>
             </div>
-            <div className="box__boxes" data-aos="fade-zoom-in" >
+            <div className="box__boxes" data-aos="fade-zoom-in">
               <div className="box__left">
                 <img src="/aboutUs/ourMission.svg" alt="Our Mission Svg" />
                 <h2>Our Mission</h2>
@@ -61,7 +71,7 @@ const HistorySection = () => {
                 </p>
               </div>
             </div>
-            <div className="box__boxes" data-aos="fade-zoom-in" >
+            <div className="box__boxes" data-aos="fade-zoom-in">
               <div className="box__left">
                 <img src="/aboutUs/ourVision.svg" alt="Our Vision Svg" />
                 <h2>Our Vision</h2>

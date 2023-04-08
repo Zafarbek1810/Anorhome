@@ -1,41 +1,45 @@
 import React, {useEffect} from "react";
-import AOS from "aos"
+import AOS from "aos";
+import { useTranslation } from "react-i18next";
 import { SecondSectionWrapper } from "./SecondSection.style";
 import Container from "../../../Common/Container";
 import FamilySvg from "../../../Common/Svgs/FamilySvg";
 import ProjectsSvg from "../../../Common/Svgs/ProjectsSvg";
 import RevenueSvg from "../../../Common/Svgs/RevenueSvg";
 import TrustedSvg from "../../../Common/Svgs/TrustedSvg";
-import MyLink from "../../../Common/MyLink";
-import Image from "next/image";
+import MyLink from "../../../Common/MyLink"; 
 
-const countData = [
-  {
-    img: <FamilySvg />,
-    count: 1234241,
-    p: "Happy Families",
-    suffix: "",
-  },
-  {
-    img: <ProjectsSvg />,
-    count: 302,
-    p: "Projects Completed",
-    suffix: "",
-  },
-  {
-    img: <RevenueSvg />,
-    count: 492,
-    p: "Total Revenue",
-    suffix: "mln",
-  },
-  {
-    img: <TrustedSvg />,
-    count: 200,
-    p: "Trusted Clients",
-    suffix: "+",
-  },
-];
+
 const SecondSection = () => {
+
+  const { t } = useTranslation();
+  
+  const countData = [
+    {
+      img: <FamilySvg />,
+      count: 1000,
+      p: t("about.p1"),
+      suffix: "+",
+    },
+    {
+      img: <ProjectsSvg />,
+      count: 120,
+      p: t("about.p2"),
+      suffix: "%",
+    },
+    {
+      img: <RevenueSvg />,
+      count: 250.000,
+      p: t("about.p3"),
+      suffix: "+",
+    },
+    {
+      img: <TrustedSvg />,
+      count: 10,
+      p: t("about.p4"),
+      suffix: "+",
+    },
+  ];
 
   useEffect(() => {
     AOS.init({ duration: 1500, once: true  });
@@ -46,7 +50,7 @@ const SecondSection = () => {
     <SecondSectionWrapper>
       <div data-aos={"fade-in"} className="title">
         <Container>
-          <h3>About Us</h3>
+          <h3>{t("about.title")}</h3>
         </Container>
       </div>
 
@@ -54,12 +58,7 @@ const SecondSection = () => {
         <div className="wrap">
           <div className="left" >
             <p data-aos={"fade-right"} className="info">
-              Lorem ipsum dolor sit amet consectetur. Arcu nullam quam nunc
-              lacus quam fringilla libero. Enim non in viverra porttitor eu
-              nisl. Dolor eget pellentesque cursus augue. Tristique dolor ornare
-              porta aenean in cras. A nunc congue varius suscipit vulputate.
-              Adipiscing quam vitae a odio eu accumsan ut. Leo et ultrices
-              scelerisque molestie ante mi in.
+            {t("about.info")}
             </p>
 
             <div className="countWrap">
@@ -77,7 +76,7 @@ const SecondSection = () => {
 
             <section data-aos={"fade-up"} class="buttons">
               <MyLink to="/#" className="btn btn-4">
-                <span>Learn More</span>
+                <span>{t("about.btn")}</span>
               </MyLink>
             </section>
           </div>

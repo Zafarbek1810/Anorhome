@@ -14,6 +14,15 @@
     "title2": "For Your Project",
     "paragr2": "Lorem ipsum dolor sit amet consectetur. Luctus in montes pellentesque proin neque pellentesque suspendisse sit. Proin ut at tortor nulla quam arcu",  
     "button": "Learn More"
+  },
+  "about": {
+    "title": "About Us",
+    "info": "Anorhome are professionals specialized in providing high quality real estate consulting services. We were founded in 2020 and during this time we have been successfully participating in the creation of local development and international projects in Uzbekistan.",
+    "p1": "довольных клиентов",
+    "p2": "рентабельности проектов",
+    "p3": "kv metr реализовано",
+    "p4": "опыт сотрудниках",
+    "btn": "Learn More"
   }
   
 

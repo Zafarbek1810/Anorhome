@@ -27,8 +27,7 @@ const Hero = () => {
           <div className="left" data-aos={"fade-in"}>
             <h2>We Make It Reality</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur. Lectus purus in nec lectus
-              fusce orci nulla viverra consectetur est.  
+            Стабильное партнерства – гарантия успеха в бизнесе.
             </p>
           </div>
 
