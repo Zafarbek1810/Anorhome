@@ -78,7 +78,7 @@ function MyApp({ Component, pageProps }) {
         <Modal>
           <FormModal />
         </Modal>
-        <Script src="//code.jivosite.com/widget/guz7xA8JEU" async />
+        {/* <Script src="//code.jivosite.com/widget/guz7xA8JEU" async /> */}
       </HeaderProvider>
     </ModalProvider>
 
