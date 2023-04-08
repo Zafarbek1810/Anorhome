@@ -41,6 +41,10 @@ const Banner = () => {
         >
           <img src="/images/banner.jpg" alt="" />
           <img src="/images/banner2.jpg" alt="" />
+          <img src="/images/banner3.jpg" alt="" />
+          <img src="/images/banner4.jpg" alt="" />
+          <img src="/images/banner5.jpg" alt="" />
+          <img src="/images/banner6.jpg" alt="" />
         </Carousel>
       </div>
       <Container className="cont">
@@ -84,14 +88,13 @@ const Banner = () => {
               </MyLink>
             </section>
           </div>
-          {/* <div className="wrap">
+          <div className="wrap" data-aos={"zoom-in"} >
             <h1 className="title">
-              How To <span>Invest</span> In Real State
+              <span>{t("hero.title-span2")} </span> 
+              {t("hero.title2")} 
             </h1>
             <p className="descr">
-              Lorem ipsum dolor sit amet consectetur. Luctus in montes
-              pellentesque proin neque pellentesque suspendisse sit. Proin ut at
-              tortor nulla quam arcu
+            {t("hero.paragr2")}
             </p>
             <section class="buttons">
               <MyLink to="/#" className="btn btn-4">
@@ -99,14 +102,13 @@ const Banner = () => {
               </MyLink>
             </section>
           </div>
-          <div className="wrap">
+          <div className="wrap" data-aos={"zoom-in"} >
             <h1 className="title">
-              How To <span>Invest</span> In Real State
+              <span>{t("hero.title-span2")} </span> 
+              {t("hero.title2")} 
             </h1>
             <p className="descr">
-              Lorem ipsum dolor sit amet consectetur. Luctus in montes
-              pellentesque proin neque pellentesque suspendisse sit. Proin ut at
-              tortor nulla quam arcu
+            {t("hero.paragr2")}
             </p>
             <section class="buttons">
               <MyLink to="/#" className="btn btn-4">
@@ -114,14 +116,13 @@ const Banner = () => {
               </MyLink>
             </section>
           </div>
-          <div className="wrap">
+          <div className="wrap" data-aos={"zoom-in"} >
             <h1 className="title">
-              How To <span>Invest</span> In Real State
+              <span>{t("hero.title-span2")} </span> 
+              {t("hero.title2")} 
             </h1>
             <p className="descr">
-              Lorem ipsum dolor sit amet consectetur. Luctus in montes
-              pellentesque proin neque pellentesque suspendisse sit. Proin ut at
-              tortor nulla quam arcu
+            {t("hero.paragr2")}
             </p>
             <section class="buttons">
               <MyLink to="/#" className="btn btn-4">
@@ -129,21 +130,20 @@ const Banner = () => {
               </MyLink>
             </section>
           </div>
-          <div className="wrap">
+          <div className="wrap" data-aos={"zoom-in"} >
             <h1 className="title">
-              How To <span>Invest</span> In Real State
+              <span>{t("hero.title-span2")} </span> 
+              {t("hero.title2")} 
             </h1>
             <p className="descr">
-              Lorem ipsum dolor sit amet consectetur. Luctus in montes
-              pellentesque proin neque pellentesque suspendisse sit. Proin ut at
-              tortor nulla quam arcu
+            {t("hero.paragr2")}
             </p>
             <section class="buttons">
               <MyLink to="/#" className="btn btn-4">
                 <span>Learn More</span>
               </MyLink>
             </section>
-          </div> */}
+          </div>
         </Carousel>
       </Container>
     </BannerWrapper>
