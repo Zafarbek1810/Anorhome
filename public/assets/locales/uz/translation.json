@@ -35,6 +35,17 @@
     "p3": "Jami Daromad",
     "p4": "Ishonchli Mijozlar",
     "btn": "Batafsil"
+  },
+
+
+
+  "footer":{
+    "descr":"Qadr – qimmat yaratmamiz ",
+    "link1":"Xizmatlar",
+    "link2":"Biz Xaqimizda",
+    "link3":"Portfolio",
+    "link4":"Aloqa",
+    "social":"Ijtimoiy tarmoqlarimiz"
   }
   
 

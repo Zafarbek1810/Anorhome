@@ -12,25 +12,25 @@ const data=[
     img:"/images/projects/sergeli/1.jpg",
     city:"Sergeli Residence",
     date:" 12.01.2023",
-    link:"/#"
+    link:"/projects"
   },
   {
     img:"/images/projects/atm/1.jpg",
     city:"Auto Tiger Mall",
     date:" 12.01.2023",
-    link:"/#"
+    link:"/projects"
   },
   {
     img:"/images/projects/kamolon/1.jpg",
     city:"Yangi Komolon",
     date:" 12.01.2023",
-    link:"/#"
+    link:"/projects"
   },
   {
     img:"/images/projects/almashriq/1.jpg",
     city:"Al-Mashriq",
     date:" 12.01.2023",
-    link:"/#"
+    link:"/projects"
   },
 ]
 const ThirdSection = () => {

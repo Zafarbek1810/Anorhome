@@ -51,7 +51,7 @@ const BannerWrapper = styled.div`
   }
 
   .carusel {
-    width: 600px;
+    width: 700px;
     /* height: auto !important; */
     
     .wrap {
@@ -67,8 +67,8 @@ const BannerWrapper = styled.div`
         font-family: "Mulish";
         font-style: normal;
         font-weight: 900;
-        font-size: 70px;
-        line-height: 84px;
+        font-size: 48px;
+        line-height: 66px;
         color: #ffffff;
         margin-bottom: 16px; 
         span { 

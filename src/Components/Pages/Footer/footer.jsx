@@ -6,8 +6,10 @@ import InstagramSvg from "../../Common/Svgs/InstagramSvg";
 import TelegramSvg from "../../Common/Svgs/TelegramSvg";
 import { FooterWrapper } from "./footer.style";
 import FooterLogoSvg from "../../Common/Svgs/FooterLogoSvg"
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const {t} = useTranslation();
   return (
     <FooterWrapper>
       <Container>
@@ -16,22 +18,22 @@ const Footer = () => {
             {/* <img src="/images/footer-logo.png" alt="Footer Logo" /> */}
             <FooterLogoSvg/>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Laudantium
+            {t('footer.descr')}
             </p>
           </div>
           <div className="footer__items">
-            <MyLink to={"/"} className="links">Services</MyLink>
-            <MyLink to={"/"} className="links">About Us</MyLink>
-            <MyLink to={"/"} className="links">Portfolio</MyLink>
-            <MyLink to={"/"} className="links">Contact Us</MyLink>
+            <MyLink to={"/"} className="links">{t('footer.link1')}</MyLink>
+            <MyLink to={"/"} className="links">{t('footer.link2')}</MyLink>
+            <MyLink to={"/"} className="links">{t('footer.link3')}</MyLink>
+            <MyLink to={"/"} className="links">{t('footer.link4')}</MyLink>
           </div>
           <div className="footer__socials">
-            <p>Our Social Media</p>
+            <p>{t('footer.social')}</p>
             <div>
-              <InstagramSvg />
-              <TelegramSvg />
-              <FacebookSvg />
+              <MyLink to="https://www.instagram.com/anorhome/"><InstagramSvg /></MyLink>
+              <MyLink to="https://t.me/anorhome"><TelegramSvg /></MyLink>
+              <MyLink to="https://www.facebook.com/anorhome"><FacebookSvg /></MyLink>
+              
             </div>
           </div>
         </div>

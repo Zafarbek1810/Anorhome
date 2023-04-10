@@ -6,15 +6,13 @@ import MyLink from "../../../Common/MyLink";
 import Container from "../../../Common/Container";
 import { Carousel } from "antd";
 
-
 const Banner = () => {
-
   const { t } = useTranslation();
 
   const ref = useRef();
 
   useEffect(() => {
-    AOS.init({ duration: 1500, once: true  });
+    AOS.init({ duration: 1500, once: true });
     AOS.refresh();
   }, []);
 
@@ -23,9 +21,8 @@ const Banner = () => {
   }, []);
 
   const onChange = (currentSlide) => {
-    ref.current.goTo(currentSlide)
+    ref.current.goTo(currentSlide);
   };
- 
 
   return (
     <BannerWrapper>
@@ -55,89 +52,74 @@ const Banner = () => {
           pauseOnDotsHover={false}
           autoplaySpeed={3000}
           afterChange={onChange}
-          
           className="carusel"
         >
-          <div
-            className="wrap" data-aos={"zoom-in"}
-          >
+          <div className="wrap" data-aos={"zoom-in"}>
             <h1 className="title">
               <span>{t("hero.title-span")} </span>
-              {t("hero.title")}
+              {/* {t("hero.title")} */}
             </h1>
-            <p className="descr">
-            {t("hero.paragr")}
-            </p>
+            <p className="descr">{t("hero.paragr")}</p>
             <section class="buttons">
               <MyLink to="/#" className="btn btn-4">
                 <span>{t("hero.button")}</span>
               </MyLink>
             </section>
           </div>
-          <div className="wrap" data-aos={"zoom-in"} >
+          <div className="wrap" data-aos={"zoom-in"}>
             <h1 className="title">
-              <span>{t("hero.title-span2")} </span> 
-              {t("hero.title2")} 
+              <span>{t("hero.title-span2")} </span>
+              {/* {t("hero.title2")}  */}
             </h1>
-            <p className="descr">
-            {t("hero.paragr2")}
-            </p>
+            <p className="descr">{t("hero.paragr2")}</p>
             <section class="buttons">
               <MyLink to="/#" className="btn btn-4">
                 <span>Learn More</span>
               </MyLink>
             </section>
           </div>
-          <div className="wrap" data-aos={"zoom-in"} >
+          <div className="wrap" data-aos={"zoom-in"}>
             <h1 className="title">
-              <span>{t("hero.title-span2")} </span> 
-              {t("hero.title2")} 
+              <span>{t("hero.title-span3")} </span>
+              {/* {t("hero.title2")}  */}
             </h1>
-            <p className="descr">
-            {t("hero.paragr2")}
-            </p>
+            <p className="descr">{t("hero.paragr3")}</p>
             <section class="buttons">
               <MyLink to="/#" className="btn btn-4">
                 <span>Learn More</span>
               </MyLink>
             </section>
           </div>
-          <div className="wrap" data-aos={"zoom-in"} >
+          <div className="wrap" data-aos={"zoom-in"}>
             <h1 className="title">
-              <span>{t("hero.title-span2")} </span> 
-              {t("hero.title2")} 
+              <span>{t("hero.title-span4")} </span>
+              {/* {t("hero.title2")}  */}
             </h1>
-            <p className="descr">
-            {t("hero.paragr2")}
-            </p>
+            <p className="descr">{t("hero.paragr4")}</p>
             <section class="buttons">
               <MyLink to="/#" className="btn btn-4">
                 <span>Learn More</span>
               </MyLink>
             </section>
           </div>
-          <div className="wrap" data-aos={"zoom-in"} >
+          <div className="wrap" data-aos={"zoom-in"}>
             <h1 className="title">
-              <span>{t("hero.title-span2")} </span> 
-              {t("hero.title2")} 
+              <span>{t("hero.title-span5")} </span>
+              {/* {t("hero.title2")}  */}
             </h1>
-            <p className="descr">
-            {t("hero.paragr2")}
-            </p>
+            <p className="descr">{t("hero.paragr5")}</p>
             <section class="buttons">
               <MyLink to="/#" className="btn btn-4">
                 <span>Learn More</span>
               </MyLink>
             </section>
           </div>
-          <div className="wrap" data-aos={"zoom-in"} >
+          <div className="wrap" data-aos={"zoom-in"}>
             <h1 className="title">
-              <span>{t("hero.title-span2")} </span> 
-              {t("hero.title2")} 
+              <span>{t("hero.title-span6")} </span>
+              {/* {t("hero.title2")}  */}
             </h1>
-            <p className="descr">
-            {t("hero.paragr2")}
-            </p>
+            <p className="descr">{t("hero.paragr6")}</p>
             <section class="buttons">
               <MyLink to="/#" className="btn btn-4">
                 <span>Learn More</span>

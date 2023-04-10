@@ -35,6 +35,14 @@
     "p3": "kv metr реализовано",
     "p4": "опыт сотрудниках",
     "btn": "Learn More"
+  },
+  "footer":{
+    "descr":"Creating value",
+    "link1":"Service",
+    "link2":"About Us",
+    "link3":"Portfolio",
+    "link4":"Contact Us",
+    "social":"Our Social Media"
   }
   
 

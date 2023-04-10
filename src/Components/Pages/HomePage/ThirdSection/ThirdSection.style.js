@@ -344,7 +344,6 @@ const ThirdSectionWrapper = styled.div`
               display: flex;
               flex-direction: column;
               padding: 20px 35px !important; 
-              transform: translateX(25%);
               span{
                 height: 35px;
                 transform: translateX(25%);
@@ -353,6 +352,7 @@ const ThirdSectionWrapper = styled.div`
                 }
               }
               a{
+                width: 100%;
                 font-size: 12px;
               }
             }

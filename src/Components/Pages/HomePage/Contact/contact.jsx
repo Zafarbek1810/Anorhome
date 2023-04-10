@@ -33,8 +33,8 @@ const Contact = () => {
                 <UserNumSvg />
               </span>
               <h4>Phone Number</h4>
-              <p>+094 9123124 214124</p>
-              <p>+094 9123124 214124</p>
+              <p>+998 99 861 75 00</p>
+              <p>+998 33 150 75 75</p>
             </div>
             <div className="contact__box">
               <span className="contact__icon">
@@ -42,9 +42,9 @@ const Contact = () => {
               </span>
               <h4>Working Hours</h4>
               <p>
-                From: <span>9:00 - 19:00</span>
+                From: <span>10:00 – 19:00</span>
               </p>
-              <p>Saturday and Sunday are closed</p>
+              <p>Monday-Friday</p>
             </div>
             <div className="contact__box">
               <span className="contact__icon">
@@ -52,8 +52,8 @@ const Contact = () => {
               </span>
 
               <h4>Email</h4>
-              <MyLink to={"mailto: anorhome@gmail.com"} className="emailLink">
-                anorhome@gmail.com
+              <MyLink to={"mailto: info@anorhome.com"} className="emailLink">
+              info@anorhome.com
               </MyLink>
             </div>
           </div>
