@@ -179,8 +179,8 @@ const ServicesWrapper = styled.div`
           width: 100%;
           margin-bottom:30px;
           img{
-            transform:none !important;
-            height: 100%;
+            /* transform:none !important; */
+            height: 150%;
           }
         }
 

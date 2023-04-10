@@ -9,26 +9,26 @@ import RightSvg from "../../../Common/Svgs/RightSvg";
 
 const data=[
   {
-    img:"/images/img2.png",
-    city:"New York",
+    img:"/images/projects/sergeli/1.jpg",
+    city:"Sergeli Residence",
     date:" 12.01.2023",
     link:"/#"
   },
   {
-    img:"/images/img.png",
-    city:"New York",
+    img:"/images/projects/atm/1.jpg",
+    city:"Auto Tiger Mall",
     date:" 12.01.2023",
     link:"/#"
   },
   {
-    img:"/images/img2.png",
-    city:"New York",
+    img:"/images/projects/kamolon/1.jpg",
+    city:"Yangi Komolon",
     date:" 12.01.2023",
     link:"/#"
   },
   {
-    img:"/images/img.png",
-    city:"New York",
+    img:"/images/projects/almashriq/1.jpg",
+    city:"Al-Mashriq",
     date:" 12.01.2023",
     link:"/#"
   },

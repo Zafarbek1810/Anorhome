@@ -109,6 +109,22 @@ const FormModalWrapper = styled.div`
       }
     }
   }
+
+  @media(max-width: 1024px){
+    input {
+        margin: 12px 0 22px !important;
+        width: 70%;
+        padding: 11px 0 11px 50px;
+
+        font-family: "Mulish";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+
+        color: #161a1d;
+      }
+  }
 `;
 
 export { FormModalWrapper };
