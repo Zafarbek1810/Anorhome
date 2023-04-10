@@ -1,4 +1,7 @@
 {
+  "button":{
+    "btn": "Batafsil"
+  },
   "header": {
     "home": "Asosiy",
     "service": "Xizmatlar",
@@ -24,8 +27,7 @@
     "paragr5": "",
     "title-span6": "",
     "title6": "",
-    "paragr6": "",
-    "button": "Batafsil"
+    "paragr6": "" 
   },
   "about": {
     "title": "Biz Xaqimizda",

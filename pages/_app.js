@@ -78,6 +78,7 @@ function MyApp({ Component, pageProps }) {
         <Modal>
           <FormModal />
         </Modal> 
+        <Script src="//code.jivo.ru/widget/dqFEUXxryd" async />
       </HeaderProvider>
     </ModalProvider>
 
