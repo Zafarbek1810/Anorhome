@@ -40,6 +40,14 @@ a {
   min-width: 80px;
   width: 80px;
 }
+@media (max-width:1024px) {
+  .ant-select-dropdown{
+    left: 0px;
+    top: 330px !important;
+    min-width: 80px;
+    width: 80px;
+  }
+}
 
 .select__input{
   color: #fff !important;

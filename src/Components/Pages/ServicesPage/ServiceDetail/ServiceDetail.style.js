@@ -310,6 +310,7 @@ const TemplateWrapper = styled.div`
       padding: 70px 0 100px;
       .card {
         width: calc((100% - 50px) / 2)!important;
+        margin-bottom: 50px;
         .cardImg {
           position: relative;
           z-index: 30 !important;

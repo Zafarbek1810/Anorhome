@@ -641,8 +641,28 @@ const MainHeaderWrapper = styled.div`
       background-color: #fff;
     }
     .header {
-      /* background-color: transparent; */
+      background-color: #fff !important;
       padding-top: 35px;
+      svg{
+        path:last-child{
+          fill: #000 !important;
+        }
+      }
+      .burger-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        span {
+          background-color: #000 !important;
+        }
+        &::before {
+          background-color: #000 !important;
+        }
+        &::after {
+          background-color: #000 !important;
+        }
+      }
     }
 
     .header2 {

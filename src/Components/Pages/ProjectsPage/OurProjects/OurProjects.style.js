@@ -34,12 +34,94 @@ const OurProjectsWrapper = styled.div`
 
   .wrapper {
     display: flex;
-    height: 1500px;
     .left {
       background-color: #fff;
       width: 50%;
       padding-right: 40px;
       border-right: 1px solid #d9d9d9;
+      .cards{
+        display: none;
+      }
+
+      .cards {
+        .card {
+          background-color: #fff;
+          display: flex;
+          width: 400px !important;
+          margin-bottom: 20px;
+          padding: 15px 10px;
+          border: 1px solid rgba(0, 0, 0, 0.5);
+          transition: 300ms ease;
+          display: flex;
+          flex-direction: column;
+          flex-shrink: 0;
+
+          .img {
+            width: 100%;
+            height: 100px;
+            margin-bottom: 10px;
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+
+          .text {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            h6 {
+              margin: 0;
+              font-family: "Mulish";
+              font-style: normal;
+              font-weight: 600;
+              font-size: 18px;
+              line-height: 20px;
+              letter-spacing: 0.1em;
+              color: #161a1d;
+            }
+
+            p {
+              font-family: "Mulish";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 16px;
+              color: #fe152b;
+            }
+
+            .location-card {
+              display: flex;
+              align-items: center;
+              p {
+                margin-left:10px;
+                font-family: "Mulish";
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 16px;
+                color: #161a1d;
+              }
+            }
+          }
+        }
+
+        .card:hover {
+          background-color: #161a1d;
+          cursor: pointer;
+
+          .text {
+            h6 {
+              color: #ffffff;
+            }
+            p {
+              color: #ffffff;
+            }
+          }
+        }
+      }
 
       .title {
         font-family: "Mulish";
@@ -145,7 +227,7 @@ const OurProjectsWrapper = styled.div`
     }
     .right {
       width: 50%;
-      height: 100%;
+      height: 1500px;
       overflow-y: scroll;
       padding: 40px;
       background-color: #fff;
@@ -249,49 +331,24 @@ const OurProjectsWrapper = styled.div`
         width: 100%;
         border: none;
         padding: 0;
+        .cards{
+          display: flex;
+          gap: 20px;
+          overflow-x: auto;
+
+          .card{
+            width: 200px !important;
+          }
+
+        }
       }
 
       .right{
-        width: 100%;
-        height:300px;
-        padding: 0;
-
-        .cards{
-          height: 300px !important;
-
-          .card{
-            width: 100% !important;
-          }
-        }
+        display: none;
       }
-      
     }
   }
-  @media(max-width: 745px){
-    .wrapper{
-      height: 1600px;
-    }
-  }
-  @media(max-width: 620px){
-    .wrapper{
-      height: 1700px;
-    }
-  }
-  @media(max-width: 520px){
-    .wrapper{
-      height: 1800px;
-    }
-  }
-  @media(max-width: 454px){
-    .wrapper{
-      height: 1900px;
-    }
-  }
-  @media(max-width: 375px){
-    .wrapper{
-      height: 1980px;
-    }
-  }
+
 `;
 
 export { OurProjectsWrapper };

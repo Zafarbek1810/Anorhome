@@ -21,6 +21,7 @@ const BurgerWrapper = styled.div`
       display: flex !important;
       align-items: center;
       margin-top: 30px;
+      width: 40% !important;
 
       .ant-select-selector {
         border: none !important;

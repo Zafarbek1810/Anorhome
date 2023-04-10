@@ -155,6 +155,31 @@ const OurProjects = () => {
             {selectedCardIndex !== null ? (
               <div>
                 <h4 className="title">Our Completed Projects</h4>
+                <div className="cards">
+              {data.map((card, index) => (
+                <div
+                  className={`card ${
+                    index === selectedCardIndex ? "selected" : ""
+                  }`}
+                  key={index}
+                  onClick={() => handleCardClick(index)}
+                >
+                  <div className="img">
+                    <img src={card.img1} alt="" />
+                  </div>
+                  <div className="text">
+                    <div>
+                      <h6>{card.title}</h6>
+                      <p>{card.category}</p>
+                    </div>
+                    <div className="location-card">
+                      <LocationSvg />
+                      <p>{card.loc1}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
                 <p className="heading">{data[selectedCardIndex].title}</p>
                 <p className="descr">{data[selectedCardIndex].descr}</p>
                 <div className="location">

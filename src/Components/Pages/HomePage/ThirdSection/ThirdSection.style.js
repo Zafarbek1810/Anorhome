@@ -114,9 +114,6 @@ const ThirdSectionWrapper = styled.div`
       height: 100%;
       display: flex;
 
-      
-      
-
       .card { 
         padding: 10px;
         overflow: hidden;
@@ -228,7 +225,7 @@ const ThirdSectionWrapper = styled.div`
             }
           }
           a{
-            width: 170px;
+            width: 70%;
             display: flex;
             align-items: center;
             svg {

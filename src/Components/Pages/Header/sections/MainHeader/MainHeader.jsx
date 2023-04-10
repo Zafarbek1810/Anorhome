@@ -16,22 +16,22 @@ import i18next from "i18next";
 
 export const LINKS = [
   {
-    name: "Home",
+    name: "header.home",
     path: "/",
     id: 1,
   },
   {
-    name: "Services",
+    name: "header.service",
     path: "/services",
     id: 2,
   },
   {
-    name: "About Us",
+    name: "header.about",
     path: "/about",
     id: 3,
   },
   {
-    name: "Projects",
+    name: "header.projects",
     path: "/projects",
     id: 4,
   },
@@ -98,7 +98,7 @@ const MainHeader = ({ isFixed }) => {
           <ul className="links_cont">
             <li>
               <NavLink activePath={activePath} to="/" className="item-links">
-              {t("header.home")}
+                {t("header.home")}
               </NavLink>
             </li>
             <li>
@@ -125,7 +125,7 @@ const MainHeader = ({ isFixed }) => {
                 to="/projects"
                 className="item-links"
               >
-              {t("header.projects")}
+                {t("header.projects")}
               </NavLink>
             </li>
           </ul>
@@ -138,7 +138,7 @@ const MainHeader = ({ isFixed }) => {
             placeholder="Lang"
             id="lang"
             value={defaultLang}
-            getPopupContainer={trigger => trigger.parentElement}
+            getPopupContainer={(trigger) => trigger.parentElement}
             style={{
               width: 80,
             }}

@@ -5,13 +5,26 @@ import { LINKS } from "../MainHeader";
 import {BurgerWrapper} from "./style"
 import GlobeSvg from "../../../../../Common/Svgs/GlobeSvg";
 import { Select } from "antd";
+import { useTranslation } from "react-i18next";
+import { useContextSelector } from "use-context-selector";
+import { ModalContext } from "../../../../../../Context/ModalContext/Context";
 
 const BurgerList = ({ burger }) => {
   const [burgerDrop, setBurgerDrop] = useState(false);
-  const { setBurger } = useContext(HeaderContext);
-  const handleChange = (value) => {
-    console.log(`selected ${value}`);
+  const { t, i18n } = useTranslation();
+
+  const handleChange = (e) => {
+    localStorage.setItem("siteLang", e);
+    i18n.changeLanguage(e);
   };
+
+  const setIsModalVisible = useContextSelector(
+    ModalContext,
+    (state) => state[1]
+  );
+
+  const { setBurger } = useContext(HeaderContext);
+ 
   return (
     <div className={`burger-list-wrapper ${burger ? "open" : "close"}`}>
         <BurgerWrapper>
@@ -23,7 +36,7 @@ const BurgerList = ({ burger }) => {
                 to={path}
                 className="burger-link"
               >
-                {name}
+                {t(name)}
               </MyLink>
           </li>
         ))}
@@ -53,9 +66,11 @@ const BurgerList = ({ burger }) => {
         </div>
         <div className="callBtn">
         <section class="buttons">
-              <MyLink to="/#" className="btn btn-4">
-                <span>Call Me Now!</span>
-              </MyLink>
+              <button onClick={() => {
+                setIsModalVisible((p) => !p);
+              }} className="btn btn-4">
+                <span>{t("header.call-btn")}</span>
+              </button>
             </section>
         </div>
       </ul>
