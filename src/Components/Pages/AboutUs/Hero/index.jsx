@@ -1,11 +1,15 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
+import { useTranslation } from "react-i18next";
 import Container from "../../../Common/Container/index";
 import { HeroWrapper } from "./HeroWrapper.style"; 
 import useMousePosition from "../../../../Hooks/useMousePosition";
 import useWindowDimensions from "../../../../Hooks/useWindow";
 
 const Hero = () => {
+  
+  const { t } = useTranslation();
+
   const { x, y } = useMousePosition();
   const { height: clientHeight, width: clientWidth } = useWindowDimensions()
   
@@ -38,8 +42,8 @@ const Hero = () => {
                   <span>
                     <img src="/aboutUs/building.svg" alt="Building svg" />
                   </span>
-                  <h3>200+</h3>
-                  <p>Trusted Clients</p>
+                  <h3>10+</h3>
+                  <p>{t("about.p4")}</p>
                   <div className="arrow-white"></div>
                 </div>
 
@@ -47,8 +51,8 @@ const Hero = () => {
                   <span>
                     <img src="/aboutUs/money.svg" alt="Money svg" />
                   </span>
-                  <h3>1234241</h3>
-                  <p>Happy Families</p>
+                  <h3>250+</h3>
+                  <p>{t("about.p3")}</p>
                   <div className="arrow-red"></div>
                 </div>
               </div>
@@ -57,8 +61,8 @@ const Hero = () => {
                   <span>
                     <img src="/aboutUs/family.svg" alt="Family svg" />
                   </span>
-                  <h3>$9.922mln</h3>
-                  <p>Total Revenue</p>
+                  <h3>1000+</h3>
+                  <p>{t("about.p1")}</p>
                   <div className="arrow-red"></div>
                 </div>
 
@@ -66,8 +70,8 @@ const Hero = () => {
                   <span>
                     <img src="/aboutUs/projects.svg" alt="Projects svg" />
                   </span>
-                  <h3>300+</h3>
-                  <p>Completed Projects</p>
+                  <h3>120%</h3>
+                  <p>{t("about.p2")}</p>
                   <div className="arrow-white"></div>
                 </div>
               </div>
