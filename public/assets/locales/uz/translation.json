@@ -1,4 +1,7 @@
 {
+  "button":{
+    "btn": "Batafsil"
+  },
   "header": {
     "home": "Asosiy",
     "service": "Xizmatlar",
@@ -24,8 +27,7 @@
     "paragr5": "",
     "title-span6": "",
     "title6": "",
-    "paragr6": "",
-    "button": "Batafsil"
+    "paragr6": "" 
   },
   "about": {
     "title": "Biz Xaqimizda",
@@ -33,8 +35,7 @@
     "p1": "Baxtli Oilalar",
     "p2": "Loyihalar Tugallandi",
     "p3": "Jami Daromad",
-    "p4": "Ishonchli Mijozlar",
-    "btn": "Batafsil"
+    "p4": "Ishonchli Mijozlar" 
   }
   
 

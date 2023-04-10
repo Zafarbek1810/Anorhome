@@ -1,4 +1,7 @@
 {
+  "button":{
+    "btn": "Learn More"
+  },
   "header": {
     "home": "Home",
     "service": "Service",
@@ -24,8 +27,8 @@
     "paragr5": "",
     "title-span6": "",
     "title6": "",
-    "paragr6": "",
-    "button": "Learn More"
+    "paragr6": ""
+    
   },
   "about": {
     "title": "About Us",
@@ -33,8 +36,7 @@
     "p1": "довольных клиентов",
     "p2": "рентабельности проектов",
     "p3": "kv metr реализовано",
-    "p4": "опыт сотрудниках",
-    "btn": "Learn More"
+    "p4": "опыт сотрудниках"
   }
   
 

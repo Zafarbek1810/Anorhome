@@ -70,7 +70,7 @@ const Banner = () => {
             </p>
             <section class="buttons">
               <MyLink to="/#" className="btn btn-4">
-                <span>{t("hero.button")}</span>
+                <span>{t("button.btn")}</span>
               </MyLink>
             </section>
           </div>
@@ -85,7 +85,7 @@ const Banner = () => {
             </p>
             <section class="buttons">
               <MyLink to="/#" className="btn btn-4">
-                <span>Learn More</span>
+                <span>{t("button.btn")}</span>
               </MyLink>
             </section>
           </div>
@@ -100,7 +100,7 @@ const Banner = () => {
             </p>
             <section class="buttons">
               <MyLink to="/#" className="btn btn-4">
-                <span>Learn More</span>
+                <span>{t("button.btn")}</span>
               </MyLink>
             </section>
           </div>
@@ -115,7 +115,7 @@ const Banner = () => {
             </p>
             <section class="buttons">
               <MyLink to="/#" className="btn btn-4">
-                <span>Learn More</span>
+                <span>{t("button.btn")}</span>
               </MyLink>
             </section>
           </div>
@@ -130,7 +130,7 @@ const Banner = () => {
             </p>
             <section class="buttons">
               <MyLink to="/#" className="btn btn-4">
-                <span>Learn More</span>
+                <span>{t("button.btn")}</span>
               </MyLink>
             </section>
           </div>
