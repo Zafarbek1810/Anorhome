@@ -3,116 +3,139 @@ import Container from "../../../Common/Container";
 import { OurProjectsWrapper } from "./OurProjects.style";
 import LocationSvg from "../../../Common/Svgs/LocationSvg";
 import CalendarSvg from "../../../Common/Svgs/CalendarSvg";
-import MyLink from "../../../Common/MyLink";
-import { Carousel } from "antd";
-import RightSvg from "../../../Common/Svgs/RightSvg";
 import ToRightSvg from "../../../Common/Svgs/ToRightSvg";
 import ToLeftSvg from "../../../Common/Svgs/ToLeftSvg";
-import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Navigation, Pagination } from "swiper";
 
 const data = [
   {
-    title: "Magic Building1",
+    title: "Sergeli Residence",
     category: "Investment Consulting",
     loc1: "Yunusabad, Tashkent",
     loc2: "Amir Temur, 03124923, Yunusobod District, Tashkent City, Uzbekistan",
     date: "12.01.2023",
     descr:
       "1Lorem ipsum dolor sit amet consectetur. Rhoncus hac dui phasellus dolor lectus aliquam diam. Curabitur elementum faucibus dui a et. Neque consectetur scelerisque condimentum posuere et magna nibh vitae nulla. Risus vitae sit luctus dictumst porta eu nulla non sollicitudin. Non malesuada elementum adipiscing et. Faucibus mi ante proin pretium praesent scelerisque. Aliquet tempor viverra eget quis. Semper facilisi a massa diam odio feugiat pharetra justo urna. Bibendum pulvinar et purus aliquam netus nisl. Posuere mattis accumsan sodales ultrices amet eget. Pretium felis pellentesque cursus purus fusce enim a at dolor. Ultricies condimentum ac eget etiam donec adipiscing lobortis. Molestie pellentesque placerat aliquam varius turpis lobortis consequat nulla nisl. Semper scelerisque ultrices urna mus in ornare scelerisque. Fringilla nunc et pellentesque massa integer condimentum. Duis tempus in vestibulum nam tincidunt accumsan arcu amet vestibulum. Sit mi pellentesque vehicula commodo. Turpis enim augue sit enim placerat consequat proin maecenas scelerisque.",
-    img1: "/images/gallery1.png",
+    img1: "/images/projects/sergeli/1.jpg",
+    img2: "/images/projects/sergeli/2.jpg",
+    img3: "/images/projects/sergeli/3.jpg",
+    img4: "/images/projects/sergeli/4.jpg",
+    img5: "/images/projects/sergeli/5.jpg",
+    img6: "/images/projects/sergeli/6.jpg",
+    img7: "/images/projects/sergeli/7.jpg",
+    img8: "/images/projects/sergeli/8.jpg",
+    img9: "/images/projects/sergeli/9.jpg",
   },
   {
-    title: "Magic Building2",
+    title: "Auto Tiger Mall",
     category: "Investment Consulting",
     loc1: "Yunusabad, Tashkent",
     loc2: "Amir Temur, 03124923, Yunusobod District, Tashkent City, Uzbekistan",
     date: "12.01.2023",
     descr:
       "2Lorem ipsum dolor sit amet consectetur. Rhoncus hac dui phasellus dolor lectus aliquam diam. Curabitur elementum faucibus dui a et. Neque consectetur scelerisque condimentum posuere et magna nibh vitae nulla. Risus vitae sit luctus dictumst porta eu nulla non sollicitudin. Non malesuada elementum adipiscing et. Faucibus mi ante proin pretium praesent scelerisque. Aliquet tempor viverra eget quis. Semper facilisi a massa diam odio feugiat pharetra justo urna. Bibendum pulvinar et purus aliquam netus nisl. Posuere mattis accumsan sodales ultrices amet eget. Pretium felis pellentesque cursus purus fusce enim a at dolor. Ultricies condimentum ac eget etiam donec adipiscing lobortis. Molestie pellentesque placerat aliquam varius turpis lobortis consequat nulla nisl. Semper scelerisque ultrices urna mus in ornare scelerisque. Fringilla nunc et pellentesque massa integer condimentum. Duis tempus in vestibulum nam tincidunt accumsan arcu amet vestibulum. Sit mi pellentesque vehicula commodo. Turpis enim augue sit enim placerat consequat proin maecenas scelerisque.",
-    img1: "/images/gallery2.png",
+    img1: "/images/projects/atm/1.jpg",
+    img2: "/images/projects/atm/2.jpg",
+    img3: "/images/projects/atm/3.jpg",
+    img4: "/images/projects/atm/4.jpg",
+    img5: "/images/projects/atm/5.jpg",
+    img6: "/images/projects/atm/6.jpg",
+    img7: "/images/projects/atm/7.jpg",
+    img8: "/images/projects/atm/8.jpg",
+    img9: "/images/projects/atm/9.jpg",
   },
   {
-    title: "Magic Building3",
+    title: "Termiz International Trading center ",
     category: "Investment Consulting",
     loc1: "Yunusabad, Tashkent",
     loc2: "Amir Temur, 03124923, Yunusobod District, Tashkent City, Uzbekistan",
     date: "12.01.2023",
     descr:
       "3Lorem ipsum dolor sit amet consectetur. Rhoncus hac dui phasellus dolor lectus aliquam diam. Curabitur elementum faucibus dui a et. Neque consectetur scelerisque condimentum posuere et magna nibh vitae nulla. Risus vitae sit luctus dictumst porta eu nulla non sollicitudin. Non malesuada elementum adipiscing et. Faucibus mi ante proin pretium praesent scelerisque. Aliquet tempor viverra eget quis. Semper facilisi a massa diam odio feugiat pharetra justo urna. Bibendum pulvinar et purus aliquam netus nisl. Posuere mattis accumsan sodales ultrices amet eget. Pretium felis pellentesque cursus purus fusce enim a at dolor. Ultricies condimentum ac eget etiam donec adipiscing lobortis. Molestie pellentesque placerat aliquam varius turpis lobortis consequat nulla nisl. Semper scelerisque ultrices urna mus in ornare scelerisque. Fringilla nunc et pellentesque massa integer condimentum. Duis tempus in vestibulum nam tincidunt accumsan arcu amet vestibulum. Sit mi pellentesque vehicula commodo. Turpis enim augue sit enim placerat consequat proin maecenas scelerisque.",
-    img1: "/images/gallery3.png",
+    img1: "/images/projects/termiz/1.jpg",
+    img2: "/images/projects/termiz/2.jpg",
+    img3: "/images/projects/termiz/3.jpg",
+    img4: "/images/projects/termiz/4.jpg",
+    img5: "/images/projects/termiz/5.jpg",
+    img6: "/images/projects/termiz/6.jpg",
+    img7: "/images/projects/termiz/7.jpg",
+    img8: "/images/projects/termiz/8.jpg",
+    img9: "/images/projects/termiz/9.jpg",
   },
   {
-    title: "Magic Building4",
+    title: "BIY311 Buyuk Ipak Yo‘li 311",
     category: "Investment Consulting",
     loc1: "Yunusabad, Tashkent",
     loc2: "Amir Temur, 03124923, Yunusobod District, Tashkent City, Uzbekistan",
     date: "12.01.2023",
     descr:
       "4Lorem ipsum dolor sit amet consectetur. Rhoncus hac dui phasellus dolor lectus aliquam diam. Curabitur elementum faucibus dui a et. Neque consectetur scelerisque condimentum posuere et magna nibh vitae nulla. Risus vitae sit luctus dictumst porta eu nulla non sollicitudin. Non malesuada elementum adipiscing et. Faucibus mi ante proin pretium praesent scelerisque. Aliquet tempor viverra eget quis. Semper facilisi a massa diam odio feugiat pharetra justo urna. Bibendum pulvinar et purus aliquam netus nisl. Posuere mattis accumsan sodales ultrices amet eget. Pretium felis pellentesque cursus purus fusce enim a at dolor. Ultricies condimentum ac eget etiam donec adipiscing lobortis. Molestie pellentesque placerat aliquam varius turpis lobortis consequat nulla nisl. Semper scelerisque ultrices urna mus in ornare scelerisque. Fringilla nunc et pellentesque massa integer condimentum. Duis tempus in vestibulum nam tincidunt accumsan arcu amet vestibulum. Sit mi pellentesque vehicula commodo. Turpis enim augue sit enim placerat consequat proin maecenas scelerisque.",
-    img1: "/images/gallery4.png",
+    img1: "/images/projects/biy/1.jpg",
+    img2: "/images/projects/biy/2.jpg",
+    img3: "/images/projects/biy/3.jpg",
+    img4: "/images/projects/biy/4.jpg",
+    img5: "/images/projects/biy/5.jpg",
+    img6: "/images/projects/biy/6.jpg",
+    img7: "/images/projects/biy/7.jpg",
+    img8: "/images/projects/biy/8.jpg",
+    img9: "/images/projects/biy/9.jpg",
   },
   {
-    title: "Magic Building5",
+    title: "Yangi Komolon",
     category: "Investment Consulting",
     loc1: "Yunusabad, Tashkent",
     loc2: "Amir Temur, 03124923, Yunusobod District, Tashkent City, Uzbekistan",
     date: "12.01.2023",
     descr:
       "5Lorem ipsum dolor sit amet consectetur. Rhoncus hac dui phasellus dolor lectus aliquam diam. Curabitur elementum faucibus dui a et. Neque consectetur scelerisque condimentum posuere et magna nibh vitae nulla. Risus vitae sit luctus dictumst porta eu nulla non sollicitudin. Non malesuada elementum adipiscing et. Faucibus mi ante proin pretium praesent scelerisque. Aliquet tempor viverra eget quis. Semper facilisi a massa diam odio feugiat pharetra justo urna. Bibendum pulvinar et purus aliquam netus nisl. Posuere mattis accumsan sodales ultrices amet eget. Pretium felis pellentesque cursus purus fusce enim a at dolor. Ultricies condimentum ac eget etiam donec adipiscing lobortis. Molestie pellentesque placerat aliquam varius turpis lobortis consequat nulla nisl. Semper scelerisque ultrices urna mus in ornare scelerisque. Fringilla nunc et pellentesque massa integer condimentum. Duis tempus in vestibulum nam tincidunt accumsan arcu amet vestibulum. Sit mi pellentesque vehicula commodo. Turpis enim augue sit enim placerat consequat proin maecenas scelerisque.",
-    img1: "/images/gallery1.png",
+    img1: "/images/projects/kamolon/1.jpg",
+    img2: "/images/projects/kamolon/2.jpg",
+    img3: "/images/projects/kamolon/3.jpg",
+    img4: "/images/projects/kamolon/4.jpg",
+    img5: "/images/projects/kamolon/5.jpg",
+    img6: "/images/projects/kamolon/6.jpg",
+    img7: "/images/projects/kamolon/7.jpg",
+    img8: "/images/projects/kamolon/8.jpg",
+    img9: "/images/projects/kamolon/9.jpg",
   },
   {
-    title: "Magic Building1",
+    title: "Travel Business Center",
     category: "Investment Consulting",
     loc1: "Yunusabad, Tashkent",
     loc2: "Amir Temur, 03124923, Yunusobod District, Tashkent City, Uzbekistan",
     date: "12.01.2023",
     descr:
       "1Lorem ipsum dolor sit amet consectetur. Rhoncus hac dui phasellus dolor lectus aliquam diam. Curabitur elementum faucibus dui a et. Neque consectetur scelerisque condimentum posuere et magna nibh vitae nulla. Risus vitae sit luctus dictumst porta eu nulla non sollicitudin. Non malesuada elementum adipiscing et. Faucibus mi ante proin pretium praesent scelerisque. Aliquet tempor viverra eget quis. Semper facilisi a massa diam odio feugiat pharetra justo urna. Bibendum pulvinar et purus aliquam netus nisl. Posuere mattis accumsan sodales ultrices amet eget. Pretium felis pellentesque cursus purus fusce enim a at dolor. Ultricies condimentum ac eget etiam donec adipiscing lobortis. Molestie pellentesque placerat aliquam varius turpis lobortis consequat nulla nisl. Semper scelerisque ultrices urna mus in ornare scelerisque. Fringilla nunc et pellentesque massa integer condimentum. Duis tempus in vestibulum nam tincidunt accumsan arcu amet vestibulum. Sit mi pellentesque vehicula commodo. Turpis enim augue sit enim placerat consequat proin maecenas scelerisque.",
-    img1: "/images/gallery1.png",
+    img1: "/images/projects/travel/1.jpg",
+    img2: "/images/projects/travel/2.jpg",
+    img3: "/images/projects/travel/3.jpg",
+    img4: "/images/projects/travel/4.jpg",
+    img5: "/images/projects/travel/5.jpg",
+    img6: "/images/projects/travel/6.jpg",
+    img7: "/images/projects/travel/4.jpg",
+    img8: "/images/projects/travel/5.jpg",
+    img9: "/images/projects/travel/6.jpg",
   },
   {
-    title: "Magic Building2",
+    title: "Al-Mashriq",
     category: "Investment Consulting",
     loc1: "Yunusabad, Tashkent",
     loc2: "Amir Temur, 03124923, Yunusobod District, Tashkent City, Uzbekistan",
     date: "12.01.2023",
     descr:
       "2Lorem ipsum dolor sit amet consectetur. Rhoncus hac dui phasellus dolor lectus aliquam diam. Curabitur elementum faucibus dui a et. Neque consectetur scelerisque condimentum posuere et magna nibh vitae nulla. Risus vitae sit luctus dictumst porta eu nulla non sollicitudin. Non malesuada elementum adipiscing et. Faucibus mi ante proin pretium praesent scelerisque. Aliquet tempor viverra eget quis. Semper facilisi a massa diam odio feugiat pharetra justo urna. Bibendum pulvinar et purus aliquam netus nisl. Posuere mattis accumsan sodales ultrices amet eget. Pretium felis pellentesque cursus purus fusce enim a at dolor. Ultricies condimentum ac eget etiam donec adipiscing lobortis. Molestie pellentesque placerat aliquam varius turpis lobortis consequat nulla nisl. Semper scelerisque ultrices urna mus in ornare scelerisque. Fringilla nunc et pellentesque massa integer condimentum. Duis tempus in vestibulum nam tincidunt accumsan arcu amet vestibulum. Sit mi pellentesque vehicula commodo. Turpis enim augue sit enim placerat consequat proin maecenas scelerisque.",
-    img1: "/images/gallery2.png",
-  },
-  {
-    title: "Magic Building3",
-    category: "Investment Consulting",
-    loc1: "Yunusabad, Tashkent",
-    loc2: "Amir Temur, 03124923, Yunusobod District, Tashkent City, Uzbekistan",
-    date: "12.01.2023",
-    descr:
-      "3Lorem ipsum dolor sit amet consectetur. Rhoncus hac dui phasellus dolor lectus aliquam diam. Curabitur elementum faucibus dui a et. Neque consectetur scelerisque condimentum posuere et magna nibh vitae nulla. Risus vitae sit luctus dictumst porta eu nulla non sollicitudin. Non malesuada elementum adipiscing et. Faucibus mi ante proin pretium praesent scelerisque. Aliquet tempor viverra eget quis. Semper facilisi a massa diam odio feugiat pharetra justo urna. Bibendum pulvinar et purus aliquam netus nisl. Posuere mattis accumsan sodales ultrices amet eget. Pretium felis pellentesque cursus purus fusce enim a at dolor. Ultricies condimentum ac eget etiam donec adipiscing lobortis. Molestie pellentesque placerat aliquam varius turpis lobortis consequat nulla nisl. Semper scelerisque ultrices urna mus in ornare scelerisque. Fringilla nunc et pellentesque massa integer condimentum. Duis tempus in vestibulum nam tincidunt accumsan arcu amet vestibulum. Sit mi pellentesque vehicula commodo. Turpis enim augue sit enim placerat consequat proin maecenas scelerisque.",
-    img1: "/images/gallery3.png",
-  },
-  {
-    title: "Magic Building4",
-    category: "Investment Consulting",
-    loc1: "Yunusabad, Tashkent",
-    loc2: "Amir Temur, 03124923, Yunusobod District, Tashkent City, Uzbekistan",
-    date: "12.01.2023",
-    descr:
-      "4Lorem ipsum dolor sit amet consectetur. Rhoncus hac dui phasellus dolor lectus aliquam diam. Curabitur elementum faucibus dui a et. Neque consectetur scelerisque condimentum posuere et magna nibh vitae nulla. Risus vitae sit luctus dictumst porta eu nulla non sollicitudin. Non malesuada elementum adipiscing et. Faucibus mi ante proin pretium praesent scelerisque. Aliquet tempor viverra eget quis. Semper facilisi a massa diam odio feugiat pharetra justo urna. Bibendum pulvinar et purus aliquam netus nisl. Posuere mattis accumsan sodales ultrices amet eget. Pretium felis pellentesque cursus purus fusce enim a at dolor. Ultricies condimentum ac eget etiam donec adipiscing lobortis. Molestie pellentesque placerat aliquam varius turpis lobortis consequat nulla nisl. Semper scelerisque ultrices urna mus in ornare scelerisque. Fringilla nunc et pellentesque massa integer condimentum. Duis tempus in vestibulum nam tincidunt accumsan arcu amet vestibulum. Sit mi pellentesque vehicula commodo. Turpis enim augue sit enim placerat consequat proin maecenas scelerisque.",
-    img1: "/images/gallery4.png",
-  },
-  {
-    title: "Magic Building5",
-    category: "Investment Consulting",
-    loc1: "Yunusabad, Tashkent",
-    loc2: "Amir Temur, 03124923, Yunusobod District, Tashkent City, Uzbekistan",
-    date: "12.01.2023",
-    descr:
-      "5Lorem ipsum dolor sit amet consectetur. Rhoncus hac dui phasellus dolor lectus aliquam diam. Curabitur elementum faucibus dui a et. Neque consectetur scelerisque condimentum posuere et magna nibh vitae nulla. Risus vitae sit luctus dictumst porta eu nulla non sollicitudin. Non malesuada elementum adipiscing et. Faucibus mi ante proin pretium praesent scelerisque. Aliquet tempor viverra eget quis. Semper facilisi a massa diam odio feugiat pharetra justo urna. Bibendum pulvinar et purus aliquam netus nisl. Posuere mattis accumsan sodales ultrices amet eget. Pretium felis pellentesque cursus purus fusce enim a at dolor. Ultricies condimentum ac eget etiam donec adipiscing lobortis. Molestie pellentesque placerat aliquam varius turpis lobortis consequat nulla nisl. Semper scelerisque ultrices urna mus in ornare scelerisque. Fringilla nunc et pellentesque massa integer condimentum. Duis tempus in vestibulum nam tincidunt accumsan arcu amet vestibulum. Sit mi pellentesque vehicula commodo. Turpis enim augue sit enim placerat consequat proin maecenas scelerisque.",
-    img1: "/images/gallery1.png",
+    img1: "/images/projects/almashriq/1.jpg",
+    img2: "/images/projects/almashriq/2.jpg",
+    img3: "/images/projects/almashriq/3.jpg",
+    img4: "/images/projects/almashriq/4.jpg",
+    img5: "/images/projects/almashriq/5.jpg",
+    img6: "/images/projects/almashriq/6.jpg",
+    img7: "/images/projects/almashriq/7.jpg",
+    img8: "/images/projects/almashriq/8.jpg",
+    img9: "/images/projects/almashriq/9.jpg",
   },
 ];
 
@@ -123,7 +146,6 @@ const OurProjects = () => {
     setSelectedCardIndex(index);
   }
   const swiperRef = useRef();
-  const swiper = useSwiper();
 
   return (
     <OurProjectsWrapper>
@@ -172,30 +194,40 @@ const OurProjects = () => {
                     <SwiperSlide>
                       <div className="imgs">
                         <div className="img">
-                          <img src={data[selectedCardIndex].img1} alt="" />
+                          <img src={data[selectedCardIndex].img2} alt="" />
                         </div>
                         <div className="img">
-                          <img src={data[selectedCardIndex].img1} alt="" />
-                        </div>
-                      </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <div className="imgs">
-                        <div className="img">
-                          <img src={data[selectedCardIndex].img1} alt="" />
-                        </div>
-                        <div className="img">
-                          <img src={data[selectedCardIndex].img1} alt="" />
+                          <img src={data[selectedCardIndex].img3} alt="" />
                         </div>
                       </div>
                     </SwiperSlide>
                     <SwiperSlide>
                       <div className="imgs">
                         <div className="img">
-                          <img src={data[selectedCardIndex].img1} alt="" />
+                          <img src={data[selectedCardIndex].img4} alt="" />
                         </div>
                         <div className="img">
-                          <img src={data[selectedCardIndex].img1} alt="" />
+                          <img src={data[selectedCardIndex].img5} alt="" />
+                        </div>
+                      </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <div className="imgs">
+                        <div className="img">
+                          <img src={data[selectedCardIndex].img6} alt="" />
+                        </div>
+                        <div className="img">
+                          <img src={data[selectedCardIndex].img7} alt="" />
+                        </div>
+                      </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <div className="imgs">
+                        <div className="img">
+                          <img src={data[selectedCardIndex].img8} alt="" />
+                        </div>
+                        <div className="img">
+                          <img src={data[selectedCardIndex].img9} alt="" />
                         </div>
                       </div>
                     </SwiperSlide>
