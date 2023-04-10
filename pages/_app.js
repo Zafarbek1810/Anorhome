@@ -45,12 +45,18 @@ i18n
 function MyApp({ Component, pageProps }) {
   const [loading, setLoading] = useState(true)
   const [loading2, setLoading2] = useState(false)
-
+  const [jivo, setJivo] = useState(false)
   // useLayoutEffect(() => {
   //   setTimeout(() => {
   //     setLoading(false)
   //   }, 2000)
   // }, [])
+
+  useEffect(()=>{
+    setTimeout(() => {
+      setJivo(true)
+    }, 10000);
+  }, [])
 
   useEffect(() => {
     setTimeout(() => {
@@ -78,7 +84,7 @@ function MyApp({ Component, pageProps }) {
         <Modal>
           <FormModal />
         </Modal> 
-        <Script src="//code.jivo.ru/widget/dqFEUXxryd" async />
+        {jivo && <Script src="//code.jivo.ru/widget/dqFEUXxryd" async />}
       </HeaderProvider>
     </ModalProvider>
 
