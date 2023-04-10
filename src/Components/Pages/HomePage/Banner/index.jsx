@@ -74,6 +74,7 @@ const Banner = () => {
               </MyLink>
             </section>
           </div>
+          
           <div className="wrap" data-aos={"zoom-in"} >
             <h1 className="title">
               <span>{t("hero.title-span2")} </span> 
@@ -88,13 +89,14 @@ const Banner = () => {
               </MyLink>
             </section>
           </div>
+
           <div className="wrap" data-aos={"zoom-in"} >
             <h1 className="title">
-              <span>{t("hero.title-span2")} </span> 
-              {t("hero.title2")} 
+              <span>{t("hero.title-span3")} </span> 
+              {t("hero.title3")} 
             </h1>
             <p className="descr">
-            {t("hero.paragr2")}
+            {t("hero.paragr3")}
             </p>
             <section class="buttons">
               <MyLink to="/#" className="btn btn-4">
@@ -102,13 +104,14 @@ const Banner = () => {
               </MyLink>
             </section>
           </div>
+
           <div className="wrap" data-aos={"zoom-in"} >
             <h1 className="title">
-              <span>{t("hero.title-span2")} </span> 
-              {t("hero.title2")} 
+              <span>{t("hero.title-span4")} </span> 
+              {t("hero.title4")} 
             </h1>
             <p className="descr">
-            {t("hero.paragr2")}
+            {t("hero.paragr4")}
             </p>
             <section class="buttons">
               <MyLink to="/#" className="btn btn-4">
@@ -116,13 +119,14 @@ const Banner = () => {
               </MyLink>
             </section>
           </div>
+
           <div className="wrap" data-aos={"zoom-in"} >
             <h1 className="title">
-              <span>{t("hero.title-span2")} </span> 
-              {t("hero.title2")} 
+              <span>{t("hero.title-span5")} </span> 
+              {t("hero.title5")} 
             </h1>
             <p className="descr">
-            {t("hero.paragr2")}
+            {t("hero.paragr5")}
             </p>
             <section class="buttons">
               <MyLink to="/#" className="btn btn-4">
@@ -130,13 +134,14 @@ const Banner = () => {
               </MyLink>
             </section>
           </div>
+
           <div className="wrap" data-aos={"zoom-in"} >
             <h1 className="title">
-              <span>{t("hero.title-span2")} </span> 
-              {t("hero.title2")} 
+              <span>{t("hero.title-span6")} </span> 
+              {t("hero.title6")} 
             </h1>
             <p className="descr">
-            {t("hero.paragr2")}
+            {t("hero.paragr6")}
             </p>
             <section class="buttons">
               <MyLink to="/#" className="btn btn-4">

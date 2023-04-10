@@ -49,7 +49,8 @@ const HistorySection = () => {
                 </p>
               </div>
             </div>
-            <div className="box__boxes" data-aos="fade-zoom-in">
+            
+            {/* <div className="box__boxes" data-aos="fade-zoom-in">
               <div className="box__left">
                 <img src="/aboutUs/ourMission.svg" alt="Our Mission Svg" />
                 <h2>Our Mission</h2>
@@ -70,8 +71,9 @@ const HistorySection = () => {
                   posuere et purus. Pulvinar ut at et{" "}
                 </p>
               </div>
-            </div>
-            <div className="box__boxes" data-aos="fade-zoom-in">
+            </div>  */}
+
+            {/* <div className="box__boxes" data-aos="fade-zoom-in">
               <div className="box__left">
                 <img src="/aboutUs/ourVision.svg" alt="Our Vision Svg" />
                 <h2>Our Vision</h2>
@@ -85,7 +87,8 @@ const HistorySection = () => {
                   vitae amet faucibus in ac.{" "}
                 </p>
               </div>
-            </div>
+            </div> */}
+
           </div>
         </section>
       </Container>
