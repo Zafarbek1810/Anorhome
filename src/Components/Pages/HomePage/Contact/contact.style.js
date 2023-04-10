@@ -37,7 +37,7 @@ padding-bottom: 40px;
     &__info {
       background: #161a1d;
       width: 30%;
-      padding:20px 40px;
+      padding:35px 40px;
     }
     &__box {
       padding-bottom: 40px;
