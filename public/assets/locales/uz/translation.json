@@ -35,9 +35,34 @@
     "p1": "Baxtli Oilalar",
     "p2": "Loyihalar Tugallandi",
     "p3": "Jami Daromad",
-    "p4": "Ishonchli Mijozlar",
-    "btn": "Batafsil"
+    "p4": "Ishonchli Mijozlar"  
   },
+  "projects": {
+    "title": "Loyihalar",
+    "info-top": "Arxitektura Tavsiyalar",
+    "info-title": "Orzular Uyini Qurish",
+    "info-p": "Lorem ipsum dolor sit amet consectetur. Luctus in montes pellentesque proin neque pellentesque suspendisse sit. Proin ut at tortor nulla quam arcu.",
+    "btn": "Hammasini Ko'rish"
+  },
+  "clients":{
+    "title": "Hamkorlar"
+  },
+  "contact": {
+    "title": "Biz Bilan Bog'lanish",
+    "phone": "Telefon Nomer",
+    "working": "Ish Soati",
+    "from": "Dan:",
+    "week": "Dushanba-Juma",
+    "email": "Elektron pochta"
+  },
+
+
+
+  "services":{
+    "top-parag": "Find us at some of the coolest cities across the globe.",
+    "top-title": "Anorhome Services"
+  }
+
 
 
 

@@ -5,45 +5,51 @@ import { ServicesWrapper } from "./Services.style";
 import { useRouter } from "next/router";
 import useWindowDimensions from "../../../../Hooks/useWindow";
 import AOS from "aos";
-const data = [
-  {
-    id: "1",
-    span: "1",
-    p1: "Strategic consulting",
-    img: "/images/services/service1.jpg",
-    p2: "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Scelerisque pulvinar amet turpis elit euismod mollis interdum nulla. Consequat viverra aenean egestas congue metus nisi sed. Semper vitae amet faucibus in ac. Donec aliquam eu faucibus faucibus id lobortis integer. Ipsum dignissim non dui nullam eu magna. Ut pellentesque arcu est pulvinar ullamcorper. Aliquet egestas at tincidunt mi scelerisque orci",
-  },
-  {
-    id: "2",
-    span: "2",
-    p1: "Promotion of real estate development projects",
-    img: "/images/services/service2.jpg",
-    p2: "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Scelerisque pulvinar amet turpis elit euismod mollis interdum nulla. Consequat viverra aenean egestas congue metus nisi sed. Semper vitae amet faucibus in ac. Donec aliquam eu faucibus faucibus id lobortis integer. Ipsum dignissim non dui nullam eu magna. Ut pellentesque arcu est pulvinar ullamcorper. Aliquet egestas at tincidunt mi scelerisque orci",
-  },
-  {
-    id: "3",
-    span: "3",
-    p1: "Investment consulting",
-    img: "/images/services/service3.jpg",
-    p2: "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Scelerisque pulvinar amet turpis elit euismod mollis interdum nulla. Consequat viverra aenean egestas congue metus nisi sed. Semper vitae amet faucibus in ac. Donec aliquam eu faucibus faucibus id lobortis integer. Ipsum dignissim non dui nullam eu magna. Ut pellentesque arcu est pulvinar ullamcorper. Aliquet egestas at tincidunt mi scelerisque orci",
-  },
-  {
-    id: "4",
-    span: "4",
-    p1: "Real estate services",
-    img: "/images/services/service4.jpg",
-    p2: "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Scelerisque pulvinar amet turpis elit euismod mollis interdum nulla. Consequat viverra aenean egestas congue metus nisi sed. Semper vitae amet faucibus in ac. Donec aliquam eu faucibus faucibus id lobortis integer. Ipsum dignissim non dui nullam eu magna. Ut pellentesque arcu est pulvinar ullamcorper. Aliquet egestas at tincidunt mi scelerisque orci",
-  },
-  {
-    id: "5",
-    span: "5",
-    p1: "Trust management",
-    img: "/images/services/service5.jpg",
-    p2: "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Scelerisque pulvinar amet turpis elit euismod mollis interdum nulla. Consequat viverra aenean egestas congue metus nisi sed. Semper vitae amet faucibus in ac. Donec aliquam eu faucibus faucibus id lobortis integer. Ipsum dignissim non dui nullam eu magna. Ut pellentesque arcu est pulvinar ullamcorper. Aliquet egestas at tincidunt mi scelerisque orci",
-  },
-];
+import { useTranslation } from "react-i18next";
+
 
 const Services = () => {
+  
+  const { t } = useTranslation();
+  
+  const data = [
+    {
+      id: "1",
+      span: "1",
+      p1: t("hero.title-span"),
+      img: "/images/services/service1.jpg",
+      p2: t("hero.paragr"),
+    },
+    {
+      id: "2",
+      span: "2",
+      p1: t("hero.title-span2"),
+      img: "/images/services/service2.jpg",
+      p2: t("hero.paragr2"),
+    },
+    {
+      id: "3",
+      span: "3",
+      p1: t("hero.title-span3"),
+      img: "/images/services/service3.jpg",
+      p2: t("hero.paragr3"),
+    },
+    {
+      id: "4",
+      span: "4",
+      p1: t("hero.title-span4"),
+      img: "/images/services/service4.jpg",
+      p2: t("hero.paragr4"),
+    },
+    {
+      id: "5",
+      span: "5",
+      p1: t("hero.title-span5"),
+      img: "/images/services/service5.jpg",
+      p2: t("hero.paragr5"),
+    },
+  ];
+
   const router = useRouter();
 
   const pos = useScrollPosition(-0.07); //scrollY * 0.5

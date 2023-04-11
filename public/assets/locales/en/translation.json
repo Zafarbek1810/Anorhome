@@ -36,9 +36,35 @@
     "p1": "довольных клиентов",
     "p2": "рентабельности проектов",
     "p3": "kv metr реализовано",
-    "p4": "опыт сотрудниках",
-    "btn": "Learn More"
+    "p4": "опыт сотрудниках"
   },
+  "projects": {
+    "title": "Projects",
+    "info-top": "Architecture Consulting",
+    "info-title": "Dream House Building",
+    "info-p": "Lorem ipsum dolor sit amet consectetur. Luctus in montes pellentesque proin neque pellentesque suspendisse sit. Proin ut at tortor nulla quam arcu",
+    "btn": "See All"
+  },
+  "clients": {
+    "title": "Clients"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "phone": "Phone Number",
+    "working": "Working Hours",
+    "from": "From:",
+    "week": "Monday-Friday",
+    "email": "Email"
+  },
+
+
+  "services":{
+    "top-parag": "Find us at some of the coolest cities across the globe.",
+    "top-title": "Anorhome Services" 
+  },
+
+
+
   "footer":{
     "descr":"Creating value",
     "link1":"Service",
