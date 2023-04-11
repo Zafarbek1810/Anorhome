@@ -25,7 +25,7 @@ const FooterWrapper = styled.div`
     }
   }
   .footer__items {
-    width: 40%;
+    width: 50%;
     padding-top: 15px;
     display: flex;
 
@@ -33,7 +33,7 @@ const FooterWrapper = styled.div`
       font-family: "Montserrat";
       font-style: normal;
       font-weight: 600;
-      font-size: 18px;
+      font-size: 16px;
       /* margin: 30px; */
       transition: 0.3s;
       color: #fff;

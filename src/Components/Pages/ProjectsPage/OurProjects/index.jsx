@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Container from "../../../Common/Container";
 import { OurProjectsWrapper } from "./OurProjects.style";
 import LocationSvg from "../../../Common/Svgs/LocationSvg";
@@ -9,6 +9,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Navigation, Pagination } from "swiper";
+import Aos from "aos";
 
 const data = [
   {
@@ -141,136 +142,144 @@ const data = [
 
 const OurProjects = () => {
   const [selectedCardIndex, setSelectedCardIndex] = useState(0);
+  const [loading, setLoading] = useState(false);
 
   function handleCardClick(index) {
-    setSelectedCardIndex(index);
+    setLoading(true)
+    Aos.init({ duration: 1500, once: false });
+      Aos.refresh();
+    setTimeout(() => {
+      setSelectedCardIndex(index);
+    }, 1000);
+    setLoading(false);
   }
   const swiperRef = useRef();
+
+ 
 
   return (
     <OurProjectsWrapper>
       <Container>
         <div className="wrapper">
-          <div className="left">
-            {selectedCardIndex !== null ? (
-              <div>
-                <h4 className="title">Our Completed Projects</h4>
-                <div className="cards">
-              {data.map((card, index) => (
-                <div
-                  className={`card ${
-                    index === selectedCardIndex ? "selected" : ""
-                  }`}
-                  key={index}
-                  onClick={() => handleCardClick(index)}
-                >
-                  <div className="img">
-                    <img src={card.img1} alt="" />
+            <div className="left">
+              {selectedCardIndex !== null ? (
+                <div>
+                  <h4 className="title">
+                    Our Completed Projects
+                  </h4>
+                  <div className="cards">
+                    {data.map((card, index) => (
+                      <div
+                        className={`card ${
+                          index === selectedCardIndex ? "selected" : ""
+                        }`}
+                        key={index}
+                        onClick={() => handleCardClick(index)}
+                      >
+                        <div className="img">
+                          <img src={card.img1} alt="" />
+                        </div>
+                        <div className="text">
+                          <div>
+                            <h6>{card.title}</h6>
+                            <p>{card.category}</p>
+                          </div>
+                          <div className="location-card">
+                            <LocationSvg />
+                            <p>{card.loc1}</p>
+                          </div>
+                        </div>
+                      </div>
+                    ))}
                   </div>
-                  <div className="text">
-                    <div>
-                      <h6>{card.title}</h6>
-                      <p>{card.category}</p>
-                    </div>
-                    <div className="location-card">
-                      <LocationSvg />
-                      <p>{card.loc1}</p>
-                    </div>
+                  <p className="heading" data-aos={ !loading ? "fade-right" : ""}>
+                    {data[selectedCardIndex].title}
+                  </p>
+                  <p className="descr" data-aos={ !loading ? "fade-right" : ""}>
+                    {data[selectedCardIndex].descr}
+                  </p>
+                  <div className="location">
+                    <LocationSvg />
+                    <p>{data[selectedCardIndex].loc2}</p>
                   </div>
-                </div>
-              ))}
-            </div>
-                <p className="heading">{data[selectedCardIndex].title}</p>
-                <p className="descr">{data[selectedCardIndex].descr}</p>
-                <div className="location">
-                  <LocationSvg />
-                  <p>{data[selectedCardIndex].loc2}</p>
-                </div>
-                <div className="calendar">
-                  <CalendarSvg /> <p>{data[selectedCardIndex].date}</p>
-                </div>
+                  <div className="calendar">
+                    <CalendarSvg /> <p>{data[selectedCardIndex].date}</p>
+                  </div>
 
-                <div className="galery">
-                  <h5 className="title-img">Project Gallery</h5>
-                  <Swiper
-                    slidesPerView={2}
-                    spaceBetween={30}
-                    ref={swiperRef}
-                    loop={true}
-                    pagination={true}
-                    navigation={{
-                      prevEl: ".prev",
-                      nextEl: ".next",
-                      clickable: true,
-                    }}
-                    modules={[Navigation, Pagination]}
-                    className="mySwiper"
-                  >
-                    <SwiperSlide>
-                      <div className="imgs">
-                        <div className="img">
-                          <img src={data[selectedCardIndex].img1} alt="" />
+                  <div className="galery">
+                    <h5 className="title-img">Project Gallery</h5>
+                    <Swiper
+                      slidesPerView={2}
+                      spaceBetween={30}
+                      ref={swiperRef}
+                      loop={true}
+                      pagination={true}
+                      navigation={{
+                        prevEl: ".prev",
+                        nextEl: ".next",
+                        clickable: true,
+                      }}
+                      modules={[Navigation, Pagination]}
+                      className="mySwiper"
+                    >
+                      
+                      <SwiperSlide>
+                        <div className="imgs">
+                          <div className="img">
+                            <img src={data[selectedCardIndex].img2} alt="" />
+                          </div>
+                          <div className="img">
+                            <img src={data[selectedCardIndex].img3} alt="" />
+                          </div>
                         </div>
-                        <div className="img">
-                          <img src={data[selectedCardIndex].img1} alt="" />
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        <div className="imgs">
+                          <div className="img">
+                            <img src={data[selectedCardIndex].img4} alt="" />
+                          </div>
+                          <div className="img">
+                            <img src={data[selectedCardIndex].img5} alt="" />
+                          </div>
                         </div>
-                      </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <div className="imgs">
-                        <div className="img">
-                          <img src={data[selectedCardIndex].img2} alt="" />
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        <div className="imgs">
+                          <div className="img">
+                            <img src={data[selectedCardIndex].img6} alt="" />
+                          </div>
+                          <div className="img">
+                            <img src={data[selectedCardIndex].img7} alt="" />
+                          </div>
                         </div>
-                        <div className="img">
-                          <img src={data[selectedCardIndex].img3} alt="" />
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        <div className="imgs">
+                          <div className="img">
+                            <img src={data[selectedCardIndex].img8} alt="" />
+                          </div>
+                          <div className="img">
+                            <img src={data[selectedCardIndex].img9} alt="" />
+                          </div>
                         </div>
-                      </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <div className="imgs">
-                        <div className="img">
-                          <img src={data[selectedCardIndex].img4} alt="" />
-                        </div>
-                        <div className="img">
-                          <img src={data[selectedCardIndex].img5} alt="" />
-                        </div>
-                      </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <div className="imgs">
-                        <div className="img">
-                          <img src={data[selectedCardIndex].img6} alt="" />
-                        </div>
-                        <div className="img">
-                          <img src={data[selectedCardIndex].img7} alt="" />
-                        </div>
-                      </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <div className="imgs">
-                        <div className="img">
-                          <img src={data[selectedCardIndex].img8} alt="" />
-                        </div>
-                        <div className="img">
-                          <img src={data[selectedCardIndex].img9} alt="" />
-                        </div>
-                      </div>
-                    </SwiperSlide>
-                  </Swiper>
-                  <div className="btns">
-                    <button className="prev">
-                      <ToLeftSvg />
-                    </button>
-                    <button className="next">
-                      <ToRightSvg />
-                    </button>
+                      </SwiperSlide>
+                    </Swiper>
+                    <div className="btns">
+                      <button className="prev">
+                        <ToLeftSvg />
+                      </button>
+                      <button className="next">
+                        <ToRightSvg />
+                      </button>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ) : (
-              <p>Select a card to view its information</p>
-            )}
-          </div>
+              ) : (
+                <p>Select a card to view its information</p>
+              )}
+            </div>
+          
+
           <div className="right">
             <div className="cards">
               {data.map((card, index) => (

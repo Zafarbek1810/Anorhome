@@ -45,13 +45,13 @@ const SecondSectionWrapper = styled.div`
           width: 25%;
           text-align: center;
           border-right: 1px solid #A4161A;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
           
           &:last-child{
               border-right: none;
           }
-
-          
-
           .num {
             font-family: "Mulish";
             font-style: normal;

@@ -108,6 +108,8 @@ const OurProjectsWrapper = styled.div`
           }
         }
 
+        
+
         .card:hover {
           background-color: #161a1d;
           cursor: pointer;
@@ -227,7 +229,7 @@ const OurProjectsWrapper = styled.div`
     }
     .right {
       width: 50%;
-      height: 1500px;
+      height: 1400px;
       overflow-y: scroll;
       padding: 40px;
       background-color: #fff;
@@ -307,6 +309,19 @@ const OurProjectsWrapper = styled.div`
           }
         }
 
+        .card.card.selected{
+          background-color: #161a1d;
+
+          .text {
+            h6 {
+              color: #ffffff;
+            }
+            p {
+              color: #ffffff;
+            }
+          }
+        }
+
         .card:hover {
           background-color: #161a1d;
           cursor: pointer;
@@ -324,6 +339,31 @@ const OurProjectsWrapper = styled.div`
     }
   }
 
+  @media (max-width: 2450px) {
+    .right{
+      height: 1200px !important;
+    }
+  }
+  @media (max-width: 1700px) {
+    .right{
+      height: 1200px !important;
+    }
+  }
+  @media (max-width: 1450px) {
+    .right{
+      height: 1400px !important;
+    }
+  }
+  @media (max-width: 1300px) {
+    .right{
+      height: 1450px !important;
+    }
+  }
+  @media (max-width: 1050px) {
+    .right{
+      height: 1550px !important;
+    }
+  }
   @media(max-width:870px){
     .wrapper{
       flex-direction:column-reverse;
@@ -349,6 +389,6 @@ const OurProjectsWrapper = styled.div`
     }
   }
 
-`;
+`
 
 export { OurProjectsWrapper };
