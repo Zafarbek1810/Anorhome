@@ -28,13 +28,14 @@ const Banner = () => {
     <BannerWrapper>
       <div className="img-wrapper">
         <Carousel
-          key={"asdasdasdad"}
+        autoplay
           pauseOnFocus={false}
           pauseOnHover={false}
           pauseOnDotsHover={false}
-          autoplay
-          ref={ref}
-          // autoplaySpeed={3000}
+          autoplaySpeed={3000}
+          // afterChange={onChange}
+          beforeChange={onChange}
+          
         >
           <img src="/images/banner.jpg" alt="" />
           <img src="/images/banner2.jpg" alt="" />
@@ -46,14 +47,11 @@ const Banner = () => {
       </div>
       <Container className="cont">
         <Carousel
-          autoplay
+          className="carusel"
           pauseOnFocus={false}
           pauseOnHover={false}
           pauseOnDotsHover={false}
-          autoplaySpeed={3000}
-          // afterChange={onChange}
-          beforeChange={onChange}
-          className="carusel"
+          ref={ref}
         >
           <div className="wrap" data-aos={"zoom-in"}>
             <h1 className="title">

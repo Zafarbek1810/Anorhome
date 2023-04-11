@@ -7,6 +7,7 @@ import EmailSvg from "../../../Common/Svgs/EmailSvg";
 import { ContactWrappper } from "./contact.style";
 import MyLink from "../../../Common/MyLink";
 import { Map, Placemark, YMaps } from "@pbe/react-yandex-maps";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
 
@@ -18,6 +19,9 @@ const Contact = () => {
     center: [41.324987, 69.320206],
     zoom: 17,
   };
+
+  const {t} = useTranslation();
+  
   return (
     <ContactWrappper>
       <div data-aos={"fade-in"} className="title">
@@ -28,33 +32,33 @@ const Contact = () => {
 
       <Container>
         <div className="contact" data-aos={"fade-up"}>
-          <div className="contact__info">
+        <div className="contact__info">
             <div className="contact__box">
               <span className="contact__icon">
                 <UserNumSvg />
               </span>
-              <h4>Phone Number</h4>
-              <p>+094 9123124 214124</p>
-              <p>+094 9123124 214124</p>
+              <h4>{t("contact.phone")}</h4>
+              <p>+998 99 861 75 00</p>
+              <p>+998 33 150 75 75</p>
             </div>
             <div className="contact__box">
               <span className="contact__icon">
                 <BuildingSvg />
               </span>
-              <h4>Working Hours</h4>
+              <h4>{t("contact.working")}</h4>
               <p>
-                From: <span>9:00 - 19:00</span>
+              {t("contact.from")} <span>10:00 – 19:00</span>
               </p>
-              <p>Saturday and Sunday are closed</p>
+              <p>{t("contact.week")}</p>
             </div>
             <div className="contact__box">
               <span className="contact__icon">
                 <EmailSvg />
               </span>
 
-              <h4>Email</h4>
-              <MyLink to={"mailto: anorhome@gmail.com"} className="emailLink">
-                anorhome@gmail.com
+              <h4>{t("contact.email")}</h4>
+              <MyLink to={"mailto: info@anorhome.com"} className="emailLink">
+              info@anorhome.com
               </MyLink>
             </div>
           </div>
