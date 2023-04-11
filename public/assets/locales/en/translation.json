@@ -99,6 +99,14 @@
     "link4":"Contact Us",
     "social":"Our Social Media",
     "everbest": "Powered by"
+  },
+
+  "error404": {
+    "title": "Page Not Found.",
+    "parag": "Lorem ipsum dolor sit amet consectetur. Rhoncus hac dui phasellus dolor lectus aliquam diam. Curabitur elementum faucibus dui a et. Neque consectetur scelerisque condim",
+    "back": "Go back",
+    "home": "Take Home"
+
   }
   
 

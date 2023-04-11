@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import Header from "../src/Components/Pages/Header/index"
 import Footer from "../src/Components/Pages/Footer/footer"
 import MyLink from "../src/Components/Common/MyLink";
@@ -7,6 +8,8 @@ import { ErrorPageWrapper } from "../styles/404.style";
 import Container from "../src/Components/Common/Container";
 
 const Page404 = () => {
+
+  const { t } = useTranslation();
 
   const onBack = () =>{
     window.history.back();
@@ -20,22 +23,20 @@ const Page404 = () => {
      <section className="section1">
      <div className="wrapper">
         <div className="left">
-          <h2>Page Not Found.</h2>
+          <h2>{t("error404.title")}</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur. Rhoncus hac dui phasellus
-            dolor lectus aliquam diam. Curabitur elementum faucibus dui a et.
-            Neque consectetur scelerisque condim
+          {t("error404.parag")}
           </p>
           <div className="buttonWr">
             <section class="buttons">
               <div className="btn1 btn-4" onClick={onBack}>
-                <span> <BackSvg /> Go Back</span>
+                <span> <BackSvg /> {t("error404.back")}</span>
               </div>
             </section>
 
             <section class="buttons">
               <MyLink to="/" className="btn2 btn-4">
-                <span>Take Home</span>
+                <span>{t("error404.home")}</span>
               </MyLink>
             </section>
           </div>

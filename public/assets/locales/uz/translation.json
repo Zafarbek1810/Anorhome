@@ -96,8 +96,16 @@
     "link4":"Aloqa",
     "social":"Ijtimoiy tarmoqlarimiz",
     "everbest": "Loyiha Muallifi"
-  }
+  },
   
+
+  "error404": {
+    "title": "Sahifa Topilmadi.",
+    "parag": "Lorem ipsum dolor sit amet consectetur. Rhoncus hac dui phasellus dolor lectus aliquam diam. Curabitur elementum faucibus dui a et. Neque consectetur scelerisque condim",
+    "back": "Ortga Qaytish",
+    "home": "Asosiy Sahifa"
+
+  }
 
 
 }
