@@ -47,8 +47,7 @@ const HistoryWrapper = styled.div`
         font-style: normal;
         font-weight: 900;
         font-size: 45px;
-        margin: 0;
-        letter-spacing: 0.1em;
+        margin: 0; 
         color: #000000;
       }
     }

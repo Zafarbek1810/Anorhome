@@ -95,5 +95,14 @@
     "link4":"Связаться С Нами",
     "social":"Наши Социальные Сети",
     "everbest": "Разработано"
+  },
+
+  "error404": {
+    "title": "Страница Не Найдена.",
+    "parag": "Lorem ipsum dolor sit amet consectetur. Rhoncus hac dui phasellus dolor lectus aliquam diam. Curabitur elementum faucibus dui a et. Neque consectetur scelerisque condim",
+    "back": "Возвращаться",
+    "home": "Главная Страница"
+
   }
+
 }

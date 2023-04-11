@@ -21,7 +21,7 @@ const ErrorPageWrapper = styled.div`
       font-family: "Mulish";
       font-style: normal;
       font-weight: 700;
-      font-size: 64px;
+      font-size: 60px;
       line-height: 77px;
       margin-top: 0;
       color: #ffffff;
@@ -60,8 +60,8 @@ const ErrorPageWrapper = styled.div`
     font-size: 16px;
     color: #fff;
     cursor: pointer;
-    max-width: 170px !important;
-    padding: 14px 40px;
+    max-width: 190px !important;
+    padding: 14px 20px;
     position: relative;
     width: 100%;
     background: transparent;
@@ -77,8 +77,8 @@ const ErrorPageWrapper = styled.div`
     font-size: 16px;
     color: #fff;
     cursor: pointer;
-    max-width: 170px !important;
-    padding: 15px 40px;
+    max-width: 190px !important;
+    padding: 15px 20px;
     position: relative;
     width: 100%;
     background: #fe152b;
@@ -86,12 +86,12 @@ const ErrorPageWrapper = styled.div`
   .btn2:hover {
     text-decoration: none;
   }
-  .btn-4 {
+  .btn-4 { 
     /* border: 1px solid; */
     overflow: hidden;
     position: relative;
   }
-  .btn-4 span {
+  .btn-4 span { 
     z-index: 20;
   }
   .btn-4:after {
@@ -139,13 +139,13 @@ const ErrorPageWrapper = styled.div`
       }
     }
     .btn1 {
-      max-width: 160px !important;
-      padding: 13px 30px;
+      max-width: 170px !important;
+      padding: 13px 10px;
     }
 
     .btn2 {
-      max-width: 160px !important;
-      padding: 13px 30px;
+      max-width: 170px !important;
+      padding: 13px 10px;
     }
   }
 
@@ -192,8 +192,8 @@ const ErrorPageWrapper = styled.div`
       font-size: 15px;
       color: #fff;
       cursor: pointer;
-      max-width: 160px !important;
-      padding: 14px 30px;
+      max-width: 170px !important;
+      padding: 14px 10px;
       position: relative;
       width: 100%;
       background: transparent;
@@ -209,8 +209,8 @@ const ErrorPageWrapper = styled.div`
       font-size: 15px;
       color: #fff;
       cursor: pointer;
-      max-width: 160px !important;
-      padding: 15px 30px;
+      max-width: 170px !important;
+      padding: 15px 10px;
       position: relative;
       width: 100%;
       background: #fe152b;
