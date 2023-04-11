@@ -14,9 +14,9 @@ const data = [
     title: "hero.title-span",
     banner: {
       title: "hero.title-span",
-      img: "/images/serviceDetailBanner.png",
+      img: "/images/banner.jpg",
       descr:
-        "Lorem ipsum dolor sit amet consectetur. Rhoncus hac dui phasellus dolor lectus aliquam diam. Curabitur elementum faucibus dui a et. Neque consectetur scelerisque condimentum posuere et magna nibh vitae nulla. Risus vitae sit luctus dictumst porta eu nulla non sollicitudin. Non malesuada elementum adipiscinndimentum ac e",
+        "hero.paragr",
     },
     works: {
       title: "How It Works",
@@ -78,9 +78,9 @@ const data = [
     id: "2",
     banner: {
       title: "hero.title-span2",
-      img: "/images/serviceDetailBanner.png",
+      img: "/images/banner2.jpg",
       descr:
-        "Lorem ipsum dolor sit amet consectetur. Rhoncus hac dui phasellus dolor lectus aliquam diam. Curabitur elementum faucibus dui a et. Neque consectetur scelerisque condimentum posuere et magna nibh vitae nulla. Risus vitae sit luctus dictumst porta eu nulla non sollicitudin. Non malesuada elementum adipiscinndimentum ac e",
+        "hero.paragr2",
     },
     works: {
       title: "How It Works",
@@ -142,9 +142,9 @@ const data = [
     id: "3",
     banner: {
       title: "hero.title-span3",
-      img: "/images/serviceDetailBanner.png",
+      img: "/images/banner3.jpg",
       descr:
-        "Lorem ipsum dolor sit amet consectetur. Rhoncus hac dui phasellus dolor lectus aliquam diam. Curabitur elementum faucibus dui a et. Neque consectetur scelerisque condimentum posuere et magna nibh vitae nulla. Risus vitae sit luctus dictumst porta eu nulla non sollicitudin. Non malesuada elementum adipiscinndimentum ac e",
+        "hero.paragr3",
     },
     works: {
       title: "How It Works",
@@ -206,9 +206,9 @@ const data = [
     id: "4",
     banner: {
       title: "hero.title-span4",
-      img: "/images/serviceDetailBanner.png",
+      img: "/images/banner4.jpg",
       descr:
-        "Lorem ipsum dolor sit amet consectetur. Rhoncus hac dui phasellus dolor lectus aliquam diam. Curabitur elementum faucibus dui a et. Neque consectetur scelerisque condimentum posuere et magna nibh vitae nulla. Risus vitae sit luctus dictumst porta eu nulla non sollicitudin. Non malesuada elementum adipiscinndimentum ac e",
+        "hero.paragr4",
     },
     works: {
       title: "How It Works",
@@ -270,9 +270,9 @@ const data = [
     id: "5",
     banner: {
       title: "hero.title-span5",
-      img: "/images/serviceDetailBanner.png",
+      img: "/images/banner5.jpg",
       descr:
-        "Lorem ipsum dolor sit amet consectetur. Rhoncus hac dui phasellus dolor lectus aliquam diam. Curabitur elementum faucibus dui a et. Neque consectetur scelerisque condimentum posuere et magna nibh vitae nulla. Risus vitae sit luctus dictumst porta eu nulla non sollicitudin. Non malesuada elementum adipiscinndimentum ac e",
+        "hero.paragr5",
     },
     works: {
       title: "How It Works",
@@ -379,7 +379,7 @@ const Template = ({ id }) => {
           </div>
           <div className="right">
             <img src={object[0].banner.img} alt="" />
-            <p className="descr">{object[0].banner.descr}</p>
+            <p className="descr">{t(object[0].banner.descr)}</p>
           </div>
         </div>
       </Container>

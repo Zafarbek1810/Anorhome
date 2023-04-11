@@ -10,13 +10,12 @@ const TemplateWrapper = styled.div`
       width: 30%;
       z-index: 33;
       .title {
-        width: 150%;
+        width: 220%;
         font-family: "Mulish";
         font-style: normal;
         font-weight: 900;
         font-size: 70px;
         line-height: 74px;
-        letter-spacing: 0.1em;
         color: #ffffff;
       }
     }
@@ -28,6 +27,8 @@ const TemplateWrapper = styled.div`
 
       img {
         width: 100%;
+        height: 450px;
+        object-fit: cover;
       }
 
       .descr {

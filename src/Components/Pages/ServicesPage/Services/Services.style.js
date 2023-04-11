@@ -46,7 +46,7 @@ const ServicesWrapper = styled.div`
         display: flex;
         border-bottom: 1px solid #ffffff;
       .col-1 {
-        width: 27%;
+        width: 30%;
         position: relative;
         span {
           font-family: "Mulish";
@@ -68,11 +68,11 @@ const ServicesWrapper = styled.div`
           position: absolute;
           top: 25%;
           left: 0;
-          text-transform: lowercase;
+          text-transform: capitalize;
         }
       }
       .col-2 {
-        width: 37%;
+        width: 36%;
         height: 350px;
         padding: 0 30px;
         overflow: hidden;
@@ -87,7 +87,7 @@ const ServicesWrapper = styled.div`
       }
 
       .col-3 {
-        width: 37%;
+        width: 33%;
         padding-left: 50px;
         display: flex;
         flex-direction: column;

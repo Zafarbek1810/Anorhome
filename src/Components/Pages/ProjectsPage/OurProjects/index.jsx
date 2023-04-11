@@ -10,6 +10,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Navigation, Pagination } from "swiper";
 import Aos from "aos";
+import { useTranslation } from "react-i18next";
 
 const data = [
   {
@@ -155,7 +156,7 @@ const OurProjects = () => {
   }
   const swiperRef = useRef();
 
- 
+ const {t} =useTranslation();
 
   return (
     <OurProjectsWrapper>
@@ -207,7 +208,7 @@ const OurProjects = () => {
                   </div>
 
                   <div className="galery">
-                    <h5 className="title-img">Project Gallery</h5>
+                    <h5 className="title-img">{t("projects.gallery")}</h5>
                     <Swiper
                       slidesPerView={2}
                       spaceBetween={30}

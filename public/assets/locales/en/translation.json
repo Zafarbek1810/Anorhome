@@ -48,7 +48,8 @@
     "info-top": "Architecture Consulting",
     "info-title": "Dream House Building",
     "info-p": "Lorem ipsum dolor sit amet consectetur. Luctus in montes pellentesque proin neque pellentesque suspendisse sit. Proin ut at tortor nulla quam arcu",
-    "btn": "See All"
+    "btn": "See All",
+    "gallery":"Project Gallery"
   },
   "clients": {
     "title": "Clients"

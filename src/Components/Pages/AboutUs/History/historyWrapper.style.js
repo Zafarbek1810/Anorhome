@@ -17,6 +17,7 @@ const HistoryWrapper = styled.div`
       font-size: 40px;
       line-height: 48px;
       color: #ffffff;
+      letter-spacing: 0;
     }
   }
   img {
@@ -48,7 +49,6 @@ const HistoryWrapper = styled.div`
         font-weight: 900;
         font-size: 45px;
         margin: 0;
-        letter-spacing: 0.1em;
         color: #000000;
       }
     }
