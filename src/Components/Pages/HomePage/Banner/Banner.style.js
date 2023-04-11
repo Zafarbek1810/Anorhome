@@ -43,6 +43,7 @@ const BannerWrapper = styled.div`
       width: 100%;
       height: 100vh;
       object-fit: cover;
+      transform: translateX(200px);
      }
 
      .slick-dots.slick-dots-bottom {
@@ -51,13 +52,13 @@ const BannerWrapper = styled.div`
   }
 
   .carusel {
-    width: 700px;
+    width: 750px;
     /* height: auto !important; */
     
     .wrap {
       position: relative;
       height: 100vh;
-      transform: translateY(20%);
+      transform: translateY(25%);
       display: flex;
       flex-direction: column;
       align-items: flex-start;
@@ -67,7 +68,7 @@ const BannerWrapper = styled.div`
         font-family: "Mulish";
         font-style: normal;
         font-weight: 900;
-        font-size: 48px;
+        font-size: 52px;
         line-height: 66px;
         color: #ffffff;
         margin-bottom: 16px; 
@@ -79,6 +80,7 @@ const BannerWrapper = styled.div`
       }
 
       .descr {
+        width: 90%;
         font-family: "Mulish";
         font-style: normal;
         font-weight: 400;
@@ -189,13 +191,29 @@ const BannerWrapper = styled.div`
       overflow: hidden;
 
       .wrap {
+        transform: translateY(20%);
         .title {
           font-size: 42px;
           line-height: 52px;
         }
 
         .descr {
+          margin-bottom: 20px;
         }
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+    .carusel{
+      .title{
+        font-size: 32px !important;
+        line-height: 40px !important;
+      }
+
+      .descr{
+        font-size: 14px !important;
+        margin-bottom: 10px;
       }
     }
   }

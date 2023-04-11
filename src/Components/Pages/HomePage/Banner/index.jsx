@@ -21,7 +21,7 @@ const Banner = () => {
   }, []);
 
   const onChange = (currentSlide) => {
-    ref.current.goTo(currentSlide);
+      ref.current.goTo(currentSlide);
   };
 
   return (
@@ -51,7 +51,8 @@ const Banner = () => {
           pauseOnHover={false}
           pauseOnDotsHover={false}
           autoplaySpeed={3000}
-          afterChange={onChange}
+          // afterChange={onChange}
+          beforeChange={onChange}
           className="carusel"
         >
           <div className="wrap" data-aos={"zoom-in"}>
