@@ -1,9 +1,12 @@
 import React, { useEffect } from "react";
-import AOS from "aos"
+import AOS from "aos";
+import { useTranslation } from "react-i18next";
 import Container from "../../../Common/Container";
 import { ValuesWrapper } from "./valuesWrapper.style";
 
 const ValuesSection = () => {
+
+  const { t } = useTranslation();
 
   useEffect(() => {
     AOS.init({ duration: 1500, once: true});
@@ -14,7 +17,7 @@ const ValuesSection = () => {
     <ValuesWrapper>
       <div className="title" data-aos={"fade-in"}>
         <Container>
-          <h3>Our Values</h3>
+          <h3>{t("aboutUs.values")}</h3>
         </Container>
       </div>
       <Container>
@@ -24,24 +27,24 @@ const ValuesSection = () => {
             <div className="boxes" data-aos={"fade-right"}> 
              
               <img src="/aboutUs/confidence.svg" alt="Confidence Svg" />
-              <h3>Confidence</h3>
-              <p>Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc</p>
+              <h3>{t("aboutUs.values-tit1")}</h3>
+              <p>{t("aboutUs.values-p1")}</p>
              
             </div>
             <div className="boxes" data-aos={"fade-right"}>
               <img src="/aboutUs/truthworth.svg" alt="Trustworthy Svg" />
-              <h3>Trustworthy</h3>
-              <p>Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc</p>
+              <h3>{t("aboutUs.values-tit2")}</h3>
+              <p>{t("aboutUs.values-p2")}</p>
             </div>
             <div className="boxes" data-aos={"fade-left"}>
               <img src="/aboutUs/world.svg" alt="Global Vision Svg" />
-              <h3>Global Vision</h3>
-              <p>Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc</p>
+              <h3>{t("aboutUs.values-tit3")}</h3>
+              <p>{t("aboutUs.values-p3")}</p>
             </div>
             <div className="boxes" data-aos={"fade-left"}>
               <img src="/aboutUs/rise.svg" alt="Constant Rise Svg" />
-              <h3>Constant Rise</h3>
-              <p>Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc</p>
+              <h3>{t("aboutUs.values-tit4")}</h3>
+              <p>{t("aboutUs.values-p4")}</p>
             </div>
           </div>
         </section>

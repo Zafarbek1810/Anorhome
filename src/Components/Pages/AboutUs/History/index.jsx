@@ -1,9 +1,13 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
+import { useTranslation } from "react-i18next";
 import { HistoryWrapper } from "./historyWrapper.style";
 import Container from "../../../Common/Container/index";
 
 const HistorySection = () => {
+
+  const { t } = useTranslation();
+
   useEffect(() => {
     AOS.init({ duration: 1500, once: true });
     AOS.refresh();
@@ -13,7 +17,7 @@ const HistorySection = () => {
     <HistoryWrapper>
       <div data-aos={"fade-in"} className="title">
         <Container>
-          <h3>About Us</h3>
+          <h3>{t("aboutUs.title2")}</h3>
         </Container>
       </div>
       <Container>
@@ -30,22 +34,11 @@ const HistorySection = () => {
             <div className="box__boxes" data-aos="fade-zoom-in">
               <div className="box__left">
                 <img src="/aboutUs/ourStory.svg" alt="Our Story Svg" />
-                <h2>Our Story</h2>
+                <h2>{t("aboutUs.history")}</h2>
               </div>
               <div className="box__right">
                 <p>
-                  Наша команда экспертов обладает профессиональными знаниями и
-                  многолетним опытом работы в сфере недвижимости, что позволяет
-                  нам предоставлять нашим партнерам и клиентам уникальные
-                  решения и качественный сервис. Мы стремимся к долгосрочным
-                  отношениям с нашими клиентами и готовы оказать
-                  профессиональную поддержку на всех этапах работы в сфере
-                  недвижимости. Стратегический партнер ООО «Anorhome» -
-                  узбекско-британское CП Beltera Holding. Учредители Beltera
-                  Holding много лет успешно занимаются инвестиционным
-                  консалтингом на европейском рынке. Собирая опыт каждого
-                  проекта, мы храним все ваши данные в секрете, гарантируя их
-                  безопасность договором о коммерческой тайне
+                {t("aboutUs.historyP")}
                 </p>
               </div>
             </div>

@@ -10,33 +10,38 @@
     "call-btn": "Call Me Now!"
   },
   "hero": {
-    "title-span": "Investment",
-    "title": "In Real Estate",
-    "paragr": "Lorem ipsum dolor sit amet consectetur. Luctus in montes pellentesque proin neque pellentesque suspendisse sit. Proin ut at tortor nulla quam arcu",
-    "title-span2": "Sales Office",
-    "title2": "For Your Project",
-    "paragr2": "Lorem ipsum dolor sit amet consectetur. Luctus in montes pellentesque proin neque pellentesque suspendisse sit. Proin ut at tortor nulla quam arcu",  
-    "title-span3": "",
+    "title-span": "CREATING VALUE",
+    "title": " ",
+    "paragr": "Strategic consulting — This is the main service of Anorhome company. And the main success of each project is the uniqueness of ideas, concept, service quality, and sales. These details create value both for the project and for the developer's future clients.",
+
+    "title-span2": "HIGH SALES PERFORMANCE — PROJECT SUCCESS",
+    "title2": " ",
+    "paragr2": "Promoting development projects — By entrusting your development project to us, you will receive a comprehensive solution related to marketing and IT support, sales of the project that increase revenue and optimize operational costs. We will build sales offices ourselves, provide high-quality modern service, and won't stop until we sell EVERYTHING!",  
+
+    "title-span3": "INVEST IN THE FUTURE",
     "title3": "",
-    "paragr3": "",
-    "title-span4": "",
+    "paragr3": "Investment consulting — By analyzing and evaluating future opportunities and market potential, we will offer you profitable deals for investment purposes in order to achieve maximum returns and minimize risks for your project.",
+
+    "title-span4": "ADVANTAGEOUSLY, QUICKLY, CORRECTLY, AND SUCCESSFULLY!",
     "title4": "",
-    "paragr4": "",  
-    "title-span5": "",
+    "paragr4": "Real estate services — Buying, selling, renting or leasing real estate always plays an important role in our lives, but not everyone can do it successfully. A successful deal should be evaluated in the correct and profitable execution. We will advise you on how to make a profitable and correct deal.",  
+
+    "title-span5": "UMANAGE CORRECTLY AND PROFITABLY!",
     "title5": "",
-    "paragr5": "",
-    "title-span6": "",
+    "paragr5": "Trust management — This service is designed for companies and individuals who have real estate assets in their portfolio that require the intervention of the professional Anorhome team to manage commercial and domestic issues, as well as prepare reports and monitor the performance of lease agreements with tenants.",
+
+    "title-span6": "RESEARCH, ANALYSIS, SOLUTIONS!",
     "title6": "",
-    "paragr6": ""
+    "paragr6": "Marketing research — Marketing research and in-depth market analysis are considered the foundation for successful product implementation in every industry. The main task of marketing research is to create and provide the right product both for the developer and for the end consumer."
     
   },
   "about": {
     "title": "About Us",
     "info": "Anorhome are professionals specialized in providing high quality real estate consulting services. We were founded in 2020 and during this time we have been successfully participating in the creation of local development and international projects in Uzbekistan.",
-    "p1": "довольных клиентов",
-    "p2": "рентабельности проектов",
-    "p3": "kv metr реализовано",
-    "p4": "опыт сотрудниках"
+    "p1": "Satisfied customers",
+    "p2": "Project profitability",
+    "p3": "Kv metr implemented",
+    "p4": "Employee experience"
   },
   "projects": {
     "title": "Projects",
@@ -65,13 +70,34 @@
 
 
 
+  "aboutUs":{
+    "title": "We Make It Reality",
+    "parag": "Stable partnership is a guarantee of success in business.",
+    "title2": "About Us",
+    "history": "Our History",
+    "historyP": "Anorhome is a company of professionals specializing in providing high-quality consulting services in the real estate industry. We were founded in 2020 and have successfully participated in the creation of local development and international projects in Uzbekistan. Our team of experts has professional knowledge and many years of experience in the real estate industry, which allows us to provide our partners and clients with unique solutions and high-quality service. We strive for long-term relationships with our clients and are ready to provide professional support at all stages of work in the real estate industry. The strategic partner of Anorhome LLC is the Uzbek-British JV Beltera Holding. The founders of Beltera Holding have been successfully engaged in investment consulting in the European market for many years. By accumulating experience from each project, we keep all of your data secret, ensuring their security with a non-disclosure agreement. Stable partnership is a guarantee of success in business.",
+    "team": "Our Team",
+    "values": "Our Values",
+    "values-tit1": "Confidence",
+    "values-p1": "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
+    "values-tit2": "Trustworthy",
+    "values-p2": "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
+    "values-tit3": "Global Vision",
+    "values-p3": "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
+    "values-tit4": "Constant Rise",
+    "values-p4": "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc"
+  },
+
+
+
   "footer":{
     "descr":"Creating value",
     "link1":"Service",
     "link2":"About Us",
     "link3":"Portfolio",
     "link4":"Contact Us",
-    "social":"Our Social Media"
+    "social":"Our Social Media",
+    "everbest": "Powered by"
   }
   
 

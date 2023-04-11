@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
-import AOS from "aos"
+import AOS from "aos";
+import { useTranslation } from "react-i18next";
 import { TeamWrapper } from "./teamWrapper.style"; 
 import Container from "../../../Common/Container/index";
 
@@ -39,6 +40,8 @@ const ourStaffs = [
 
 const TeamSection = () => {
 
+  const { t } = useTranslation();
+
   useEffect(() => {
     AOS.init({ duration: 1500, once: true});
     AOS.refresh();
@@ -48,7 +51,7 @@ const TeamSection = () => {
     <TeamWrapper>
       <div data-aos={"fade-in"} className="title">
         <Container>
-          <h3>Our Team</h3>
+          <h3>{t("aboutUs.team")}</h3>
         </Container>
       </div>
       <Container>

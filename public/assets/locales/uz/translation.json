@@ -10,24 +10,29 @@
     "call-btn": "Qong'iroq qiling!"
   },
   "hero": {
-    "title-span": "Sarmoya",
-    "title": "Ko'chmas mulk sohasida",
-    "paragr": "Tog'larda motam tutib, askarlar to'xtatilmadi. Misol uchun, yoydan boshqa harorat yo'q",
-    "title-span2": "Savdo idorasi",
-    "title2": "Loyihangiz uchun",
-    "paragr2": "Tog'larda motam tutib, askarlar to'xtatilmadi. Misol uchun, yoydan boshqa harorat yo'q.",
-    "title-span3": "",
+    "title-span": "QADR-QIMMAT YARATAMIZ",
+    "title": " ",
+    "paragr": "Strategik konsalting — Bu yo’nalish Anorhome kompaniyasining xizmatlari orasida eng asosiysidir. Har bir loyiha yutug’i asosan g'oyalarning o'ziga xosligi, to’g’ri kontsept yaratilishi, xizmat ko’rsatish sifati va muvaffaqiyatli sotuvdadir. Har bir loyiha va loyihaning kelajakdagi mijozlariga aynan shu narsalar qadir va qimmat yaratadi.",
+    
+    "title-span2": "MUVAFFAQIYATLIK SAVDO – LOYIHA YUTUG’IDIR",
+    "title2": " ",
+    "paragr2": "Developerlik loyihalarini yuritish — O’z loyihangizni bizga ishonib topshirsangizgina, siz sotuv va daromadlar darajasini oshirish, xarajatlarni kamaytirish, marketingni to’g’ri yo’naltirish hamda IT dasturlarini o’rnatilish kabi keng qamrovli yechimlarga ega bo'lasiz. Biz o'zimiz savdo ofislarini quramiz, mijozlar uchun yuqori sifatli zamonaviy xizmatni taqdim etamiz va oxirigacha sotmaguncha ketmaymiz.",
+
+    "title-span3": "KELAJAKKA SARMOYA QILING.",
     "title3": "",
-    "paragr3": "",
-    "title-span4": "",
+    "paragr3": "Investitsion konsalting — Ko’chmas mulk bozorining kelajagi, imkoniyatlarini tahlil qilish va baholash orqali, sizning kutilayotgan loyihalaringiz uchun xavfsiz va daromadli sarmoya bitimlarni taklif etamiz.",
+
+    "title-span4": "UNUMLI, TEZ, TO'G'RI VA MUVAFFAQIYATLI!",
     "title4": "",
-    "paragr4": "",  
-    "title-span5": "",
+    "paragr4": "Rieltorlik xizmatlari — Hayotimizda ko’chmas mulk haridi, sotuvi, ijaraga topshirish va olish bitimlari alohida joy egallaydi. Ammo, har doim ham buni muvaffaqiyatli amalga oshirish onson emas. Bitimlar huquqiy to’g’ri va har tomonlama unumli amalga oshsagina muvaffaqiyatli baholana oladi. Bunday bitimlarni tuzishda biz sizga hamrohlik qilamiz.",  
+
+    "title-span5": "MULK BOSHQARUVINI TO’G’RI VA FOYDALI AMALGA OSHIRAMIZ",
     "title5": "",
-    "paragr5": "",
-    "title-span6": "",
+    "paragr5": "Ishonchli boshqaruv — Ishonchli boshqaruv xizmati – Anorhome jamoasi mutaxassislari aralashuvi talab etadigan, o’z tasaruffida bir nechta ko’chmas mulklarga ega bo’lgan korxonalar va jismoniy shaxslar uchun mo’ljallangan bo’lib, tijoriy va maishiy masalalarni o’z vaqtida boshqarish, hisobotlar orqali kirim va chiqimlarni monitoring qilishni o’z zimmasiga oladi.",
+
+    "title-span6": "TADQIQOT, TAHLIL, YECHIMLAR.  ",
     "title6": "",
-    "paragr6": "" 
+    "paragr6": "Marketing tadqiqotlari — Har bir yo’nalishda sinchkovli marketing tadqiqotlari va izlanishlar tahlili, mahsulotlarni muvaffaqiyatli targ’iboti asosi hisoblanadi. Loyiha egalari va iste’molchilar uchun to’g’ri mahsulot yaratish va taqdim etish marketing tadqiqotlarining asosiy vazifalaridir." 
   },
   "about": {
     "title": "Biz Xaqimizda",
@@ -59,11 +64,27 @@
 
 
   "services":{
-    "top-parag": "Find us at some of the coolest cities across the globe.",
-    "top-title": "Anorhome Services"
-  }
+    "top-parag": "Bizni dunyoning eng ajoyib shaharlaridan toping.",
+    "top-title": "Anorhome Xizmatlari"
+  },
 
-
+  "aboutUs":{
+    "title": "Biz Buni Haqiqatga Aylantiramiz",
+    "parag": "Mustahkam hamkorlik - muvaffaqiyatli biznes kafolatidir.",
+    "title2": "Biz Haqimizda",
+    "history": "Bizning Tarix",
+    "historyP": "Anorhome bu – ko’chmas mulk sohasida sifatli konsalting xizmatlari ko’rsatadigan mutaxassislari jamoasidir. Bizning korxonamiz 2020 yil tashkil topgan bo’lib, bugungi kunda O’zbekiston bo’ylab bir nechta ichki va xalqaro loyihalarda ishtirok etib kelmoqdamiz.    Ko’p yillik tajriba, bilm va individual yondashuv orqali biz ko’chmas mulk sohasidagi hamkorlarimiz va mijozlarimiz uchun, o’ziga xos loyiha yechimlari va sifatli xizmat o’rsatib kelmoqdamiz. Uzoq muddatli munosabat qurish va loyihalarning har bir osqichlarida hamkorlarimizga professional xizmat ko’rsatishga intilamiz. O'zbekiston - Britaniya qo'shma korxonasi - Beltera Holding, Anorhome kompaniyasi strategik hamkori bo’lib, ko’p yillardan buyon Yevropada ko’chmas mulk bozorida konsalting soxasida muvaffaqiyatli ishlab kelmoqda. Har bir loyihalardan yeg’ilgan tajribaga asosan, biz sizning loyihadagi barcha ma'lumotlarni maxfiy saqlashga kafolat beramiz va ularning xavfsizligini ta'minlaymiz. Mustahkam hamkorlik - muvaffaqiyatli biznes kafolatidir.",
+    "team": "Bizning Jamoa",
+    "values": "Bizning Qadriyatlarimiz",
+    "values-tit1": "Ishonch",
+    "values-p1": "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
+    "values-tit2": "Ishonchli",
+    "values-p2": "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
+    "values-tit3": "Global Vizyon",
+    "values-p3": "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
+    "values-tit4": "Doimiy yuksalish",
+    "values-p4": "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc"
+  },
 
 
   "footer":{
@@ -72,7 +93,8 @@
     "link2":"Biz Xaqimizda",
     "link3":"Portfolio",
     "link4":"Aloqa",
-    "social":"Ijtimoiy tarmoqlarimiz"
+    "social":"Ijtimoiy tarmoqlarimiz",
+    "everbest": "Loyiha Muallifi"
   }
   
 
