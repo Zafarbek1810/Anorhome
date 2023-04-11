@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
+import { useTranslation } from "react-i18next";
 import Container from "../../../Common/Container";
 import UserNumSvg from "../../../Common/Svgs/UserNumSvg";
 import BuildingSvg from "../../../Common/Svgs/BuildingSvg";
@@ -9,6 +10,9 @@ import MyLink from "../../../Common/MyLink";
 import { Map, Placemark, YMaps } from "@pbe/react-yandex-maps";
 
 const Contact = () => {
+
+  const { t } = useTranslation();
+
   useEffect(() => {
     AOS.init({ duration: 1500, once: true });
     AOS.refresh();
@@ -21,7 +25,7 @@ const Contact = () => {
     <ContactWrappper>
       <div data-aos={"fade-in"} className="title">
         <Container>
-          <h3>Contact Us</h3>
+          <h3>{t("contact.title")}</h3>
         </Container>
       </div>
 
@@ -32,7 +36,7 @@ const Contact = () => {
               <span className="contact__icon">
                 <UserNumSvg />
               </span>
-              <h4>Phone Number</h4>
+              <h4>{t("contact.phone")}</h4>
               <p>+998 99 861 75 00</p>
               <p>+998 33 150 75 75</p>
             </div>
@@ -40,18 +44,18 @@ const Contact = () => {
               <span className="contact__icon">
                 <BuildingSvg />
               </span>
-              <h4>Working Hours</h4>
+              <h4>{t("contact.working")}</h4>
               <p>
-                From: <span>10:00 – 19:00</span>
+              {t("contact.from")} <span>10:00 – 19:00</span>
               </p>
-              <p>Monday-Friday</p>
+              <p>{t("contact.week")}</p>
             </div>
             <div className="contact__box">
               <span className="contact__icon">
                 <EmailSvg />
               </span>
 
-              <h4>Email</h4>
+              <h4>{t("contact.email")}</h4>
               <MyLink to={"mailto: info@anorhome.com"} className="emailLink">
               info@anorhome.com
               </MyLink>

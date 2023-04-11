@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import AOS from "aos"
+import AOS from "aos";
+import { useTranslation } from "react-i18next";
 import Container from "../../../Common/Container";
 import MyLink from "../../../Common/MyLink";
 import CalendarSvg from "../../../Common/Svgs/CalendarSvg";
@@ -34,6 +35,9 @@ const data=[
   },
 ]
 const ThirdSection = () => {
+
+  const { t } = useTranslation();
+
   const [activeIndex, setActiveIndex] = useState("0");
 
   useEffect(() => {
@@ -59,22 +63,20 @@ const ThirdSection = () => {
     <ThirdSectionWrapper>
       <div data-aos={"fade-in"} className="title">
         <Container>
-          <h3>Projects</h3>
+          <h3>{t("projects.title")}</h3>
         </Container>
       </div>
       <Container style={{ paddingTop: 90, paddingBottom: 90 }}>
         <div className="wrap">
           <div className="left">
-            <h5 data-aos={"fade-right"} className="subtitle">Architecture Consulting</h5>
-            <h3 data-aos={"fade-right"} className="titles">Dream House Building</h3>
+            <h5 data-aos={"fade-right"} className="subtitle">{t("projects.info-top")}</h5>
+            <h3 data-aos={"fade-right"} className="titles">{t("projects.info-title")}</h3>
             <p data-aos={"fade-right"} className="descr">
-              Lorem ipsum dolor sit amet consectetur. Luctus in montes
-              pellentesque proin neque pellentesque suspendisse sit. Proin ut at
-              tortor nulla quam arcu{" "}
+            {t("projects.info-p")}
             </p>
             <section data-aos={"fade-right"} class="buttons">
               <MyLink to="/projects" className="btn btn-4">
-                <span>See All</span>
+                <span>{t("projects.btn")}</span>
               </MyLink>
             </section>
           </div>
@@ -97,7 +99,7 @@ const ThirdSection = () => {
                     <span>
                       <LocationSvg /> {obj.city}
                     </span>
-                      <MyLink to={obj.link}>Learn More <RightSvg/></MyLink>
+                      <MyLink to={obj.link}>{t("button.btn")} <RightSvg/></MyLink>
                   </div>
                   <div className="bottom2">
                     <span>{obj.city}</span>
