@@ -41,7 +41,7 @@ const Footer = () => {
       <hr />
       <Container>
         <div className="everbest">
-          <MyLink to={"/"} className="link">Powered by EverbestLab</MyLink>
+          <MyLink to={"/"} className="link">{t('footer.everbest')} EverbestLab</MyLink>
         </div>
       </Container>
     </FooterWrapper>

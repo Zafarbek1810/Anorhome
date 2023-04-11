@@ -69,6 +69,7 @@ const ServicesWrapper = styled.div`
           position: absolute;
           top: 25%;
           left: 0;
+          text-transform: lowercase;
         }
       }
       .col-2 {

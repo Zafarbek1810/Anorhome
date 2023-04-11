@@ -31,9 +31,9 @@ const Hero = () => {
 
 
           <div className="left" data-aos={"fade-in"}>
-            <h2>We Make It Reality</h2>
+            <h2>{t("aboutUs.title")}</h2>
             <p>
-            Стабильное партнерства – гарантия успеха в бизнесе.
+            {t("aboutUs.parag")}
             </p>
           </div>
 

@@ -69,8 +69,8 @@ const Services = () => {
   return (
     <ServicesWrapper>
       <div className="top" data-aos={"fade-up"}>
-        <p>Find us at some of the coolest cities across the globe.</p>
-        <h4>Anorhome Services</h4>
+        <p>{t("services.top-parag")}</p>
+        <h4>{t("services.top-title")}</h4>
       </div>
 
       <div className="wrapper">
@@ -84,7 +84,7 @@ const Services = () => {
             <div className="col-3">
               <p>{v.p2}</p>
               <div className="btn">
-                <MyLink to={`/serviceDetail?id=${v.id}`}>Learn More</MyLink>
+                <MyLink to={`/serviceDetail?id=${v.id}`}>{t("button.btn")}</MyLink>
               </div>
             </div>
           </div>
