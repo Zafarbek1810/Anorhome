@@ -150,7 +150,7 @@ const OurProjects = () => {
       Aos.refresh();
     setTimeout(() => {
       setSelectedCardIndex(index);
-    }, 1000);
+    }, 400);
     setLoading(false);
   }
   const swiperRef = useRef();
