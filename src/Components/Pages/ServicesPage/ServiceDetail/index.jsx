@@ -5,13 +5,15 @@ import ThirdSection from "../../HomePage/ThirdSection";
 import Contact from "../../HomePage/Contact/contact";
 import { TemplateWrapper } from "./ServiceDetail.style";
 import Container from "../../../Common/Container";
+import { useTranslation } from "react-i18next";
+
 
 const data = [
   {
     id: "1",
-    title: "Investment In Real State",
+    title: "hero.title-span",
     banner: {
-      title: "Investment In Real State",
+      title: "hero.title-span",
       img: "/images/serviceDetailBanner.png",
       descr:
         "Lorem ipsum dolor sit amet consectetur. Rhoncus hac dui phasellus dolor lectus aliquam diam. Curabitur elementum faucibus dui a et. Neque consectetur scelerisque condimentum posuere et magna nibh vitae nulla. Risus vitae sit luctus dictumst porta eu nulla non sollicitudin. Non malesuada elementum adipiscinndimentum ac e",
@@ -75,7 +77,7 @@ const data = [
   {
     id: "2",
     banner: {
-      title: "Investment In Real State 2",
+      title: "hero.title-span2",
       img: "/images/serviceDetailBanner.png",
       descr:
         "Lorem ipsum dolor sit amet consectetur. Rhoncus hac dui phasellus dolor lectus aliquam diam. Curabitur elementum faucibus dui a et. Neque consectetur scelerisque condimentum posuere et magna nibh vitae nulla. Risus vitae sit luctus dictumst porta eu nulla non sollicitudin. Non malesuada elementum adipiscinndimentum ac e",
@@ -139,7 +141,7 @@ const data = [
   {
     id: "3",
     banner: {
-      title: "Investment In Real State 3",
+      title: "hero.title-span3",
       img: "/images/serviceDetailBanner.png",
       descr:
         "Lorem ipsum dolor sit amet consectetur. Rhoncus hac dui phasellus dolor lectus aliquam diam. Curabitur elementum faucibus dui a et. Neque consectetur scelerisque condimentum posuere et magna nibh vitae nulla. Risus vitae sit luctus dictumst porta eu nulla non sollicitudin. Non malesuada elementum adipiscinndimentum ac e",
@@ -203,7 +205,7 @@ const data = [
   {
     id: "4",
     banner: {
-      title: "Investment In Real State 4",
+      title: "hero.title-span4",
       img: "/images/serviceDetailBanner.png",
       descr:
         "Lorem ipsum dolor sit amet consectetur. Rhoncus hac dui phasellus dolor lectus aliquam diam. Curabitur elementum faucibus dui a et. Neque consectetur scelerisque condimentum posuere et magna nibh vitae nulla. Risus vitae sit luctus dictumst porta eu nulla non sollicitudin. Non malesuada elementum adipiscinndimentum ac e",
@@ -267,71 +269,7 @@ const data = [
   {
     id: "5",
     banner: {
-      title: "Investment In Real State 5",
-      img: "/images/serviceDetailBanner.png",
-      descr:
-        "Lorem ipsum dolor sit amet consectetur. Rhoncus hac dui phasellus dolor lectus aliquam diam. Curabitur elementum faucibus dui a et. Neque consectetur scelerisque condimentum posuere et magna nibh vitae nulla. Risus vitae sit luctus dictumst porta eu nulla non sollicitudin. Non malesuada elementum adipiscinndimentum ac e",
-    },
-    works: {
-      title: "How It Works",
-      card1: {
-        svg: "/images/vector.png",
-        title: "Fill Form",
-        descr:
-          "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
-      },
-      card2: {
-        svg: "/images/vector2.png",
-        title: "Administration",
-        descr:
-          "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
-      },
-      card3: {
-        svg: "/images/vector3.png",
-        title: "Keep In Touch",
-        descr:
-          "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
-      },
-      card4: {
-        svg: "/images/vector4.png",
-        title: "Make A Deal",
-        descr:
-          "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
-      },
-    },
-    about: {
-      title: "About Service",
-      descr1:
-        "Lorem ipsum dolor sit amet consectetur. Rhoncus hac dui phasellus dolor lectus aliquam diam. Curabitur elementum faucibus dui a et. Neque consectetur scelerisque condimentum posuere et magna nibh vitae nulla. Risus vitae sit luctus dictumst porta eu nulla non sollicitudin. Non malesuada elementum adipiscinndimentum ac e",
-      descr2:
-        "Lorem ipsum dolor sit amet consectetur. Rhoncus hac dui phasellus dolor lectus aliquam diam. Curabitur elementum faucibus dui a et. Neque consectetur scelerisque condimentum posuere et magna nibh vitae nulla. Risus vitae sit luctus dictumst porta eu nulla non sollicitudin. Non malesuada elementum adipiscinndimentum ac e",
-    },
-    services: {
-      title: "Other Services",
-      card1: {
-        img: "/images/card.png",
-        cardTitle: "Investment In Real State",
-        descr:
-          "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Scelerisque pulvinar  e",
-      },
-      card2: {
-        img: "/images/card.png",
-        cardTitle: "Investment In Real State",
-        descr:
-          "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Scelerisque pulvinar  e",
-      },
-      card3: {
-        img: "/images/card.png",
-        cardTitle: "Investment In Real State",
-        descr:
-          "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Scelerisque pulvinar  e",
-      },
-    },
-  },
-  {
-    id: "6",
-    banner: {
-      title: "Investment In Real State 6",
+      title: "hero.title-span5",
       img: "/images/serviceDetailBanner.png",
       descr:
         "Lorem ipsum dolor sit amet consectetur. Rhoncus hac dui phasellus dolor lectus aliquam diam. Curabitur elementum faucibus dui a et. Neque consectetur scelerisque condimentum posuere et magna nibh vitae nulla. Risus vitae sit luctus dictumst porta eu nulla non sollicitudin. Non malesuada elementum adipiscinndimentum ac e",
@@ -397,6 +335,7 @@ const data = [
 const ServiceDetail = ({ id }) => {
   console.log(id);
   let Component = null;
+  
 
   switch (id) {
     case "1": {
@@ -419,10 +358,6 @@ const ServiceDetail = ({ id }) => {
       Component = <ServiceFifth id={id} />;
       break;
     }
-    case "6": {
-      Component = <ServiceSixth id={id} />;
-      break;
-    }
   }
 
   return <div>{Component}</div>;
@@ -432,13 +367,15 @@ const Template = ({ id }) => {
   const object = data.filter((obj) => {
     return obj.id == id;
   });
-  console.log(object[0].banner.title);
+
+  const {t} = useTranslation();
+
   return (
     <TemplateWrapper>
       <Container>
         <div className="banner">
           <div className="left">
-            <h3 className="title">{object[0].banner.title}</h3>
+            <h3 className="title">{t(object[0].banner.title)}</h3>
           </div>
           <div className="right">
             <img src={object[0].banner.img} alt="" />
@@ -590,16 +527,6 @@ const ServiceFourth = ({ id }) => {
   );
 };
 const ServiceFifth = ({ id }) => {
-  return (
-    <>
-      <Header />
-      <Template id={id} />
-      <Contact />
-      <Footer />
-    </>
-  );
-};
-const ServiceSixth = ({ id }) => {
   return (
     <>
       <Header />

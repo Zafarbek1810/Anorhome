@@ -64,7 +64,6 @@ const ServicesWrapper = styled.div`
           font-weight: 800;
           font-size: 36px;
           line-height: 43px;
-          letter-spacing: 0.1em;
           color: #ffffff;
           position: absolute;
           top: 25%;
