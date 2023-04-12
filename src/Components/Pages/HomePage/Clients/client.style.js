@@ -17,21 +17,36 @@ const ClientsWrapper = styled.div`
     }
   }
   .clients__logo{
-    padding: 120px 0;
+    padding: 60px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
+  }
+  .al-mashriq{
+    width: 160px;
+  }
+  .komolon{
+    width: 230px;
+  }
+  .travel{
+    width: 130px;
   }
 
   @media (max-width: 700px) {
     .clients__logo{
       flex-wrap: wrap;
-      justify-content: center;
-
-      svg{
-        margin: 10px;
-      }
+      justify-content: space-between; 
     }
+    .al-mashriq{
+    width: 120px;
+  }
+  .komolon{
+    width: 160px;
+  }
+  .travel{
+    width: 90px;
+  }
   }
 `;
 export { ClientsWrapper };
