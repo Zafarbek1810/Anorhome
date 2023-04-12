@@ -29,7 +29,7 @@ const SecondSection = () => {
     },
     {
       img: <RevenueSvg />,
-      count: 250.000,
+      count: 250000,
       p: t("about.p3"),
       suffix: "+",
     },

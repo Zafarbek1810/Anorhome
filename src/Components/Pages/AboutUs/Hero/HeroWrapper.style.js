@@ -89,7 +89,7 @@ const HeroWrapper = styled.div`
         font-style: normal;
         font-weight: 400;
         font-size: 12px;
-        line-height: 1px;
+        line-height: 15px;
         margin: 13px;
         color: #000;
       }
@@ -108,10 +108,10 @@ const HeroWrapper = styled.div`
     }
     &__box-red {
       position: absolute;
-      width: 156px;
+      width: 190px;
       background: #fe172d;
       margin-top: 10px;
-      padding: 5px 0;
+      padding: 5px;
       text-align: center;
       transform: translateY(100px) translateX(-5px);
 
@@ -128,7 +128,7 @@ const HeroWrapper = styled.div`
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
-        line-height: 1px;
+        line-height: 16px;
         margin-top: 6px;
         color: #fff;
       }
@@ -147,10 +147,10 @@ const HeroWrapper = styled.div`
     }
     &__box-white2 {
       position: absolute;
-      width: 150px;
+      width: 170px;
       background: #ffffff;
       margin-top: 10px;
-      padding: 5px 0;
+      padding: 5px;
       text-align: center;
       transform: translateY(50px) translateX(-10px);
 
@@ -168,7 +168,7 @@ const HeroWrapper = styled.div`
         font-style: normal;
         font-weight: 400;
         font-size: 12px;
-        line-height: 1px;
+        line-height: 15px;
         margin: 14px 0;
         color: #000;
       }
