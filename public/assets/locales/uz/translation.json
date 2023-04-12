@@ -38,9 +38,9 @@
     "title": "Biz Xaqimizda",
     "info": "Anorhome yuqori sifatli ko'chmas mulk bo'yicha maslahat xizmatlarini ko'rsatishga ixtisoslashgan mutaxassislardir. Biz 2020-yilda tashkil etilganmiz va shu vaqt mobaynida O‘zbekistonda mahalliy rivojlanish va xalqaro loyihalarni yaratishda muvaffaqiyatli ishtirok etib kelmoqdamiz.",
     "p1": "Mamnun mijozlar",
-    "p2": "Loyihalarning rentabelligini oshirishning o'rtacha foizi",
-    "p3": "Sotilgan kvadrat metr",
-    "p4": "Xodimlarimizning ko'chmas mulk soxasida tajribasi"  
+    "p2": "Loyiha rentabel foizi",
+    "p3": "Sotilgan kv metr",
+    "p4": "Xodimlarimizni tajribasi"  
   },
   "projects": {
     "title": "Loyihalar",
@@ -70,7 +70,7 @@
   },
 
   "aboutUs":{
-    "title": "Biz Buni Haqiqatga Aylantiramiz",
+    "title": "Biz Buni Reallashtiramiz",
     "parag": "Mustahkam hamkorlik - muvaffaqiyatli biznes kafolatidir.",
     "title2": "Biz Haqimizda",
     "history": "Bizning Tarix",
