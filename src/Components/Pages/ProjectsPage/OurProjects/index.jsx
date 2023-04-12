@@ -145,29 +145,34 @@ const OurProjects = () => {
   const [selectedCardIndex, setSelectedCardIndex] = useState(0);
   const [loading, setLoading] = useState(false);
 
-  function handleCardClick(index) {
-    setLoading(true)
-    Aos.init({ duration: 1500, once: false });
-      Aos.refresh();
+   function handleCardClick(index) {
+    setLoading(true);
+    console.log(loading);
+    setSelectedCardIndex(index);
     setTimeout(() => {
-      setSelectedCardIndex(index);
-    }, 400);
-    setLoading(false);
+      setLoading(false);
+    }, 100);
   }
+  
+
   const swiperRef = useRef();
 
- const {t} =useTranslation();
+  useEffect(() => {
+    Aos.init({ duration: 1500, once: true });
+    Aos.refresh();
+  }, [loading]);
+
+  const { t } = useTranslation();
 
   return (
     <OurProjectsWrapper>
       <Container>
         <div className="wrapper">
-            <div className="left">
+          {!loading ? (
+            <div className="left" data-aos={"fade-right"}>
               {selectedCardIndex !== null ? (
                 <div>
-                  <h4 className="title">
-                    Our Completed Projects
-                  </h4>
+                  <h4 className="title">Our Completed Projects</h4>
                   <div className="cards">
                     {data.map((card, index) => (
                       <div
@@ -193,12 +198,8 @@ const OurProjects = () => {
                       </div>
                     ))}
                   </div>
-                  <p className="heading" data-aos={ !loading ? "fade-right" : ""}>
-                    {data[selectedCardIndex].title}
-                  </p>
-                  <p className="descr" data-aos={ !loading ? "fade-right" : ""}>
-                    {data[selectedCardIndex].descr}
-                  </p>
+                  <p className="heading">{data[selectedCardIndex].title}</p>
+                  <p className="descr">{data[selectedCardIndex].descr}</p>
                   <div className="location">
                     <LocationSvg />
                     <p>{data[selectedCardIndex].loc2}</p>
@@ -223,7 +224,6 @@ const OurProjects = () => {
                       modules={[Navigation, Pagination]}
                       className="mySwiper"
                     >
-                      
                       <SwiperSlide>
                         <div className="imgs">
                           <div className="img">
@@ -279,7 +279,11 @@ const OurProjects = () => {
                 <p>Select a card to view its information</p>
               )}
             </div>
-          
+          ) : (
+            <>
+            <div className="left"></div>
+            </>
+          )}
 
           <div className="right">
             <div className="cards">
