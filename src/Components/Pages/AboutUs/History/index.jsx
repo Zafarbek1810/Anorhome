@@ -23,7 +23,7 @@ const HistorySection = () => {
       <Container>
         <section>
           <img
-            src="/aboutUs/history1.jpg"
+            src="/images/aboutUshistory.jpg"
             alt="History section image"
             data-aos={"fade-up"}
           />

@@ -1,5 +1,5 @@
 {
-  "button":{
+  "button": {
     "btn": "Learn More"
   },
   "header": {
@@ -16,7 +16,7 @@
 
     "title-span2": "HIGH SALES PERFORMANCE — PROJECT SUCCESS",
     "title2": " ",
-    "paragr2": "Promoting development projects — By entrusting your development project to us, you will receive a comprehensive solution related to marketing and IT support, sales of the project that increase revenue and optimize operational costs. We will build sales offices ourselves, provide high-quality modern service, and won't stop until we sell EVERYTHING!",  
+    "paragr2": "Promoting development projects — By entrusting your development project to us, you will receive a comprehensive solution related to marketing and IT support, sales of the project that increase revenue and optimize operational costs. We will build sales offices ourselves, provide high-quality modern service, and won't stop until we sell EVERYTHING!",
 
     "title-span3": "INVEST IN THE FUTURE",
     "title3": "",
@@ -24,7 +24,7 @@
 
     "title-span4": "ADVANTAGEOUSLY, QUICKLY, CORRECTLY, AND SUCCESSFULLY!",
     "title4": "",
-    "paragr4": "Real estate services — Buying, selling, renting or leasing real estate always plays an important role in our lives, but not everyone can do it successfully. A successful deal should be evaluated in the correct and profitable execution. We will advise you on how to make a profitable and correct deal.",  
+    "paragr4": "Real estate services — Buying, selling, renting or leasing real estate always plays an important role in our lives, but not everyone can do it successfully. A successful deal should be evaluated in the correct and profitable execution. We will advise you on how to make a profitable and correct deal.",
 
     "title-span5": "UMANAGE CORRECTLY AND PROFITABLY!",
     "title5": "",
@@ -33,15 +33,14 @@
     "title-span6": "RESEARCH, ANALYSIS, SOLUTIONS!",
     "title6": "",
     "paragr6": "Marketing research — Marketing research and in-depth market analysis are considered the foundation for successful product implementation in every industry. The main task of marketing research is to create and provide the right product both for the developer and for the end consumer."
-    
   },
   "about": {
     "title": "About Us",
     "info": "Anorhome are professionals specialized in providing high quality real estate consulting services. We were founded in 2020 and during this time we have been successfully participating in the creation of local development and international projects in Uzbekistan.",
     "p1": "Satisfied clients",
     "p2": "Project profitability",
-    "p3": "Square meters implemented",
-    "p4": "Experience of employees"
+    "p3": "Sq meters implemented",
+    "p4": "Years of employees experience"
   },
   "projects": {
     "title": "Projects",
@@ -49,7 +48,7 @@
     "info-title": "Dream House Building",
     "info-p": "Lorem ipsum dolor sit amet consectetur. Luctus in montes pellentesque proin neque pellentesque suspendisse sit. Proin ut at tortor nulla quam arcu",
     "btn": "See All",
-    "gallery":"Project Gallery"
+    "gallery": "Project Gallery"
   },
   "clients": {
     "title": "Clients"
@@ -63,15 +62,12 @@
     "email": "Email"
   },
 
-
-  "services":{
+  "services": {
     "top-parag": "Find us at some of the coolest cities across the globe.",
-    "top-title": "Anorhome Services" 
+    "top-title": "Anorhome Services"
   },
 
-
-
-  "aboutUs":{
+  "aboutUs": {
     "title": "We Make It Reality",
     "parag": "Stable partnership is a guarantee of success in business.",
     "title2": "About Us",
@@ -89,15 +85,63 @@
     "values-p4": "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc"
   },
 
+  "projectPage": {
 
+    "title": "Our Completed Projects",
 
-  "footer":{
-    "descr":"Creating value",
-    "link1":"Service",
-    "link2":"About Us",
-    "link3":"Portfolio",
-    "link4":"Contact Us",
-    "social":"Our Social Media",
+    "view-info": "Select a card to view its information",
+
+     
+    "sr-category": "Investment Consulting",
+    "sr-loc1": "Yunusabad, Tashkent",
+    "sr-loc2": "Amir Temur, 03124923, Yunusobod District, Tashkent City, Uzbekistan",
+    "sr-descr": "Sergeli Residence is a luxurious apartment complex located in the heart of Tashkent, Uzbekistan. Offering top-of-the-line amenities and breathtaking views of the city, Sergeli Residence is the perfect place to call home. With spacious and modern living spaces, residents can enjoy a comfortable and convenient lifestyle. The complex also features on-site fitness facilities, a swimming pool, and 24-hour security for added peace of mind. Don't miss out on the opportunity to experience the best of Tashkent living at Sergeli Residence.",
+
+     
+    "atm-category": "Investment Consulting",
+    "atm-loc1": "Yunusabad, Tashkent",
+    "atm-loc2": "Amir Temur, 03124923, Yunusobod District, Tashkent City, Uzbekistan",
+    "atm-descr": "Auto Tiger Mall is a one-stop destination for automobile enthusiasts in Tashkent, Uzbekistan. It offers a wide range of automotive products and services, including car accessories, spare parts, lubricants, and repair services. The mall features a modern and spacious showroom, with friendly and knowledgeable staff to assist customers. With its top-quality products and excellent customer service, Auto Tiger Mall is the perfect place for car owners and enthusiasts to find everything they need to keep their vehicles running smoothly.",
+
+     
+    "termiz-itc-category": "Investment Consulting",
+    "termiz-itc-loc1": "Yunusabad, Tashkent",
+    "termiz-itc-loc2": "Amir Temur, 03124923, Yunusobod District, Tashkent City, Uzbekistan",
+    "termiz-itc-descr": "The Termez International Trade Center, also known as Intermex, is a new project in Uzbekistan designed to increase foreign trade with countries in Central and South Asia. The center covers an area of 260,000 square meters and will serve as a free trade zone where entrepreneurs can engage in retail and wholesale trade without paying customs duties when importing goods. It offers tax incentives for property owners and includes various facilities such as wholesale and retail stores, production sites, warehouses, a logistics center, medical clinic, hotel, restaurant, car service, and gas station. The project is set to be completed by the first quarter of 2023 and is expected to attract over 1 million visitors within the first quarter of operation. The location of the center in Termez, on Uzbekistan's southern border, will increase the country's foreign trade with neighboring countries such as Tajikistan, Turkmenistan, Afghanistan, Pakistan, Iran, and others. The project has been allocated 26 hectares in Termez district and will house $75 million worth of terminals for receiving, storing, and processing goods",
+
+    
+    "biy311-category": "Investment Consulting",
+    "biy311-loc1": "Yunusabad, Tashkent",
+    "biy311-loc2": "Amir Temur, 03124923, Yunusobod District, Tashkent City, Uzbekistan",
+    "biy311-descr": "The BIY311 Buyuk Ipak Yo‘li 311 is a major transportation project in Uzbekistan that aims to create a modern and efficient transportation corridor linking the country with neighboring Central Asian countries and beyond. The project involves the construction of a new highway that will span over 240 kilometers, connecting the cities of Tashkent and Andijan. The highway will have four lanes and will include several bridges, tunnels, and overpasses to ensure smooth traffic flow. The project also includes the construction of several service areas, including gas stations, rest areas, and other facilities. Once completed, the BIY311 Buyuk Ipak Yo‘li 311 is expected to significantly boost trade and economic cooperation between Uzbekistan and its neighboring countries. The project is part of the government's efforts to modernize the country's infrastructure and improve its connectivity with the rest of the world.",
+
+     
+    "komolon-category": "Investment Consulting",
+    "komolon-loc1": "Yunusabad, Tashkent",
+    "komolon-loc2": "Amir Temur, 03124923, Yunusobod District, Tashkent City, Uzbekistan",
+    "komolon-descr": "“Yangi Kamolon” is a vibrant marketplace in Tashkent, Uzbekistan, offering a wide range of goods and services, including fresh produce, clothing, electronics, and more. With a bustling atmosphere and friendly vendors, visitors can enjoy shopping for quality items at affordable prices. The market also features a food court serving authentic Uzbek cuisine, making it a popular destination for both locals and tourists alike. Come experience the sights, sounds, and flavors of “Yangi Kamolon” for yourself!",
+
+    
+    "travelBs-category": "Investment Consulting",
+    "travelBs-loc1": "Yunusabad, Tashkent",
+    "travelBs-loc2": "Amir Temur, 03124923, Yunusobod District, Tashkent City, Uzbekistan",
+    "travelBs-descr": "The Travel Business Center is a platform designed to help travel agencies and tour operators streamline their operations and improve their services. The center provides a range of tools and resources, including booking management software, marketing and promotional materials, customer support services, and access to a network of industry professionals. By utilizing the Travel Business Center, travel businesses can increase their efficiency, reduce costs, and offer more personalized and high-quality experiences to their customers. Additionally, the center serves as a hub for industry news and trends, helping businesses stay up-to-date with the latest developments in the travel industry.",
+
+    
+    "mashriq-category": "Investment Consulting",
+    "mashriq-loc1": "Yunusabad, Tashkent",
+    "mashriq-loc2": "Amir Temur, 03124923, Yunusobod District, Tashkent City, Uzbekistan",
+    "mashriq-descr": "”Al Mashriq” is a state-of-the-art multi-functional living complex that is designed to provide residents with a luxurious and convenient lifestyle. This complex is located in a prime location that offers easy access to major commercial and entertainment centers, making it an ideal place to live for busy professionals and families. The residential units at Al Mashriq are thoughtfully designed to provide a comfortable and elegant living experience. The apartments are spacious and well-lit, with large windows that offer stunning views of the surrounding landscape. They are equipped with high-quality fittings and fixtures that are both functional and aesthetically pleasing."
+ 
+  },
+
+  "footer": {
+    "descr": "Creating value",
+    "link1": "Service",
+    "link2": "About Us",
+    "link3": "Portfolio",
+    "link4": "Contact Us",
+    "social": "Our Social Media",
     "everbest": "Powered by"
   },
 
@@ -106,9 +150,5 @@
     "parag": "Lorem ipsum dolor sit amet consectetur. Rhoncus hac dui phasellus dolor lectus aliquam diam. Curabitur elementum faucibus dui a et. Neque consectetur scelerisque condim",
     "back": "Go back",
     "home": "Take Home"
-
   }
-  
-
-
 }

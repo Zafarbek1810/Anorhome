@@ -4,8 +4,8 @@ const ClientsWrapper = styled.div`
   background: #fff;
   padding-top: 100px;
   .title {
-    border-top: 1px solid #161A1D;
-    border-bottom: 1px solid #161A1D;
+    border-top: 1px solid #161a1d;
+    border-bottom: 1px solid #161a1d;
 
     h3 {
       font-family: "Mulish";
@@ -13,39 +13,50 @@ const ClientsWrapper = styled.div`
       font-weight: 700;
       font-size: 40px;
       line-height: 48px;
-      color: #161A1D;
+      color: #161a1d;
     }
   }
-  .clients__logo{
+  .clients__logo {
     padding: 60px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
   }
-  .al-mashriq{
+  .al-mashriq {
     width: 160px;
   }
-  .komolon{
+  .komolon {
     width: 230px;
   }
-  .travel{
+  .travel {
     width: 130px;
+  }
+  .amt {
+    width: 160px;
+  }
+  .sr{
+      width: 110px;
   }
 
   @media (max-width: 700px) {
-    .clients__logo{
+    .clients__logo {
       flex-wrap: wrap;
-      justify-content: space-between; 
+      justify-content: space-between;
     }
-    .al-mashriq{
-    width: 120px;
+    .al-mashriq {
+      width: 120px;
+    }
+    .komolon {
+      width: 160px;
+    }
+    .travel {
+      width: 90px;
+    }
+    .amt{
+      width: 120px;
   }
-  .komolon{
-    width: 160px;
-  }
-  .travel{
-    width: 90px;
+  .sr{
+      width: 100px;
   }
   }
 `;

@@ -90,7 +90,7 @@ const HeroWrapper = styled.div`
         font-weight: 400;
         font-size: 12px;
         line-height: 15px;
-        margin: 13px;
+        margin: 10px 0;
         color: #000;
       }
       span {
@@ -119,7 +119,7 @@ const HeroWrapper = styled.div`
         font-family: "Mulish";
         font-style: normal;
         font-size: 24px;
-        line-height: 9px;
+        line-height: 3px;
         margin-top: 14px;
         color: #fff;
       }
@@ -128,8 +128,8 @@ const HeroWrapper = styled.div`
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
-        line-height: 1px;
-        margin-top: 2px;
+        line-height: 15px;
+        margin-top: 1px;
         color: #fff;
       }
       span {
@@ -292,6 +292,7 @@ const HeroWrapper = styled.div`
         }
         p {
           font-size: 12px;
+        
         }
       }
       &__box-white2 {
@@ -324,6 +325,7 @@ const HeroWrapper = styled.div`
         p {
           font-weight: 400;
           font-size: 12px;
+          line-height: 14px;
         }
       }
     }

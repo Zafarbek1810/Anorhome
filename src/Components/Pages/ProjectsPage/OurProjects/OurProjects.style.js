@@ -79,7 +79,6 @@ const OurProjectsWrapper = styled.div`
               font-weight: 600;
               font-size: 18px;
               line-height: 20px;
-              letter-spacing: 0.1em;
               color: #161a1d;
             }
 
@@ -195,7 +194,6 @@ const OurProjectsWrapper = styled.div`
           font-weight: 600;
           font-size: 20px;
           line-height: 24px;
-          letter-spacing: 0.1em;
           color: #161a1d;
         }
 
@@ -280,7 +278,6 @@ const OurProjectsWrapper = styled.div`
               font-weight: 600;
               font-size: 20px;
               line-height: 24px;
-              letter-spacing: 0.1em;
               color: #161a1d;
             }
 

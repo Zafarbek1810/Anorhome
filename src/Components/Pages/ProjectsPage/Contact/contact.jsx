@@ -26,7 +26,7 @@ const Contact = () => {
     <ContactWrappper>
       <div data-aos={"fade-in"} className="title">
         <Container>
-          <h3>Contact Us</h3>
+          <h3>{t("contact.title")}</h3>
         </Container>
       </div>
 
