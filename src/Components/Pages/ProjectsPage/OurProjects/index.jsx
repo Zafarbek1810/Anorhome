@@ -167,9 +167,7 @@ const OurProjects = () => {
           <div className="left" id={selectedCardIndex} >
             {selectedCardIndex !== null ? (
               <div>
-                <h4 className="title">Our Completed Projects</h4>
-                {!loading ? (
-                  <div data-aos={"fade-right"}>
+                <h4 className="title">{t('projectPage.title')}</h4>
                     <div className="cards">
                       {data.map((card, index) => (
                         <div
@@ -195,6 +193,8 @@ const OurProjects = () => {
                         </div>
                       ))}
                     </div>
+                {!loading ? (
+                  <div data-aos={"fade-right"}>
                     <p className="heading">{data[selectedCardIndex].title}</p>
                     <p className="descr">{data[selectedCardIndex].descr}</p>
                     <div className="location">
@@ -279,7 +279,7 @@ const OurProjects = () => {
                 )}
               </div>
             ) : (
-              <p>Select a card to view its information</p>
+              <p>{t('projectPage.view-info')}</p>
             )}
           </div>
 
