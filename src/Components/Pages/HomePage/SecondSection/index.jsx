@@ -75,7 +75,7 @@ const SecondSection = () => {
             </div>
 
             <section data-aos={"fade-up"} class="buttons">
-              <MyLink to="/#" className="btn btn-4">
+              <MyLink to="/about" className="btn btn-4">
                 <span>{t("button.btn")}</span>
               </MyLink>
             </section>

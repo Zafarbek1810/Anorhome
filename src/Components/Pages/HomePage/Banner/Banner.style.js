@@ -68,19 +68,21 @@ const BannerWrapper = styled.div`
         font-family: "Mulish";
         font-style: normal;
         font-weight: 900;
-        font-size: 52px;
+        font-size: 64px;
         line-height: 66px;
         color: #ffffff;
         margin-bottom: 16px; 
+        text-transform: uppercase;
         span { 
           background-image: linear-gradient(90deg, #ff6a00, #ee0979);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
+          font-weight: 900;
         }
       }
 
       .descr {
-        width: 90%;
+        width: 70%;
         font-family: "Mulish";
         font-style: normal;
         font-weight: 400;

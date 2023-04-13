@@ -7,11 +7,9 @@ import useWindowDimensions from "../../../../Hooks/useWindow";
 import AOS from "aos";
 import { useTranslation } from "react-i18next";
 
-
 const Services = () => {
-  
   const { t } = useTranslation();
-  
+
   const data = [
     {
       id: "1",
@@ -84,7 +82,9 @@ const Services = () => {
             <div className="col-3">
               <p>{v.p2}</p>
               <div className="btn">
-                <MyLink to={`/serviceDetail?id=${v.id}`}>{t("button.btn")}</MyLink>
+                <MyLink to={`/service_details?id=${v.id}`}>
+                  {t("button.btn")}
+                </MyLink>
               </div>
             </div>
           </div>
@@ -108,7 +108,8 @@ function ImgParalax({ v, pos }) {
   // }
 
   useEffect(() => {
-    const elDistanceToTop =  window?.pageYOffset + imgRef.current?.getBoundingClientRect().top;
+    const elDistanceToTop =
+      window?.pageYOffset + imgRef.current?.getBoundingClientRect().top;
     setIsVisibleOnScreen(pos + window?.innerHeight > elDistanceToTop);
     setNum(pos + window?.innerHeight - elDistanceToTop);
   }, [pos]);

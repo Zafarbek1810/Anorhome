@@ -7,7 +7,6 @@ import { TemplateWrapper } from "./ServiceDetail.style";
 import Container from "../../../Common/Container";
 import { useTranslation } from "react-i18next";
 
-
 const data = [
   {
     id: "1",
@@ -15,8 +14,7 @@ const data = [
     banner: {
       title: "hero.title-span",
       img: "/images/banner.jpg",
-      descr:
-        "hero.paragr",
+      descr: "hero.paragr",
     },
     works: {
       title: "How It Works",
@@ -79,8 +77,7 @@ const data = [
     banner: {
       title: "hero.title-span2",
       img: "/images/banner2.jpg",
-      descr:
-        "hero.paragr2",
+      descr: "hero.paragr2",
     },
     works: {
       title: "How It Works",
@@ -143,8 +140,7 @@ const data = [
     banner: {
       title: "hero.title-span3",
       img: "/images/banner3.jpg",
-      descr:
-        "hero.paragr3",
+      descr: "hero.paragr3",
     },
     works: {
       title: "How It Works",
@@ -207,8 +203,7 @@ const data = [
     banner: {
       title: "hero.title-span4",
       img: "/images/banner4.jpg",
-      descr:
-        "hero.paragr4",
+      descr: "hero.paragr4",
     },
     works: {
       title: "How It Works",
@@ -271,8 +266,7 @@ const data = [
     banner: {
       title: "hero.title-span5",
       img: "/images/banner5.jpg",
-      descr:
-        "hero.paragr5",
+      descr: "hero.paragr5",
     },
     works: {
       title: "How It Works",
@@ -335,7 +329,6 @@ const data = [
 const ServiceDetail = ({ id }) => {
   console.log(id);
   let Component = null;
-  
 
   switch (id) {
     case "1": {
@@ -368,7 +361,7 @@ const Template = ({ id }) => {
     return obj.id == id;
   });
 
-  const {t} = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <TemplateWrapper>
@@ -476,8 +469,6 @@ const Template = ({ id }) => {
                   </button>
                 </section>
               </div>
-              
-             
             </div>
           </Container>
         </div>

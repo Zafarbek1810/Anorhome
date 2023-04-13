@@ -55,7 +55,7 @@ function MyApp({ Component, pageProps }) {
   useEffect(()=>{
     setTimeout(() => {
       setJivo(true)
-    }, 10000);
+    }, 15000);
   }, [])
 
   useEffect(() => {

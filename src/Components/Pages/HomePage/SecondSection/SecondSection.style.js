@@ -55,7 +55,7 @@ const SecondSectionWrapper = styled.div`
           .num {
             font-family: "Mulish";
             font-style: normal;
-            font-weight: 600;
+            font-weight: 800;
             font-size: 20px;
             line-height: 24px;
             color: #000000;

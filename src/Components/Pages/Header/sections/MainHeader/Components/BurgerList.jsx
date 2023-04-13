@@ -59,7 +59,7 @@ const BurgerList = ({ burger }) => {
               },
               {
                 value: "ru",
-                label: "RUS",
+                label: "РУС",
               },
             ]}
           />

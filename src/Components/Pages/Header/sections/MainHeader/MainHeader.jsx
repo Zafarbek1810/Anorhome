@@ -162,7 +162,7 @@ const MainHeader = ({ isFixed }) => {
               },
               {
                 value: "ru",
-                label: "RUS",
+                label: "РУС",
               },
             ]}
           />

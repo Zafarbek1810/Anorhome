@@ -22,7 +22,7 @@ const Contact = () => {
     zoom: 17,
   };
   return (
-    <ContactWrappper>
+    <ContactWrappper id="contact">
       <div data-aos={"fade-in"} className="title">
         <Container>
           <h3>{t("contact.title")}</h3>
