@@ -107,7 +107,18 @@ const OurProjectsWrapper = styled.div`
           }
         }
 
-        
+        .card.card.selected{
+          background-color: #161a1d;
+
+          .text {
+            h6 {
+              color: #ffffff;
+            }
+            p {
+              color: #ffffff;
+            }
+          }
+        }
 
         .card:hover {
           background-color: #161a1d;

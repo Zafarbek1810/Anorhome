@@ -3,35 +3,34 @@ import AOS from "aos";
 import { useTranslation } from "react-i18next";
 import Container from "../../../Common/Container";
 import MyLink from "../../../Common/MyLink";
-import CalendarSvg from "../../../Common/Svgs/CalendarSvg";
-import LocationSvg from "../../../Common/Svgs/LocationSvg";
 import { ThirdSectionWrapper } from "./ThirdSection.style";
 import RightSvg from "../../../Common/Svgs/RightSvg";
+import ProIcon from "../../../Common/Svgs/ProIcon";
 
 const data=[
   {
     img:"/images/projects/sergeli/1.jpg",
     city:"Sergeli Residence",
     date:" 12.01.2023",
-    link:"/projects"
+    link:"/projects?title=Sergeli%20Residence"
   },
   {
     img:"/images/projects/atm/1.jpg",
     city:"Auto Tiger Mall",
     date:" 12.01.2023",
-    link:"/projects"
+    link:"/projects?title=Auto Tiger Mall"
   },
   {
     img:"/images/projects/kamolon/1.jpg",
     city:"Yangi Komolon",
     date:" 12.01.2023",
-    link:"/projects"
+    link:"/projects?title=Yangi%20Komolon"
   },
   {
     img:"/images/projects/almashriq/1.jpg",
     city:"Al-Mashriq",
     date:" 12.01.2023",
-    link:"/projects"
+    link:"/projects?title=Al%20Mashriq"
   },
 ]
 const ThirdSection = () => {
@@ -97,7 +96,7 @@ const ThirdSection = () => {
                   </div>
                   <div className="bottom">
                     <span>
-                      <LocationSvg /> {obj.city}
+                      <ProIcon /> {obj.city}
                     </span>
                       <MyLink to={obj.link}>{t("button.btn")} <RightSvg/></MyLink>
                   </div>
