@@ -149,6 +149,13 @@
     "everbest": "Разработано"
   },
 
+  "modal": {
+    "callNow": "Нас отделяет всего один звонок! Как можно с Вами связаться?",
+    "num": "Номер Телефона",
+    "send": "Отправить",
+    "failed": "Это поле обязательно к заполнению"
+  },
+
   "error404": {
     "title": "Страница Не Найдена.",
     "parag": "Lorem ipsum dolor sit amet consectetur. Rhoncus hac dui phasellus dolor lectus aliquam diam. Curabitur elementum faucibus dui a et. Neque consectetur scelerisque condim",

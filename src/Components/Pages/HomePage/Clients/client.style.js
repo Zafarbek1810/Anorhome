@@ -17,7 +17,7 @@ const ClientsWrapper = styled.div`
     }
   }
   .clients__logo {
-    padding: 60px 0;
+    padding: 75px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;

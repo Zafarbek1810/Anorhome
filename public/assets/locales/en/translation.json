@@ -143,6 +143,13 @@
     "everbest": "Powered by"
   },
 
+  "modal": {
+    "callNow": "We are just one call away! How can we contact you?",
+    "num": "Phone Number",
+    "send": "Send Now",
+    "failed": "This field is required"
+  },
+
   "error404": {
     "title": "Page Not Found.",
     "parag": "Lorem ipsum dolor sit amet consectetur. Rhoncus hac dui phasellus dolor lectus aliquam diam. Curabitur elementum faucibus dui a et. Neque consectetur scelerisque condim",

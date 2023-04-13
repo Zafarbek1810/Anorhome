@@ -1,14 +1,18 @@
 import React, { useState, useEffect } from "react";
 import { FormModalWrapper } from "./FormModal.style";
 import { useForm, Controller } from "react-hook-form";
+import axios from "axios";
+import { useTranslation } from "react-i18next";
 import MyLink from "../../../Common/MyLink";
 import { Checkbox, Input, message } from "antd";
 import Loading from "./Loading";
 import { useContextSelector } from "use-context-selector";
 import { ModalContext } from "../../../../Context/ModalContext/Context";
-import axios from "axios";
 
 const FormModal = () => {
+
+  const { t } = useTranslation();
+
   const {
     register,
     reset,
@@ -67,9 +71,9 @@ const FormModal = () => {
       <div className="form-wrapper">
         <form className="form" onSubmit={handleSubmit(onSubmit)}>
           <div className="top">
-            <h3>Call Me Now!</h3>
+            <h3>{t("modal.callNow")}</h3>
             <label className="label">
-              <span className="label-text">Phone Number</span>
+              <span className="label-text">{t("modal.num")}</span>
               <svg
                   width="13"
                   height="22"
@@ -89,7 +93,7 @@ const FormModal = () => {
                 {...register("phone", { required: true })}
               />
               {errors.phone && (
-                <span className="err-text">This field is required</span>
+                <span className="err-text">{t("modal.failed")}</span>
               )}
             </label>
           </div>
@@ -97,7 +101,7 @@ const FormModal = () => {
           <div className="submit-btn-wrapper">
           <section class="buttons">
             <button type="submit" className="btn btn-4" >
-              <span>Send Now</span>
+              <span>{t("modal.send")}</span>
             </button>
           </section>
             

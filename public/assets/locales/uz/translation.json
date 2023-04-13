@@ -147,6 +147,13 @@
     "social":"Ijtimoiy tarmoqlarimiz",
     "everbest": "Loyiha Muallifi"
   },
+
+  "modal": {
+    "callNow": "Biz faqat bir qo'ng'iroq masofadamiz! Siz bilan qanday bog'lanishimiz mumkin?",
+    "num": "Telefon No'mer",
+    "send": "Yuboring",
+    "failed": "Ushbu qator to'ldirilishi shart"
+  },
   
 
   "error404": {
