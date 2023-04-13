@@ -1,13 +1,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import { useTranslation } from "react-i18next";
-import Container from "../../../Common/Container";
-import AtlassianSvg from "../../../Common/Svgs/AtlassianSvg";
-import GithubSvg from "../../../Common/Svgs/GithubSvg";
-import GitlabSvg from "../../../Common/Svgs/GitlabSvg";
-import GoogleSvg from "../../../Common/Svgs/GoogleSvg";
-import OracleSvg from "../../../Common/Svgs/OracleSvg";
-import WindowsSvg from "../../../Common/Svgs/WindowsSvg";
+import Container from "../../../Common/Container"; 
 import { ClientsWrapper } from "./client.style";
 
 const Clients = () => {
@@ -30,13 +24,11 @@ const Clients = () => {
 
         <Container>
             <div data-aos={"fade-up"} className="clients__logo">
-              <GoogleSvg />
-              <WindowsSvg />
-              <OracleSvg />
-              <AtlassianSvg />
-              <GithubSvg />
-              <GitlabSvg />
-              <GoogleSvg />
+              <img src="/images/al-mashriq-logo.png" alt="Al Mashriq Logo" className="al-mashriq" />
+              <img src="/images/Travel-logo.png" alt="Travel Business center logo" className="travel" />
+              <img src="/images/kamolon-logo.png" alt="Komolon residence logo"  className="komolon" />
+              <img src="/images/amt-svg.svg" alt="auto mall tiger logo" className="amt" />
+              <img src="/images/sr-logo.png" alt="sergeli residence" className="sr" />
             </div>
         </Container>
     </ClientsWrapper>
