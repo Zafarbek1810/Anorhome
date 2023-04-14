@@ -207,6 +207,11 @@ const BannerWrapper = styled.div`
   }
 
   @media (max-width: 600px) {
+    .img-wrapper{
+      img{
+        transform: translateX(0px);
+      }
+    }
     .carusel{
       .title{
         font-size: 32px !important;
