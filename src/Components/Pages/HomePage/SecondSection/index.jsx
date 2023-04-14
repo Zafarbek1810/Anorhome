@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import AOS from "aos";
 import { useTranslation } from "react-i18next";
 import { SecondSectionWrapper } from "./SecondSection.style";
@@ -7,13 +7,11 @@ import FamilySvg from "../../../Common/Svgs/FamilySvg";
 import ProjectsSvg from "../../../Common/Svgs/ProjectsSvg";
 import RevenueSvg from "../../../Common/Svgs/RevenueSvg";
 import TrustedSvg from "../../../Common/Svgs/TrustedSvg";
-import MyLink from "../../../Common/MyLink"; 
-
+import MyLink from "../../../Common/MyLink";
 
 const SecondSection = () => {
-
   const { t } = useTranslation();
-  
+
   const countData = [
     {
       img: <FamilySvg />,
@@ -42,7 +40,7 @@ const SecondSection = () => {
   ];
 
   useEffect(() => {
-    AOS.init({ duration: 1500, once: true  });
+    AOS.init({ duration: 1500, once: true });
     AOS.refresh();
   }, []);
 
@@ -56,9 +54,11 @@ const SecondSection = () => {
 
       <Container style={{ paddingTop: 90, paddingBottom: 90 }}>
         <div className="wrap">
-          <div className="left" >
+          <div className="left">
             <p data-aos={"fade-right"} className="info">
-            {t("about.info")}
+              <b>{t("about.info").split(" ").slice(0, 1).join(" ")}</b>
+              &nbsp;
+              {t("about.info").split(" ").slice(1).join(" ")}
             </p>
 
             <div className="countWrap">
@@ -69,7 +69,9 @@ const SecondSection = () => {
                     {v.count}
                     {v.suffix}
                   </p>
-                  <p data-aos={"fade-up"} className="title">{v.p}</p>
+                  <p data-aos={"fade-up"} className="title">
+                    {v.p}
+                  </p>
                 </div>
               ))}
             </div>
@@ -81,7 +83,7 @@ const SecondSection = () => {
             </section>
           </div>
           <div className="right">
-            <img src="/images/img.png" alt=""  data-aos={"fade-left"}/>
+            <img src="/images/img.png" alt="" data-aos={"fade-left"} />
           </div>
         </div>
       </Container>
