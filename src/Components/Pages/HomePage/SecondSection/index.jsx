@@ -83,7 +83,7 @@ const SecondSection = () => {
             </section>
           </div>
           <div className="right">
-            <img src="/images/img.png" alt="" data-aos={"fade-left"} />
+            <img src="/images/img.jpg" alt=""  data-aos={"fade-left"}/>
           </div>
         </div>
       </Container>
