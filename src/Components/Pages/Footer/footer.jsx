@@ -24,7 +24,7 @@ const Footer = () => {
           <div className="footer__items">
             <MyLink to={"/services"} className="links">{t('footer.link1')}</MyLink>
             <MyLink to={"/about"} className="links">{t('footer.link2')}</MyLink>
-            <MyLink to={"/"} className="links">{t('footer.link3')}</MyLink>
+            <MyLink to={"/projects"} className="links">{t('footer.link3')}</MyLink>
             <MyLink to={"/#contact"} className="links">{t('footer.link4')}</MyLink>
           </div>
           <div className="footer__socials">

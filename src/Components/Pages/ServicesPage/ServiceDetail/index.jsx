@@ -6,6 +6,7 @@ import Contact from "../../HomePage/Contact/contact";
 import { TemplateWrapper } from "./ServiceDetail.style";
 import Container from "../../../Common/Container";
 import { useTranslation } from "react-i18next";
+import MyLink from "../../../Common/MyLink";
 
 const data = [
   {
@@ -363,6 +364,48 @@ const Template = ({ id }) => {
 
   const { t } = useTranslation();
 
+  const otherData = [
+    {
+      id: "1",
+      span: "1",
+      p1: t("hero.title-span"),
+      img: "/images/services/service1.jpg",
+      p2: t("hero.paragr"),
+    },
+    {
+      id: "2",
+      span: "2",
+      p1: t("hero.title-span2"),
+      img: "/images/services/service2.jpg",
+      p2: t("hero.paragr2"),
+    },
+    {
+      id: "3",
+      span: "3",
+      p1: t("hero.title-span3"),
+      img: "/images/services/service3.jpg",
+      p2: t("hero.paragr3"),
+    },
+    {
+      id: "4",
+      span: "4",
+      p1: t("hero.title-span4"),
+      img: "/images/services/service4.jpg",
+      p2: t("hero.paragr4"),
+    },
+    {
+      id: "5",
+      span: "5",
+      p1: t("hero.title-span5"),
+      img: "/images/services/service5.jpg",
+      p2: t("hero.paragr5"),
+    },
+  ];
+
+  const objOtherData=otherData.filter((obj)=>{
+    return obj.id !==id
+  })
+
   return (
     <TemplateWrapper>
       <Container>
@@ -433,42 +476,48 @@ const Template = ({ id }) => {
         <div className="wrap">
           <Container>
             <div className="cards">
-              <div className="card">
-                <div className="cardImg">
-                  <img src={object[0].services.card1.img} alt="" />
+                <div className="card">
+                  <div className="cardImg">
+                    <img src={objOtherData[0].img} alt="" />
+                  </div>
+                  <h5 className="titles">
+                    {objOtherData[0].p1}
+                  </h5>
+                  <p className="descr">{objOtherData[0].p2}</p>
+                  <section class="buttons">
+                    <MyLink to={`/service_details?id=${objOtherData[0].id}`} className="btn btn-4">
+                      <span>Learn More</span>
+                    </MyLink>
+                  </section>
                 </div>
-                <h5 className="titles">{object[0].services.card1.cardTitle}</h5>
-                <p className="descr">{object[0].services.card1.descr}</p>
-                <section class="buttons">
-                  <button className="btn btn-4">
-                    <span>Learn More</span>
-                  </button>
-                </section>
-              </div>
-              <div className="card">
-                <div className="cardImg">
-                  <img src={object[0].services.card2.img} alt="" />
+                <div className="card">
+                  <div className="cardImg">
+                    <img src={objOtherData[1].img} alt="" />
+                  </div>
+                  <h5 className="titles">
+                    {objOtherData[1].p1}
+                  </h5>
+                  <p className="descr">{objOtherData[1].p2}</p>
+                  <section class="buttons">
+                  <MyLink to={`/service_details?id=${objOtherData[1].id}`} className="btn btn-4">
+                      <span>Learn More</span>
+                    </MyLink>
+                  </section>
                 </div>
-                <h5 className="titles">{object[0].services.card2.cardTitle}</h5>
-                <p className="descr">{object[0].services.card2.descr}</p>
-                <section class="buttons">
-                  <button className="btn btn-4">
-                    <span>Learn More</span>
-                  </button>
-                </section>
-              </div>
-              <div className="card">
-                <div className="cardImg">
-                  <img src={object[0].services.card3.img} alt="" />
+                <div className="card">
+                  <div className="cardImg">
+                    <img src={objOtherData[2].img} alt="" />
+                  </div>
+                  <h5 className="titles">
+                    {objOtherData[2].p1}
+                  </h5>
+                  <p className="descr">{objOtherData[2].p2}</p>
+                  <section class="buttons">
+                  <MyLink to={`/service_details?id=${objOtherData[2].id}`} className="btn btn-4">
+                      <span>Learn More</span>
+                    </MyLink>
+                  </section>
                 </div>
-                <h5 className="titles">{object[0].services.card3.cardTitle}</h5>
-                <p className="descr">{object[0].services.card3.descr}</p>
-                <section class="buttons">
-                  <button className="btn btn-4">
-                    <span>Learn More</span>
-                  </button>
-                </section>
-              </div>
             </div>
           </Container>
         </div>
