@@ -149,7 +149,8 @@
   },
 
   "modal": {
-    "callNow": "We are just one call away! How can we contact you?",
+    "callNow": "We are just one call away! ",
+    "p":"How can we contact you?",
     "num": "Phone Number",
     "send": "Send Now",
     "failed": "This field is required"

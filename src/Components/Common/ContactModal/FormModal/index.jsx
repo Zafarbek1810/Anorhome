@@ -72,8 +72,9 @@ const FormModal = () => {
         <form className="form" onSubmit={handleSubmit(onSubmit)}>
           <div className="top">
             <h3>{t("modal.callNow")}</h3>
+            <p>{t("modal.p")}</p>
             <label className="label">
-              <span className="label-text">{t("modal.num")}</span>
+              <span className="label-text"></span>
               <svg
                   width="13"
                   height="22"

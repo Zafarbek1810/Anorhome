@@ -12,6 +12,15 @@ const FormModalWrapper = styled.div`
       line-height: 43px;
       color: #000000;
       margin-top: 0;
+      margin-bottom: 0;
+    }
+    p{
+      margin-bottom: 30px;
+      font-family: "Mulish";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 23px;
     }
 
     label {
@@ -45,7 +54,7 @@ const FormModalWrapper = styled.div`
 
       svg {
         position: absolute;
-        top: 40px;
+        top: 20px;
         left: 14px;
       }
 

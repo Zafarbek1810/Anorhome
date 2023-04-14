@@ -152,7 +152,8 @@
   },
 
   "modal": {
-    "callNow": "Biz faqat bir qo'ng'iroq masofadamiz! Siz bilan qanday bog'lanishimiz mumkin?",
+    "callNow": "Biz faqat bir qo'ng'iroq masofadamiz!",
+    "p":" Siz bilan qanday bog'lanishimiz mumkin?",
     "num": "Telefon No'mer",
     "send": "Yuboring",
     "failed": "Ushbu qator to'ldirilishi shart"
