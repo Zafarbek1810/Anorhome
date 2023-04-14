@@ -18,6 +18,12 @@ const BannerWrapper = styled.div`
   position: relative;
   z-index: 4;
 }
+.top-title{
+  font-family: "Mulish";
+  font-style: normal;
+  font-size: 18px;
+  color: #ED3240;
+}
   .img-wrapper {
     position: absolute;
     width: 100%;
@@ -52,7 +58,7 @@ const BannerWrapper = styled.div`
   }
 
   .carusel {
-    width: 750px;
+    width: 680px;
     /* height: auto !important; */
     
     .wrap {
@@ -68,10 +74,10 @@ const BannerWrapper = styled.div`
         font-family: "Mulish";
         font-style: normal;
         font-weight: 900;
-        font-size: 64px;
-        line-height: 66px;
+        font-size: 70px;
+        line-height: 76px;
         color: #ffffff;
-        margin-bottom: 16px; 
+        margin: 3px 0; 
         text-transform: uppercase;
         span { 
           background-image: linear-gradient(90deg, #ff6a00, #ee0979);

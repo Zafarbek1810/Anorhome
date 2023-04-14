@@ -10,17 +10,20 @@
     "call-btn": "Qong'iroq qiling!"
   },
   "hero": {
-    "title-span": "QADR-QIMMAT YARATAMIZ",
-    "title": " ",
-    "paragr": "Strategik konsalting — Bu yo’nalish Anorhome kompaniyasining xizmatlari orasida eng asosiysidir. Har bir loyiha yutug’i asosan g'oyalarning o'ziga xosligi, to’g’ri kontsept yaratilishi, xizmat ko’rsatish sifati va muvaffaqiyatli sotuvdadir. Har bir loyiha va loyihaning kelajakdagi mijozlariga aynan shu narsalar qadir va qimmat yaratadi.",
+    "title-top": "Strategik konsalting",
+    "title": "QADR-QIMMAT",
+    "title-span": "YARATAMIZ",
+    "paragr": "Har bir loyiha yutug’i asosan g'oyalarning o'ziga xosligi, to’g’ri kontsept yaratilishi, xizmat ko’rsatish sifati va muvaffaqiyatli sotuvdadir.",
     
-    "title-span2": "MUVAFFAQIYATLIK SAVDO – LOYIHA YUTUG’IDIR",
-    "title2": " ",
-    "paragr2": "Developerlik loyihalarini yuritish — O’z loyihangizni bizga ishonib topshirsangizgina, siz sotuv va daromadlar darajasini oshirish, xarajatlarni kamaytirish, marketingni to’g’ri yo’naltirish hamda IT dasturlarini o’rnatilish kabi keng qamrovli yechimlarga ega bo'lasiz. Biz o'zimiz savdo ofislarini quramiz, mijozlar uchun yuqori sifatli zamonaviy xizmatni taqdim etamiz va oxirigacha sotmaguncha ketmaymiz.",
+    "title-top2": "Developerlik loyihalarini yuritish",
+    "title2": "KUCHLI SAVDO –",
+    "title-span2": "LOYIHA YUTUG’I",
+    "paragr2": "Biz o'zimiz savdo ofislarini quramiz, mijozlar uchun yuqori sifatli zamonaviy xizmatni taqdim etamiz va oxirigacha sotmaguncha ketmaymiz.",
 
-    "title-span3": "KELAJAKKA SARMOYA QILING",
-    "title3": "",
-    "paragr3": "Investitsion konsalting — Ko’chmas mulk bozorining kelajagi, imkoniyatlarini tahlil qilish va baholash orqali, sizning kutilayotgan loyihalaringiz uchun xavfsiz va daromadli sarmoya bitimlarni taklif etamiz.",
+    "title-top3": "Investitsion konsalting",
+    "title3": "KELAJAKKA",
+    "title-span3": "SARMOYA QILING",
+    "paragr3": "Ko’chmas mulk bozorining kelajagi, imkoniyatlarini tahlil qilish va baholash orqali, sizning kutilayotgan loyihalaringiz uchun xavfsiz va daromadli sarmoya bitimlarni taklif etamiz.",
 
     "title-span4": "UNUMLI, TEZ, TO'G'RI VA MUVAFFAQIYATLI!",
     "title4": "",

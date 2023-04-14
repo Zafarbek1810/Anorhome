@@ -10,15 +10,20 @@
     "call-btn": "Call Me Now!"
   },
   "hero": {
-    "title-span": "Strategic ",
-    "title": " consulting",
-    "paragr": "We Create Value. The main success of each project is the uniqueness of ideas, concept, service quality, and sales", 
-    "title-span2": "Promoting ",
-    "title2": " development projects",
-    "paragr2": "HIGH SALES PERFORMANCE - PROJECT SUCCESS. We will build sales offices ourselves, provide high-quality modern service, and won't stop until we sell EVERYTHING!",  
-    "title-span3": "INVEST IN THE FUTURE",
-    "title3": "",
-    "paragr3": "Investment consulting — By analyzing and evaluating future opportunities and market potential, we will offer you profitable deals for investment purposes in order to achieve maximum returns and minimize risks for your project.",
+    "title-top": "Strategic consulting",
+    "title": "We Create",
+    "title-span": "Value",
+    "paragr": "The main success of each project is the uniqueness of ideas, concept, service quality, and sales", 
+
+    "title-top2": "Promoting development projects",
+    "title2": "HIGH SALES —",
+    "title-span2": "PROJECT SUCCESS",
+    "paragr2": "We will build sales offices ourselves, provide high-quality modern service, and won't stop until we sell EVERYTHING!",  
+
+    "title-top3": "Investment consulting",
+    "title3": "INVEST IN",
+    "title-span3": "THE FUTURE",
+    "paragr3": "By analyzing and evaluating future opportunities and market potential, we will offer you profitable deals for investment purposes in order to achieve maximum returns and minimize risks for your project.",
 
     "title-span4": "ADVANTAGEOUSLY, QUICKLY, CORRECTLY, AND SUCCESSFULLY!",
     "title4": "",
