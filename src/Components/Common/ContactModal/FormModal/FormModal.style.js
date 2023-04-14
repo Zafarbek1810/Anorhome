@@ -11,11 +11,11 @@ const FormModalWrapper = styled.div`
       font-size: 36px;
       line-height: 43px;
       color: #000000;
-      margin-top: 0;
-      margin-bottom: 0;
+      margin: 0;
+      width: 90%;
     }
     p{
-      margin-bottom: 30px;
+      margin-bottom: 50px;
       font-family: "Mulish";
       font-style: normal;
       font-weight: 400;
@@ -39,8 +39,8 @@ const FormModalWrapper = styled.div`
       }
 
       input {
-        margin: 10px 0 22px;
-        width: 70%;
+        margin: 10px 0 42px;
+        width: 100%;
         padding: 11px 0 11px 50px;
 
         font-family: "Mulish";
@@ -48,7 +48,6 @@ const FormModalWrapper = styled.div`
         font-weight: 600;
         font-size: 16px;
         line-height: 19px;
-
         color: #161a1d;
       }
 

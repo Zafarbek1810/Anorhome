@@ -24,7 +24,7 @@ function MyModal({ children }) {
 
   return (
     <ModalWrapper>
-      <Modal visible={isModalVisible} onOk={handleOk} onCancel={handleCancel} width={600} >
+      <Modal visible={isModalVisible} onOk={handleOk} onCancel={handleCancel} width={400} >
         {children}
       </Modal>
     </ModalWrapper>
