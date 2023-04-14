@@ -43,11 +43,11 @@ const Banner = () => {
       </div>
       <Container className="cont">
         <Carousel
-          // autoplay
+          autoplay
           pauseOnFocus={false}
           pauseOnHover={false}
           pauseOnDotsHover={false}
-          // autoplaySpeed={3000}
+          autoplaySpeed={3000}
           // afterChange={onChange}
           beforeChange={onChange}
           className="carusel"

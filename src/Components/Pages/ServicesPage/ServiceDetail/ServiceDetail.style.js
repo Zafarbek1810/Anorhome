@@ -3,6 +3,7 @@ import styled from "styled-components";
 const TemplateWrapper = styled.div`
   padding-top: 100px;
   background: #161a1d;
+  box-sizing: border-box;
   .banner {
     display: flex;
     margin-bottom: 70px;
@@ -146,12 +147,17 @@ const TemplateWrapper = styled.div`
       padding: 60px 0 100px;
       .card {
         width: calc((100% - 60px) / 3);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         .cardImg {
           position: relative;
           z-index: 30 !important;
           transform-style: preserve-3d;
           img {
             width: 100%;
+            height: 250px;
+            object-fit: cover;
           }
           &:before {
             content: " ";
@@ -168,7 +174,7 @@ const TemplateWrapper = styled.div`
 
         .cardImg:hover:before {
           position: absolute;
-          top: -1px;
+          top: -3px;
           right: -1px;
         }
 
@@ -176,19 +182,24 @@ const TemplateWrapper = styled.div`
           font-family: "Mulish";
           font-style: normal;
           font-weight: 900;
-          font-size: 24px;
+          font-size: 18px;
           line-height: 29px;
-          letter-spacing: 0.1em;
           color: #161a1d;
-          margin: 50px 0 30px;
+          margin: 30px 0;
+          
         }
         p {
           font-family: "Mulish";
           font-style: normal;
           font-weight: 400;
-          font-size: 16px;
+          font-size: 14px;
           line-height: 19px;
           color: #161a1d;
+          -webkit-line-clamp: 4;
+          -webkit-box-orient: vertical;
+          display: -webkit-box;
+          overflow: hidden;
+          text-overflow: ellipsis;
         }
         /* ============== button hover  start======================== */
         .buttons {
