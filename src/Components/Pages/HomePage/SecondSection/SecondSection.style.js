@@ -47,7 +47,11 @@ const SecondSectionWrapper = styled.div`
           border-right: 1px solid #A4161A;
           display: flex;
           flex-direction: column;
-          justify-content: space-between;
+          justify-content: start;
+
+          .imgs{
+            height: 30px;
+          }
           
           &:last-child{
               border-right: none;

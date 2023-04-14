@@ -64,7 +64,7 @@ const SecondSection = () => {
             <div className="countWrap">
               {countData.map((v, i) => (
                 <div key={i} className="count">
-                  <div data-aos={"fade-up"}>{v.img}</div>
+                  <div data-aos={"fade-up"} className="imgs">{v.img}</div>
                   <p data-aos={"fade-up"} className="num">
                     {v.count}
                     {v.suffix}
