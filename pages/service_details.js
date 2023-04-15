@@ -28,7 +28,7 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <ServiceDetail id={id}/>
-            {loading && <Loader loading2={loading2} />}
+            {/* {loading && <Loader loading2={loading2} />} */}
         </div>
     )
 }

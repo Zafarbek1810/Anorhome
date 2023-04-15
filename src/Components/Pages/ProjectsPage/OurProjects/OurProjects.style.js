@@ -33,12 +33,20 @@ const OurProjectsWrapper = styled.div`
   }
 
   .wrapper {
+    height: 1400px;
     display: flex;
     .left {
       background-color: #fff;
       width: 50%;
+      height: 100%;
       padding-right: 40px;
       border-right: 1px solid #d9d9d9;
+
+      .leftIn{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between !important;
+      }
       .cards{
         display: none;
       }
@@ -238,8 +246,11 @@ const OurProjectsWrapper = styled.div`
     }
     .right {
       width: 50%;
-      height: 1400px;
-      overflow-y: scroll;
+      height: 100%;
+      
+      .rightIn{
+        height: 100%;
+        overflow-y: scroll;
       padding: 40px;
       background-color: #fff;
 
@@ -255,6 +266,9 @@ const OurProjectsWrapper = styled.div`
         background-color: #d9d9d9 !important;
         border-radius: 10px !important;
       }
+      }
+
+      
 
       .cards {
         .card {
@@ -347,7 +361,7 @@ const OurProjectsWrapper = styled.div`
     }
   }
 
-  @media (max-width: 2450px) {
+  /* @media (max-width: 2450px) {
     .right{
       height: 1200px !important;
     }
@@ -371,7 +385,7 @@ const OurProjectsWrapper = styled.div`
     .right{
       height: 1550px !important;
     }
-  }
+  } */
   @media(max-width:870px){
     .wrapper{
       flex-direction:column-reverse;

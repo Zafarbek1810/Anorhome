@@ -14,6 +14,7 @@ import FormModal from "../src/Components/Common/ContactModal/FormModal";
 import "aos/dist/aos.css";
 
 import '../styles/globals.css'
+import { useRouter } from 'next/router';
 
 if (typeof window === undefined) {
   var window = {};
@@ -46,11 +47,34 @@ function MyApp({ Component, pageProps }) {
   const [loading, setLoading] = useState(true)
   const [loading2, setLoading2] = useState(false)
   const [jivo, setJivo] = useState(false)
+  // const router = useRouter();
+  // const [scrollPosition, setScrollPosition] = useState(0);
+
   // useLayoutEffect(() => {
   //   setTimeout(() => {
   //     setLoading(false)
   //   }, 2000)
   // }, [])
+
+  // console.log(window);
+
+  // useEffect(() => {
+  //   const handleRouteChange = () => {
+  //     setScrollPosition(window.scrollY);
+  //   };
+
+  //   router.events.on('routeChangeStart', handleRouteChange);
+
+  //   return () => {
+  //     router.events.off('routeChangeStart', handleRouteChange);
+  //     console.log();
+  //   };
+  // }, [router.events]);
+
+  // useEffect(() => {
+  //   window.scrollTo(0, scrollPosition);
+  // }, [scrollPosition]);
+
 
   useEffect(()=>{
     setTimeout(() => {

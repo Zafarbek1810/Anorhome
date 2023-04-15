@@ -7,7 +7,7 @@ import Container from "../../../Common/Container/index";
 const ourStaffs = [
   {
     img: "/aboutUs/staff3.jpg",
-    title: "John Wick",
+    title: "Anvar Bahodirovich Anarbayev",
     text: "President of Anorhome.com",
   },
   {

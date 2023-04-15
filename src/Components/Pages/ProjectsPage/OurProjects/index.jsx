@@ -173,8 +173,10 @@ const OurProjects = () => {
         <div className="wrapper">
           <div className="left" id={selectedCardIndex}>
             {selectedCardIndex !== null ? (
-              <div>
+              <div className="leftIn">
+                <div>
                 <h4 className="title">{t("projectPage.title")}</h4>
+                </div>
                 <div className="cards">
                   {data.map((card, index) => (
                     <div
@@ -299,6 +301,7 @@ const OurProjects = () => {
           </div>
 
           <div className="right">
+            <div className="rightIn">
             <div className="cards">
               {data.map((card, index) => (
                 <div
@@ -323,6 +326,7 @@ const OurProjects = () => {
                   </div>
                 </div>
               ))}
+            </div>
             </div>
           </div>
         </div>

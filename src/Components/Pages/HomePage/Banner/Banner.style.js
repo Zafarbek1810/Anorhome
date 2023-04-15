@@ -74,7 +74,7 @@ const BannerWrapper = styled.div`
         font-family: "Mulish";
         font-style: normal;
         font-weight: 900;
-        font-size: 70px;
+        font-size: 72px;
         line-height: 76px;
         color: #ffffff;
         margin: 3px 0; 

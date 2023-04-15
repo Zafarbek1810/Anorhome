@@ -260,10 +260,8 @@ const ServiceDetail = ({ id }) => {
 };
 
 const Template = ({ id }) => {
-  const object = data.filter((obj) => {
-    return obj.id == id;
-  });
-
+  
+  const { t } = useTranslation();
 
   const data = [
     {
@@ -575,9 +573,10 @@ const Template = ({ id }) => {
       },
     },
   ];
+  const object = data.filter((obj) => {
+    return obj.id == id;
+  });
 
-
-  const { t } = useTranslation();
 
   const otherData = [
     {

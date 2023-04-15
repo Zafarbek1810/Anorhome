@@ -9,7 +9,7 @@ const FormModalWrapper = styled.div`
       font-style: normal;
       font-weight: 700;
       font-size: 28px;
-      line-height: 43px;
+      line-height: 30px;
       color: #000000;
       margin: 0;
       width: 90%;

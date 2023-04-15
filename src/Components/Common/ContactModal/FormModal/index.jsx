@@ -112,7 +112,7 @@ const FormModal = () => {
               <input
                 className="nameInput"
                 type="text"
-                placeholder="Phone Number"
+                placeholder={t("modal.num")}
                 {...register("phone", { required: true })}
               />
               {errors.phone && (
