@@ -359,7 +359,7 @@ const Template = ({ id }) => {
                   <p className="descr">{objOtherData[0].p2}</p>
                   <section class="buttons">
                     <MyLink to={`/service_details?id=${objOtherData[0].id}`} className="btn btn-4">
-                      <span>Learn More</span>
+                      <span>{t("button.btn")}</span>
                     </MyLink>
                   </section>
                 </div>
@@ -373,7 +373,7 @@ const Template = ({ id }) => {
                   <p className="descr">{objOtherData[1].p2}</p>
                   <section class="buttons">
                   <MyLink to={`/service_details?id=${objOtherData[1].id}`} className="btn btn-4">
-                      <span>Learn More</span>
+                      <span>{t("button.btn")}</span>
                     </MyLink>
                   </section>
                 </div>
@@ -387,7 +387,7 @@ const Template = ({ id }) => {
                   <p className="descr">{objOtherData[2].p2}</p>
                   <section class="buttons">
                   <MyLink to={`/service_details?id=${objOtherData[2].id}`} className="btn btn-4">
-                      <span>Learn More</span>
+                      <span>{t("button.btn")}</span>
                     </MyLink>
                   </section>
                 </div>
