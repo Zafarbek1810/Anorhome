@@ -16,9 +16,9 @@ const data=[
   },
   {
     img:"/images/projects/travel/pro.jpg",
-    city:"Auto Tiger Mall",
+    city:"Travel Business Center",
     date:" 12.01.2023",
-    link:"/projects?title=Auto Tiger Mall"
+    link:"/projects?title=Travel%20Business%20Center"
   },
   {
     img:"/images/projects/kamolon/9.jpg",
@@ -28,9 +28,9 @@ const data=[
   },
   {
     img:"/images/projects/biy/pro.jpg",
-    city:"Sergeli Residence",
+    city:"Buyuk Ipak Yo‘li 311",
     date:" 12.01.2023",
-    link:"/projects?title=Sergeli%20Residence"
+    link:"/projects?title=Buyuk%20Ipak%20Yo‘li%20311"
   }
 ]
 const ThirdSection = () => {
