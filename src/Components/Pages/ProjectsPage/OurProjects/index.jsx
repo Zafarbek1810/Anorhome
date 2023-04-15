@@ -12,6 +12,7 @@ import { Navigation, Pagination } from "swiper";
 import Aos from "aos";
 import { useTranslation } from "react-i18next";
 import { useRouter } from "next/router";
+import { Image } from "antd";
 
 const OurProjects = () => {
   const { t } = useTranslation();
@@ -115,9 +116,9 @@ const OurProjects = () => {
       img4: "/images/projects/travel/4.jpg",
       img5: "/images/projects/travel/5.jpg",
       img6: "/images/projects/travel/6.jpg",
-      img7: "/images/projects/travel/4.jpg",
-      img8: "/images/projects/travel/5.jpg",
-      img9: "/images/projects/travel/6.jpg",
+      img7: "/images/projects/travel/2.jpg",
+      img8: "/images/projects/travel/3.jpg",
+      img9: "/images/projects/travel/4.jpg"
     },
     {
       title: "Al Mashriq",
@@ -230,40 +231,48 @@ const OurProjects = () => {
                         <SwiperSlide>
                           <div className="imgs">
                             <div className="img">
-                              <img src={selectedCard.img2} alt="" />
+                              <Image src={selectedCard.img2}/>
+                              {/* <img src={selectedCard.img2} alt="" /> */}
                             </div>
                             <div className="img">
-                              <img src={selectedCard.img3} alt="" />
-                            </div>
-                          </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                          <div className="imgs">
-                            <div className="img">
-                              <img src={selectedCard.img4} alt="" />
-                            </div>
-                            <div className="img">
-                              <img src={selectedCard.img5} alt="" />
+                            <Image src={selectedCard.img3}/>
+                              {/* <img src={selectedCard.img3} alt="" /> */}
                             </div>
                           </div>
                         </SwiperSlide>
                         <SwiperSlide>
                           <div className="imgs">
                             <div className="img">
-                              <img src={selectedCard.img6} alt="" />
+                              <Image src={selectedCard.img4}/>
+                              {/* <img src={selectedCard.img4} alt="" /> */}
                             </div>
                             <div className="img">
-                              <img src={selectedCard.img7} alt="" />
+                              <Image src={selectedCard.img5}/>
+                              {/* <img src={selectedCard.img5} alt="" /> */}
                             </div>
                           </div>
                         </SwiperSlide>
                         <SwiperSlide>
                           <div className="imgs">
                             <div className="img">
-                              <img src={selectedCard.img8} alt="" />
+                              <Image src={selectedCard.img6}/>
+                              {/* <img src={selectedCard.img6} alt="" /> */}
                             </div>
                             <div className="img">
-                              <img src={selectedCard.img9} alt="" />
+                              <Image src={selectedCard.img7}/>
+                              {/* <img src={selectedCard.img7} alt="" /> */}
+                            </div>
+                          </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                          <div className="imgs">
+                            <div className="img">
+                              <Image src={selectedCard.img8}/>
+                              {/* <img src={selectedCard.img8} alt="" /> */}
+                            </div>
+                            <div className="img">
+                              <Image src={selectedCard.img9}/>
+                              {/* <img src={selectedCard.img9} alt="" /> */}
                             </div>
                           </div>
                         </SwiperSlide>

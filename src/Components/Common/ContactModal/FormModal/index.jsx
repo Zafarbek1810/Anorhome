@@ -31,6 +31,32 @@ const FormModal = () => {
     console.log("yuborildi");
   };
 
+  const sendFormDataToBitrix24 = async (phone) => {
+    const response = await fetch(
+      'https://b24-sxb9n5.bitrix24.com/rest/1/ou1q9dnhfyrmdjja/crm.lead.add',
+      {
+        method: 'POST',
+        body: JSON.stringify({
+          fields: {
+            PHONE: [{VALUE: phone, VALUE_TYPE: 'WORK'}],
+          },
+          params: {REGISTER_SONET_EVENT: 'Y'},
+        }),
+      }
+    );
+  
+    const data = await response.json();
+    console.log(data);
+  };
+  
+  const handleSubmit1 = (event) => {
+    // console.log(event.phone);
+    // event.preventDefault();
+    const phone = event.phone;
+    sendFormDataToBitrix24(phone);
+  };
+
+  
   const onSubmit = async (values) => {
     // console.log(values);
     // setIsLoading(true);
@@ -55,21 +81,17 @@ const FormModal = () => {
           },
         }
       );
+      console.log(response);
   
-      console.log(response.data);
-  
-      // Display a success message to the user
     } catch (error) {
       console.error(error);
-  
-      // Display an error message to the user
     }
   };
 
   return (
     <FormModalWrapper>
       <div className="form-wrapper">
-        <form className="form" onSubmit={handleSubmit(onSubmit)}>
+        <form className="form" onSubmit={handleSubmit(handleSubmit1)}>
           <div className="top">
             <h3>{t("modal.callNow")}</h3>
             <p>{t("modal.p")}</p>

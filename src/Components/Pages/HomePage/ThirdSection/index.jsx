@@ -9,25 +9,25 @@ import ProIcon from "../../../Common/Svgs/ProIcon";
 
 const data=[
   {
-    img:"/images/projects/sergeli/1.jpg",
+    img:"/images/projects/biy/pro.jpg",
     city:"Sergeli Residence",
     date:" 12.01.2023",
     link:"/projects?title=Sergeli%20Residence"
   },
   {
-    img:"/images/projects/atm/1.jpg",
+    img:"/images/projects/travel/pro.jpg",
     city:"Auto Tiger Mall",
     date:" 12.01.2023",
     link:"/projects?title=Auto Tiger Mall"
   },
   {
-    img:"/images/projects/kamolon/1.jpg",
+    img:"/images/projects/kamolon/9.jpg",
     city:"Yangi Komolon",
     date:" 12.01.2023",
     link:"/projects?title=Yangi%20Komolon"
   },
   {
-    img:"/images/projects/almashriq/1.jpg",
+    img:"/images/projects/termiz/8.jpg",
     city:"Al-Mashriq",
     date:" 12.01.2023",
     link:"/projects?title=Al%20Mashriq"
