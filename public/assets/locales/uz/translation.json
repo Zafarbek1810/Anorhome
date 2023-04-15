@@ -51,8 +51,8 @@
   "projects": {
     "title": "Loyihalar",
     "info-top": "Arxitektura Konsalting",
-    "info-title": "Orzular Uyini Qurish",
-    "info-p": "Lorem ipsum dolor sit amet consectetur. Luctus in montes pellentesque proin neque pellentesque suspendisse sit. Proin ut at tortor nulla quam arcu.",
+    "info-title": "Orzular Qurilishi",
+    "info-p": "Qurilishni loyihalash bo'yicha ekspertizamiz bilan orzuingizdagi binoni kashf eting.",
     "btn": "Hammasini Ko'rish",
     "gallery":"Loyiha galereyasi"
   },
@@ -71,10 +71,20 @@
 
 
   "services":{
-    "top-parag": "Bizni dunyoning eng ajoyib shaharlaridan toping.",
+    "top-parag": "Aniq qarorlar qabul qilish uchun ko'chmas mulk bo'yicha maslahat.",
     "top-title": "Anorhome Xizmatlari",
     "how-work" : "Bu Qanday Ishlaydi",
+    "work-title1": "Shaklni To'ldiring",
+    "work-title2": "Ma'muriyat",
+    "work-title3": "Aloqada Bo'lish",
+    "work-title4": "Bitim Tuzing",
+    "work-p1": "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
     "ab-ser": "Xizmat Xaqida",
+    "aboutP1": "Bu Anorhome kompaniyasining asosiy xizmati. Va har bir loyihaning asosiy muvaffaqiyati - g'oyalar, kontseptsiya, xizmat ko'rsatish sifati va sotishning o'ziga xosligi. Bu tafsilotlar loyiha uchun ham, ishlab chiquvchining kelajakdagi mijozlari uchun ham qiymat yaratadi",
+    "aboutP2": "Rivojlanish loyihangizni bizga ishonib topshirish orqali siz marketing va IT-quvvatlash, daromadni oshiradigan va operatsion xarajatlarni optimallashtiradigan loyihani sotish bilan bog'liq kompleks yechimga ega bo'lasiz. Savdo ofislarini o'zimiz quramiz, sifatli zamonaviy xizmat ko'rsatamiz va HAMMA NARSANI sotmagunimizcha to'xtamaymiz!",
+    "aboutP3": "Kelajakdagi imkoniyatlar va bozor potentsialini tahlil qilish va baholash orqali biz sizga maksimal daromad olish va loyihangiz uchun xavflarni minimallashtirish uchun investitsiya maqsadlarida foydali bitimlarni taklif qilamiz.",
+    "aboutP4": "Ko'chmas mulkni sotib olish, sotish, ijaraga berish yoki ijaraga berish bizning hayotimizda doimo muhim rol o'ynaydi, ammo hamma ham buni muvaffaqiyatli bajara olmaydi. Muvaffaqiyatli bitim to'g'ri va foydali bajarilishida baholanishi kerak. Qanday qilib foydali va to'g'ri bitim tuzish haqida sizga maslahat beramiz.",
+    "aboutP5": "Ushbu xizmat o'z portfelida ko'chmas mulk aktivlari bo'lgan kompaniyalar va jismoniy shaxslar uchun mo'ljallangan bo'lib, ular tijorat va maishiy muammolarni hal qilish, shuningdek, hisobotlarni tayyorlash va ijarachilar bilan lizing shartnomalari bajarilishini nazorat qilish uchun professional Anorhome jamoasining aralashuvini talab qiladi.",
     "other-ser": "Boshqa Xizmat"
   },
 
@@ -83,17 +93,23 @@
     "parag": "Biz ekspertizamiz orqali sizning maqsadlaringizga erishishga yordam beramiz.",
     "title2": "Biz Haqimizda",
     "history": "Bizning Tarix",
-    "historyP": "Anorhome bu – ko’chmas mulk sohasida sifatli konsalting xizmatlari ko’rsatadigan mutaxassislari jamoasidir. Bizning korxonamiz 2020 yil tashkil topgan bo’lib, bugungi kunda O’zbekiston bo’ylab bir nechta ichki va xalqaro loyihalarda ishtirok etib kelmoqdamiz.    Ko’p yillik tajriba, bilm va individual yondashuv orqali biz ko’chmas mulk sohasidagi hamkorlarimiz va mijozlarimiz uchun, o’ziga xos loyiha yechimlari va sifatli xizmat o’rsatib kelmoqdamiz. Uzoq muddatli munosabat qurish va loyihalarning har bir osqichlarida hamkorlarimizga professional xizmat ko’rsatishga intilamiz. O'zbekiston - Britaniya qo'shma korxonasi - Beltera Holding, Anorhome kompaniyasi strategik hamkori bo’lib, ko’p yillardan buyon Yevropada ko’chmas mulk bozorida konsalting soxasida muvaffaqiyatli ishlab kelmoqda. Har bir loyihalardan yeg’ilgan tajribaga asosan, biz sizning loyihadagi barcha ma'lumotlarni maxfiy saqlashga kafolat beramiz va ularning xavfsizligini ta'minlaymiz. Mustahkam hamkorlik - muvaffaqiyatli biznes kafolatidir.",
+    "historyP": "Anorhome bu – ko’chmas mulk sohasida sifatli konsalting xizmatlari ko’rsatadigan mutaxassislari jamoasidir. Bizning korxonamiz 2020 yil tashkil topgan bo’lib, bugungi kunda O’zbekiston bo’ylab bir nechta ichki va xalqaro loyihalarda ishtirok etib kelmoqdamiz.",
+    "historyP2": "Ko’p yillik tajriba, bilm va individual yondashuv orqali biz ko’chmas mulk sohasidagi  hamkorlarimiz va mijozlarimiz uchun, o’ziga xos loyiha yechimlari va sifatli xizmat ko’rsatib kelmoqdamiz. Uzoq muddatli munosabat qurish va loyihalarning har bir bosqichlarida hamkorlarimizga professional xizmat ko’rsatishga intilamiz.",
+    "historyP3": "O'zbekiston - Britaniya qo'shma korxonasi - Beltera Holding, Anorhome kompaniyasi strategik hamkori bo’lib, ko’p yillardan buyon Yevropada ko’chmas mulk bozorida konsalting soxasida muvaffaqiyatli ishlab kelmoqda..",
+    "historyP4": "Har bir loyihalardan yeg’ilgan tajribaga asosan, biz sizning loyihadagi barcha ma'lumotlarni maxfiy saqlashga kafolat beramiz va ularning xavfsizligini ta'minlaymiz.",
+    "historyP5": "Mustahkam hamkorlik - muvaffaqiyatli biznes kafolatidir.",
+    
+
     "team": "Bizning Jamoa",
-    "values": "Bizning Qadriyatlarimiz",
-    "values-tit1": "Ishonch",
-    "values-p1": "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
-    "values-tit2": "Ishonchli",
-    "values-p2": "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
-    "values-tit3": "Global Vizyon",
-    "values-p3": "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
-    "values-tit4": "Doimiy yuksalish",
-    "values-p4": "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc"
+    "values": "Bizning Qadriyatlar",
+    "values-tit1": "Professionallik",
+    "values-p1": "Bizning jamoamiz ishimizning barcha jabhalarida, mijozlar bilan o'zaro munosabatlarimizdan tortib, yetkazib berish sifatiga qadar eng yuqori professionallik standartlarini saqlab qolishga intiladi.",
+    "values-tit2": "Ishonchlilik",
+    "values-p2": "Biz oshkora va etik muloqot orqali mijozlarimiz bilan ishonchni mustahkamlash va saqlashga alohida ahamiyat beramiz.",
+    "values-tit3": "Global Nigoh",
+    "values-p3": "Biz keng qamrovli tarmoqlarimiz va bozor bilimlarimizdan foydalangan holda, mijozlarimizga xalqaro ko'chmas mulk landshaftini to'liq tushunishga yordam beramiz.",
+    "values-tit4": "Doimiy Yuksalish",
+    "values-p4": "Biz doimiy ravishda rivojlanayotgan ko'chmas mulk bozorida oldinda bo'lishga, tendentsiyalarni oldindan bilish va mijozlarimizga doimiy yuksalish uchun paydo bo'ladigan imkoniyatlardan foydalanishga yordam beramiz."
   },
 
   "projectPage": {

@@ -51,8 +51,8 @@
   "projects": {
     "title": "Projects",
     "info-top": "Architecture Consulting",
-    "info-title": "Dream House Building",
-    "info-p": "Lorem ipsum dolor sit amet consectetur. Luctus in montes pellentesque proin neque pellentesque suspendisse sit. Proin ut at tortor nulla quam arcu",
+    "info-title": "Constructing Dreams",
+    "info-p": "Discover your dream property with our expert real estate consulting.",
     "btn": "See All",
     "gallery": "Project Gallery"
   },
@@ -69,9 +69,14 @@
   },
 
   "services": {
-    "top-parag": "Find us at some of the coolest cities across the globe.",
+    "top-parag": "Customized real estate consulting for informed decisions.",
     "top-title": "Anorhome Services",
     "how-work" : "How It Work",
+    "work-title1": "Fill Form",
+    "work-title2": "Administration",
+    "work-title3": "Keep In Touch",
+    "work-title4": "Make A Deal",
+    "work-p1": "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
     "ab-ser": "About Service",
     "aboutP1": "This is the main service of Anorhome company. And the main success of each project is the uniqueness of ideas, concept, service quality, and sales. These details create value both for the project and for the developer's future clients",
     "aboutP2": "By entrusting your development project to us, you will receive a comprehensive solution related to marketing and IT support, sales of the project that increase revenue and optimize operational costs. We will build sales offices ourselves, provide high-quality modern service, and won't stop until we sell EVERYTHING!",
@@ -86,17 +91,22 @@
     "parag": "We use our expertise to help you achieve your property aspirations and turn them into a reality.",
     "title2": "About Us",
     "history": "Our History",
-    "historyP": "Anorhome is a company of professionals specializing in providing high-quality consulting services in the real estate industry. We were founded in 2020 and have successfully participated in the creation of local development and international projects in Uzbekistan. Our team of experts has professional knowledge and many years of experience in the real estate industry, which allows us to provide our partners and clients with unique solutions and high-quality service. We strive for long-term relationships with our clients and are ready to provide professional support at all stages of work in the real estate industry. The strategic partner of Anorhome LLC is the Uzbek-British JV Beltera Holding. The founders of Beltera Holding have been successfully engaged in investment consulting in the European market for many years. By accumulating experience from each project, we keep all of your data secret, ensuring their security with a non-disclosure agreement. Stable partnership is a guarantee of success in business.",
+    "historyP": "Anorhome is a company of professionals specializing in providing high-quality consulting services in the real estate industry. We were founded in 2020 and have successfully participated in the creation of local development and international projects in Uzbekistan. ",
+    "historyP2": "Our team of experts has professional knowledge and many years of experience in the real estate industry, which allows us to provide our partners and clients with unique solutions and high-quality service. We strive for long-term relationships with our clients and are ready to provide professional support at all stages of work in the real estate industry.",
+    "historyP3": "The strategic partner of Anorhome LLC is the Uzbek-British JV Beltera Holding. The founders of Beltera Holding have been successfully engaged in investment consulting in the European market for many years.",
+    "historyP4": "By accumulating experience from each project, we keep all of your data secret, ensuring their security with a non-disclosure agreement.",
+    "historyP5": "Stable partnership is a guarantee of success in business.",
+
     "team": "Our Team",
     "values": "Our Values",
-    "values-tit1": "Confidence",
-    "values-p1": "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
-    "values-tit2": "Trustworthy",
-    "values-p2": "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
+    "values-tit1": "Professionalism",
+    "values-p1": "Our team is dedicated to maintaining the highest standards of professionalism in all aspects of our work, from our interactions with clients to the quality of our deliverables.",
+    "values-tit2": "Trustworthiness",
+    "values-p2": "We prioritize building and maintaining trust with our clients through transparent communication and ethical behavior.",
     "values-tit3": "Global Vision",
-    "values-p3": "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
+    "values-p3": "We leverage our extensive network and market insights to provide our clients with a comprehensive understanding of the international real estate landscape.",
     "values-tit4": "Constant Rise",
-    "values-p4": "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc"
+    "values-p4": "We are dedicated to staying ahead of the curve in a constantly evolving real estate market, using our industry expertise to anticipate trends and help our clients capitalize on emerging opportunities for constant rise."
   },
 
   "projectPage": {

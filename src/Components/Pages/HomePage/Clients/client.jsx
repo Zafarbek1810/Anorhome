@@ -25,10 +25,10 @@ const Clients = () => {
         <Container>
             <div data-aos={"fade-up"} className="clients__logo">
               <img src="/images/mashriq.svg" alt="Al Mashriq Logo" className="al-mashriq" />
-              <img src="/images/Travel-logo.svg" alt="Travel Business center logo" className="travel" />
+              <img src="/images/Travel-logo.png" alt="Travel Business center logo" className="travel" />
               <img src="/images/komolon.svg" alt="Komolon residence logo"  className="komolon" />
               <img src="/images/amt-svg.svg" alt="auto mall tiger logo" className="amt" />
-              <img src="/images/sr-logo.svg" alt="sergeli residence" className="sr" />
+              <img src="/images/sr-logo.png" alt="sergeli residence" className="sr" />
             </div>
         </Container>
     </ClientsWrapper>
