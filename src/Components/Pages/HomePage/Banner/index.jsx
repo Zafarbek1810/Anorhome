@@ -92,10 +92,12 @@ const Banner = () => {
               </MyLink>
             </section>
           </div>
+
           <div className="wrap" data-aos={"zoom-in"}>
+          <p className="top-title">{t("hero.title-top4")}</p>
             <h1 className="title">
-              <span>{t("hero.title-span4")} </span>
               {t("hero.title4")}
+              <span> {t("hero.title-span4")}</span>
             </h1>
             <p className="descr">{t("hero.paragr4")}</p>
             <section class="buttons">
@@ -104,10 +106,12 @@ const Banner = () => {
               </MyLink>
             </section>
           </div>
+
           <div className="wrap" data-aos={"zoom-in"}>
+          <p className="top-title">{t("hero.title-top5")}</p>
             <h1 className="title">
-              <span>{t("hero.title-span5")} </span>
               {t("hero.title5")}
+              <span> {t("hero.title-span5")}</span>
             </h1>
             <p className="descr">{t("hero.paragr5")}</p>
             <section class="buttons">
@@ -117,9 +121,10 @@ const Banner = () => {
             </section>
           </div>
           <div className="wrap" data-aos={"zoom-in"}>
+          <p className="top-title">{t("hero.title-top6")}</p>
             <h1 className="title">
-              <span>{t("hero.title-span6")} </span>
-              {t("hero.title6")}
+              {t("hero.title6")} <br />
+              <span> {t("hero.title-span6")}</span>
             </h1>
             <p className="descr">{t("hero.paragr6")}</p>
             <section class="buttons">

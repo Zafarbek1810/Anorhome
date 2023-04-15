@@ -58,7 +58,7 @@ const BannerWrapper = styled.div`
   }
 
   .carusel {
-    width: 680px;
+    width: 710px;
     /* height: auto !important; */
     
     .wrap {
