@@ -40,6 +40,22 @@ const HistorySection = () => {
                 <p>
                 {t("aboutUs.historyP")}
                 </p>
+                <br />
+                <p>
+                {t("aboutUs.historyP2")}
+                </p>
+                <br />
+                <p>
+                {t("aboutUs.historyP3")}
+                </p>
+                <br />
+                <p>
+                {t("aboutUs.historyP4")}
+                </p>
+                <br />
+                <p>
+                {t("aboutUs.historyP5")}
+                </p>
               </div>
             </div>
             

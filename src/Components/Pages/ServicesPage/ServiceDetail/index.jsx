@@ -22,35 +22,29 @@ const data = [
       title: "How It Works",
       card1: {
         svg: "/images/vector.png",
-        title: "Fill Form",
-        descr:
-          "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
+        title: "services.work-title1",
+        descr: "services.work-p1",
       },
       card2: {
         svg: "/images/vector2.png",
-        title: "Administration",
-        descr:
-          "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
+        title: "services.work-title2",
+        descr: "services.work-p1",
       },
       card3: {
         svg: "/images/vector3.png",
-        title: "Keep In Touch",
-        descr:
-          "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
+        title: "services.work-title3",
+        descr: "services.work-p1",
       },
       card4: {
         svg: "/images/vector4.png",
-        title: "Make A Deal",
-        descr:
-          "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
+        title: "services.work-title4",
+        descr: "services.work-p1",
       },
     },
     about: {
       title: "About Service",
-      descr1:
-        "Lorem ipsum dolor sit amet consectetur. Rhoncus hac dui phasellus dolor lectus aliquam diam. Curabitur elementum faucibus dui a et. Neque consectetur scelerisque condimentum posuere et magna nibh vitae nulla. Risus vitae sit luctus dictumst porta eu nulla non sollicitudin. Non malesuada elementum adipiscinndimentum ac e",
-      descr2:
-        "Lorem ipsum dolor sit amet consectetur. Rhoncus hac dui phasellus dolor lectus aliquam diam. Curabitur elementum faucibus dui a et. Neque consectetur scelerisque condimentum posuere et magna nibh vitae nulla. Risus vitae sit luctus dictumst porta eu nulla non sollicitudin. Non malesuada elementum adipiscinndimentum ac e",
+      descr1:"services.aboutP1",
+      descr2:"",
     },
   },
   {
@@ -65,35 +59,29 @@ const data = [
       title: "How It Works",
       card1: {
         svg: "/images/vector.png",
-        title: "Fill Form",
-        descr:
-          "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
+        title: "services.work-title1",
+        descr: "services.work-p1",
       },
       card2: {
         svg: "/images/vector2.png",
-        title: "Administration",
-        descr:
-          "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
+        title: "services.work-title2",
+        descr: "services.work-p1",
       },
       card3: {
         svg: "/images/vector3.png",
-        title: "Keep In Touch",
-        descr:
-          "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
+        title: "services.work-title3",
+        descr: "services.work-p1",
       },
       card4: {
         svg: "/images/vector4.png",
-        title: "Make A Deal",
-        descr:
-          "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
+        title: "services.work-title4",
+        descr: "services.work-p1",
       },
     },
     about: {
       title: "About Service",
-      descr1:
-        "Lorem ipsum dolor sit amet consectetur. Rhoncus hac dui phasellus dolor lectus aliquam diam. Curabitur elementum faucibus dui a et. Neque consectetur scelerisque condimentum posuere et magna nibh vitae nulla. Risus vitae sit luctus dictumst porta eu nulla non sollicitudin. Non malesuada elementum adipiscinndimentum ac e",
-      descr2:
-        "Lorem ipsum dolor sit amet consectetur. Rhoncus hac dui phasellus dolor lectus aliquam diam. Curabitur elementum faucibus dui a et. Neque consectetur scelerisque condimentum posuere et magna nibh vitae nulla. Risus vitae sit luctus dictumst porta eu nulla non sollicitudin. Non malesuada elementum adipiscinndimentum ac e",
+      descr1:"services.aboutP2",
+      descr2:"",
     },
   },
   {
@@ -108,35 +96,29 @@ const data = [
       title: "How It Works",
       card1: {
         svg: "/images/vector.png",
-        title: "Fill Form",
-        descr:
-          "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
+        title: "services.work-title1",
+        descr: "services.work-p1",
       },
       card2: {
         svg: "/images/vector2.png",
-        title: "Administration",
-        descr:
-          "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
+        title: "services.work-title2",
+        descr: "services.work-p1",
       },
       card3: {
         svg: "/images/vector3.png",
-        title: "Keep In Touch",
-        descr:
-          "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
+        title: "services.work-title3",
+        descr: "services.work-p1",
       },
       card4: {
         svg: "/images/vector4.png",
-        title: "Make A Deal",
-        descr:
-          "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
+        title: "services.work-title4",
+        descr: "services.work-p1",
       },
     },
     about: {
       title: "About Service",
-      descr1:
-        "Lorem ipsum dolor sit amet consectetur. Rhoncus hac dui phasellus dolor lectus aliquam diam. Curabitur elementum faucibus dui a et. Neque consectetur scelerisque condimentum posuere et magna nibh vitae nulla. Risus vitae sit luctus dictumst porta eu nulla non sollicitudin. Non malesuada elementum adipiscinndimentum ac e",
-      descr2:
-        "Lorem ipsum dolor sit amet consectetur. Rhoncus hac dui phasellus dolor lectus aliquam diam. Curabitur elementum faucibus dui a et. Neque consectetur scelerisque condimentum posuere et magna nibh vitae nulla. Risus vitae sit luctus dictumst porta eu nulla non sollicitudin. Non malesuada elementum adipiscinndimentum ac e",
+      descr1:"services.aboutP3",
+      descr2:"",
     },
     
   },
@@ -152,35 +134,29 @@ const data = [
       title: "How It Works",
       card1: {
         svg: "/images/vector.png",
-        title: "Fill Form",
-        descr:
-          "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
+        title: "services.work-title1",
+        descr: "services.work-p1",
       },
       card2: {
         svg: "/images/vector2.png",
-        title: "Administration",
-        descr:
-          "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
+        title: "services.work-title2",
+        descr: "services.work-p1",
       },
       card3: {
         svg: "/images/vector3.png",
-        title: "Keep In Touch",
-        descr:
-          "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
+        title: "services.work-title3",
+        descr: "services.work-p1",
       },
       card4: {
         svg: "/images/vector4.png",
-        title: "Make A Deal",
-        descr:
-          "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
+        title: "services.work-title4",
+        descr: "services.work-p1",
       },
     },
     about: {
       title: "About Service",
-      descr1:
-        "Lorem ipsum dolor sit amet consectetur. Rhoncus hac dui phasellus dolor lectus aliquam diam. Curabitur elementum faucibus dui a et. Neque consectetur scelerisque condimentum posuere et magna nibh vitae nulla. Risus vitae sit luctus dictumst porta eu nulla non sollicitudin. Non malesuada elementum adipiscinndimentum ac e",
-      descr2:
-        "Lorem ipsum dolor sit amet consectetur. Rhoncus hac dui phasellus dolor lectus aliquam diam. Curabitur elementum faucibus dui a et. Neque consectetur scelerisque condimentum posuere et magna nibh vitae nulla. Risus vitae sit luctus dictumst porta eu nulla non sollicitudin. Non malesuada elementum adipiscinndimentum ac e",
+      descr1:"services.aboutP4",
+      descr2:"",
     },
     
   },
@@ -196,35 +172,29 @@ const data = [
       title: "How It Works",
       card1: {
         svg: "/images/vector.png",
-        title: "Fill Form",
-        descr:
-          "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
+        title: "services.work-title1",
+        descr: "services.work-p1",
       },
       card2: {
         svg: "/images/vector2.png",
-        title: "Administration",
-        descr:
-          "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
+        title: "services.work-title2",
+        descr: "services.work-p1",
       },
       card3: {
         svg: "/images/vector3.png",
-        title: "Keep In Touch",
-        descr:
-          "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
+        title: "services.work-title3",
+        descr: "services.work-p1",
       },
       card4: {
         svg: "/images/vector4.png",
-        title: "Make A Deal",
-        descr:
-          "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
+        title: "services.work-title4",
+        descr: "services.work-p1",
       },
     },
     about: {
       title: "About Service",
-      descr1:
-        "Lorem ipsum dolor sit amet consectetur. Rhoncus hac dui phasellus dolor lectus aliquam diam. Curabitur elementum faucibus dui a et. Neque consectetur scelerisque condimentum posuere et magna nibh vitae nulla. Risus vitae sit luctus dictumst porta eu nulla non sollicitudin. Non malesuada elementum adipiscinndimentum ac e",
-      descr2:
-        "Lorem ipsum dolor sit amet consectetur. Rhoncus hac dui phasellus dolor lectus aliquam diam. Curabitur elementum faucibus dui a et. Neque consectetur scelerisque condimentum posuere et magna nibh vitae nulla. Risus vitae sit luctus dictumst porta eu nulla non sollicitudin. Non malesuada elementum adipiscinndimentum ac e",
+      descr1:"services.aboutP5",
+      descr2:"",
     },
   },
 ];
@@ -263,320 +233,8 @@ const Template = ({ id }) => {
   const object = data.filter((obj) => {
     return obj.id == id;
   });
-
-
-  const data = [
-    {
-      id: "1",
-      title: "hero.title-span",
-      banner: {
-        title: "hero.title-span",
-        img: "/images/banner.jpg",
-        descr: "hero.paragr",
-      },
-      works: {
-        title: "How It Works",
-        card1: {
-          svg: "/images/vector.png",
-          title: "Fill Form",
-          descr:
-            "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
-        },
-        card2: {
-          svg: "/images/vector2.png",
-          title: "Administration",
-          descr:
-            "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
-        },
-        card3: {
-          svg: "/images/vector3.png",
-          title: "Keep In Touch",
-          descr:
-            "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
-        },
-        card4: {
-          svg: "/images/vector4.png",
-          title: "Make A Deal",
-          descr:
-            "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
-        },
-      },
-  
-      about: {
-        title: "About Service",
-        descr1: t("services.aboutP1"),
-        descr2: "",
-      },
-  
-      services: {
-        title: "Other Services",
-        card1: {
-          img: "/images/card.png",
-          cardTitle: "Investment In Real State",
-          descr:
-            "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Scelerisque pulvinar  e",
-        },
-        card2: {
-          img: "/images/card.png",
-          cardTitle: "Investment In Real State",
-          descr:
-            "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Scelerisque pulvinar  e",
-        },
-        card3: {
-          img: "/images/card.png",
-          cardTitle: "Investment In Real State",
-          descr:
-            "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Scelerisque pulvinar  e",
-        },
-      },
-    },
-    {
-      id: "2",
-      banner: {
-        title: "hero.title-span2",
-        img: "/images/banner2.jpg",
-        descr: "hero.paragr2",
-      },
-      works: {
-        title: "How It Works",
-        card1: {
-          svg: "/images/vector.png",
-          title: "Fill Form",
-          descr:
-            "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
-        },
-        card2: {
-          svg: "/images/vector2.png",
-          title: "Administration",
-          descr:
-            "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
-        },
-        card3: {
-          svg: "/images/vector3.png",
-          title: "Keep In Touch",
-          descr:
-            "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
-        },
-        card4: {
-          svg: "/images/vector4.png",
-          title: "Make A Deal",
-          descr:
-            "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
-        },
-      },
-      about: {
-        title: "About Service",
-        descr1: t("services.aboutP2"),
-        descr2: "",
-      },
-      services: {
-        title: "Other Services",
-        card1: {
-          img: "/images/card.png",
-          cardTitle: "Investment In Real State",
-          descr:
-            "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Scelerisque pulvinar  e",
-        },
-        card2: {
-          img: "/images/card.png",
-          cardTitle: "Investment In Real State",
-          descr:
-            "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Scelerisque pulvinar  e",
-        },
-        card3: {
-          img: "/images/card.png",
-          cardTitle: "Investment In Real State",
-          descr:
-            "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Scelerisque pulvinar  e",
-        },
-      },
-    },
-    {
-      id: "3",
-      banner: {
-        title: "hero.title-span3",
-        img: "/images/banner3.jpg",
-        descr: "hero.paragr3",
-      },
-      works: {
-        title: "How It Works",
-        card1: {
-          svg: "/images/vector.png",
-          title: "Fill Form",
-          descr:
-            "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
-        },
-        card2: {
-          svg: "/images/vector2.png",
-          title: "Administration",
-          descr:
-            "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
-        },
-        card3: {
-          svg: "/images/vector3.png",
-          title: "Keep In Touch",
-          descr:
-            "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
-        },
-        card4: {
-          svg: "/images/vector4.png",
-          title: "Make A Deal",
-          descr:
-            "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
-        },
-      },
-      about: {
-        title: "About Service",
-        descr1: t("services.aboutP3"),
-        descr2: "",
-      },
-      services: {
-        title: "Other Services",
-        card1: {
-          img: "/images/card.png",
-          cardTitle: "Investment In Real State",
-          descr:
-            "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Scelerisque pulvinar  e",
-        },
-        card2: {
-          img: "/images/card.png",
-          cardTitle: "Investment In Real State",
-          descr:
-            "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Scelerisque pulvinar  e",
-        },
-        card3: {
-          img: "/images/card.png",
-          cardTitle: "Investment In Real State",
-          descr:
-            "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Scelerisque pulvinar  e",
-        },
-      },
-    },
-    {
-      id: "4",
-      banner: {
-        title: "hero.title-span4",
-        img: "/images/banner4.jpg",
-        descr: "hero.paragr4",
-      },
-      works: {
-        title: "How It Works",
-        card1: {
-          svg: "/images/vector.png",
-          title: "Fill Form",
-          descr:
-            "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
-        },
-        card2: {
-          svg: "/images/vector2.png",
-          title: "Administration",
-          descr:
-            "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
-        },
-        card3: {
-          svg: "/images/vector3.png",
-          title: "Keep In Touch",
-          descr:
-            "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
-        },
-        card4: {
-          svg: "/images/vector4.png",
-          title: "Make A Deal",
-          descr:
-            "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
-        },
-      },
-      about: {
-        title: "About Service",
-        descr1: t("services.aboutP4"),
-        descr2: "",
-      },
-      services: {
-        title: "Other Services",
-        card1: {
-          img: "/images/card.png",
-          cardTitle: "Investment In Real State",
-          descr:
-            "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Scelerisque pulvinar  e",
-        },
-        card2: {
-          img: "/images/card.png",
-          cardTitle: "Investment In Real State",
-          descr:
-            "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Scelerisque pulvinar  e",
-        },
-        card3: {
-          img: "/images/card.png",
-          cardTitle: "Investment In Real State",
-          descr:
-            "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Scelerisque pulvinare",
-        },
-      },
-    },
-    {
-      id: "5",
-      banner: {
-        title: "hero.title-span5",
-        img: "/images/banner5.jpg",
-        descr: "hero.paragr5",
-      },
-      works: {
-        title: "How It Works",
-        card1: {
-          svg: "/images/vector.png",
-          title: "Fill Form",
-          descr:
-            "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
-        },
-        card2: {
-          svg: "/images/vector2.png",
-          title: "Administration",
-          descr:
-            "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
-        },
-        card3: {
-          svg: "/images/vector3.png",
-          title: "Keep In Touch",
-          descr:
-            "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
-        },
-        card4: {
-          svg: "/images/vector4.png",
-          title: "Make A Deal",
-          descr:
-            "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
-        },
-      },
-      about: {
-        title: "About Service",
-        descr1: t("services.aboutP5"),
-        descr2: "",
-      },
-      services: {
-        title: "Other Services",
-        card1: {
-          img: "/images/card.png",
-          cardTitle: "Investment In Real State",
-          descr:
-            "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Scelerisque pulvinar  e",
-        },
-        card2: {
-          img: "/images/card.png",
-          cardTitle: "Investment In Real State",
-          descr:
-            "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Scelerisque pulvinar  e",
-        },
-        card3: {
-          img: "/images/card.png",
-          cardTitle: "Investment In Real State",
-          descr:
-            "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Scelerisque pulvinar  e",
-        },
-      },
-    },
-  ];
-
-
+ 
+ 
   const { t } = useTranslation();
 
   const otherData = [
@@ -645,23 +303,23 @@ const Template = ({ id }) => {
             <div className="cards">
               <div className="card">
                 <img src={object[0].works.card1.svg} alt="" />
-                <h5 className="title">{object[0].works.card1.title}</h5>
-                <p className="descr">{object[0].works.card1.descr}</p>
+                <h5 className="title">{t(object[0].works.card1.title)}</h5>
+                <p className="descr">{t(object[0].works.card1.descr)}</p>
               </div>
               <div className="card">
                 <img src={object[0].works.card2.svg} alt="" />
-                <h5 className="title">{object[0].works.card2.title}</h5>
-                <p className="descr">{object[0].works.card2.descr}</p>
+                <h5 className="title">{t(object[0].works.card2.title)}</h5>
+                <p className="descr">{t(object[0].works.card2.descr)}</p>
               </div>
               <div className="card">
                 <img src={object[0].works.card3.svg} alt="" />
-                <h5 className="title">{object[0].works.card3.title}</h5>
-                <p className="descr">{object[0].works.card3.descr}</p>
+                <h5 className="title">{t(object[0].works.card3.title)}</h5>
+                <p className="descr">{t(object[0].works.card3.descr)}</p>
               </div>
               <div className="card">
                 <img src={object[0].works.card4.svg} alt="" />
-                <h5 className="title">{object[0].works.card4.title}</h5>
-                <p className="descr">{object[0].works.card4.descr}</p>
+                <h5 className="title">{t(object[0].works.card4.title)}</h5>
+                <p className="descr">{t(object[0].works.card4.descr)}</p>
               </div>
             </div>
           </Container>
@@ -675,7 +333,7 @@ const Template = ({ id }) => {
         </div>
         <Container>
           <p className="descr" style={{ marginTop: 40 }}>
-            {object[0].about.descr1}
+            {t(object[0].about.descr1)}
           </p>
           <br />
           <p className="descr">{object[0].about.descr2}</p>
