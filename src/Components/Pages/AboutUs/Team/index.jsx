@@ -6,7 +6,7 @@ import Container from "../../../Common/Container/index";
 
 const ourStaffs = [
   {
-    img: "/aboutUs/staff3.png",
+    img: "/aboutUs/staff3.jpg",
     title: "John Wick",
     text: "President of Anorhome.com",
   },

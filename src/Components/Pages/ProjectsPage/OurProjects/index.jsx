@@ -157,7 +157,7 @@ const OurProjects = () => {
   useEffect(() => {
     Aos.init({ duration: 1500, once: true });
     Aos.refresh();
-  }, [loading]);
+  }, []);
 
   useEffect(() => {
     if (router.query.title) {

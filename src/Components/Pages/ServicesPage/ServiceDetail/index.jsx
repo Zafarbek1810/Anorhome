@@ -11,9 +11,10 @@ import MyLink from "../../../Common/MyLink";
 const data = [
   {
     id: "1",
-    title: "hero.title-span",
+    title: "hero.title",
     banner: {
-      title: "hero.title-span",
+      title: "hero.title",
+      title2: "hero.title-span",
       img: "/images/banner.jpg",
       descr: "hero.paragr",
     },
@@ -51,32 +52,12 @@ const data = [
       descr2:
         "Lorem ipsum dolor sit amet consectetur. Rhoncus hac dui phasellus dolor lectus aliquam diam. Curabitur elementum faucibus dui a et. Neque consectetur scelerisque condimentum posuere et magna nibh vitae nulla. Risus vitae sit luctus dictumst porta eu nulla non sollicitudin. Non malesuada elementum adipiscinndimentum ac e",
     },
-    services: {
-      title: "Other Services",
-      card1: {
-        img: "/images/card.png",
-        cardTitle: "Investment In Real State",
-        descr:
-          "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Scelerisque pulvinar  e",
-      },
-      card2: {
-        img: "/images/card.png",
-        cardTitle: "Investment In Real State",
-        descr:
-          "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Scelerisque pulvinar  e",
-      },
-      card3: {
-        img: "/images/card.png",
-        cardTitle: "Investment In Real State",
-        descr:
-          "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Scelerisque pulvinar  e",
-      },
-    },
   },
   {
     id: "2",
     banner: {
-      title: "hero.title-span2",
+      title: "hero.title2",
+      title2: "hero.title-span2",
       img: "/images/banner2.jpg",
       descr: "hero.paragr2",
     },
@@ -114,32 +95,12 @@ const data = [
       descr2:
         "Lorem ipsum dolor sit amet consectetur. Rhoncus hac dui phasellus dolor lectus aliquam diam. Curabitur elementum faucibus dui a et. Neque consectetur scelerisque condimentum posuere et magna nibh vitae nulla. Risus vitae sit luctus dictumst porta eu nulla non sollicitudin. Non malesuada elementum adipiscinndimentum ac e",
     },
-    services: {
-      title: "Other Services",
-      card1: {
-        img: "/images/card.png",
-        cardTitle: "Investment In Real State",
-        descr:
-          "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Scelerisque pulvinar  e",
-      },
-      card2: {
-        img: "/images/card.png",
-        cardTitle: "Investment In Real State",
-        descr:
-          "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Scelerisque pulvinar  e",
-      },
-      card3: {
-        img: "/images/card.png",
-        cardTitle: "Investment In Real State",
-        descr:
-          "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Scelerisque pulvinar  e",
-      },
-    },
   },
   {
     id: "3",
     banner: {
-      title: "hero.title-span3",
+      title: "hero.title3",
+      title2: "hero.title-span3",
       img: "/images/banner3.jpg",
       descr: "hero.paragr3",
     },
@@ -177,32 +138,13 @@ const data = [
       descr2:
         "Lorem ipsum dolor sit amet consectetur. Rhoncus hac dui phasellus dolor lectus aliquam diam. Curabitur elementum faucibus dui a et. Neque consectetur scelerisque condimentum posuere et magna nibh vitae nulla. Risus vitae sit luctus dictumst porta eu nulla non sollicitudin. Non malesuada elementum adipiscinndimentum ac e",
     },
-    services: {
-      title: "Other Services",
-      card1: {
-        img: "/images/card.png",
-        cardTitle: "Investment In Real State",
-        descr:
-          "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Scelerisque pulvinar  e",
-      },
-      card2: {
-        img: "/images/card.png",
-        cardTitle: "Investment In Real State",
-        descr:
-          "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Scelerisque pulvinar  e",
-      },
-      card3: {
-        img: "/images/card.png",
-        cardTitle: "Investment In Real State",
-        descr:
-          "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Scelerisque pulvinar  e",
-      },
-    },
+    
   },
   {
     id: "4",
     banner: {
-      title: "hero.title-span4",
+      title: "hero.title4",
+      title2: "hero.title-span4",
       img: "/images/banner4.jpg",
       descr: "hero.paragr4",
     },
@@ -240,32 +182,13 @@ const data = [
       descr2:
         "Lorem ipsum dolor sit amet consectetur. Rhoncus hac dui phasellus dolor lectus aliquam diam. Curabitur elementum faucibus dui a et. Neque consectetur scelerisque condimentum posuere et magna nibh vitae nulla. Risus vitae sit luctus dictumst porta eu nulla non sollicitudin. Non malesuada elementum adipiscinndimentum ac e",
     },
-    services: {
-      title: "Other Services",
-      card1: {
-        img: "/images/card.png",
-        cardTitle: "Investment In Real State",
-        descr:
-          "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Scelerisque pulvinar  e",
-      },
-      card2: {
-        img: "/images/card.png",
-        cardTitle: "Investment In Real State",
-        descr:
-          "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Scelerisque pulvinar  e",
-      },
-      card3: {
-        img: "/images/card.png",
-        cardTitle: "Investment In Real State",
-        descr:
-          "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Scelerisque pulvinar  e",
-      },
-    },
+    
   },
   {
     id: "5",
     banner: {
-      title: "hero.title-span5",
+      title: "hero.title5",
+      title2: "hero.title-span5",
       img: "/images/banner5.jpg",
       descr: "hero.paragr5",
     },
@@ -302,27 +225,6 @@ const data = [
         "Lorem ipsum dolor sit amet consectetur. Rhoncus hac dui phasellus dolor lectus aliquam diam. Curabitur elementum faucibus dui a et. Neque consectetur scelerisque condimentum posuere et magna nibh vitae nulla. Risus vitae sit luctus dictumst porta eu nulla non sollicitudin. Non malesuada elementum adipiscinndimentum ac e",
       descr2:
         "Lorem ipsum dolor sit amet consectetur. Rhoncus hac dui phasellus dolor lectus aliquam diam. Curabitur elementum faucibus dui a et. Neque consectetur scelerisque condimentum posuere et magna nibh vitae nulla. Risus vitae sit luctus dictumst porta eu nulla non sollicitudin. Non malesuada elementum adipiscinndimentum ac e",
-    },
-    services: {
-      title: "Other Services",
-      card1: {
-        img: "/images/card.png",
-        cardTitle: "Investment In Real State",
-        descr:
-          "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Scelerisque pulvinar  e",
-      },
-      card2: {
-        img: "/images/card.png",
-        cardTitle: "Investment In Real State",
-        descr:
-          "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Scelerisque pulvinar  e",
-      },
-      card3: {
-        img: "/images/card.png",
-        cardTitle: "Investment In Real State",
-        descr:
-          "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Scelerisque pulvinar  e",
-      },
     },
   },
 ];
@@ -411,7 +313,7 @@ const Template = ({ id }) => {
       <Container>
         <div className="banner">
           <div className="left">
-            <h3 className="title">{t(object[0].banner.title)}</h3>
+            <h3 className="title">{t(object[0].banner.title)}{t(object[0].banner.title2)}</h3>
           </div>
           <div className="right">
             <img src={object[0].banner.img} alt="" />

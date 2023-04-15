@@ -90,7 +90,7 @@ const MainHeader = ({ isFixed }) => {
     <MainHeaderWrapper ref={ref} isFixed={isFixed}>
       <div className={`content ${header}`}>
         <div className="logo">
-          <MyLink to="/#" onClick={() => setBurger((p) => !p)}>
+          <MyLink to="/" onClick={() => setBurger((p) => !p)}>
             <LogoSvg />
           </MyLink>
         </div>

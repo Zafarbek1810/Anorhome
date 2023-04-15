@@ -71,7 +71,7 @@ const ThirdSectionWrapper = styled.div`
         color: #000;
         cursor: pointer;
         max-width: 160px !important;
-        padding: 15px 30px;
+        padding: 15px 10px;
         position: relative;
         width: 100%;
         background: #e5e5e5;
@@ -228,6 +228,7 @@ const ThirdSectionWrapper = styled.div`
             width: 70%;
             display: flex;
             align-items: center;
+            justify-content: end;
             svg {
               margin-right: 0px;
               margin-left: 5px;
