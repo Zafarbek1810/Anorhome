@@ -156,7 +156,7 @@ const ThirdSectionWrapper = styled.div`
             font-family: "Mulish";
             font-style: normal;
             font-weight: 400;
-            font-size: 16px;
+            font-size: 14px !important;
             line-height: 19px;
             color: #ffffff;
             svg {
@@ -183,7 +183,7 @@ const ThirdSectionWrapper = styled.div`
             font-family: "Mulish";
             font-style: normal;
             font-weight: 400;
-            font-size: 16px;
+            font-size: 14px;
             line-height: 19px;
             color: #ffffff;
           }
@@ -235,6 +235,7 @@ const ThirdSectionWrapper = styled.div`
 
             }
             display: flex;
+            font-size: 14px;
             font-family: "Mulish";
           }
         }

@@ -9,10 +9,10 @@ import ProIcon from "../../../Common/Svgs/ProIcon";
 
 const data=[
   {
-    img:"/images/projects/biy/pro.jpg",
-    city:"Sergeli Residence",
+    img:"/images/projects/termiz/pro.jpg",
+    city:"Termez Internatinal Trade Center",
     date:" 12.01.2023",
-    link:"/projects?title=Sergeli%20Residence"
+    link:"/projects?title=Termez%20Internatinal%20Trade%20Center"
   },
   {
     img:"/images/projects/travel/pro.jpg",
@@ -27,11 +27,11 @@ const data=[
     link:"/projects?title=Yangi%20Komolon"
   },
   {
-    img:"/images/projects/termiz/8.jpg",
-    city:"Al-Mashriq",
+    img:"/images/projects/biy/pro.jpg",
+    city:"Sergeli Residence",
     date:" 12.01.2023",
-    link:"/projects?title=Al%20Mashriq"
-  },
+    link:"/projects?title=Sergeli%20Residence"
+  }
 ]
 const ThirdSection = () => {
 
