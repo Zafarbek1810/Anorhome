@@ -73,7 +73,10 @@
 
   "services":{
     "top-parag": "Найдите нас в самых крутых городах мира.",
-    "top-title": "Anorhome Услуги" 
+    "top-title": "Anorhome Услуги",
+    "how-work" : "Как Это Работает",
+    "ab-ser": "О Сервисе",
+    "other-ser": "Другая Услуга"
   },
 
   "aboutUs":{

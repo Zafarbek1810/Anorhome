@@ -72,7 +72,10 @@
 
   "services":{
     "top-parag": "Bizni dunyoning eng ajoyib shaharlaridan toping.",
-    "top-title": "Anorhome Xizmatlari"
+    "top-title": "Anorhome Xizmatlari",
+    "how-work" : "Bu Qanday Ishlaydi",
+    "ab-ser": "Xizmat Xaqida",
+    "other-ser": "Boshqa Xizmat"
   },
 
   "aboutUs":{

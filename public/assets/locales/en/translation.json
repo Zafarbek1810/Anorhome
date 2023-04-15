@@ -70,7 +70,15 @@
 
   "services": {
     "top-parag": "Find us at some of the coolest cities across the globe.",
-    "top-title": "Anorhome Services"
+    "top-title": "Anorhome Services",
+    "how-work" : "How It Work",
+    "ab-ser": "About Service",
+    "aboutP1": "This is the main service of Anorhome company. And the main success of each project is the uniqueness of ideas, concept, service quality, and sales. These details create value both for the project and for the developer's future clients",
+    "aboutP2": "By entrusting your development project to us, you will receive a comprehensive solution related to marketing and IT support, sales of the project that increase revenue and optimize operational costs. We will build sales offices ourselves, provide high-quality modern service, and won't stop until we sell EVERYTHING!",
+    "aboutP3": "By analyzing and evaluating future opportunities and market potential, we will offer you profitable deals for investment purposes in order to achieve maximum returns and minimize risks for your project.",
+    "aboutP4": "Buying, selling, renting or leasing real estate always plays an important role in our lives, but not everyone can do it successfully. A successful deal should be evaluated in the correct and profitable execution. We will advise you on how to make a profitable and correct deal.",
+    "aboutP5": "This service is designed for companies and individuals who have real estate assets in their portfolio that require the intervention of the professional Anorhome team to manage commercial and domestic issues, as well as prepare reports and monitor the performance of lease agreements with tenants.",
+    "other-ser": "Other Service"
   },
 
   "aboutUs": {
