@@ -8,7 +8,7 @@ const FormModalWrapper = styled.div`
       font-family: "Mulish";
       font-style: normal;
       font-weight: 700;
-      font-size: 36px;
+      font-size: 28px;
       line-height: 43px;
       color: #000000;
       margin: 0;

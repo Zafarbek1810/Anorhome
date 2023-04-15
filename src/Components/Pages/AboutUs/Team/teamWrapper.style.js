@@ -30,11 +30,13 @@ section{
   .img-wrapper {
     overflow: hidden;
     width: 100%;
-    height: auto;
+    height: 415px;
 
     img {
       max-width: 100%;
       width: 100%;
+      height: 100%;
+      object-fit: cover;
       filter: grayscale(99%);
       transition: 0.2s;
       :hover {
