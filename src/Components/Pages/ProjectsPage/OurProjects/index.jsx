@@ -151,6 +151,7 @@ const OurProjects = () => {
       setLoading(false);
     }, 100);
   }
+  let selectedCardIndex = data.title;
 
   const leftDivRef = useRef();
   const [rightDivHeight, setRightDivHeight] = useState(
@@ -159,7 +160,8 @@ const OurProjects = () => {
 
   useEffect(() => {
     setRightDivHeight(leftDivRef.current?.clientHeight || "500px");
-  }, [selectedCard]);
+    console.log(leftDivRef);
+  }, [data]);
 
   useEffect(() => {
     Aos.init({ duration: 1500, once: true });
@@ -173,14 +175,13 @@ const OurProjects = () => {
     }
   }, [router.query.title, t]);
 
-  let selectedCardIndex = data.title;
   return (
     <OurProjectsWrapper>
       <Container>
         <div className="wrapper">
-          <div className="left" id={selectedCardIndex} ref={leftDivRef}>
+          <div className="left" id={selectedCardIndex} >
             {selectedCardIndex !== null ? (
-              <div className="leftIn">
+              <div className="leftIn" ref={leftDivRef}>
                 <div>
                   <h4 className="title">{t("projectPage.title")}</h4>
                 </div>
@@ -217,9 +218,9 @@ const OurProjects = () => {
                       <LocationSvg />
                       <p>{selectedCard.loc2}</p>
                     </div>
-                    <div className="calendar">
+                    {/* <div className="calendar">
                       <CalendarSvg /> <p>{selectedCard.date}</p>
-                    </div>
+                    </div> */}
 
                     <div className="galery">
                       <h5 className="title-img">{t("projects.gallery")}</h5>
