@@ -33,17 +33,19 @@ const OurProjectsWrapper = styled.div`
   }
 
   .wrapper {
-    height: 1400px;
+    /* height: 1400px; */
     display: flex;
+    margin-bottom: 50px;
     .left {
       background-color: #fff;
       width: 50%;
-      height: 100%;
+      height: 100% !important;
       padding-right: 40px;
       border-right: 1px solid #d9d9d9;
 
       .leftIn{
         display: flex;
+        height: 100% !important;
         flex-direction: column;
         justify-content: space-between !important;
       }
@@ -246,7 +248,7 @@ const OurProjectsWrapper = styled.div`
     }
     .right {
       width: 50%;
-      height: 100%;
+      overflow-y: auto;
       
       .rightIn{
         height: 100%;

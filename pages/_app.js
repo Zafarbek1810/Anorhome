@@ -10,7 +10,7 @@ import { ModalProvider } from '../src/Context/ModalContext/Context';
 import { useState } from 'react';
 import Loader from '../src/Components/Common/Loader';
 import FormModal from "../src/Components/Common/ContactModal/FormModal";
-
+import AOS from "aos"
 import "aos/dist/aos.css";
 
 import '../styles/globals.css'
@@ -47,7 +47,7 @@ function MyApp({ Component, pageProps }) {
   const [loading, setLoading] = useState(true)
   const [loading2, setLoading2] = useState(false)
   const [jivo, setJivo] = useState(false)
-  // const router = useRouter();
+  const router = useRouter();
   // const [scrollPosition, setScrollPosition] = useState(0);
 
   // useLayoutEffect(() => {
@@ -75,6 +75,10 @@ function MyApp({ Component, pageProps }) {
   //   window.scrollTo(0, scrollPosition);
   // }, [scrollPosition]);
 
+useEffect(() => {
+    AOS.init({ duration: 1500, once: true  });
+    AOS.refresh();
+  }, [router.pathname]);
 
   useEffect(()=>{
     setTimeout(() => {

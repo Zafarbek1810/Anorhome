@@ -39,10 +39,10 @@ const ThirdSection = () => {
 
   const [activeIndex, setActiveIndex] = useState("0");
 
-  useEffect(() => {
-    AOS.init({ duration: 1500, once: true  });
-    AOS.refresh();
-  }, []);
+  // useEffect(() => {
+  //   AOS.init({ duration: 1500, once: true  });
+  //   AOS.refresh();
+  // }, []);
 
   const onMouseOver = (e) => {
     const element = e.target;

@@ -13,10 +13,10 @@ const Contact = () => {
 
   const { t } = useTranslation();
 
-  useEffect(() => {
-    AOS.init({ duration: 1500, once: true });
-    AOS.refresh();
-  }, []);
+  // useEffect(() => {
+  //   AOS.init({ duration: 1500, once: true });
+  //   AOS.refresh();
+  // }, []);
   const defaultState = {
     center: [41.324987, 69.320206],
     zoom: 17,

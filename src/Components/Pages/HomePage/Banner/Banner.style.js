@@ -14,6 +14,10 @@ const BannerWrapper = styled.div`
   background-size: cover;
   position: relative;
   
+  .imgCarousel{
+    height: 100vh !important;
+    overflow-y: hidden;
+  }
 .cont {
   position: relative;
   z-index: 4;

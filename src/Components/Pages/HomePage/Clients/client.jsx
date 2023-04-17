@@ -8,11 +8,11 @@ const Clients = () => {
 
   const { t } = useTranslation();
 
-  useEffect(() => {
-    AOS.init({ duration: 1500, once: true });
-    AOS.refresh();
+  // useEffect(() => {
+  //   AOS.init({ duration: 1500, once: true });
+  //   AOS.refresh();
     
-  }, []);
+  // }, []);
 
   return (
     <ClientsWrapper>

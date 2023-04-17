@@ -8,10 +8,10 @@ import CarouselRightSvg from "../../../Common/Svgs/CarouselRightSvg";
 const Testimionals = () => {
   const carouselRef = useRef();
 
-  useEffect(() => {
-    AOS.init({ duration: 1500, once: true  });
-    AOS.refresh();
-  }, []);
+  // useEffect(() => {
+  //   AOS.init({ duration: 1500, once: true  });
+  //   AOS.refresh();
+  // }, []);
 
   useEffect(() => {
     console.log();

@@ -118,7 +118,7 @@ const OurProjects = () => {
       img6: "/images/projects/travel/6.jpg",
       img7: "/images/projects/travel/2.jpg",
       img8: "/images/projects/travel/3.jpg",
-      img9: "/images/projects/travel/4.jpg"
+      img9: "/images/projects/travel/4.jpg",
     },
     {
       title: "Al Mashriq",
@@ -152,7 +152,14 @@ const OurProjects = () => {
     }, 100);
   }
 
-  const swiperRef = useRef();
+  const leftDivRef = useRef();
+  const [rightDivHeight, setRightDivHeight] = useState(
+    leftDivRef.current?.clientHeight || "500px"
+  );
+
+  useEffect(() => {
+    setRightDivHeight(leftDivRef.current?.clientHeight || "500px");
+  }, [selectedCard]);
 
   useEffect(() => {
     Aos.init({ duration: 1500, once: true });
@@ -164,18 +171,18 @@ const OurProjects = () => {
       const card = data.find((i) => i.title == router.query.title);
       setSelectedCard(card);
     }
-  }, [router.query.title]);
+  }, [router.query.title, t]);
 
   let selectedCardIndex = data.title;
   return (
     <OurProjectsWrapper>
       <Container>
         <div className="wrapper">
-          <div className="left" id={selectedCardIndex}>
+          <div className="left" id={selectedCardIndex} ref={leftDivRef}>
             {selectedCardIndex !== null ? (
               <div className="leftIn">
                 <div>
-                <h4 className="title">{t("projectPage.title")}</h4>
+                  <h4 className="title">{t("projectPage.title")}</h4>
                 </div>
                 <div className="cards">
                   {data.map((card, index) => (
@@ -219,7 +226,7 @@ const OurProjects = () => {
                       <Swiper
                         slidesPerView={2}
                         spaceBetween={30}
-                        ref={swiperRef}
+                        // ref={swiperRef}
                         loop={true}
                         pagination={true}
                         navigation={{
@@ -233,11 +240,11 @@ const OurProjects = () => {
                         <SwiperSlide>
                           <div className="imgs">
                             <div className="img">
-                              <Image src={selectedCard.img2}/>
+                              <Image src={selectedCard.img2} />
                               {/* <img src={selectedCard.img2} alt="" /> */}
                             </div>
                             <div className="img">
-                            <Image src={selectedCard.img3}/>
+                              <Image src={selectedCard.img3} />
                               {/* <img src={selectedCard.img3} alt="" /> */}
                             </div>
                           </div>
@@ -245,11 +252,11 @@ const OurProjects = () => {
                         <SwiperSlide>
                           <div className="imgs">
                             <div className="img">
-                              <Image src={selectedCard.img4}/>
+                              <Image src={selectedCard.img4} />
                               {/* <img src={selectedCard.img4} alt="" /> */}
                             </div>
                             <div className="img">
-                              <Image src={selectedCard.img5}/>
+                              <Image src={selectedCard.img5} />
                               {/* <img src={selectedCard.img5} alt="" /> */}
                             </div>
                           </div>
@@ -257,11 +264,11 @@ const OurProjects = () => {
                         <SwiperSlide>
                           <div className="imgs">
                             <div className="img">
-                              <Image src={selectedCard.img6}/>
+                              <Image src={selectedCard.img6} />
                               {/* <img src={selectedCard.img6} alt="" /> */}
                             </div>
                             <div className="img">
-                              <Image src={selectedCard.img7}/>
+                              <Image src={selectedCard.img7} />
                               {/* <img src={selectedCard.img7} alt="" /> */}
                             </div>
                           </div>
@@ -269,11 +276,11 @@ const OurProjects = () => {
                         <SwiperSlide>
                           <div className="imgs">
                             <div className="img">
-                              <Image src={selectedCard.img8}/>
+                              <Image src={selectedCard.img8} />
                               {/* <img src={selectedCard.img8} alt="" /> */}
                             </div>
                             <div className="img">
-                              <Image src={selectedCard.img9}/>
+                              <Image src={selectedCard.img9} />
                               {/* <img src={selectedCard.img9} alt="" /> */}
                             </div>
                           </div>
@@ -300,33 +307,38 @@ const OurProjects = () => {
             )}
           </div>
 
-          <div className="right">
+          <div
+            className="right"
+            style={{
+              height: rightDivHeight,
+            }}
+          >
             <div className="rightIn">
-            <div className="cards">
-              {data.map((card, index) => (
-                <div
-                  className={`card ${
-                    card.title === selectedCard.title ? "selected" : ""
-                  }`}
-                  key={index}
-                  onClick={() => handleCardClick(card.title)}
-                >
-                  <div className="img">
-                    <img src={card.img1} alt="" />
-                  </div>
-                  <div className="text">
-                    <div>
-                      <h6>{card.title}</h6>
-                      <p>{card.category}</p>
+              <div className="cards">
+                {data.map((card, index) => (
+                  <div
+                    className={`card ${
+                      card.title === selectedCard.title ? "selected" : ""
+                    }`}
+                    key={index}
+                    onClick={() => handleCardClick(card.title)}
+                  >
+                    <div className="img">
+                      <img src={card.img1} alt="" />
                     </div>
-                    <div className="location-card">
-                      <LocationSvg />
-                      <p>{card.loc1}</p>
+                    <div className="text">
+                      <div>
+                        <h6>{card.title}</h6>
+                        <p>{card.category}</p>
+                      </div>
+                      <div className="location-card">
+                        <LocationSvg />
+                        <p>{card.loc1}</p>
+                      </div>
                     </div>
                   </div>
-                </div>
-              ))}
-            </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>

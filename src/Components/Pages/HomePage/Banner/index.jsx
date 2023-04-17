@@ -11,17 +11,17 @@ const Banner = () => {
 
   const ref = useRef();
 
-  useEffect(() => {
-    AOS.init({ duration: 1500, once: true });
-    AOS.refresh();
-  }, []);
+  // useEffect(() => {
+  //   AOS.init({ duration: 1500, once: true });
+  //   AOS.refresh();
+  // }, []);
 
   useEffect(() => {
     console.log(ref);
   }, []);
 
   const onChange = (currentSlide) => {
-    ref.current.goTo(currentSlide);
+    ref.current.goTo(currentSlide+1);
   };
 
   return (
@@ -32,13 +32,14 @@ const Banner = () => {
           pauseOnHover={false}
           pauseOnDotsHover={false}
           ref={ref}
+          className="imgCarousel"
         >
           <img src="/images/banner.jpg" alt="" />
           <img src="/images/banner2.jpg" alt="" />
           <img src="/images/banner3.jpg" alt="" />
           <img src="/images/banner4.jpg" alt="" />
           <img src="/images/banner5.jpg" alt="" />
-          <img src="/images/banner6.jpg" alt="" />
+          {/* <img src="/images/banner6.jpg" alt="" /> */}
         </Carousel>
       </div>
       <Container className="cont">
@@ -52,7 +53,7 @@ const Banner = () => {
           beforeChange={onChange}
           className="carusel"
         >
-          <div className="wrap" data-aos={"zoom-in"}>
+          <div className="wrap">
             <p className="top-title">{t("hero.title-top")}</p>
             <h1 className="title">
               {t("hero.title")} <br />
@@ -65,8 +66,8 @@ const Banner = () => {
               </MyLink>
             </section>
           </div>
-          <div className="wrap" data-aos={"zoom-in"}>
-          <p className="top-title">{t("hero.title-top2")}</p>
+          <div className="wrap">
+            <p className="top-title">{t("hero.title-top2")}</p>
             <h1 className="title">
               {t("hero.title2")} <br />
               <span>{t("hero.title-span2")} </span>
@@ -78,9 +79,9 @@ const Banner = () => {
               </MyLink>
             </section>
           </div>
-          
-          <div className="wrap" data-aos={"zoom-in"}>
-          <p className="top-title">{t("hero.title-top3")}</p>
+
+          <div className="wrap">
+            <p className="top-title">{t("hero.title-top3")}</p>
             <h1 className="title">
               {t("hero.title3")} <br />
               <span> {t("hero.title-span3")}</span>
@@ -93,8 +94,8 @@ const Banner = () => {
             </section>
           </div>
 
-          <div className="wrap" data-aos={"zoom-in"}>
-          <p className="top-title">{t("hero.title-top4")}</p>
+          <div className="wrap">
+            <p className="top-title">{t("hero.title-top4")}</p>
             <h1 className="title">
               {t("hero.title4")}
               <span> {t("hero.title-span4")}</span>
@@ -107,8 +108,8 @@ const Banner = () => {
             </section>
           </div>
 
-          <div className="wrap" data-aos={"zoom-in"}>
-          <p className="top-title">{t("hero.title-top5")}</p>
+          <div className="wrap">
+            <p className="top-title">{t("hero.title-top5")}</p>
             <h1 className="title">
               {t("hero.title5")}
               <span> {t("hero.title-span5")}</span>
@@ -120,8 +121,8 @@ const Banner = () => {
               </MyLink>
             </section>
           </div>
-          <div className="wrap" data-aos={"zoom-in"}>
-          <p className="top-title">{t("hero.title-top6")}</p>
+          {/* <div className="wrap">
+            <p className="top-title">{t("hero.title-top6")}</p>
             <h1 className="title">
               {t("hero.title6")} <br />
               <span> {t("hero.title-span6")}</span>
@@ -132,7 +133,7 @@ const Banner = () => {
                 <span>{t("button.btn")}</span>
               </MyLink>
             </section>
-          </div>
+          </div> */}
         </Carousel>
       </Container>
     </BannerWrapper>
