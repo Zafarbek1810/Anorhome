@@ -141,6 +141,7 @@ const OurProjects = () => {
   const router = useRouter();
   console.log(router.query.title);
   const [loading, setLoading] = useState(false);
+  const [loading2, setLoading2] = useState(false);
 
   const [selectedCard, setSelectedCard] = useState(data[0]);
 
@@ -155,12 +156,13 @@ const OurProjects = () => {
 
   const leftDivRef = useRef();
   const [rightDivHeight, setRightDivHeight] = useState(
-    leftDivRef.current?.clientHeight || "500px"
+    leftDivRef.current?.clientHeight || "900px"
   );
 
   useEffect(() => {
-    setRightDivHeight(leftDivRef.current?.clientHeight || "500px");
-    console.log(leftDivRef);
+    setTimeout(() => {
+      setRightDivHeight(leftDivRef.current?.clientHeight || "900px");
+    }, 100);
   }, [data]);
 
   useEffect(() => {
@@ -179,9 +181,9 @@ const OurProjects = () => {
     <OurProjectsWrapper>
       <Container>
         <div className="wrapper">
-          <div className="left" id={selectedCardIndex} >
+          <div className="left" id={selectedCardIndex} ref={leftDivRef}>
             {selectedCardIndex !== null ? (
-              <div className="leftIn" ref={leftDivRef}>
+              <div className="leftIn" >
                 <div>
                   <h4 className="title">{t("projectPage.title")}</h4>
                 </div>

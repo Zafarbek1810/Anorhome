@@ -248,7 +248,7 @@ const OurProjectsWrapper = styled.div`
     }
     .right {
       width: 50%;
-      height: 500px;
+      height: 100%;
       overflow-y: auto;
       
       .rightIn{
