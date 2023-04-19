@@ -21,6 +21,8 @@ const ClientsWrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    
   }
   .al-mashriq {
     width: 160px;
@@ -34,14 +36,17 @@ const ClientsWrapper = styled.div`
   .amt {
     width: 160px;
   }
-  .sr{
-      width: 110px;
+  .sr {
+    width: 110px;
   }
 
-  @media (max-width: 700px) {
+  @media (max-width: 800px) {
     .clients__logo {
       flex-wrap: wrap;
       justify-content: space-between;
+      img{
+      margin-bottom: 50px;
+    }
     }
     .al-mashriq {
       width: 120px;
@@ -52,12 +57,12 @@ const ClientsWrapper = styled.div`
     .travel {
       width: 90px;
     }
-    .amt{
+    .amt {
       width: 120px;
-  }
-  .sr{
+    }
+    .sr {
       width: 100px;
-  }
+    }
   }
 `;
 export { ClientsWrapper };

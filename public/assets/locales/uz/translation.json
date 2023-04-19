@@ -14,31 +14,38 @@
     "title": "QADR-QIMMAT",
     "title-span": "YARATAMIZ",
     "paragr": "Har bir loyiha yutug’i asosan g'oyalarning o'ziga xosligi, to’g’ri kontsept yaratilishi, xizmat ko’rsatish sifati va muvaffaqiyatli sotuvdadir.",
+    "descr":"Bu yo’nalish Anorhome kompaniyasining xizmatlari orasida eng asosiysidir.Har bir loyiha yutug’i asosan g'oyalarning o'ziga xosligi, to’g’ri kontsept yaratilishi, xizmat ko’rsatish sifati va muvaffaqiyatli sotuvdadir. Har bir loyiha va loyihaning kelajakdagi mijozlariga aynan shu narsalar qadir va qimmat yaratadi.",
     
     "title-top2": "Developerlik loyihalarini yuritish",
     "title2": "KUCHLI SAVDO –",
     "title-span2": "LOYIHA YUTUG’I",
     "paragr2": "Biz o'zimiz savdo ofislarini quramiz, mijozlar uchun yuqori sifatli zamonaviy xizmatni taqdim etamiz va oxirigacha sotmaguncha ketmaymiz.",
+    "descr2":"O’z loyihangizni bizga ishonib topshirsangizgina, siz sotuv va daromadlar darajasini oshirish, xarajatlarni kamaytirish, marketingni to’g’ri yo’naltirish hamda IT dasturlarini o’rnatilish kabi keng qamrovli yechimlarga ega bo'lasiz. Biz o'zimiz savdo ofislarini quramiz, mijozlar uchun yuqori sifatli zamonaviy xizmatni taqdim etamiz va oxirigacha sotmaguncha ketmaymiz.",
 
     "title-top3": "Investitsion konsalting",
     "title3": "KELAJAKKA",
     "title-span3": "SARMOYA QILING",
     "paragr3": "Ko’chmas mulk bozorining kelajagi, imkoniyatlarini tahlil qilish va baholash orqali, sizning kutilayotgan loyihalaringiz uchun xavfsiz va daromadli sarmoya bitimlarni taklif etamiz.",
+    "descr3":"Ko’chmas mulk bozorining kelajagi, imkoniyatlarini tahlil qilish va baholash orqali, sizning kutilayotgan loyihalaringiz uchun xavfsiz va daromadli sarmoya bitimlarni taklif etamiz.",
+
 
     "title-top4": "Rieltorlik xizmatlari",
     "title4": "TEZ VA",
     "title-span4": "MUVAFFAQIYATLI!",
     "paragr4": "Hayotimizda ko’chmas mulk haridi, sotuvi, ijaraga topshirish va olish bitimlari alohida joy egallaydi. Bunday bitimlarni tuzishda biz sizga hamrohlik qilamiz.",  
+    "descr4":"Hayotimizda ko’chmas mulk haridi, sotuvi, ijaraga topshirish va olish bitimlari alohida joy egallaydi. Ammo, har doim ham buni muvaffaqiyatli amalga oshirish onson emas. Bitimlar huquqiy to’g’ri va har tomonlama unumli amalga oshsagina muvaffaqiyatli baholana oladi. Bunday bitimlarni tuzishda biz sizga hamrohlik qilamiz.",
 
     "title-top5": "Ishonchli boshqaruv",
     "title5": "SAMARALI",
     "title-span5": "BOSHQARAMIZ!",
     "paragr5": "Anorhome jamoasi mutaxassislari aralashuvi talab etadigan, o’z tasaruffida bir nechta ko’chmas mulklarga ega bo’lgan korxonalar va jismoniy shaxslar uchun mo’ljallangan bo’lib, tijoriy va maishiy masalalarni o’z vaqtida to'liq boshqarishni o’z zimmasiga oladi.",
+    "descr5":"Ishonchli boshqaruv xizmati – Anorhome jamoasi mutaxassislari aralashuvi talab etadigan, o’z tasaruffida bir nechta ko’chmas mulklarga ega bo’lgan korxonalar va jismoniy shaxslar uchun mo’ljallangan bo’lib, tijoriy va maishiy masalalarni o’z vaqtida boshqarish, hisobotlar orqali kirim va chiqimlarni monitoring qilishni o’z zimmasiga oladi.",
 
     "title-top6": "Marketing tadqiqotlari",
     "title6": "TADQIQOT VA",
     "title-span6": "TAHLILLAR",
-    "paragr6": "Har bir yo’nalishda sinchkovli marketing tadqiqotlari va izlanishlar tahlili, mahsulotlarni muvaffaqiyatli targ’iboti asosi hisoblanadi." 
+    "paragr6": "Har bir yo’nalishda sinchkovli marketing tadqiqotlari va izlanishlar tahlili, mahsulotlarni muvaffaqiyatli targ’iboti asosi hisoblanadi." ,
+    "descr6":"Har bir yo’nalishda sinchkovli marketing tadqiqotlari va izlanishlar tahlili, mahsulotlarni muvaffaqiyatli targ’iboti asosi hisoblanadi. Loyiha egalari va iste’molchilar uchun to’g’ri mahsulot yaratish va taqdim etish marketing tadqiqotlarining asosiy vazifalaridir."
   },
   "about": {
     "title": "Biz Xaqimizda",

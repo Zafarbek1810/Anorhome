@@ -14,31 +14,37 @@
     "title": "We Create",
     "title-span": "Value",
     "paragr": "The main success of each project is the uniqueness of ideas, concept, service quality, and sales", 
+    "descr":"At Anorhome, our main service is strategic consulting, which aims to create value for our clients. The success of each project hinges on the originality of ideas, the strength of the concept, the quality of service, and effective sales. It is these details that generate value not only for the current project but also for the developer's future clientele.",
 
     "title-top2": "Promoting development projects",
     "title2": "SALES —",
     "title-span2": "PROJECT SUCCESS",
     "paragr2": "We will build sales offices ourselves, provide high-quality modern service, and won't stop until we sell EVERYTHING!",
+    "descr2":"We believe that promoting real estate development projects is key to achieving high sales figures and overall project success. By partnering with us, you can expect a comprehensive solution that encompasses marketing and IT support, along with effective sales strategies designed to boost revenue and streamline operational expenses. Additionally, we'll set up sales offices and deliver top-quality modern service until every unit is sold!",
 
     "title-top3": "Investment consulting",
     "title3": "INVEST IN",
     "title-span3": "THE FUTURE",
     "paragr3": "By analyzing and evaluating future opportunities and market potential, we will offer you profitable deals for investment purposes in order to achieve maximum returns and minimize risks for your project.",
+    "descr3":"Anorhome offers investment consulting services that help you invest in the future. By analyzing and evaluating potential market opportunities, we provide you with attractive investment options that maximize returns while minimizing risk for your project.",
 
     "title-top4": "Real estate services",
     "title4": "QUICK AND",
     "title-span4": "SUCCESSFUL!",
     "paragr4": "Buying, selling, renting or leasing real estate always plays an important role in our lives. We will advise you on how to make a profitable and correct deal.",
+    "descr4":"Purchasing, selling, renting or leasing property always holds a significant place in our lives, but not everyone can achieve success in doing so. A profitable real estate deal is dependent on its accurate evaluation and structuring. We can offer our expertise to ensure that your real estate transaction is profitable and carried out effectively.",
 
     "title-top5": "Trust management",
     "title5": "MANAGE",
     "title-span5": "EFFECTIVELY!",
     "paragr5": "This service is designed for companies and individuals who have real estate assets in their portfolio that require the intervention of the professional Anorhome team to fully manage commercial and domestic issues.",
+    "descr5":"This service is designed for companies and individuals who hold real estate assets that require professional intervention from the Anorhome team to manage commercial and residential issues, prepare reports, and monitor compliance with lease agreements.",
 
     "title-top6": "Marketing research",
     "title6": "RESEARCH AND",
     "title-span6": "ANALYSIS",
-    "paragr6": "Marketing research and in-depth market analysis are considered the foundation for successful product implementation in every industry."
+    "paragr6": "Marketing research and in-depth market analysis are considered the foundation for successful product implementation in every industry.",
+    "descr6":"Marketing research involves conducting research, analyzing data, and providing solutions. It is essential for successful product implementation in any industry. The primary objective of marketing research is to create and deliver the right product to both developers and end customers by gaining insights into market trends and preferences."
   },
   "about": {
     "title": "About Us",
