@@ -42,7 +42,8 @@ const FormModalWrapper = styled.div`
         margin: 10px 0 42px;
         width: 100%;
         padding: 11px 0 11px 50px;
-
+        background-color:#fff;
+        border: 1px solid #000;
         font-family: "Mulish";
         font-style: normal;
         font-weight: 600;

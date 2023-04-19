@@ -167,22 +167,22 @@ const BannerWrapper = styled.div`
       justify-content: start;
 
       li {
-        width: 37px;
-        height: 2px !important;
+        width: 45px;
+        height: 4px !important;
         background: transparent;
 
         button {
-          height: 2px !important;
+          height: 4px !important;
           background: rgba(255, 255, 255, 0.2);
         }
       }
       li.slick-active {
         background: #2e3134;
-        height: 2px !important;
+        height: 4px !important;
         button {
-          height: 2px !important;
+          height: 4px !important;
           background: #fe152b !important;
-          animation: dot 3.3s linear infinite;
+          animation: dot 24.7s linear infinite;
         }
       }
     }

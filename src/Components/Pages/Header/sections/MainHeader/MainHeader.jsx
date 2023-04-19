@@ -12,6 +12,7 @@ import { useContextSelector } from "use-context-selector";
 import { ModalContext } from "../../../../../Context/ModalContext/Context";
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
+import PhoneSvg from "../../../../Common/Svgs/PhoneSvg";
 // import Select from "react-select";
 
 export const LINKS = [
@@ -203,7 +204,7 @@ const MainHeader = ({ isFixed }) => {
                 setIsModalVisible((p) => !p);
               }}
             >
-              <span>{t("header.call-btn")}</span>
+              <span><PhoneSvg/> {t("header.call-btn")}</span>
             </button>
           </section>
         </div>

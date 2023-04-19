@@ -150,9 +150,16 @@ const MainHeaderWrapper = styled.div`
     }
 
     .callBtn {
-      border: none;
+      border: 1px solid #fff;
       /* ============== button hover  start======================== */
-
+      svg{
+        fill: #fff;
+        margin-right: 10px;
+      }
+      span{
+        display: flex;
+        align-items: center;
+      }
       .buttons {
         display: flex;
         flex-direction: column;
@@ -165,13 +172,13 @@ const MainHeaderWrapper = styled.div`
         font-family: "Mulish";
         font-weight: 500;
         font-size: 16px;
-        color: #fff;
+        color: #fff !important;
         cursor: pointer;
-        max-width: 160px !important;
+        max-width: 100% !important;
         padding: 15px 15px;
         position: relative;
         width: 100%;
-        background: #e5e5e5;
+        background: rgb(229, 229, 229, 0.2);
         border: none;
       }
 
@@ -353,7 +360,14 @@ const MainHeaderWrapper = styled.div`
     .callBtn {
       border: none;
       /* ============== button hover  start======================== */
-
+      svg{
+        fill: #fff;
+        margin-right: 10px;
+      }
+      span{
+        display: flex;
+        align-items: center;
+      }
       .buttons {
         display: flex;
         flex-direction: column;
