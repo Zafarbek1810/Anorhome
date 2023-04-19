@@ -23,9 +23,9 @@ const BannerWrapper = styled.div`
   z-index: 4;
 }
 .top-title{
-  font-family: "Mulish";
+  font-family: "Montserrat";
   font-style: normal;
-  font-size: 18px;
+  font-size: 20px;
   color: #ED3240;
 }
   .img-wrapper {
