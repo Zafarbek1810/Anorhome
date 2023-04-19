@@ -51,6 +51,9 @@ a {
   min-width: 80px;
   width: 80px;
 }
+.ant-select-selector{
+  box-shadow: none !important;
+}
 
 
 
