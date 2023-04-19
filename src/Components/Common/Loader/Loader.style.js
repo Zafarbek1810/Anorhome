@@ -35,7 +35,7 @@ const LoaderWrapper = styled.div`
       }
     }
   }
-/* rgb(237,50,64) */
+
   .circle {
     width: 100%;
     height: 100%;
@@ -45,7 +45,7 @@ const LoaderWrapper = styled.div`
     width: 100%;
     height: 100%;
     border-radius: 100%;
-    border: 7px solid rgba(237,50,64, 0.9);
+    border: 7px solid rgba(254,21,43, 0.9);
     border-right: none;
     border-top: none;
     background-clip: padding;
