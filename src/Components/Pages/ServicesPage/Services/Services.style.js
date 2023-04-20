@@ -36,7 +36,7 @@ const ServicesWrapper = styled.div`
       font-size: 56px;
       line-height: 67px;
       letter-spacing: 2px;
-      color: #ffffff;
+      color: #fe152b;
     }
   }
 
@@ -64,7 +64,7 @@ const ServicesWrapper = styled.div`
           font-weight: 800;
           font-size: 36px;
           line-height: 43px;
-          color: #ffffff;
+          color: #fe152b;
           /* position: absolute; */
           /* top: 25%; */
           /* left: 0; */
@@ -112,8 +112,8 @@ const ServicesWrapper = styled.div`
             color: #fe152b;
             font-family: "Mulish";
             font-style: normal;
-            font-weight: 500;
-            font-size: 16px;
+            font-weight: 600;
+            font-size: 18px;
             line-height: 19px;
             transition: 0.3s;
 
