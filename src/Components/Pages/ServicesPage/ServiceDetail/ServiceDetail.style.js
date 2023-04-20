@@ -203,56 +203,59 @@ const TemplateWrapper = styled.div`
         }
         /* ============== button hover  start======================== */
         .buttons {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          text-align: center;
-          width: 100%;
-        }
-
-        .btn {
-          font-family: "Mulish";
-          font-weight: 500;
-          font-size: 16px;
-          color: #fff !important;
-          cursor: pointer;
-          max-width: 160px !important;
-          padding: 15px 30px;
+          padding: 10px;
           position: relative;
-          width: 100%;
-          background: #000;
-          border: none !important;
-        }
+          width: 70%;
+          a {
+            padding: 10px;
+            display: inline-block;
+            text-align: center;
+            width: 100%;
+            background-color: #fff;
+            color: #fe152b;
+            font-family: "Mulish";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 19px;
+            transition: 0.3s;
 
-        .btn:hover {
-          text-decoration: none;
-        }
+            &::before {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 3%;
+              height: 100%;
+              border: 1px solid #fe152b;
+              border-right: none;
+              transition: 0.3s;
+            }
 
-        .btn-4 {
-          /* border: 1px solid; */
-          overflow: hidden;
-          position: relative;
-        }
-        .btn-4 span {
-          z-index: 20;
-        }
-        .btn-4:after {
-          background: #fff;
-          content: "";
-          height: 155px;
-          left: -75px;
-          opacity: 0.6;
-          position: absolute;
-          top: -50px;
-          transform: rotate(35deg);
-          transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
-          width: 50px;
-          z-index: 10;
-        }
+            &::after {
+              content: "";
+              position: absolute;
+              top: 0;
+              right: 0;
+              width: 3%;
+              height: 100%;
+              border: 1px solid #fe152b;
+              border-left: none;
+              transition: 0.3s;
+            }
 
-        .btn-4:hover:after {
-          left: 120%;
-          transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+            &:hover {
+              background: #fe152b;
+              color: #ffffff;
+            }
+
+            &:hover:after,
+            &:hover:before {
+              transition: width 350ms ease-in-out;
+              width: 50%;
+              border-color: #fe152b;
+            }
+          }
         }
         /* ============== button hover  end======================== */
       }
