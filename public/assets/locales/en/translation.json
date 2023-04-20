@@ -52,7 +52,8 @@
     "p1": "Satisfied clients",
     "p2": "Project profitability",
     "p3": "Sq meters implemented",
-    "p4": "Years of employees experience"
+    "p4": "Years of employees experience",
+    "age":"year"
   },
   "projects": {
     "title": "Projects",

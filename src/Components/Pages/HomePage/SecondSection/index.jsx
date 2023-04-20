@@ -15,7 +15,7 @@ const SecondSection = () => {
   const countData = [
     {
       img: <FamilySvg />,
-      count: 1000,
+      count: "1 000",
       p: t("about.p1"),
       suffix: "+",
     },
@@ -27,7 +27,7 @@ const SecondSection = () => {
     },
     {
       img: <RevenueSvg />,
-      count: 250000,
+      count: "250 000",
       p: t("about.p3"),
       suffix: "+",
     },
@@ -36,6 +36,7 @@ const SecondSection = () => {
       count: 10,
       p: t("about.p4"),
       suffix: "+",
+      age:t("about.age")
     },
   ];
 
@@ -67,7 +68,7 @@ const SecondSection = () => {
                   <div data-aos={"fade-up"} className="imgs">{v.img}</div>
                   <p data-aos={"fade-up"} className="num">
                     {v.count}
-                    {v.suffix}
+                    {v.suffix}{v.age}
                   </p>
                   <p data-aos={"fade-up"} className="title">
                     {v.p}
