@@ -2,7 +2,7 @@ import React from 'react';
 import Header from "../Header"
 import Footer from "../Footer/footer"
 import OurProjects from './OurProjects';
-import Contact from './Contact/contact';
+import Contact from './../HomePage/Contact/contact';
 const ProjectsPage = () => {
     return (
         <>
@@ -10,7 +10,7 @@ const ProjectsPage = () => {
          <div style={{height:150, background: "#161a1d"}}></div>
          <OurProjects/>
          <Contact/>
-         <Footer/>   
+         {/* <Footer/>    */}
         </>
     );
 };

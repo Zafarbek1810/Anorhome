@@ -26,7 +26,7 @@ const BannerWrapper = styled.div`
   font-family: "Montserrat";
   font-style: normal;
   font-size: 20px;
-  color: #ED3240;
+  color: #FE152B;
 }
   .img-wrapper {
     position: absolute;

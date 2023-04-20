@@ -20,7 +20,7 @@ const AboutUs = () => {
       {/* <Testimonials /> */}
       <Clients />
       <Contact />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

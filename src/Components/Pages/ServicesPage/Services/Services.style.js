@@ -55,7 +55,7 @@ const ServicesWrapper = styled.div`
           font-size: 128px;
           line-height: 154px;
           letter-spacing: 0.1em;
-          color: rgba(255, 255, 255, 0.2);
+          color: rgba(255, 255, 255);
         }
 
         p {
@@ -65,9 +65,9 @@ const ServicesWrapper = styled.div`
           font-size: 36px;
           line-height: 43px;
           color: #ffffff;
-          position: absolute;
-          top: 25%;
-          left: 0;
+          /* position: absolute; */
+          /* top: 25%; */
+          /* left: 0; */
           text-transform: capitalize;
         }
       }
@@ -124,7 +124,7 @@ const ServicesWrapper = styled.div`
               left: 0;
               width: 3%;
               height: 100%;
-              border: 1px solid #fff;
+              border: 1px solid #fe152b;
               border-right: none;
               transition: 0.3s;
             }
@@ -136,7 +136,7 @@ const ServicesWrapper = styled.div`
               right: 0;
               width: 3%;
               height: 100%;
-              border: 1px solid #fff;
+              border: 1px solid #fe152b;
               border-left: none;
               transition: 0.3s;
             }

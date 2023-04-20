@@ -8,9 +8,13 @@ import EmailSvg from "../../../Common/Svgs/EmailSvg";
 import { ContactWrappper } from "./contact.style";
 import MyLink from "../../../Common/MyLink";
 import { Map, Placemark, YMaps } from "@pbe/react-yandex-maps";
+import InstagramSvg from "../../../Common/Svgs/InstagramSvg";
+import TelegramSvg from "../../../Common/Svgs/TelegramSvg";
+import FacebookSvg from "../../../Common/Svgs/FacebookSvg";
+import FooterLogoSvg from "../../../Common/Svgs/FooterLogoSvg";
+import SocialSvg from "../../../Common/Svgs/SocialSvg";
 
 const Contact = () => {
-
   const { t } = useTranslation();
 
   // useEffect(() => {
@@ -46,7 +50,7 @@ const Contact = () => {
               </span>
               <h4>{t("contact.working")}</h4>
               <p>
-              {t("contact.from")} <span>10:00 – 19:00</span>
+                {t("contact.from")} <span>10:00 – 19:00</span>
               </p>
               <p>{t("contact.week")}</p>
             </div>
@@ -57,8 +61,25 @@ const Contact = () => {
 
               <h4>{t("contact.email")}</h4>
               <MyLink to={"mailto: info@anorhome.com"} className="emailLink">
-              info@anorhome.com
+                info@anorhome.com
               </MyLink>
+            </div>
+            <div className="contact__box">
+              <span className="contact__icon socialSvg">
+                <SocialSvg />
+              </span>
+              <h4>{t("footer.social")}</h4>
+              <div className="socials">
+                <MyLink to="https://www.instagram.com/anorhome/">
+                  <InstagramSvg />
+                </MyLink>
+                <MyLink to="https://t.me/anorhome">
+                  <TelegramSvg />
+                </MyLink>
+                <MyLink to="https://www.facebook.com/anorhome">
+                  <FacebookSvg />
+                </MyLink>
+              </div>
             </div>
           </div>
           <div className="contact__map">
@@ -78,7 +99,7 @@ const Contact = () => {
                     iconLayout: "default#image",
                     iconImageSize: [50, 50],
                     iconImageHref: "/images/map.svg",
-                    iconColor:"red"
+                    iconColor: "red",
                   }}
                 />
               </Map>
@@ -86,6 +107,35 @@ const Contact = () => {
           </div>
         </div>
       </Container>
+      <div className="footer">
+        <Container>
+          <div className="footer__wrapper">
+            <div className="footer__info">
+              {/* <img src="/images/footer-logo.png" alt="Footer Logo" /> */}
+              <FooterLogoSvg />
+              <p>{t("footer.descr")}</p>
+            </div>
+            <div className="footer__items">
+              <MyLink to={"/services"} className="links">
+                {t("footer.link1")}
+              </MyLink>
+              <MyLink to={"/about"} className="links">
+                {t("footer.link2")}
+              </MyLink>
+              <MyLink to={"/projects"} className="links">
+                {t("footer.link3")}
+              </MyLink>
+              {/* <MyLink to={"/#contact"} className="links">{t('footer.link4')}</MyLink> */}
+            </div>
+          </div>
+        </Container>
+        <div className="everbest">
+          <hr />
+          <MyLink to={"/"} className="link">
+            {t("footer.everbest")} EverbestLab
+          </MyLink>
+        </div>
+      </div>
     </ContactWrappper>
   );
 };

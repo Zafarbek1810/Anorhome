@@ -54,7 +54,7 @@ const MainHeaderWrapper = styled.div`
       width: 10%;
     }
     .callBtn {
-      width: 15%;
+      width: 17%;
     }
   }
 
@@ -190,6 +190,8 @@ const MainHeaderWrapper = styled.div`
         /* border: 1px solid; */
         overflow: hidden;
         position: relative;
+        display: flex;
+        justify-content: center;
       }
       .btn-4 span {
         z-index: 20;
@@ -383,7 +385,7 @@ const MainHeaderWrapper = styled.div`
         color: #fff !important;
         cursor: pointer;
         max-width: 160px !important;
-        padding: 15px;
+        padding: 10px 12px ;
         position: relative;
         width: 100%;
         background: #000;

@@ -1,8 +1,12 @@
 import styled from "styled-components";
 
 const ContactWrappper = styled.div`
-padding-bottom: 40px;
-  background: #fff;
+  background: #161A1D;
+  .socialSvg{
+    svg{
+      transform: translateY(3px) !important;
+    }
+    }
   .pharmacies_placemarket {
   background: #baadf3;
   box-shadow: 0 12px 16px #1c009833;
@@ -18,7 +22,7 @@ padding-bottom: 40px;
   .title {
     border-top: 1px solid #161a1d;
     border-bottom: 1px solid #161a1d;
-
+    background: #fff;
     h3 {
       font-style: normal;
       font-weight: 700;
@@ -30,18 +34,34 @@ padding-bottom: 40px;
   .contact {
     width: 100%;
     height: 100%;
-    margin-top: 100px;
+    margin-top: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
+    
     &__info {
       background: #161a1d;
-      width: 30%;
+      width: 50%;
       padding:35px 40px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .socials{
+      display: flex;
+      gap: 30px;
+      svg {
+      fill: #fff;
+      transition: 300ms ease;
+      &:hover {
+        fill: #fe152b;
+        cursor: pointer;
+      }
+    }
     }
     &__box {
+      width: 50%;
       padding-bottom: 40px;
-      :nth-child(3) {
+      :nth-child(4) {
         padding-bottom: 0;
       }
       h4 {
@@ -77,16 +97,98 @@ padding-bottom: 40px;
     }
     &__map {
       background-color: #fff;
-      width: 70%;
-      height: 615px;
+      width: 50%;
+      height: 350px;
       iframe {
-        height: 615px !important;
+        height: 350px !important;
         border: none;
       }
     }
   }
 
-  @media (max-width: 700px) {
+  .footer{
+    background-color: #161a1d;
+    .footer__wrapper {
+    padding: 75px 0 50px;
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .footer__info {
+    width: 50%;
+    svg {
+      width: 50%;
+      height: auto;
+    }
+    p {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      color: #fff;
+    }
+  }
+  .footer__items {
+    width: 50%;
+    padding-top: 15px;
+    display: flex;
+
+    .links {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      /* margin: 30px; */
+      transition: 0.3s;
+      color: #fff;
+      width: 25%;
+      &:hover {
+        color: #fe152b;
+      }
+    }
+  }
+  .footer__socials {
+    width: 15%;
+    padding-top: 15px;
+    p {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      margin: 0;
+      margin-bottom: 35px;
+      color: #fff;
+    }
+    div {
+      display: flex;
+      gap: 30px;
+    }
+
+    svg {
+      fill: #fff;
+      transition: 300ms ease;
+      &:hover {
+        fill: #fe152b;
+        cursor: pointer;
+      }
+    }
+  }
+  .everbest {
+    width: 100%;
+    padding: 10px 0 20px;
+    text-align: center;
+    .link {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      color: #fff;
+    }
+  }
+  }
+
+  @media (max-width: 800px) {
     .contact{
       display: flex;
       flex-direction: column-reverse;
@@ -96,6 +198,33 @@ padding-bottom: 40px;
       &__map{
         width: 100%;
         
+      }
+    }
+  }
+  @media (max-width: 500px) {
+    .contact{
+      display: flex;
+      flex-direction: column-reverse;
+      &__box{
+        width: 100%;
+      }
+    }
+    .footer{
+      .footer__wrapper{
+        flex-direction: column;
+
+        .footer__info{
+          margin-bottom: 20px;
+          width: 100%;
+          svg {
+      width: 80%;
+      height: auto;
+    }
+        }
+        .footer__items{
+          width: 100%;
+          justify-content: space-between;
+        }
       }
     }
   }

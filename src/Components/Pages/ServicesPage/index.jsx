@@ -15,7 +15,7 @@ const ServicesPage = () => {
             {/* <Testimionals/> */}
             <Clients/>
             <Contact/>
-            <Footer/>
+            {/* <Footer/> */}
         </div>
     );
 };
