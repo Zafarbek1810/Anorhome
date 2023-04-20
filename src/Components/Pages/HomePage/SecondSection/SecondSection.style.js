@@ -87,8 +87,8 @@ const SecondSectionWrapper = styled.div`
             display: inline-block;
             text-align: center;
             width: 100%;
-            background-color: #fff;
-            color: #fe152b;
+            background-color: #161A1D;
+            color: #fff;
             font-family: "Mulish";
             font-style: normal;
             font-weight: 600;
