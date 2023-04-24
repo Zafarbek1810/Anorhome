@@ -192,26 +192,39 @@ const ContactWrappper = styled.div`
         font-weight: 500;
         font-size: 12px;
         color: #fff;
-        text-align: end !important;
       }
-      .anorhome{
+      .anorhome {
         transform: translateX(-50%);
         font-family: "Montserrat";
         font-style: normal;
         font-weight: 500;
         font-size: 13px;
         color: #fff;
-        text-align: center !important;
       }
     }
   }
 
   @media (max-width: 800px) {
+    .footer {
+      .footer__items {
+      width: 50%;
+      padding-top: 0px;
+      gap: 14px;
+      display: flex;
+    }
+      .everbest {
+        width: 100%;
+        .anorhome {
+          transform: translateX(0%);
+        }
+      }
+    }
     .contact {
       display: flex;
       flex-direction: column-reverse;
       &__info {
         width: 100%;
+        padding: 40px 0;
       }
       &__map {
         width: 100%;
@@ -241,6 +254,12 @@ const ContactWrappper = styled.div`
         .footer__items {
           width: 100%;
           justify-content: space-between;
+        }
+      }
+      .everbest {
+        width: 100%;
+        .anorhome {
+          transform: translateX(0%);
         }
       }
     }
