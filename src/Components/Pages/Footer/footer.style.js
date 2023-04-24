@@ -4,7 +4,7 @@ const FooterWrapper = styled.div`
   background-color: #161a1d;
 
   .footer__wrapper {
-    padding: 75px 0 50px;
+    padding: 75px 0 30px;
     display: flex;
     align-items: start;
     flex-wrap: wrap;

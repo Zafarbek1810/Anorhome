@@ -114,7 +114,7 @@ const ContactWrappper = styled.div`
   .footer {
     background-color: #161a1d;
     .footer__wrapper {
-      padding: 75px 0 50px;
+      padding: 75px 0 20px;
       display: flex;
       align-items: start;
       flex-wrap: wrap;
@@ -180,15 +180,28 @@ const ContactWrappper = styled.div`
       }
     }
     .everbest {
-      width: 100%;
+      margin-left: auto;
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
       padding: 10px 0 20px;
-      text-align: center;
       .link {
         font-family: "Montserrat";
         font-style: normal;
         font-weight: 500;
         font-size: 12px;
         color: #fff;
+        text-align: end !important;
+      }
+      .anorhome{
+        transform: translateX(-50%);
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+        color: #fff;
+        text-align: center !important;
       }
     }
   }
