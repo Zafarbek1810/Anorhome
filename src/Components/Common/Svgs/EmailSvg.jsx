@@ -4,15 +4,12 @@ const EmailSvg = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="20"
-      height="15"
-      viewBox="0 0 20 16"
-      fill="none"
+      height="25"
+      viewBox="0 96 960 960"
+      width="25"
+      fill="white"
     >
-      <path
-        d="M18 0H2C0.9 0 0.00999999 0.9 0.00999999 2L0 14C0 15.1 0.9 16 2 16H18C19.1 16 20 15.1 20 14V2C20 0.9 19.1 0 18 0ZM18 4L10 9L2 4V2L10 7L18 2V4Z"
-        fill="white"
-      />
+      <path d="M176 873q-20 8-38-3.5T120 836V687q0-14 8-25t22-14l290-72-290-72q-14-3-22-14t-8-25V316q0-22 18-33.5t38-3.5l616 260q25 11 25 37t-25 37L176 873Z" />
     </svg>
   );
 };

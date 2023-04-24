@@ -23,7 +23,8 @@ const SecondSection = () => {
       img: <ProjectsSvg />,
       count: 120,
       p: t("about.p2"),
-      suffix: "%",
+      suffix: "",
+      foiz:"%"
     },
     {
       img: <RevenueSvg />,
@@ -67,8 +68,8 @@ const SecondSection = () => {
                 <div key={i} className="count">
                   <div data-aos={"fade-up"} className="imgs">{v.img}</div>
                   <p data-aos={"fade-up"} className="num">
-                    {v.count}
-                    {v.suffix}{v.age}
+                  {v.suffix} {v.count} {v.foiz}
+                    {v.age}
                   </p>
                   <p data-aos={"fade-up"} className="title">
                     {v.p}

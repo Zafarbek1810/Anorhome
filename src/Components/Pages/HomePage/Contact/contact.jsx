@@ -55,7 +55,7 @@ const Contact = () => {
               <p>{t("contact.week")}</p>
             </div>
             <div className="contact__box">
-              <span className="contact__icon">
+              <span className="contact__icon emailSvg">
                 <EmailSvg />
               </span>
 

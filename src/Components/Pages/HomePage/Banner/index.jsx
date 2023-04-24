@@ -48,7 +48,7 @@ const Banner = () => {
           pauseOnFocus={false}
           pauseOnHover={false}
           pauseOnDotsHover={false}
-          autoplaySpeed={25000}
+          autoplaySpeed={10000}
           // afterChange={onChange}
           beforeChange={onChange}
           className="carusel"

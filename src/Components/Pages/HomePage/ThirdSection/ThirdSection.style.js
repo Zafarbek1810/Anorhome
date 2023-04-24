@@ -69,7 +69,7 @@ const ThirdSectionWrapper = styled.div`
             font-family: "Mulish";
             font-style: normal;
             font-weight: 600;
-            font-size: 18px;
+            font-size: 16px;
             line-height: 19px;
             transition: 0.3s;
 

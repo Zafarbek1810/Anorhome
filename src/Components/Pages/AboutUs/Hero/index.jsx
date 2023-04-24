@@ -44,7 +44,7 @@ const Hero = () => {
                   <span>
                     <img src="/aboutUs/building.svg" alt="Building svg" />
                   </span>
-                  <h3>250.000+</h3>
+                  <h3>+ 250 000</h3>
                   <p>{t("about.p3")}</p>
                   <div className="arrow-white"></div>
                 </div>
@@ -53,7 +53,7 @@ const Hero = () => {
                   <span>
                   <TrustedSvg />
                   </span>
-                  <h3>10+</h3>
+                  <h3>+ 10 {t("about.age")}</h3>
                   <p>{t("about.p4")}</p>
                   <div className="arrow-red"></div>
                 </div>
@@ -63,7 +63,7 @@ const Hero = () => {
                   <span>
                   <FamilySvg />
                   </span>
-                  <h3>1000+</h3>
+                  <h3>+ 1 000</h3>
                   <p>{t("about.p1")}</p>
                   <div className="arrow-red"></div>
                 </div>
