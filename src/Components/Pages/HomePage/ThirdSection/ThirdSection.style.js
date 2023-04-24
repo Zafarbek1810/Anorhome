@@ -68,7 +68,7 @@ const ThirdSectionWrapper = styled.div`
             color: #fe152b;
             font-family: "Mulish";
             font-style: normal;
-            font-weight: 600;
+            font-weight: 400;
             font-size: 16px;
             line-height: 19px;
             transition: 0.3s;

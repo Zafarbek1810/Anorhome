@@ -215,7 +215,7 @@ const TemplateWrapper = styled.div`
             color: #fff;
             font-family: "Mulish";
             font-style: normal;
-            font-weight: 600;
+            font-weight: 400;
             font-size: 16px;
             line-height: 19px;
             transition: 0.3s;

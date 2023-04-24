@@ -238,7 +238,7 @@ const BannerWrapper = styled.div`
         button {
           height: 4px !important;
           background: #fe152b !important;
-          animation: dot 24.7s linear infinite;
+          animation: dot 9.7s linear infinite;
         }
       }
     }
