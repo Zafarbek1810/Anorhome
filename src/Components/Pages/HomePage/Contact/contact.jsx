@@ -131,7 +131,7 @@ const Contact = () => {
         <hr />
         <Container>
           <div className="everbest">
-            <p className="anorhome">(c) Anorhome, 2023.</p>
+            <p className="anorhome">© Anorhome, 2023.</p>
             <MyLink to={"/"} className="link">
               {t("footer.everbest")} EverbestLab
             </MyLink>
