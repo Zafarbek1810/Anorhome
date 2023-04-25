@@ -2,42 +2,43 @@ import styled from "styled-components";
 
 const BannerWrapper = styled.div`
   background-image: linear-gradient(
-      90deg,
-      #161a1d 36.48%,
-      rgba(22, 26, 29, 0.6) 65.12%,
-      rgba(22, 26, 29, 0) 100%
-    );
-    /* url("/images/banner.jpg"); */
+    90deg,
+    #161a1d 36.48%,
+    rgba(22, 26, 29, 0.6) 65.12%,
+    rgba(22, 26, 29, 0) 100%
+  );
+  /* url("/images/banner.jpg"); */
   height: 100vh;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  
-  .imgCarousel{
+
+  .imgCarousel {
     height: 100vh !important;
     overflow-y: hidden;
   }
-.cont {
-  position: relative;
-  z-index: 4;
-}
-.top-title{
-  font-family: "Montserrat";
-  font-style: normal;
-  font-size: 20px;
-  color: #FE152B;
-}
+  .cont {
+    position: relative;
+    z-index: 4;
+  }
+  .top-title {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fe152b;
+  }
   .img-wrapper {
     position: absolute;
     width: 100%;
     height: 100%;
     &:after {
       background-image: linear-gradient(
-      90deg,
-      #161a1d 36.48%,
-      rgba(22, 26, 29, 0.6) 65.12%,
-      rgba(22, 26, 29, 0) 100%
+        90deg,
+        #161a1d 36.48%,
+        rgba(22, 26, 29, 0.6) 65.12%,
+        rgba(22, 26, 29, 0) 100%
       );
       z-index: 3;
       top: 0;
@@ -46,25 +47,25 @@ const BannerWrapper = styled.div`
       width: 100%;
       height: 100%;
       display: block;
-      content: '';
+      content: "";
     }
 
-     img {
+    img {
       width: 100%;
       height: 100vh;
       object-fit: cover;
       transform: translateX(200px);
-     }
+    }
 
-     .slick-dots.slick-dots-bottom {
+    .slick-dots.slick-dots-bottom {
       display: none !important;
-     }
+    }
   }
 
   .carusel {
     width: 710px;
     /* height: auto !important; */
-    
+
     .wrap {
       position: relative;
       height: 100vh;
@@ -81,9 +82,9 @@ const BannerWrapper = styled.div`
         font-size: 72px;
         line-height: 76px;
         color: #ffffff;
-        margin: 3px 0; 
+        margin: 3px 0;
         text-transform: uppercase;
-        span { 
+        span {
           background-image: linear-gradient(90deg, #ff6a00, #ee0979);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
@@ -105,113 +106,60 @@ const BannerWrapper = styled.div`
       /* ============== button hover  start======================== */
 
       .buttons {
+        padding: 10px;
+        position: relative;
+        width: 30%;
+        a {
           padding: 10px;
-          position: relative;
-          width: 30%;
-          a {
-            padding: 10px;
-            display: inline-block;
-            text-align: center;
-            width: 100%;
-            background-color: #fff;
-            color: #fe152b;
-            font-family: "Mulish";
-            font-style: normal;
-            font-weight: 600;
-            font-size: 16px;
-            line-height: 19px;
+          display: inline-block;
+          text-align: center;
+          width: 100%;
+          background-color: #fff;
+          color: #fe152b;
+          font-family: "Mulish";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 19px;
+          transition: 0.3s;
+
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 3%;
+            height: 100%;
+            border: 1px solid #fe152b;
+            border-right: none;
             transition: 0.3s;
+          }
 
-            &::before {
-              content: "";
-              position: absolute;
-              top: 0;
-              left: 0;
-              width: 3%;
-              height: 100%;
-              border: 1px solid #fe152b;
-              border-right: none;
-              transition: 0.3s;
-            }
+          &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 3%;
+            height: 100%;
+            border: 1px solid #fe152b;
+            border-left: none;
+            transition: 0.3s;
+          }
 
-            &::after {
-              content: "";
-              position: absolute;
-              top: 0;
-              right: 0;
-              width: 3%;
-              height: 100%;
-              border: 1px solid #fe152b;
-              border-left: none;
-              transition: 0.3s;
-            }
+          &:hover {
+            background: #fe152b;
+            color: #ffffff;
+          }
 
-            &:hover {
-              background: #fe152b;
-              color: #ffffff;
-            }
-
-            &:hover:after,
-            &:hover:before {
-              transition: width 350ms ease-in-out;
-              width: 50%;
-              border-color: #fe152b;
-            }
+          &:hover:after,
+          &:hover:before {
+            transition: width 350ms ease-in-out;
+            width: 50%;
+            border-color: #fe152b;
           }
         }
-
-      /* .buttons {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        width: 100%;
-        margin-bottom: 30px;
-      } */
-
-      /* .btn {
-        font-family: "Mulish";
-        font-weight: 500;
-        font-size: 16px;
-        color: #fff;
-        cursor: pointer;
-        max-width: 160px !important;
-        padding: 15px 30px;
-        position: relative;
-        width: 100%;
-        background: #fe152b;
-      } */
-
-      /* .btn:hover {
-        text-decoration: none;
-      } */
-
-      /* .btn-4 { */
-        /* border: 1px solid; */
-        /* overflow: hidden; */
-        /* position: relative; */
-      /* } */
-      /* .btn-4 span {
-        z-index: 20;
-      } */
-      /* .btn-4:after {
-        background: #fff;
-        content: "";
-        height: 155px;
-        left: -75px;
-        opacity: 0.2;
-        position: absolute;
-        top: -50px;
-        transform: rotate(35deg);
-        transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
-        width: 50px;
-        z-index: 10;
-      } */
-
-      /* .btn-4:hover:after {
-        left: 120%;
-        transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
-      } */
+      }
     }
 
     /* =================== button hover end =================== */
@@ -238,7 +186,7 @@ const BannerWrapper = styled.div`
         button {
           height: 4px !important;
           background: #fe152b !important;
-          animation: dot 9.7s linear infinite;
+          animation: dot 7s linear infinite;
         }
       }
     }
@@ -273,21 +221,24 @@ const BannerWrapper = styled.div`
   }
 
   @media (max-width: 600px) {
-    .img-wrapper{
-      img{
+    .img-wrapper {
+      img {
         transform: translateX(0px);
       }
     }
-    .carusel{
-      .title{
+    .carusel {
+      .title {
         font-size: 32px !important;
         line-height: 40px !important;
       }
 
-      .descr{
+      .descr {
         font-size: 14px !important;
         margin-bottom: 10px;
       }
+    }
+    .buttons {
+      width: 70% !important;
     }
   }
 `;
