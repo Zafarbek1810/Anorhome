@@ -71,6 +71,8 @@ const ServicesWrapper = styled.div`
           /* left: 0; */
           text-transform: capitalize;
           position: relative;
+          margin-left: 20px;
+          padding: 10px;
           
           &::before {
               content: "";
@@ -84,7 +86,7 @@ const ServicesWrapper = styled.div`
               transition: 0.3s;
             }
 
-            &::after {
+            /* &::after {
               content: "";
               position: absolute;
               top: 0;
@@ -94,7 +96,7 @@ const ServicesWrapper = styled.div`
               border: 1px solid #fe152b;
               border-left: none;
               transition: 0.3s;
-            }
+            } */
         }
       }
       .col-2 {
