@@ -25,15 +25,15 @@ const ContactWrappper = styled.div`
     width: 40px;
   }
   .title {
-    border-top: 1px solid #161a1d;
-    border-bottom: 1px solid #161a1d;
-    background: #fff;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    background: #161a1d;
     h3 {
       font-style: normal;
-      font-weight: 700;
+      font-weight: 600;
       font-size: 40px;
       line-height: 48px;
-      color: #161a1d;
+      color: #fff;
     }
   }
   .contact {

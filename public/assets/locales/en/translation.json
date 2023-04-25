@@ -52,7 +52,7 @@
     "p1": "Satisfied clients",
     "p2": "Project profitability",
     "p3": "Sq meters implemented",
-    "p4": "Years of employees experience",
+    "p4": "Experience of employees",
     "age":"year"
   },
   "projects": {
@@ -172,7 +172,8 @@
     "link3": "Projects",
     "link4": "Contact Us",
     "social": "Our Social Media",
-    "everbest": "Powered by"
+    "everbest": "Powered by",
+    "copywrite":" All rights reserved."
   },
 
   "modal": {

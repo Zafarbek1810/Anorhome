@@ -108,10 +108,10 @@ const HeroWrapper = styled.div`
     }
     &__box-red {
       position: absolute;
-      width: 160px;
+      width: 164px;
       background: #fe172d;
       margin-top: 10px;
-      padding: 5px 0;
+      padding: 5px 2px;
       text-align: center;
       transform: translateY(100px) translateX(-5px);
 
