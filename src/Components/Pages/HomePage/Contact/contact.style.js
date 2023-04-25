@@ -114,7 +114,7 @@ const ContactWrappper = styled.div`
   .footer {
     background-color: #161a1d;
     .footer__wrapper {
-      padding: 75px 0 50px;
+      padding: 75px 0 20px;
       display: flex;
       align-items: start;
       flex-wrap: wrap;
@@ -180,9 +180,12 @@ const ContactWrappper = styled.div`
       }
     }
     .everbest {
-      width: 100%;
+      margin-left: auto;
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
       padding: 10px 0 20px;
-      text-align: center;
       .link {
         font-family: "Montserrat";
         font-style: normal;
@@ -190,15 +193,38 @@ const ContactWrappper = styled.div`
         font-size: 12px;
         color: #fff;
       }
+      .anorhome {
+        transform: translateX(-50%);
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+        color: #fff;
+      }
     }
   }
 
   @media (max-width: 800px) {
+    .footer {
+      .footer__items {
+      width: 50%;
+      padding-top: 0px;
+      gap: 14px;
+      display: flex;
+    }
+      .everbest {
+        width: 100%;
+        .anorhome {
+          transform: translateX(0%);
+        }
+      }
+    }
     .contact {
       display: flex;
       flex-direction: column-reverse;
       &__info {
         width: 100%;
+        padding: 40px 0;
       }
       &__map {
         width: 100%;
@@ -228,6 +254,12 @@ const ContactWrappper = styled.div`
         .footer__items {
           width: 100%;
           justify-content: space-between;
+        }
+      }
+      .everbest {
+        width: 100%;
+        .anorhome {
+          transform: translateX(0%);
         }
       }
     }

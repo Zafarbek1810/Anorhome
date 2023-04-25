@@ -17,9 +17,6 @@ const Footer = () => {
           <div className="footer__info">
             {/* <img src="/images/footer-logo.png" alt="Footer Logo" /> */}
             <FooterLogoSvg/>
-            <p>
-            {t('footer.descr')}
-            </p>
           </div>
           <div className="footer__items">
             <MyLink to={"/services"} className="links">{t('footer.link1')}</MyLink>
@@ -40,6 +37,9 @@ const Footer = () => {
       </Container>
       <hr />
       <Container>
+      <div>
+          <p>(c) Anorhome, 2023.</p>
+        </div>
         <div className="everbest">
           <MyLink to={"/"} className="link">{t('footer.everbest')} EverbestLab</MyLink>
         </div>

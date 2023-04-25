@@ -113,7 +113,6 @@ const Contact = () => {
             <div className="footer__info">
               {/* <img src="/images/footer-logo.png" alt="Footer Logo" /> */}
               <FooterLogoSvg />
-              <p>{t("footer.descr")}</p>
             </div>
             <div className="footer__items">
               <MyLink to={"/services"} className="links">
@@ -129,12 +128,15 @@ const Contact = () => {
             </div>
           </div>
         </Container>
-        <div className="everbest">
-          <hr />
-          <MyLink to={"/"} className="link">
-            {t("footer.everbest")} EverbestLab
-          </MyLink>
-        </div>
+        <hr />
+        <Container>
+          <div className="everbest">
+            <p className="anorhome">© Anorhome, 2023.</p>
+            <MyLink to={"/"} className="link">
+              {t("footer.everbest")} EverbestLab
+            </MyLink>
+          </div>
+        </Container>
       </div>
     </ContactWrappper>
   );
