@@ -385,7 +385,7 @@ const MainHeaderWrapper = styled.div`
         color: #fff !important;
         cursor: pointer;
         max-width: 160px !important;
-        padding: 10px 12px ;
+        padding: 10px 15px ;
         position: relative;
         width: 100%;
         background: #000;
