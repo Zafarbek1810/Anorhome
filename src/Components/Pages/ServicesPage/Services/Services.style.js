@@ -59,6 +59,7 @@ const ServicesWrapper = styled.div`
         }
 
         p {
+          width: 80%;
           font-family: "Mulish";
           font-style: normal;
           font-weight: 800;
@@ -69,6 +70,31 @@ const ServicesWrapper = styled.div`
           /* top: 25%; */
           /* left: 0; */
           text-transform: capitalize;
+          position: relative;
+          
+          &::before {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: -10px;
+              width: 3%;
+              height: 100%;
+              border: 1px solid #fe152b;
+              border-right: none;
+              transition: 0.3s;
+            }
+
+            &::after {
+              content: "";
+              position: absolute;
+              top: 0;
+              right: 0;
+              width: 3%;
+              height: 100%;
+              border: 1px solid #fe152b;
+              border-left: none;
+              transition: 0.3s;
+            }
         }
       }
       .col-2 {

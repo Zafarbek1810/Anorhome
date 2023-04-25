@@ -30,6 +30,7 @@ const TemplateWrapper = styled.div`
         width: 100%;
         height: 450px;
         object-fit: cover;
+        filter: brightness(50%)
       }
 
       .descr {

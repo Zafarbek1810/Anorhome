@@ -732,7 +732,7 @@ const ServiceSecond = ({ id }) => {
       <Header />
       <Template id={id} />
       <Contact />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };
@@ -742,7 +742,7 @@ const ServiceThird = ({ id }) => {
       <Header />
       <Template id={id} />
       <Contact />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };
@@ -752,7 +752,7 @@ const ServiceFourth = ({ id }) => {
       <Header />
       <Template id={id} />
       <Contact />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };
@@ -762,7 +762,7 @@ const ServiceFifth = ({ id }) => {
       <Header />
       <Template id={id} />
       <Contact />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };
