@@ -8,33 +8,33 @@ const ourStaffs = [
   {
     img: "/aboutUs/staff3.jpg",
     title: "Anvar Bahodirovich Anarbayev",
-    text: "President of Anorhome.com",
+    text: "aboutUs.staff1",
   },
-  {
-    img: "/aboutUs/staff2.png",
-    title: "John Wick",
-    text: "President of Anorhome.com",
-  },
-  {
-    img: "/aboutUs/staff4.png",
-    title: "John Wick",
-    text: "President of Anorhome.com",
-  },
-  {
-    img: "/aboutUs/staff4.png",
-    title: "John Wick",
-    text: "President of Anorhome.com",
-  },
-  {
-    img: "/aboutUs/staff5.png",
-    title: "John Wick",
-    text: "President of Anorhome.com",
-  },
-  {
-    img: "/aboutUs/staff2.png",
-    title: "John Wick",
-    text: "President of Anorhome.com",
-  },
+  // {
+  //   img: "/aboutUs/staff2.png",
+  //   title: "John Wick",
+  //   text: "President of Anorhome.com",
+  // },
+  // {
+  //   img: "/aboutUs/staff4.png",
+  //   title: "John Wick",
+  //   text: "President of Anorhome.com",
+  // },
+  // {
+  //   img: "/aboutUs/staff4.png",
+  //   title: "John Wick",
+  //   text: "President of Anorhome.com",
+  // },
+  // {
+  //   img: "/aboutUs/staff5.png",
+  //   title: "John Wick",
+  //   text: "President of Anorhome.com",
+  // },
+  // {
+  //   img: "/aboutUs/staff2.png",
+  //   title: "John Wick",
+  //   text: "President of Anorhome.com",
+  // },
    
 ];
 
@@ -67,7 +67,7 @@ const TeamSection = () => {
                       <img src={img} />{" "}
                     </div>
                     <h2>{title}</h2>
-                    <p>{text}</p>
+                    <p>{t(text)}</p>
                   </div>
                 </div>
               ))}

@@ -1,14 +1,15 @@
 import styled from "styled-components";
 
 const ValuesWrapper = styled.div`
-  background-color: #fff;
-  padding-top: 100px;
+  background-color: #161A1D;
+  padding-top: 50px;
+  padding-bottom: 50px;
   section {
-    color: #fff;
+    color: #161A1D;
   }
   .title {
-    border-top: 1px solid #161a1d;
-    border-bottom: 1px solid #161a1d;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
 
     h3 {
       font-family: "Mulish";
@@ -16,12 +17,11 @@ const ValuesWrapper = styled.div`
       font-weight: 700;
       font-size: 40px;
       line-height: 48px;
-      color: #161a1d;
+      color: #fff;
     }
   }
   .box__wrapper {
     display: flex;
-    align-items: center;
     justify-content: space-between;
     padding-top: 60px;
   }
@@ -29,7 +29,8 @@ const ValuesWrapper = styled.div`
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    background: #ffffff;
+    justify-content: space-between;
+    background: #161A1D;
     transition: 0.2s;
     width: calc((100% - 100px) / 4);
     padding-top: 28px;
@@ -50,7 +51,7 @@ const ValuesWrapper = styled.div`
       font-size: 24px;
       line-height: 29px;
       margin: 10px 0;
-      color: #000000;
+      color: #fff;
     }
     p {
       font-family: "Mulish";
@@ -60,7 +61,7 @@ const ValuesWrapper = styled.div`
       line-height: 17px;
       text-align: start;
       margin: 0;
-      color: #161a1d;
+      color: #fff;
     }
   }
   // TABLET

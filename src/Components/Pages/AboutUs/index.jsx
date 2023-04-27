@@ -15,10 +15,10 @@ const AboutUs = () => {
       <Header />
       <Hero />
       <HistorySection />
-      <TeamSection />
       <ValuesSection />
+      <TeamSection />
       {/* <Testimonials /> */}
-      <Clients />
+      {/* <Clients /> */}
       <Contact />
       {/* <Footer /> */}
     </div>

@@ -9,18 +9,6 @@ import ProIcon from "../../../Common/Svgs/ProIcon";
 
 const data=[
   {
-    img:"/images/projects/termiz/pro.jpg",
-    city:"Termez Internatinal Trade Center",
-    date:" 12.01.2023",
-    link:"/projects?title=Termez%20Internatinal%20Trade%20Center"
-  },
-  {
-    img:"/images/projects/travel/pro.jpg",
-    city:"Travel Business Center",
-    date:" 12.01.2023",
-    link:"/projects?title=Travel%20Business%20Center"
-  },
-  {
     img:"/images/projects/kamolon/9.jpg",
     city:"Yangi Komolon",
     date:" 12.01.2023",
@@ -31,6 +19,18 @@ const data=[
     city:"Buyuk Ipak Yo‘li 311",
     date:" 12.01.2023",
     link:"/projects?title=Buyuk%20Ipak%20Yo‘li%20311"
+  },
+  {
+    img:"/images/projects/termiz/pro.jpg",
+    city:"Termez Internatinal Trade Center",
+    date:" 12.01.2023",
+    link:"/projects?title=Termez%20Internatinal%20Trade%20Center"
+  },
+  {
+    img:"/images/projects/travel/pro.jpg",
+    city:"Travel Business Center",
+    date:" 12.01.2023",
+    link:"/projects?title=Travel%20Business%20Center"
   }
 ]
 const ThirdSection = () => {

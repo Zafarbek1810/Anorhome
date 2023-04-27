@@ -110,14 +110,16 @@
 
     "team": "Bizning Jamoa",
     "values": "Bizning Qadriyatlar",
-    "values-tit1": "Professionallik",
-    "values-p1": "Bizning jamoamiz ishimizning barcha jabhalarida, mijozlar bilan o'zaro munosabatlarimizdan tortib, yetkazib berish sifatiga qadar eng yuqori professionallik standartlarini saqlab qolishga intiladi.",
-    "values-tit2": "Ishonchlilik",
-    "values-p2": "Biz oshkora va etik muloqot orqali mijozlarimiz bilan ishonchni mustahkamlash va saqlashga alohida ahamiyat beramiz.",
-    "values-tit3": "Global Nigoh",
-    "values-p3": "Biz keng qamrovli tarmoqlarimiz va bozor bilimlarimizdan foydalangan holda, mijozlarimizga xalqaro ko'chmas mulk landshaftini to'liq tushunishga yordam beramiz.",
-    "values-tit4": "Doimiy Yuksalish",
-    "values-p4": "Biz doimiy ravishda rivojlanayotgan ko'chmas mulk bozorida oldinda bo'lishga, tendentsiyalarni oldindan bilish va mijozlarimizga doimiy yuksalish uchun paydo bo'ladigan imkoniyatlardan foydalanishga yordam beramiz."
+    "values-tit1": "Bizning qimmatli tajribamiz",
+    "values-p1": "Bu erda biz siz bilan qimmatli tajribamizni baham ko'ramiz. Anorhome hamkori bo'lish orqali loyihangiz ushbu sahifaning bir qismiga aylanishi mumkin.",
+    "values-tit2": "Maqsad",
+    "values-p2": "Anorhome kompaniyasining asosiy maqsadi jahon tajribasini, shuningdek, har bir loyihamizdan olingan tajribani o‘zlashtirib, ko‘chmas mulk bozorida eng qimmatli hamkor va maslahatchiga aylanishdir.",
+    "values-tit3": "Missiya",
+    "values-p3": "Oʻzbekistonda koʻchmas mulk boʻyicha konsaltingning kashfiyotchilari sifatida bizning asosiy vazifamiz barchaga professional va sifatli xizmatlarni taqdim etish orqali koʻchmas mulk bozorining salohiyatini namoyish qilishdan iborat.",
+    "values-tit4": "Qiymat",
+    "values-p4": "Bu bizning hamkorimiz yoki mijozimiz bo'ladimi, ular Anorhome uchun eng qimmatli narsadir va yuqori sifatli xizmat ko'rsatish, halollikni saqlash va barchaga alohida e'tibor berish orqali biz uzoq muddatli munosabatlarni saqlab qolishga intilamiz.",
+
+    "staff1":"Ta'sischi va Ijrochi Direktor"
   },
 
   "projectPage": {

@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 const TeamWrapper = styled.div`
-background-color: #161A1D;
+background-color: #fff;
  .title {
-    border-top: 1px solid #ffffff;
-    border-bottom: 1px solid #ffffff;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
 
     h3 {
       font-family: "Mulish";
@@ -12,7 +12,7 @@ background-color: #161A1D;
       font-weight: 700;
       font-size: 40px;
       line-height: 48px; 
-      color: #ffffff;
+      color: #161A1D;
     }
   }
 section{
@@ -55,7 +55,7 @@ section{
       font-size: 24px;
       line-height: 29px; 
       letter-spacing: 0.1em; 
-      color: #ffffff;
+      color: #000;
     }
     p {
       font-family: "Mulish";
@@ -64,7 +64,7 @@ section{
       font-size: 16px;
       line-height: 20px;
       letter-spacing: 0.1em; 
-      color: #ffffff;
+      color: #000;
     }
   }
 
