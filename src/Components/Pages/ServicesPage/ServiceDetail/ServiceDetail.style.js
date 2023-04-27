@@ -4,14 +4,9 @@ const TemplateWrapper = styled.div`
   padding-top: 100px;
   background: #161a1d;
   box-sizing: border-box;
-  .banner {
-    display: flex;
-    margin-bottom: 70px;
-    .left {
-      width: 30%;
-      z-index: 33;
-      .title {
-        width: 220%;
+
+  .title {
+        /* width: 220%; */
         font-family: "Mulish";
         font-style: normal;
         font-weight: 900;
@@ -19,16 +14,35 @@ const TemplateWrapper = styled.div`
         line-height: 74px;
         color: #ffffff;
       }
+
+  .banner {
+    /* display: flex; */
+    margin-bottom: 70px;
+    position: relative;
+    .left {
+      width: 100%;
+      position: absolute;
+      z-index: 33;
+      .title {
+        width: 100%;
+        font-family: "Mulish";
+        font-style: normal;
+        font-weight: 900;
+        font-size: 70px;
+        text-align: center;
+        line-height: 74px;
+        color: #ffffff;
+      }
     }
 
     .right {
-      width: 70%;
+      width: 100%;
       display: flex;
       flex-direction: column;
 
       img {
         width: 100%;
-        height: 450px;
+        height: 500px;
         object-fit: cover;
         filter: brightness(50%)
       }

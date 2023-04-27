@@ -53,7 +53,7 @@ const HistoryWrapper = styled.div`
       }
     }
     .box__right {
-      width: 60%;
+      width: 100%;
       p {
         font-family: "Mulish";
         font-style: normal;

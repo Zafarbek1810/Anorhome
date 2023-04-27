@@ -328,7 +328,7 @@ const MainHeaderWrapper = styled.div`
     z-index: 5555;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     transition: 0.3s ease-out !important;
-    height: 70px;
+    /* height: 70px; */
     font-family: sans-serif;
 
     .lang {

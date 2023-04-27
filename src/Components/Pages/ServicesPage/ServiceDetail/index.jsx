@@ -237,7 +237,7 @@ const Template = ({ id }) => {
     {
       id: "1",
       banner: {
-        title: "hero.title2",
+        title: "hero.title-top2",
         title2: "hero.title-span2",
         img: "/images/banner2.jpg",
         descr: "hero.paragr2",
@@ -272,7 +272,7 @@ const Template = ({ id }) => {
       about: {
         title: "About Service",
         descr1: t("services.aboutP2"),
-        descr2: "",
+        descr2: "hero.descr2",
       },
       services: {
         title: "Other Services",
@@ -299,7 +299,7 @@ const Template = ({ id }) => {
     {
       id: "2",
       banner: {
-        title: "hero.title5",
+        title: "hero.title-top5",
         title2: "hero.title-span5",
         img: "/images/banner5.jpg",
         descr: "hero.paragr5",
@@ -334,7 +334,7 @@ const Template = ({ id }) => {
       about: {
         title: "About Service",
         descr1: t("services.aboutP5"),
-        descr2: "",
+        descr2: "hero.descr5",
       },
       services: {
         title: "Other Services",
@@ -362,7 +362,7 @@ const Template = ({ id }) => {
       id: "3",
       title: "hero.title-span",
       banner: {
-        title: "hero.title",
+        title: "hero.title-top",
         title2: "hero.title-span",
         img: "/images/banner.jpg",
         descr: "hero.paragr",
@@ -398,7 +398,7 @@ const Template = ({ id }) => {
       about: {
         title: "About Service",
         descr1: t("services.aboutP1"),
-        descr2: "",
+        descr2: "hero.descr",
       },
   
       services: {
@@ -426,7 +426,7 @@ const Template = ({ id }) => {
     {
       id: "4",
       banner: {
-        title: "hero.title3",
+        title: "hero.title-top3",
         title2: "hero.title-span3",
         img: "/images/banner3.jpg",
         descr: "hero.paragr3",
@@ -461,7 +461,7 @@ const Template = ({ id }) => {
       about: {
         title: "About Service",
         descr1: t("services.aboutP3"),
-        descr2: "",
+        descr2: "hero.descr3",
       },
       services: {
         title: "Other Services",
@@ -488,7 +488,7 @@ const Template = ({ id }) => {
     {
       id: "5",
       banner: {
-        title: "hero.title4",
+        title: "hero.title-top4",
         title2: "hero.title-span4",
         img: "/images/banner4.jpg",
         descr: "hero.paragr4",
@@ -523,7 +523,7 @@ const Template = ({ id }) => {
       about: {
         title: "About Service",
         descr1: t("services.aboutP4"),
-        descr2: "",
+        descr2: "hero.descr4",
       },
       services: {
         title: "Other Services",
@@ -596,16 +596,18 @@ const Template = ({ id }) => {
     return obj.id !==id
   })
 
+  
   return (
     <TemplateWrapper>
       <Container>
+            {/* <h3 className="title">{t(object[0].banner.title)} {t(object[0].banner.title2)}</h3> */}
         <div className="banner">
           <div className="left">
-            <h3 className="title">{t(object[0].banner.title)} {t(object[0].banner.title2)}</h3>
+            <h3 className="title">{t(object[0].banner.title)} </h3>
           </div>
           <div className="right">
             <img src={object[0].banner.img} alt="" />
-            <p className="descr">{t(object[0].banner.descr)}</p>
+            {/* <p className="descr">{t(object[0].banner.descr)}</p> */}
           </div>
         </div>
       </Container>
@@ -653,7 +655,7 @@ const Template = ({ id }) => {
             {t(object[0].about.descr1)}
           </p>
           <br />
-          <p className="descr">{object[0].about.descr2}</p>
+          <p className="descr">{t(object[0].about.descr2)}</p>
         </Container>
       </div>
       <ThirdSection />
@@ -668,20 +670,6 @@ const Template = ({ id }) => {
             <div className="cards">
                 <div className="card">
                   <div className="cardImg">
-                    <img src={objOtherData[0].img} alt="" />
-                  </div>
-                  <h5 className="titles">
-                    {objOtherData[0].p1}
-                  </h5>
-                  <p className="descr">{objOtherData[0].p2}</p>
-                  <section class="buttons">
-                    <MyLink to={`/service_details?id=${objOtherData[0].id}`} className="btn btn-4">
-                      <span>{t("button.btn")}</span>
-                    </MyLink>
-                  </section>
-                </div>
-                <div className="card">
-                  <div className="cardImg">
                     <img src={objOtherData[1].img} alt="" />
                   </div>
                   <h5 className="titles">
@@ -689,7 +677,7 @@ const Template = ({ id }) => {
                   </h5>
                   <p className="descr">{objOtherData[1].p2}</p>
                   <section class="buttons">
-                  <MyLink to={`/service_details?id=${objOtherData[1].id}`} className="btn btn-4">
+                    <MyLink to={`/service_details?id=${objOtherData[1].id}`} className="btn btn-4">
                       <span>{t("button.btn")}</span>
                     </MyLink>
                   </section>
@@ -704,6 +692,20 @@ const Template = ({ id }) => {
                   <p className="descr">{objOtherData[2].p2}</p>
                   <section class="buttons">
                   <MyLink to={`/service_details?id=${objOtherData[2].id}`} className="btn btn-4">
+                      <span>{t("button.btn")}</span>
+                    </MyLink>
+                  </section>
+                </div>
+                <div className="card">
+                  <div className="cardImg">
+                    <img src={objOtherData[3].img} alt="" />
+                  </div>
+                  <h5 className="titles">
+                    {objOtherData[3].p1}
+                  </h5>
+                  <p className="descr">{objOtherData[3].p2}</p>
+                  <section class="buttons">
+                  <MyLink to={`/service_details?id=${objOtherData[3].id}`} className="btn btn-4">
                       <span>{t("button.btn")}</span>
                     </MyLink>
                   </section>
