@@ -87,6 +87,7 @@ const TemplateWrapper = styled.div`
 
         .card {
           padding: 0 30px;
+          width: 25%;
           h5.title {
             margin: 10px 0;
             font-family: "Mulish";
