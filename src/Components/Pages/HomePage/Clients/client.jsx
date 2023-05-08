@@ -28,6 +28,7 @@ const Clients = () => {
               <img src="/images/Travel-logo.png" alt="Travel Business center logo" className="travel" />
               <img src="/images/komolon.svg" alt="Komolon residence logo"  className="komolon" />
               <img src="/images/amt-svg.svg" alt="auto mall tiger logo" className="amt" />
+              <img src="/images/intermex.png" alt="Intermex logo" className="inter" />
               <img src="/images/sr-logo.png" alt="sergeli residence" className="sr" />
             </div>
         </Container>

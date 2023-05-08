@@ -39,6 +39,9 @@ const ClientsWrapper = styled.div`
   .sr {
     width: 110px;
   }
+  .inter{
+    width: 140px;
+  }
 
   @media (max-width: 800px) {
     .clients__logo {
@@ -63,6 +66,9 @@ const ClientsWrapper = styled.div`
     .sr {
       width: 100px;
     }
+    .inter{
+    width: 140px;
+  }
   }
 `;
 export { ClientsWrapper };

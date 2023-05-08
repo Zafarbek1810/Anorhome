@@ -28,17 +28,17 @@ const data = [
       card2: {
         svg: "/images/vector2.png",
         title: "services.work-title2",
-        descr: "services.work-p1",
+        descr: "services.work-p2",
       },
       card3: {
         svg: "/images/vector3.png",
         title: "services.work-title3",
-        descr: "services.work-p1",
+        descr: "services.work-p3",
       },
       card4: {
         svg: "/images/vector4.png",
         title: "services.work-title4",
-        descr: "services.work-p1",
+        descr: "services.work-p4",
       },
     },
     about: {
@@ -65,17 +65,17 @@ const data = [
       card2: {
         svg: "/images/vector2.png",
         title: "services.work-title2",
-        descr: "services.work-p1",
+        descr: "services.work-p2",
       },
       card3: {
         svg: "/images/vector3.png",
         title: "services.work-title3",
-        descr: "services.work-p1",
+        descr: "services.work-p3",
       },
       card4: {
         svg: "/images/vector4.png",
         title: "services.work-title4",
-        descr: "services.work-p1",
+        descr: "services.work-p4",
       },
     },
     about: {
@@ -102,17 +102,17 @@ const data = [
       card2: {
         svg: "/images/vector2.png",
         title: "services.work-title2",
-        descr: "services.work-p1",
+        descr: "services.work-p2",
       },
       card3: {
         svg: "/images/vector3.png",
         title: "services.work-title3",
-        descr: "services.work-p1",
+        descr: "services.work-p3",
       },
       card4: {
         svg: "/images/vector4.png",
         title: "services.work-title4",
-        descr: "services.work-p1",
+        descr: "services.work-p4",
       },
     },
     about: {
@@ -140,17 +140,17 @@ const data = [
       card2: {
         svg: "/images/vector2.png",
         title: "services.work-title2",
-        descr: "services.work-p1",
+        descr: "services.work-p2",
       },
       card3: {
         svg: "/images/vector3.png",
         title: "services.work-title3",
-        descr: "services.work-p1",
+        descr: "services.work-p3",
       },
       card4: {
         svg: "/images/vector4.png",
         title: "services.work-title4",
-        descr: "services.work-p1",
+        descr: "services.work-p4",
       },
     },
     about: {
@@ -178,17 +178,17 @@ const data = [
       card2: {
         svg: "/images/vector2.png",
         title: "services.work-title2",
-        descr: "services.work-p1",
+        descr: "services.work-p2",
       },
       card3: {
         svg: "/images/vector3.png",
         title: "services.work-title3",
-        descr: "services.work-p1",
+        descr: "services.work-p3",
       },
       card4: {
         svg: "/images/vector4.png",
         title: "services.work-title4",
-        descr: "services.work-p1",
+        descr: "services.work-p4",
       },
     },
     about: {
@@ -250,27 +250,27 @@ const Template = ({ id }) => {
         title: "How It Works",
         card1: {
           svg: "/images/vector.png",
-          title: "Fill Form",
+          title: "services.work-title1",
           descr:
-            "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
+            "services.work-p1",
         },
         card2: {
           svg: "/images/vector2.png",
-          title: "Administration",
+          title: "services.work-title2",
           descr:
-            "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
+            "services.work-p2",
         },
         card3: {
           svg: "/images/vector3.png",
-          title: "Keep In Touch",
+          title: "services.work-title3",
           descr:
-            "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
+            "services.work-p3",
         },
         card4: {
           svg: "/images/vector4.png",
-          title: "Make A Deal",
+          title: "services.work-title4",
           descr:
-            "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
+            "services.work-p4",
         },
       },
       about: {
@@ -313,27 +313,27 @@ const Template = ({ id }) => {
         title: "How It Works",
         card1: {
           svg: "/images/vector.png",
-          title: "Fill Form",
+          title: "services.work-title1",
           descr:
-            "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
+            "services.work-p1",
         },
         card2: {
           svg: "/images/vector2.png",
-          title: "Administration",
+          title: "services.work-title2",
           descr:
-            "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
+            "services.work-p2",
         },
         card3: {
           svg: "/images/vector3.png",
-          title: "Keep In Touch",
+          title: "services.work-title3",
           descr:
-            "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
+            "services.work-p3",
         },
         card4: {
           svg: "/images/vector4.png",
-          title: "Make A Deal",
+          title: "services.work-title4",
           descr:
-            "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
+            "services.work-p4",
         },
       },
       about: {
@@ -377,27 +377,27 @@ const Template = ({ id }) => {
         title: "How It Works",
         card1: {
           svg: "/images/vector.png",
-          title: "Fill Form",
+          title: "services.work-title1",
           descr:
-            "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
+            "services.work-p1",
         },
         card2: {
           svg: "/images/vector2.png",
-          title: "Administration",
+          title: "services.work-title2",
           descr:
-            "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
+            "services.work-p2",
         },
         card3: {
           svg: "/images/vector3.png",
-          title: "Keep In Touch",
+          title: "services.work-title3",
           descr:
-            "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
+            "services.work-p3",
         },
         card4: {
           svg: "/images/vector4.png",
-          title: "Make A Deal",
+          title: "services.work-title4",
           descr:
-            "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
+            "services.work-p4",
         },
       },
   
@@ -442,27 +442,27 @@ const Template = ({ id }) => {
         title: "How It Works",
         card1: {
           svg: "/images/vector.png",
-          title: "Fill Form",
+          title: "FiFormll ",
           descr:
-            "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
+            "services.work-p1",
         },
         card2: {
           svg: "/images/vector2.png",
-          title: "Administration",
+          title: "services.work-title2",
           descr:
-            "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
+            "services.work-p2",
         },
         card3: {
           svg: "/images/vector3.png",
-          title: "Keep In Touch",
+          title: "services.work-title3",
           descr:
-            "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
+            "services.work-p3",
         },
         card4: {
           svg: "/images/vector4.png",
-          title: "Make A Deal",
+          title: "services.work-title4",
           descr:
-            "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
+            "services.work-p4",
         },
       },
       about: {
@@ -505,27 +505,27 @@ const Template = ({ id }) => {
         title: "How It Works",
         card1: {
           svg: "/images/vector.png",
-          title: "Fill Form",
+          title: "services.work-title1",
           descr:
-            "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
+            "services.work-p1",
         },
         card2: {
           svg: "/images/vector2.png",
-          title: "Administration",
+          title: "services.work-title2",
           descr:
-            "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
+            "services.work-p2",
         },
         card3: {
           svg: "/images/vector3.png",
-          title: "Keep In Touch",
+          title: "services.work-title3",
           descr:
-            "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
+            "services.work-p3",
         },
         card4: {
           svg: "/images/vector4.png",
-          title: "Make A Deal",
+          title: "services.work-title4",
           descr:
-            "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
+            "services.work-p4",
         },
       },
       about: {
@@ -568,27 +568,27 @@ const Template = ({ id }) => {
         title: "How It Works",
         card1: {
           svg: "/images/vector.png",
-          title: "Fill Form",
+          title: "services.work-title1",
           descr:
-            "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
+            "services.work-p1",
         },
         card2: {
           svg: "/images/vector2.png",
-          title: "Administration",
+          title: "services.work-title2",
           descr:
-            "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
+            "services.work-p2",
         },
         card3: {
           svg: "/images/vector3.png",
-          title: "Keep In Touch",
+          title: "services.work-title3",
           descr:
-            "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
+            "services.work-p3",
         },
         card4: {
           svg: "/images/vector4.png",
-          title: "Make A Deal",
+          title: "services.work-title4",
           descr:
-            "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
+            "services.work-p4",
         },
       },
       about: {
