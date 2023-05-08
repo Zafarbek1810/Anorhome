@@ -41,7 +41,7 @@ const ValuesWrapper = styled.div`
       height: 40px;
       background: rgba(254, 21, 43, 0.1);
       border: 1px solid rgba(254, 21, 43, 0.2);
-      /* border-radius: 0p; */
+      border-radius: 50%;
       padding: 5px;
     }
     h3 {
@@ -74,9 +74,8 @@ const ValuesWrapper = styled.div`
     }
     .boxes {
       display: flex;
-      align-items: flex-start;
       flex-direction: column;
-      background: #ffffff;
+      justify-content: space-between;
       width: calc((100% - 40px) / 4);
       padding-top: 28px;
       padding-right: 1px;
@@ -109,7 +108,7 @@ const ValuesWrapper = styled.div`
       display: flex;
       align-items: flex-start;
       flex-direction: column;
-      background: #ffffff;
+      justify-content: space-between;
       width: calc((100% - 30px) / 2);
       padding-top: 50px;
       padding-right: 0;

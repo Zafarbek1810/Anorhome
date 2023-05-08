@@ -12,9 +12,10 @@ import Loader from '../src/Components/Common/Loader';
 import FormModal from "../src/Components/Common/ContactModal/FormModal";
 import AOS from "aos"
 import "aos/dist/aos.css";
-
+import 'react-toastify/dist/ReactToastify.css';
 import '../styles/globals.css'
 import { useRouter } from 'next/router';
+import { ToastContainer } from 'react-toastify';
 
 if (typeof window === undefined) {
   var window = {};
@@ -109,6 +110,17 @@ useEffect(() => {
       <HeaderProvider>
         <Component {...pageProps} />
         {loading && <Loader loading2={loading2} />}
+        <ToastContainer
+            position="top-right"
+            autoClose={3000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+          />
         <Modal>
           <FormModal />
         </Modal> 

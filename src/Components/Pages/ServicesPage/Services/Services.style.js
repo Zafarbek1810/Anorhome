@@ -41,10 +41,10 @@ const ServicesWrapper = styled.div`
   }
 
   .wrapper {
-      .box {
-        padding: 40px 20px;
-        display: flex;
-        border-bottom: 1px solid #ffffff;
+    .box {
+      padding: 40px 20px;
+      display: flex;
+      border-bottom: 1px solid #ffffff;
       .col-1 {
         width: 30%;
         position: relative;
@@ -55,7 +55,8 @@ const ServicesWrapper = styled.div`
           font-size: 128px;
           line-height: 154px;
           letter-spacing: 0.1em;
-          color: rgba(255, 255, 255);
+          color: rgba(255, 255, 255, 0.4);
+          position: absolute;
         }
 
         p {
@@ -65,38 +66,15 @@ const ServicesWrapper = styled.div`
           font-weight: 800;
           font-size: 36px;
           line-height: 43px;
-          color: #fe152b;
-          /* position: absolute; */
-          /* top: 25%; */
-          /* left: 0; */
+          color: #fff;
+          position: absolute;
+          top: 25%;
+          left: 0;
           text-transform: capitalize;
           position: relative;
           margin-left: 20px;
           padding: 10px;
-          
-          &::before {
-              content: "";
-              position: absolute;
-              top: 0;
-              left: -10px;
-              width: 3%;
-              height: 100%;
-              border: 1px solid #fe152b;
-              border-right: none;
-              transition: 0.3s;
-            }
 
-            /* &::after {
-              content: "";
-              position: absolute;
-              top: 0;
-              right: 0;
-              width: 3%;
-              height: 100%;
-              border: 1px solid #fe152b;
-              border-left: none;
-              transition: 0.3s;
-            } */
         }
       }
       .col-2 {
@@ -186,36 +164,42 @@ const ServicesWrapper = styled.div`
     }
   }
 
-  @media(max-width:1024px){
+
+
+  @media (max-width: 1024px) {
     padding: 50px 10px;
-    .top{
-      flex-direction:column;
-      text-align:center;
-      p{
+    .top {
+      flex-direction: column;
+      text-align: center;
+      p {
         width: 100%;
       }
-      h4{
+      h4 {
         width: 100%;
-        text-align:center;
+        text-align: center;
       }
     }
 
-    .wrapper{
-      .box{
-        flex-direction:column;
-        .col-1, .col-2, .col-3{
+    .wrapper {
+      .box {
+        flex-direction: column;
+        .col-1,
+        .col-2,
+        .col-3 {
           width: 100%;
-          margin-bottom:30px;
-          img{
+          margin-bottom: 30px;
+          img {
             /* transform:none !important; */
             height: 150%;
           }
         }
 
-        .col-3{
-          padding-left:0;
-          p{
-            margin-bottom:30px;
+        .col-3 {
+          padding-left: 0;
+          p {
+            margin-bottom: 30px;
+            font-size: 16px !important;
+          line-height: 19px !important;
           }
         }
       }

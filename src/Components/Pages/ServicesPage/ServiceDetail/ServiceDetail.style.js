@@ -132,7 +132,7 @@ const TemplateWrapper = styled.div`
       font-weight: 400;
       font-size: 18px;
       line-height: 22px;
-
+      white-space: pre-wrap;
       color: #d1d1d1;
     }
   }

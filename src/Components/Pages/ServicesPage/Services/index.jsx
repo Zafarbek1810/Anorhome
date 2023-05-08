@@ -47,6 +47,13 @@ const Services = () => {
       img: "/images/services/service4.jpg",
       p2: t("hero.descr4"),
     },
+    {
+      id: "6",
+      span: "6",
+      p1: t("hero.title-top6"),
+      img: "/images/services/service6.jpg",
+      p2: t("hero.descr6"),
+    },
     
   ];
 

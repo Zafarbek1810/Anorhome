@@ -38,8 +38,8 @@ const Contact = () => {
                 <UserNumSvg />
               </span>
               <h4>{t("contact.phone")}</h4>
-              <p>+998 99 861 75 00</p>
               <p>+998 33 150 75 75</p>
+              <p>+998 78 150 75 75</p>
             </div>
             <div className="contact__box">
               <span className="contact__icon">

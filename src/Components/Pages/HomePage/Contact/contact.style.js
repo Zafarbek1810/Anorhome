@@ -2,16 +2,18 @@ import styled from "styled-components";
 
 const ContactWrappper = styled.div`
   background: #161a1d;
-  .socialSvg {
-    svg {
-      transform: translateY(3px) !important;
-    }
-  }
-  .emailSvg {
-    svg {
+
+  .emailSvg{
+    svg{
       transform: translateY(5px) !important;
     }
   }
+  .socialSvg{
+    svg{
+      transform: translateY(3px) !important;
+    }
+  }
+
   .pharmacies_placemarket {
     background: #baadf3;
     box-shadow: 0 12px 16px #1c009833;

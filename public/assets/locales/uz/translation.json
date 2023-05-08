@@ -59,8 +59,8 @@
   "projects": {
     "title": "Bizning Loyihalar",
     "info-top": "Strategik Konsalting",
-    "info-title": "Orzular Qurilishi",
-    "info-p": "Qurilishni loyihalash bo'yicha ekspertizamiz bilan orzuingizdagi binoni kashf eting.",
+    "info-title": "Bizning qimmatli tajribamiz",
+    "info-p": "Bu erda biz siz bilan qimmatli tajribamizni baham ko'ramiz. Anorhome hamkori bo'lish orqali loyihangiz ushbu sahifaning bir qismiga aylanishi mumkin.",
     "btn": "Hammasini Ko'rish",
     "gallery":"Loyiha galereyasi"
   },
@@ -93,7 +93,13 @@
     "aboutP3": "Kelajakdagi imkoniyatlar va bozor potentsialini tahlil qilish va baholash orqali biz sizga maksimal daromad olish va loyihangiz uchun xavflarni minimallashtirish uchun investitsiya maqsadlarida foydali bitimlarni taklif qilamiz.",
     "aboutP4": "Ko'chmas mulkni sotib olish, sotish, ijaraga berish yoki ijaraga berish bizning hayotimizda doimo muhim rol o'ynaydi, ammo hamma ham buni muvaffaqiyatli bajara olmaydi. Muvaffaqiyatli bitim to'g'ri va foydali bajarilishida baholanishi kerak. Qanday qilib foydali va to'g'ri bitim tuzish haqida sizga maslahat beramiz.",
     "aboutP5": "Ushbu xizmat o'z portfelida ko'chmas mulk aktivlari bo'lgan kompaniyalar va jismoniy shaxslar uchun mo'ljallangan bo'lib, ular tijorat va maishiy muammolarni hal qilish, shuningdek, hisobotlarni tayyorlash va ijarachilar bilan lizing shartnomalari bajarilishini nazorat qilish uchun professional Anorhome jamoasining aralashuvini talab qiladi.",
-    "other-ser": "Boshqa Xizmat"
+    "other-ser": "Boshqa Xizmat",
+    "about1":"",
+    "about2":"",
+    "about3":"",
+    "about4":"",
+    "about5":"",
+    "about6":""
   },
 
   "aboutUs":{

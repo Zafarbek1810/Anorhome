@@ -224,6 +224,10 @@ const ServiceDetail = ({ id }) => {
       Component = <ServiceFifth id={id} />;
       break;
     }
+    case "6": {
+      Component = <ServiceSixth id={id} />;
+      break;
+    }
   }
 
   return <div>{Component}</div>;
@@ -273,6 +277,7 @@ const Template = ({ id }) => {
         title: "About Service",
         descr1: t("services.aboutP2"),
         descr2: "hero.descr2",
+        descr:"services.about1",
       },
       services: {
         title: "Other Services",
@@ -335,6 +340,7 @@ const Template = ({ id }) => {
         title: "About Service",
         descr1: t("services.aboutP5"),
         descr2: "hero.descr5",
+        descr:"services.about2",
       },
       services: {
         title: "Other Services",
@@ -399,6 +405,7 @@ const Template = ({ id }) => {
         title: "About Service",
         descr1: t("services.aboutP1"),
         descr2: "hero.descr",
+        descr:"services.about3",
       },
   
       services: {
@@ -462,6 +469,7 @@ const Template = ({ id }) => {
         title: "About Service",
         descr1: t("services.aboutP3"),
         descr2: "hero.descr3",
+        descr:"services.about4",
       },
       services: {
         title: "Other Services",
@@ -524,6 +532,7 @@ const Template = ({ id }) => {
         title: "About Service",
         descr1: t("services.aboutP4"),
         descr2: "hero.descr4",
+        descr:"services.about5",
       },
       services: {
         title: "Other Services",
@@ -546,8 +555,70 @@ const Template = ({ id }) => {
             "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Scelerisque pulvinare",
         },
       },
-    }
-    
+    },
+    {
+      id: "6",
+      banner: {
+        title: "hero.title-top6",
+        title2: "hero.title-span6",
+        img: "/images/banner6.jpg",
+        descr: "hero.paragr6",
+      },
+      works: {
+        title: "How It Works",
+        card1: {
+          svg: "/images/vector.png",
+          title: "Fill Form",
+          descr:
+            "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
+        },
+        card2: {
+          svg: "/images/vector2.png",
+          title: "Administration",
+          descr:
+            "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
+        },
+        card3: {
+          svg: "/images/vector3.png",
+          title: "Keep In Touch",
+          descr:
+            "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
+        },
+        card4: {
+          svg: "/images/vector4.png",
+          title: "Make A Deal",
+          descr:
+            "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Sc",
+        },
+      },
+      about: {
+        title: "About Service",
+        descr1: "",
+        descr2: "hero.descr6",
+        descr:"services.about6",
+      },
+      services: {
+        title: "Other Services",
+        card1: {
+          img: "/images/card.png",
+          cardTitle: "Investment In Real State",
+          descr:
+            "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Scelerisque pulvinar  e",
+        },
+        card2: {
+          img: "/images/card.png",
+          cardTitle: "Investment In Real State",
+          descr:
+            "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Scelerisque pulvinar  e",
+        },
+        card3: {
+          img: "/images/card.png",
+          cardTitle: "Investment In Real State",
+          descr:
+            "Lorem ipsum dolor sit amet consectetur. Sit nulla lectus quis rhoncus scelerisque venenatis luctus nunc. Scelerisque pulvinare",
+        },
+      },
+    },
   ];
   const object = data.filter((obj) => {
     return obj.id == id;
@@ -589,6 +660,13 @@ const Template = ({ id }) => {
       p1: t("hero.title-top5"),
       img: "/images/services/service5.jpg",
       p2: t("hero.paragr5"),
+    },
+    {
+      id: "6",
+      span: "6",
+      p1: t("hero.title-top6"),
+      img: "/images/services/service5.jpg",
+      p2: t("hero.paragr6"),
     },
   ];
 
@@ -652,10 +730,10 @@ const Template = ({ id }) => {
         </div>
         <Container>
           <p className="descr" style={{ marginTop: 40 }}>
-            {t(object[0].about.descr1)}
+            {t(object[0].about.descr)}
           </p>
-          <br />
-          <p className="descr">{t(object[0].about.descr2)}</p>
+          {/* <br />
+          <p className="descr">{t(object[0].about.descr2)}</p> */}
         </Container>
       </div>
       <ThirdSection />
@@ -759,6 +837,16 @@ const ServiceFourth = ({ id }) => {
   );
 };
 const ServiceFifth = ({ id }) => {
+  return (
+    <>
+      <Header />
+      <Template id={id} />
+      <Contact />
+      {/* <Footer /> */}
+    </>
+  );
+};
+const ServiceSixth = ({ id }) => {
   return (
     <>
       <Header />

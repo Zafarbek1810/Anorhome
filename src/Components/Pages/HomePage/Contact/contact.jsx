@@ -37,15 +37,15 @@ const Contact = () => {
         <div className="contact" data-aos={"fade-up"}>
           <div className="contact__info">
             <div className="contact__box">
-              <span className="contact__icon">
+              <span className="contact__icon ">
                 <UserNumSvg />
               </span>
               <h4>{t("contact.phone")}</h4>
-              <p>+998 99 861 75 00</p>
               <p>+998 33 150 75 75</p>
+              <p>+998 78 150 75 75</p>
             </div>
             <div className="contact__box">
-              <span className="contact__icon">
+              <span className="contact__icon ">
                 <BuildingSvg />
               </span>
               <h4>{t("contact.working")}</h4>
@@ -131,7 +131,9 @@ const Contact = () => {
         <hr />
         <Container>
           <div className="everbest">
-            <p className="anorhome">© Anorhome, 2023. {t("footer.copywrite")}</p>
+            <p className="anorhome">
+              © Anorhome, 2023. {t("footer.copywrite")}
+            </p>
             <MyLink to={"/"} className="link">
               {t("footer.everbest")} EverbestLab
             </MyLink>

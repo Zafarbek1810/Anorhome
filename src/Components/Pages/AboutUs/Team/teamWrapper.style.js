@@ -54,7 +54,6 @@ section{
       font-weight: 800;
       font-size: 24px;
       line-height: 29px; 
-      letter-spacing: 0.1em; 
       color: #000;
     }
     p {

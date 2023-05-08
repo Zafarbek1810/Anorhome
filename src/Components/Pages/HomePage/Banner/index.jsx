@@ -9,6 +9,70 @@ import { Carousel } from "antd";
 const Banner = () => {
   const { t } = useTranslation();
 
+  const data = [
+    {
+      id: "3",
+      title: "Strategic consulting",
+      banner: {
+        title: "hero.title-top",
+        title2: "hero.title",
+        span: "hero.title-span",
+        img: "/images/banner.jpg",
+        descr: "hero.paragr",
+      },
+    },
+    {
+      id: "1",
+      banner: {
+        title: "hero.title-top2",
+        title2: "hero.title2",
+        span: "hero.title-span2",
+        img: "/images/banner2.jpg",
+        descr: "hero.paragr2",
+      },
+    },
+    {
+      id: "4",
+      banner: {
+        title: "hero.title-top3",
+        title2: "hero.title3",
+        span: "hero.title-span3",
+        img: "/images/banner3.jpg",
+        descr: "hero.paragr3",
+      },
+    },
+    {
+      id: "5",
+      banner: {
+        title: "hero.title-top4",
+        title2: "hero.title4",
+        span: "hero.title-span4",
+        img: "/images/banner4.jpg",
+        descr: "hero.paragr4",
+      },
+    },
+    {
+      id: "2",
+      banner: {
+        title: "hero.title-top5",
+        title2: "hero.title5",
+        span: "hero.title-span5",
+        img: "/images/banner5.jpg",
+        descr: "hero.paragr5",
+      },
+    },
+    {
+      id: "6",
+      banner: {
+        title: "hero.title-top6",
+        title2: "hero.title6",
+        span: "hero.title-span6",
+        img: "/images/banner6.jpg",
+        descr: "hero.paragr6",
+      },
+    },
+  ];
+
   const ref = useRef();
 
   // useEffect(() => {
@@ -21,7 +85,7 @@ const Banner = () => {
   }, []);
 
   const onChange = (currentSlide) => {
-    ref.current.goTo(currentSlide+1);
+    ref.current.goTo(currentSlide + 1);
   };
 
   return (
@@ -34,11 +98,15 @@ const Banner = () => {
           ref={ref}
           className="imgCarousel"
         >
-          <img src="/images/banner.jpg" alt="" />
+          {data.map((item) => (
+            <img key={item} src={item.banner.img} alt="" />
+          ))}
+
+          {/* <img src="/images/banner.jpg" alt="" />
           <img src="/images/banner2.jpg" alt="" />
           <img src="/images/banner5.jpg" alt="" />
           <img src="/images/banner3.jpg" alt="" />
-          <img src="/images/banner4.jpg" alt="" />
+          <img src="/images/banner4.jpg" alt="" /> */}
           {/* <img src="/images/banner6.jpg" alt="" /> */}
         </Carousel>
       </div>
@@ -53,21 +121,26 @@ const Banner = () => {
           beforeChange={onChange}
           className="carusel"
         >
-          <div className="wrap">
-            <p className="top-title">{t("hero.title-top")}</p>
-            <h1 className="title">
-              {t("hero.title")} <br />
-              <span> {t("hero.title-span")}</span>
-            </h1>
-            <p className="descr">{t("hero.paragr")}</p>
-            <section class="buttons">
-              <MyLink to="/service_details?id=3" className="btn btn-4">
-                <span>{t("button.btn")}</span>
-              </MyLink>
-            </section>
-          </div>
+          {data.map((v, i) => (
+            <div key={i} className="wrap">
+              <p className="top-title">{t(v.banner.title)}</p>
+              <h1 className="title">
+                {t(v.banner.title2)} <br />
+                <span> {t(v.banner.span)}</span>
+              </h1>
+              <p className="descr">{t(v.banner.descr)}</p>
+              <section class="buttons">
+                <MyLink
+                  to={`/service_details?id=${v.id}`}
+                  className="btn btn-4"
+                >
+                  <span>{t("button.btn")}</span>
+                </MyLink>
+              </section>
+            </div>
+          ))}
 
-          <div className="wrap">
+          {/* <div className="wrap">
             <p className="top-title">{t("hero.title-top2")}</p>
             <h1 className="title">
               {t("hero.title2")} <br />
@@ -122,9 +195,8 @@ const Banner = () => {
                 <span>{t("button.btn")}</span>
               </MyLink>
             </section>
-          </div>
+          </div> */}
 
-          
           {/* <div className="wrap">
             <p className="top-title">{t("hero.title-top6")}</p>
             <h1 className="title">

@@ -9,16 +9,16 @@ import ProIcon from "../../../Common/Svgs/ProIcon";
 
 const data=[
   {
-    img:"/images/projects/kamolon/9.jpg",
-    city:"Yangi Komolon",
+    img:"/images/projects/sergeli/9.jpg",
+    city:"Sergeli Residence",
     date:" 12.01.2023",
-    link:"/projects?title=Yangi%20Komolon"
+    link:"/projects/?title=Sergeli%20Residence"
   },
   {
-    img:"/images/projects/biy/pro.jpg",
-    city:"Buyuk Ipak Yo‘li 311",
+    img:"/images/projects/atm/8.jpg",
+    city:"Auto Tiger Mall",
     date:" 12.01.2023",
-    link:"/projects?title=Buyuk%20Ipak%20Yo‘li%20311"
+    link:"/projects/?title=Auto%20Tiger%20Mall"
   },
   {
     img:"/images/projects/termiz/pro.jpg",
@@ -68,7 +68,7 @@ const ThirdSection = () => {
       <Container style={{ paddingTop: 90, paddingBottom: 90 }}>
         <div className="wrap">
           <div className="left">
-            <h5 data-aos={"fade-right"} className="subtitle">{t("projects.info-top")}</h5>
+            {/* <h5 data-aos={"fade-right"} className="subtitle">{t("projects.info-top")}</h5> */}
             <h3 data-aos={"fade-right"} className="titles">{t("projects.info-title")}</h3>
             <p data-aos={"fade-right"} className="descr">
             {t("projects.info-p")}
