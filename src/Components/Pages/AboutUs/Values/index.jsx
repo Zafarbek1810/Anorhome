@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import AOS from "aos";
 import { useTranslation } from "react-i18next";
 import Container from "../../../Common/Container";
 import { ValuesWrapper } from "./valuesWrapper.style";
@@ -7,11 +6,6 @@ import { ValuesWrapper } from "./valuesWrapper.style";
 const ValuesSection = () => {
 
   const { t } = useTranslation();
-
-  useEffect(() => {
-    AOS.init({ duration: 1500, once: true});
-    AOS.refresh();
-  }, []);
 
   return (
     <ValuesWrapper>

@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-import AOS from "aos";
+import React from "react";
 import { useTranslation } from "react-i18next";
 import { SecondSectionWrapper } from "./SecondSection.style";
 import Container from "../../../Common/Container";
@@ -40,11 +39,7 @@ const SecondSection = () => {
       age:t("about.age")
     },
   ];
-
-  // useEffect(() => {
-  //   AOS.init({ duration: 1500, once: true });
-  //   // AOS.refresh();
-  // }, []);
+  
 
   return (
     <SecondSectionWrapper>

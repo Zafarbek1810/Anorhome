@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import AOS from "aos";
 import { useTranslation } from "react-i18next";
 import Container from "../../../Common/Container/index";
 import { HeroWrapper } from "./HeroWrapper.style"; 
@@ -15,10 +14,6 @@ const Hero = () => {
   const { x, y } = useMousePosition();
   const { height: clientHeight, width: clientWidth } = useWindowDimensions()
   
-  useEffect(() => {
-    AOS.init({ duration: 1500, once: true,});
-    AOS.refresh();
-  }, []);
 
   const translateX = clientWidth < 768 ? 0 : ((-(x / (clientWidth / 2)) * 10 ) + 10);
   const translateY = clientWidth < 768 ? 0 : ((-(y / (clientHeight / 2)) * 10 ) + 10);

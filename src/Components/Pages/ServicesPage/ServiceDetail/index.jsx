@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Header from "../../Header";
-import Footer from "../../Footer/footer";
+// import Footer from "../../Footer/footer";
 import ThirdSection from "../../HomePage/ThirdSection";
 import Contact from "../../HomePage/Contact/contact";
 import { TemplateWrapper } from "./ServiceDetail.style";

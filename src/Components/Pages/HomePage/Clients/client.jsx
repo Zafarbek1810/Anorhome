@@ -1,18 +1,11 @@
-import React, { useEffect } from "react";
-import AOS from "aos";
+import React, { useEffect } from "react"; 
 import { useTranslation } from "react-i18next";
 import Container from "../../../Common/Container"; 
 import { ClientsWrapper } from "./client.style";
 
 const Clients = () => {
 
-  const { t } = useTranslation();
-
-  // useEffect(() => {
-  //   AOS.init({ duration: 1500, once: true });
-  //   AOS.refresh();
-    
-  // }, []);
+  const { t } = useTranslation(); 
 
   return (
     <ClientsWrapper>

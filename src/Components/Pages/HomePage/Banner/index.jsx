@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from "react";
 import { BannerWrapper } from "./Banner.style";
-import AOS from "aos";
 import { useTranslation } from "react-i18next";
 import MyLink from "../../../Common/MyLink";
 import Container from "../../../Common/Container";

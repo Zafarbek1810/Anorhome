@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-import AOS from "aos";
+import React, { useEffect, useState } from "react"; 
 import { useTranslation } from "react-i18next";
 import Container from "../../../Common/Container";
 import MyLink from "../../../Common/MyLink";
@@ -38,11 +37,7 @@ const ThirdSection = () => {
   const { t } = useTranslation();
 
   const [activeIndex, setActiveIndex] = useState("0");
-
-  // useEffect(() => {
-  //   AOS.init({ duration: 1500, once: true  });
-  //   AOS.refresh();
-  // }, []);
+ 
 
   const onMouseOver = (e) => {
     const element = e.target;

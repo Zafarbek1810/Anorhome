@@ -3,8 +3,7 @@ import useScrollPosition from "../../../../Hooks/useScrollPosition";
 import MyLink from "../../../Common/MyLink";
 import { ServicesWrapper } from "./Services.style";
 import { useRouter } from "next/router";
-import useWindowDimensions from "../../../../Hooks/useWindow";
-import AOS from "aos";
+import useWindowDimensions from "../../../../Hooks/useWindow"; 
 import { useTranslation } from "react-i18next";
 
 const Services = () => {
@@ -67,11 +66,7 @@ const Services = () => {
     console.log(scrollY);
     console.log(clientWidth);
   }, []);
-
-  useEffect(() => {
-    AOS.init({ duration: 1500, once: true });
-    AOS.refresh();
-  }, []);
+ 
 
   return (
     <ServicesWrapper>

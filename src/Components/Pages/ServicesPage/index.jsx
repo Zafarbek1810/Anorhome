@@ -1,8 +1,8 @@
 import React from 'react';
 import Header from "../Header"
-import Footer from "../Footer/footer"
+// import Footer from "../Footer/footer"
 import Services from './Services';
-import Testimionals from "../HomePage/Testimionals"
+// import Testimionals from "../HomePage/Testimionals"
 import Clients from "../HomePage/Clients/client"
 import Contact from "../HomePage/Contact/contact"
 
