@@ -50,7 +50,7 @@ const Contact = () => {
               </span>
               <h4>{t("contact.working")}</h4>
               <p>
-                {t("contact.from")} <span>10:00 – 19:00</span>
+                 <span>10:00 – 19:00</span>
               </p>
               <p>{t("contact.week")}</p>
             </div>

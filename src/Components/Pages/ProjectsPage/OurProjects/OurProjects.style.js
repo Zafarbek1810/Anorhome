@@ -156,12 +156,21 @@ const OurProjectsWrapper = styled.div`
       }
 
       .heading {
-        font-family: "Mulish";
+        display: flex;
+        align-items: center;
+        img{
+          margin-right: 24px;
+          width: 70px;
+
+        }
+        p{
+          font-family: "Mulish";
         font-style: normal;
         font-weight: 700;
         font-size: 32px;
         line-height: 38px;
         color: #161a1d;
+        }
       }
 
       .descr {

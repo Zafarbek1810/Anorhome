@@ -13,6 +13,8 @@ import Aos from "aos";
 import { useTranslation } from "react-i18next";
 import { useRouter } from "next/router";
 import { Image } from "antd";
+import LeftAnorDona from "../../../Common/Svgs/LeftAnorDona";
+import RightAnorDona from "../../../Common/Svgs/RightAnorDona";
 
 const OurProjects = () => {
   const { t } = useTranslation();
@@ -20,6 +22,7 @@ const OurProjects = () => {
   const data = [
     {
       title: "Sergeli Residence",
+      logo: "/images/sr-logo.png",
       category: t("projectPage.sr-category"),
       loc1: t("projectPage.sr-loc1"),
       loc2: t("projectPage.sr-loc2"),
@@ -37,6 +40,7 @@ const OurProjects = () => {
     },
     {
       title: "Auto Tiger Mall",
+      logo: "/images/amt-svg.svg",
       category: t("projectPage.atm-category"),
       loc1: t("projectPage.atm-loc1"),
       loc2: t("projectPage.atm-loc2"),
@@ -54,6 +58,7 @@ const OurProjects = () => {
     },
     {
       title: "Termez Internatinal Trade Center",
+      logo: "",
       category: t("projectPage.termiz-itc-category"),
       loc1: t("projectPage.termiz-itc-loc1"),
       loc2: t("projectPage.termiz-itc-loc2"),
@@ -71,6 +76,7 @@ const OurProjects = () => {
     },
     {
       title: "Travel Business Center",
+      logo: "/images/Travel-logo.png",
       category: t("projectPage.travelBs-category"),
       loc1: t("projectPage.travelBs-loc1"),
       loc2: t("projectPage.travelBs-loc2"),
@@ -88,6 +94,7 @@ const OurProjects = () => {
     },
     {
       title: "Buyuk Ipak Yo‘li 311",
+      logo: "",
       category: t("projectPage.biy311-category"),
       loc1: t("projectPage.biy311-loc1"),
       loc2: t("projectPage.biy311-loc2"),
@@ -105,6 +112,7 @@ const OurProjects = () => {
     },
     {
       title: "Yangi Komolon",
+      logo: "/images/komolon.svg",
       category: t("projectPage.komolon-category"),
       loc1: t("projectPage.komolon-loc1"),
       loc2: t("projectPage.komolon-loc2"),
@@ -122,6 +130,7 @@ const OurProjects = () => {
     },
     {
       title: "Al Mashriq",
+      logo: "/images/mashriq.svg",
       category: t("projectPage.mashriq-category"),
       loc1: t("projectPage.mashriq-loc1"),
       loc2: t("projectPage.mashriq-loc2"),
@@ -183,7 +192,7 @@ const OurProjects = () => {
         <div className="wrapper">
           <div className="left" id={selectedCardIndex} ref={leftDivRef}>
             {selectedCardIndex !== null ? (
-              <div className="leftIn" >
+              <div className="leftIn">
                 <div>
                   <h4 className="title">{t("projectPage.title")}</h4>
                 </div>
@@ -214,7 +223,14 @@ const OurProjects = () => {
                 </div>
                 {!loading ? (
                   <div data-aos={"fade-right"}>
-                    <p className="heading">{selectedCard.title}</p>
+                    <div className="heading">
+                      <img
+                        className="pr-logo"
+                        src={selectedCard.logo}
+                        alt=""
+                      />
+                      <p>{selectedCard.title}</p>
+                    </div>
                     <p className="descr">{selectedCard.descr}</p>
                     <div className="location">
                       <LocationSvg />
@@ -291,10 +307,10 @@ const OurProjects = () => {
                       </Swiper>
                       <div className="btns">
                         <button className="prev">
-                          <ToLeftSvg />
+                          <LeftAnorDona />
                         </button>
                         <button className="next">
-                          <ToRightSvg />
+                          <RightAnorDona />
                         </button>
                       </div>
                     </div>

@@ -54,7 +54,7 @@ const MainHeaderWrapper = styled.div`
       width: 10%;
     }
     .callBtn {
-      width: 17%;
+      width: 15%;
     }
   }
 
@@ -331,6 +331,13 @@ const MainHeaderWrapper = styled.div`
     /* height: 70px; */
     font-family: sans-serif;
 
+    .logo{
+    padding: 15px 0 !important;
+      a{
+        display: flex;
+      }
+    }
+
     .lang {
       display: flex;
       align-items: center;
@@ -376,20 +383,21 @@ const MainHeaderWrapper = styled.div`
         justify-content: center;
         text-align: center;
         width: 100%;
+        
       }
-
+      
       .btn {
         font-family: "Mulish";
         font-weight: 500;
         font-size: 16px;
         color: #fff !important;
         cursor: pointer;
-        max-width: 160px !important;
+        max-width: 100% !important;
         padding: 10px 15px ;
         position: relative;
-        width: 100%;
         background: #000;
         border: none !important;
+        height: 75px !important;
       }
 
       .btn:hover {
@@ -441,20 +449,6 @@ const MainHeaderWrapper = styled.div`
       border-color: black !important;
     }
 
-    .logo {
-      flex-shrink: 0;
-      color: #000;
-      text-decoration: none;
-      font-size: 24px;
-      color: #8073b2;
-      letter-spacing: 10px;
-      font-family: sans-serif;
-
-      a {
-        color: #8073b2;
-      }
-    }
-
     .links_cont {
       a.active{
         color: #fe152b !important;
@@ -503,7 +497,7 @@ const MainHeaderWrapper = styled.div`
   }
 
   .content {
-    padding: 0px 100px;
+    padding: 0px 7.5vw;
     display: flex;
     align-items: center;
 

@@ -5,6 +5,8 @@ import { useTranslation } from "react-i18next";
 import MyLink from "../../../Common/MyLink";
 import Container from "../../../Common/Container";
 import { Carousel } from "antd";
+import LeftAnorDona from "../../../Common/Svgs/LeftAnorDona";
+import RightAnorDona from "../../../Common/Svgs/RightAnorDona";
 
 const Banner = () => {
   const { t } = useTranslation();
@@ -74,6 +76,7 @@ const Banner = () => {
   ];
 
   const ref = useRef();
+  const ref2 = useRef();
 
   // useEffect(() => {
   //   AOS.init({ duration: 1500, once: true });
@@ -88,6 +91,15 @@ const Banner = () => {
     ref.current.goTo(currentSlide + 1);
   };
 
+  const handleLeft = () => {
+    ref2.current.prev();
+  };
+
+  const handleRight = () => {
+    ref2.current.next();
+  };
+
+
   return (
     <BannerWrapper>
       <div className="img-wrapper">
@@ -101,13 +113,6 @@ const Banner = () => {
           {data.map((item) => (
             <img key={item} src={item.banner.img} alt="" />
           ))}
-
-          {/* <img src="/images/banner.jpg" alt="" />
-          <img src="/images/banner2.jpg" alt="" />
-          <img src="/images/banner5.jpg" alt="" />
-          <img src="/images/banner3.jpg" alt="" />
-          <img src="/images/banner4.jpg" alt="" /> */}
-          {/* <img src="/images/banner6.jpg" alt="" /> */}
         </Carousel>
       </div>
       <Container className="cont">
@@ -116,10 +121,11 @@ const Banner = () => {
           pauseOnFocus={false}
           pauseOnHover={false}
           pauseOnDotsHover={false}
-          autoplaySpeed={6000}
+          autoplaySpeed={8000}
           // afterChange={onChange}
           beforeChange={onChange}
           className="carusel"
+          ref={ref2}
         >
           {data.map((v, i) => (
             <div key={i} className="wrap">
@@ -139,78 +145,15 @@ const Banner = () => {
               </section>
             </div>
           ))}
-
-          {/* <div className="wrap">
-            <p className="top-title">{t("hero.title-top2")}</p>
-            <h1 className="title">
-              {t("hero.title2")} <br />
-              <span>{t("hero.title-span2")} </span>
-            </h1>
-            <p className="descr">{t("hero.paragr2")}</p>
-            <section class="buttons">
-              <MyLink to="/service_details?id=1" className="btn btn-4">
-                <span>{t("button.btn")}</span>
-              </MyLink>
-            </section>
-          </div>
-
-          <div className="wrap">
-            <p className="top-title">{t("hero.title-top5")}</p>
-            <h1 className="title">
-              {t("hero.title5")}
-              <span> {t("hero.title-span5")}</span>
-            </h1>
-            <p className="descr">{t("hero.paragr5")}</p>
-            <section class="buttons">
-              <MyLink to="/service_details?id=2" className="btn btn-4">
-                <span>{t("button.btn")}</span>
-              </MyLink>
-            </section>
-          </div>
-
-
-          <div className="wrap">
-            <p className="top-title">{t("hero.title-top3")}</p>
-            <h1 className="title">
-              {t("hero.title3")} <br />
-              <span> {t("hero.title-span3")}</span>
-            </h1>
-            <p className="descr">{t("hero.paragr3")}</p>
-            <section class="buttons">
-              <MyLink to="/service_details?id=4" className="btn btn-4">
-                <span>{t("button.btn")}</span>
-              </MyLink>
-            </section>
-          </div>
-
-          <div className="wrap">
-            <p className="top-title">{t("hero.title-top4")}</p>
-            <h1 className="title">
-              {t("hero.title4")}
-              <span> {t("hero.title-span4")}</span>
-            </h1>
-            <p className="descr">{t("hero.paragr4")}</p>
-            <section class="buttons">
-              <MyLink to="/service_details?id=5" className="btn btn-4">
-                <span>{t("button.btn")}</span>
-              </MyLink>
-            </section>
-          </div> */}
-
-          {/* <div className="wrap">
-            <p className="top-title">{t("hero.title-top6")}</p>
-            <h1 className="title">
-              {t("hero.title6")} <br />
-              <span> {t("hero.title-span6")}</span>
-            </h1>
-            <p className="descr">{t("hero.paragr6")}</p>
-            <section class="buttons">
-              <MyLink to="/service_details?id=6" className="btn btn-4">
-                <span>{t("button.btn")}</span>
-              </MyLink>
-            </section>
-          </div> */}
         </Carousel>
+        <div className="carusel_btns">
+          <button onClick={handleLeft}>
+            <LeftAnorDona/>
+          </button>
+          <button onClick={handleRight}>
+            <RightAnorDona />
+          </button>
+        </div>
       </Container>
     </BannerWrapper>
   );

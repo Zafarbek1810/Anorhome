@@ -7,6 +7,7 @@ import Contact from './Contact/contact';
 import SecondSection from './SecondSection';
 import Testimionals from './Testimionals';
 import ThirdSection from './ThirdSection';
+import NewsHome from './News';
 
 const HomePage = () => {
     return (
@@ -16,7 +17,8 @@ const HomePage = () => {
             <SecondSection/>
             <ThirdSection/>
             {/* <Testimionals/> */}
-            <Clients />
+            {/* <Clients /> */}
+            <NewsHome/>
             <Contact />
             {/* <Footer /> */}
         </div>

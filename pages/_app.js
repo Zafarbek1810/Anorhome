@@ -16,6 +16,8 @@ import 'react-toastify/dist/ReactToastify.css';
 import '../styles/globals.css'
 import { useRouter } from 'next/router';
 import { ToastContainer } from 'react-toastify';
+import { UserContextProvider } from '../src/Context/UserContext';
+import 'react-loading-skeleton/dist/skeleton.css'
 
 if (typeof window === undefined) {
   var window = {};
@@ -106,6 +108,7 @@ useEffect(() => {
   }, []);
 
   return (
+    <UserContextProvider>
     <ModalProvider>
       <HeaderProvider>
         <Component {...pageProps} />
@@ -127,6 +130,7 @@ useEffect(() => {
         {jivo && <Script src="//code.jivo.ru/widget/dqFEUXxryd" async />}
       </HeaderProvider>
     </ModalProvider>
+    </UserContextProvider>
 
   )
 

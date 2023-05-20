@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import AOS from "aos";
 import { useTranslation } from "react-i18next";
 import Container from "../../../Common/Container"; 
 import { ClientsWrapper } from "./client.style";

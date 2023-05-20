@@ -5,11 +5,10 @@ import Container from "../../../Common/Container";
 import { ValuesWrapper } from "./valuesWrapper.style";
 
 const ValuesSection = () => {
-
   const { t } = useTranslation();
 
   useEffect(() => {
-    AOS.init({ duration: 1500, once: true});
+    AOS.init({ duration: 1500, once: true });
     AOS.refresh();
   }, []);
 
@@ -22,14 +21,11 @@ const ValuesSection = () => {
       </div>
       <Container>
         <section>
-
           <div className="box__wrapper">
-            <div className="boxes" data-aos={"fade-right"}> 
-             
+            <div className="boxes" data-aos={"fade-right"}>
               <img src="/aboutUs/confidence.svg" alt="Confidence Svg" />
               <h3>{t("aboutUs.values-tit1")}</h3>
               <p>{t("aboutUs.values-p1")}</p>
-             
             </div>
             <div className="boxes" data-aos={"fade-right"}>
               <img src="/aboutUs/truthworth.svg" alt="Trustworthy Svg" />

@@ -16,21 +16,22 @@ const Services = () => {
       span: "1",
       p1: t("hero.title-top2"),
       img: "/images/services/service2.jpg",
-      p2: t("hero.descr2"),
+      // p2: t("hero.descr2"),
+      p2: t("hero.paragr2"),
     },
     {
       id: "2",
       span: "2",
       p1: t("hero.title-top5"),
       img: "/images/services/service5.jpg",
-      p2: t("hero.descr5"),
+      p2: t("hero.paragr5"),
     },
     {
       id: "3",
       span: "3",
       p1: t("hero.title-top"),
       img: "/images/services/service1.jpg",
-      p2: t("hero.descr"),
+      p2: t("hero.paragr"),
     },
     
     {
@@ -38,21 +39,21 @@ const Services = () => {
       span: "4",
       p1: t("hero.title-top3"),
       img: "/images/services/service3.jpg",
-      p2: t("hero.descr3"),
+      p2: t("hero.paragr3"),
     },
     {
       id: "5",
       span: "5",
       p1: t("hero.title-top4"),
       img: "/images/services/service4.jpg",
-      p2: t("hero.descr4"),
+      p2: t("hero.paragr4"),
     },
     {
       id: "6",
       span: "6",
       p1: t("hero.title-top6"),
       img: "/images/services/service6.jpg",
-      p2: t("hero.descr6"),
+      p2: t("hero.paragr6"),
     },
     
   ];
@@ -76,7 +77,7 @@ const Services = () => {
   return (
     <ServicesWrapper>
       <div className="top" data-aos={"fade-up"}>
-        <p>{t("services.top-parag")}</p>
+        {/* <p>{t("services.top-parag")}</p> */}
         <h4>{t("services.top-title")}</h4>
       </div>
 

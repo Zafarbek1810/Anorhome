@@ -29,7 +29,7 @@ const ValuesWrapper = styled.div`
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     background: #161A1D;
     transition: 0.2s;
     width: calc((100% - 100px) / 4);

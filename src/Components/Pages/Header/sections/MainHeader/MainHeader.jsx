@@ -129,6 +129,15 @@ const MainHeader = ({ isFixed }) => {
                 {t("header.projects")}
               </NavLink>
             </li>
+            <li>
+              <NavLink
+                activePath={activePath}
+                to="/news"
+                className="item-links"
+              >
+                {t("header.news")}
+              </NavLink>
+            </li>
           </ul>
         </div>
 
@@ -168,33 +177,6 @@ const MainHeader = ({ isFixed }) => {
             ]}
           />
         </div>
-
-        {/* <div className="sel">
-        <GlobeSvg />
-        <Select
-        onChange={handleChange}
-        classNamePrefix="select"
-        defaultValue={{
-          value: "en",
-          label: "ENG",
-        }}
-        name="language"
-        options={[
-              {
-                value: "en",
-                label: "ENG",
-              },
-              {
-                value: "uz",
-                label: "UZB",
-              },
-              {
-                value: "ru",
-                label: "RUS",
-              },
-            ]}
-      />
-        </div> */}
 
         <div className="callBtn">
           <section class="buttons">

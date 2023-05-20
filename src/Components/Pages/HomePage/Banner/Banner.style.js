@@ -65,6 +65,7 @@ const BannerWrapper = styled.div`
   .carusel {
     width: 710px;
     /* height: auto !important; */
+    user-select: none;
 
     .wrap {
       position: relative;
@@ -164,10 +165,12 @@ const BannerWrapper = styled.div`
 
     /* =================== button hover end =================== */
 
+    
     .slick-dots-bottom {
+      width: 330px;
       position: absolute;
       bottom: 0;
-      left: 0;
+      left: 50px;
       justify-content: start;
 
       li {
@@ -186,8 +189,26 @@ const BannerWrapper = styled.div`
         button {
           height: 4px !important;
           background: #fe152b !important;
-          animation: dot 7s linear infinite;
+          animation: dot 9s linear infinite;
         }
+      }
+
+    }
+  }
+  .carusel_btns{
+    width: 425px;
+    transform: translateY(-28px);
+    display: flex;
+    justify-content: space-between;
+
+    button{
+      background: transparent;
+      border: none;
+      position: relative;
+      z-index: 5522;
+
+      &:hover{
+        cursor: pointer;
       }
     }
   }
@@ -240,6 +261,53 @@ const BannerWrapper = styled.div`
     .buttons {
       width: 70% !important;
     }
+  }
+  @media (max-width: 420px) {
+    .slick-dots-bottom {
+      width: 300px;
+      position: absolute;
+      bottom: 0;
+      left: 50px;
+      justify-content: start;
+
+      li {
+        width: 30px !important;
+        height: 4px !important;
+        background: transparent;
+
+        button {
+          height: 4px !important;
+          background: rgba(255, 255, 255, 0.2);
+        }
+      }
+      li.slick-active {
+        background: #2e3134;
+        height: 4px !important;
+        button {
+          height: 4px !important;
+          background: #fe152b !important;
+          animation: dot 9s linear infinite;
+        }
+      }
+
+    }
+    .carusel_btns{
+    width: 330px;
+    transform: translateY(-28px);
+    display: flex;
+    justify-content: space-between;
+
+    button{
+      background: transparent;
+      border: none;
+      position: relative;
+      z-index: 5522;
+
+      &:hover{
+        cursor: pointer;
+      }
+    }
+  }
   }
 `;
 

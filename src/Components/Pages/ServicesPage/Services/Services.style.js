@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const ServicesWrapper = styled.div`
-  padding: 100px;
+  padding: 100px 7.5vw;
   background: #161a1d;
   p,
   span {
@@ -12,7 +12,7 @@ const ServicesWrapper = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    border-bottom: 1px solid #ffffff;
+    /* border-bottom: 1px solid #ffffff; */
 
     p {
       margin: 0;
@@ -29,7 +29,6 @@ const ServicesWrapper = styled.div`
     h4 {
       margin: 0;
       width: 60%;
-      text-align: end;
       font-family: "Mulish";
       font-style: normal;
       font-weight: 900;
@@ -45,6 +44,10 @@ const ServicesWrapper = styled.div`
       padding: 40px 20px;
       display: flex;
       border-bottom: 1px solid #ffffff;
+
+      &:last-child{
+        border-bottom:none;
+      }
       .col-1 {
         width: 30%;
         position: relative;
@@ -82,8 +85,8 @@ const ServicesWrapper = styled.div`
         height: 350px;
         padding: 0 30px;
         overflow: hidden;
-        border-left: 1px solid #d9d9d9;
-        border-right: 1px solid #d9d9d9;
+        /* border-left: 1px solid #d9d9d9; */
+        /* border-right: 1px solid #d9d9d9; */
 
         img {
           width: 100%;

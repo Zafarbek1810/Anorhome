@@ -7,6 +7,7 @@
     "service": "Xizmatlar",
     "about": "Biz Xaqimizda",
     "projects": "Loyihalar",
+    "news":"Yangiliklar va tahlillar",
     "call-btn": "Qo'ng'iroq qilish"
   },
   "hero": {
@@ -80,7 +81,7 @@
 
   "services":{
     "top-parag": "Aniq qarorlar qabul qilish uchun ko'chmas mulk bo'yicha maslahat.",
-    "top-title": "Anorhome Xizmatlari",
+    "top-title": "Xizmatlar",
     "how-work" : "Bu Qanday Ishlaydi",
     "work-title1": "Shaklni to'ldiring",
     "work-title2": "Qo'ng'iroqni kuting",
@@ -118,7 +119,7 @@
     
 
     "team": "Bizning Jamoa",
-    "values": "Bizning Qadriyatlar",
+    "values": "Bizning Qarashlarimiz",
     "values-tit1": "Bizning qimmatli tajribamiz",
     "values-p1": "Bu erda biz siz bilan qimmatli tajribamizni baham ko'ramiz. Anorhome hamkori bo'lish orqali loyihangiz ushbu sahifaning bir qismiga aylanishi mumkin.",
     "values-tit2": "Maqsad",

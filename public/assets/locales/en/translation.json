@@ -4,9 +4,10 @@
   },
   "header": {
     "home": "Home",
-    "service": "Service",
+    "service": "Services",
     "about": "About Us",
     "projects": "Projects",
+    "news":"News And Analytics",
     "call-btn": "Request a call"
   },
   "hero": {
@@ -77,7 +78,7 @@
 
   "services": {
     "top-parag": "Customized real estate consulting for informed decisions.",
-    "top-title": "Anorhome Services",
+    "top-title": "Services",
     "how-work" : "How It Work",
     "work-title1": "Fill the form",
     "work-title2": "Wait for a call",
@@ -114,7 +115,7 @@
     "historyP5": "Stable partnership is a guarantee of success in business.",
 
     "team": "Our Team",
-    "values": "Our Values",
+    "values": "Our Vision",
     "values-tit1": "Our valuable experience",
     "values-p1": "Here we share with you our valuable experience. By becoming an Anorhome partner, your project can become part of this page.",
     "values-tit2": "Target",
