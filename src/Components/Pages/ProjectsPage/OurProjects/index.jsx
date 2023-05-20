@@ -8,8 +8,7 @@ import ToLeftSvg from "../../../Common/Svgs/ToLeftSvg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Navigation, Pagination } from "swiper";
-import Aos from "aos";
+import { Navigation, Pagination } from "swiper"; 
 import { useTranslation } from "react-i18next";
 import { useRouter } from "next/router";
 import { Image } from "antd";
@@ -173,12 +172,7 @@ const OurProjects = () => {
       setRightDivHeight(leftDivRef.current?.clientHeight || "900px");
     }, 100);
   }, [data]);
-
-  useEffect(() => {
-    Aos.init({ duration: 1500, once: true });
-    Aos.refresh();
-  }, []);
-
+ 
   useEffect(() => {
     if (router.query.title) {
       const card = data.find((i) => i.title == router.query.title);

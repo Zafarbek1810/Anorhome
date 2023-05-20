@@ -1,5 +1,4 @@
-import React, { useEffect} from "react";
-import AOS from "aos"
+import React, { useEffect} from "react"; 
 import Container from "../../../Common/Container";
 import UserNumSvg from "../../../Common/Svgs/UserNumSvg";
 import BuildingSvg from "../../../Common/Svgs/BuildingSvg";
@@ -10,11 +9,7 @@ import { Map, Placemark, YMaps } from "@pbe/react-yandex-maps";
 import { useTranslation } from "react-i18next";
 
 const Contact = () => {
-
-  useEffect(() => {
-    AOS.init({ duration: 1500, once: true  });
-    AOS.refresh();
-  }, []);
+ 
   const defaultState = {
     center: [41.324987, 69.320206],
     zoom: 17,

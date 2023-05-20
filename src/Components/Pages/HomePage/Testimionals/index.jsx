@@ -1,17 +1,11 @@
 import { Carousel } from "antd";
-import React, { useEffect, useRef } from "react";
-import AOS from "aos";
+import React, { useEffect, useRef } from "react"; 
 import Container from "../../../Common/Container";
 import { TestimionalsWrapper } from "./Testimionals.style";
 import CarouselRightSvg from "../../../Common/Svgs/CarouselRightSvg";
 
 const Testimionals = () => {
-  const carouselRef = useRef();
-
-  // useEffect(() => {
-  //   AOS.init({ duration: 1500, once: true  });
-  //   AOS.refresh();
-  // }, []);
+  const carouselRef = useRef(); 
 
   useEffect(() => {
     console.log();

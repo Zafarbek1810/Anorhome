@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import AOS from "aos";
 import { useTranslation } from "react-i18next";
 import { TeamWrapper } from "./teamWrapper.style"; 
 import Container from "../../../Common/Container/index";
@@ -41,11 +40,6 @@ const ourStaffs = [
 const TeamSection = () => {
 
   const { t } = useTranslation();
-
-  useEffect(() => {
-    AOS.init({ duration: 1500, once: true});
-    AOS.refresh();
-  }, []);
 
   return (
     <TeamWrapper>

@@ -5,13 +5,7 @@ import { ClientsWrapper } from "./client.style";
 
 const Clients = () => {
 
-  const { t } = useTranslation();
-
-  // useEffect(() => {
-  //   AOS.init({ duration: 1500, once: true });
-  //   AOS.refresh();
-    
-  // }, []);
+  const { t } = useTranslation(); 
 
   return (
     <ClientsWrapper>

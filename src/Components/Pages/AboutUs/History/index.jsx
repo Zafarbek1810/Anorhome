@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import AOS from "aos";
 import { useTranslation } from "react-i18next";
 import { HistoryWrapper } from "./historyWrapper.style";
 import Container from "../../../Common/Container/index";
@@ -8,10 +7,6 @@ const HistorySection = () => {
 
   const { t } = useTranslation();
 
-  useEffect(() => {
-    AOS.init({ duration: 1500, once: true });
-    AOS.refresh();
-  }, []);
 
   return (
     <HistoryWrapper>
